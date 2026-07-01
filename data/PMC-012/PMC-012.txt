@@ -1,0 +1,69 @@
+Crystal ID: PMC-012
+
+Molecule Name:
+Imidazolium D-camphorsulfonate (D-ImCS)
+
+CCDC ID:
+2083426
+
+CSD Refcode:
+JANCAG
+
+Chemical Formula:
+C13H20N2O4S
+(Ionic Formula: C10H15O4S− · C3H5N2+)
+
+Crystal Type:
+Organic Molecular Ionic Crystal (Metal-Free Molecular Ferroelectric)
+
+Piezoelectric Property:
+Yes
+
+Evidence:
+The paper experimentally confirms that Imidazolium D-camphorsulfonate is a ferroelectric molecular crystal exhibiting piezoelectricity. Evidence includes ferroelectric polarization (P-E hysteresis loops), piezoresponse force microscopy (PFM) domain imaging and switching, and direct piezoelectric coefficient (d33) measurements.
+
+Research Paper:
+Lei Xu, Xin Mu, Xiao-Gang Chen, Han-Yue Zhang, Ren-Gen Xiong
+"Organic Enantiomeric Ferroelectrics with High Piezoelectric Performance: Imidazolium L- and D-Camphorsulfonate"
+Chemistry of Materials, 2021, Volume 33, Pages 5769–5775
+DOI: 10.1021/acs.chemmater.1c01663
+
+Space Group:
+P21 (No. 4)
+
+Crystal System:
+Monoclinic
+
+Unit Cell:
+a = 9.1142 Å
+b = 12.0574 Å
+c = 13.2549 Å
+α = 90°
+β = 90.651°
+γ = 90°
+
+Z:
+4
+
+Z':
+2
+
+Measurement Temperature:
+173 K
+
+Piezoelectric Coefficient:
+d33 ≈ 20 pC/N
+
+Curie Temperature (Tc):
+370 K
+
+Notes:
+• Metal-free organic molecular ferroelectric.
+• Chiral D-enantiomer of Imidazolium camphorsulfonate.
+• Crystal structure solved by single-crystal X-ray diffraction.
+• Deposited in the Cambridge Structural Database (CSD).
+• CSD Refcode: JANCAG.
+• CCDC Deposition Number: 2083426.
+• Crystal exhibits room-temperature ferroelectricity with a Curie temperature above room temperature (370 K).
+• High piezoelectric performance compared with many reported organic molecular crystals.
+• Corresponding L-enantiomer: PONQEP01 (CCDC 2083425).

@@ -1,0 +1,57 @@
+Crystal ID: PMC-008
+
+Crystal ID: MNIANL10
+
+CCDC ID: 1212672
+
+Molecule Name: meta-Nitroaniline (m-Nitroaniline)
+
+Chemical Formula: C₆H₆N₂O₂
+
+Crystal Type: Organic Molecular Crystal
+
+Piezoelectric Property: YES ✅
+
+Evidence:
+
+meta-Nitroaniline crystallizes in the non-centrosymmetric orthorhombic space group Pbc2₁ (No. 29), which permits piezoelectricity.
+The piezoelectric coefficients were experimentally measured using synchrotron X-ray multiple diffraction under an applied electric field.
+The experimentally observed piezoelectric behavior was later confirmed by first-principles (DFT/DFPT) calculations, which showed excellent agreement with experiment.
+
+Research Paper(s):
+
+The Crystal Structure of meta-Nitroaniline
+Journal of the Chemical Society, Perkin Transactions 2 (1973)
+DOI: 10.1039/P29730001197
+Piezoelectric Coefficients of mNA Organic Nonlinear Optical Material Using Synchrotron X-Ray Multiple Diffraction
+Physical Review Letters 81, 5426 (1998)
+DOI: 10.1103/PhysRevLett.81.5426
+First-principles analysis of the molecular piezoelectric crystal meta-Nitroaniline
+RSC Advances (2018)
+DOI: 10.1039/C8RA01499J
+
+CIF File Name: PMC-008-meta-nitroaniline.cif
+
+CIF File Name (Web/CSD): MNIANL10
+
+Space Group: Pbc2₁ (No. 29)
+
+Crystal System: Orthorhombic
+
+Piezoelectric Coefficient:
+
+Experimentally measured in the Physical Review Letters (1998) study.
+The 2018 RSC Advances paper reports the following calculated piezoelectric strain coefficients (pm/V):
+d₁₅ ≈ 31 pm/V
+d₂₄ ≈ 18 pm/V
+d₃₃ ≈ 6 pm/V
+These values are in good agreement with the experimental measurements and indicate that mNA has one of the largest piezoelectric responses among organic molecular crystals.
+
+Notes:
+
+Single-crystal organic molecular crystal.
+Non-centrosymmetric structure is responsible for its piezoelectric and electro-optic (Pockels) properties.
+One of the most extensively studied organic piezoelectric crystals.
+Frequently used as a benchmark material for nonlinear optics and molecular piezoelectricity.
+The crystal structure deposited as MNIANL10 is the structure used in subsequent experimental and theoretical piezoelectric investigations.
+Crystal System: Orthorhombic rectification rather than directly measuring piezoelectric coefficients. However, because the crystal is experimentally confirmed to be ferroelectric and belongs to the non-centrosymmetric space group Pna2₁, it is classified as a piezoelectric molecular crystal.

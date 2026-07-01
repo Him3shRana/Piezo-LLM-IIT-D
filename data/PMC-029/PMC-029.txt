@@ -1,0 +1,53 @@
+Crystal ID           : PMC-029
+
+CIF File Name        : PMC-029-3-Hydroxy-1H-phenalen-1-one.cif
+CCDC ID              : 796166
+CSD REFCODE          : TAPZIT01
+Crystal Structure DOI: 10.5517/ccvqgss
+Crystal Structure Reference :
+Horiuchi, S.; Kumai, R.; Tokura, Y.
+Advanced Materials (2011), 23, 2098–2103.
+DOI: 10.1002/adma.201100359
+
+Molecule Name        : 3-Hydroxy-1H-phenalen-1-one (HPLN)
+Chemical Formula     : C13H8O2
+Crystal Type         : Organic Molecular Crystal
+Polymorph            : α-Polymorph
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental crystal structure determined by single-crystal X-ray diffraction and deposited in the Cambridge Structural Database (CCDC 796166; CSD REFCODE: TAPZIT01).
+• The crystal crystallizes in the non-centrosymmetric monoclinic space group Pn (No. 7), which is crystallographically compatible with piezoelectricity.
+• The α-polymorph exhibits ferroelectricity originating from cooperative proton transfer (prototropy), as reported by Horiuchi et al. (Advanced Materials, 2011).
+• The piezoelectric properties were experimentally measured by Horiuchi et al. (Journal of Materials Chemistry C, 2018) using the Berlincourt method (direct piezoelectric effect) and laser interferometry (converse piezoelectric effect).
+• The experimentally measured longitudinal piezoelectric coefficient is d33 = 7.3 ± 0.8 pC/N.
+• The crystal consists of discrete neutral HPLN molecules held together by intermolecular hydrogen bonding, confirming its molecular crystal nature.
+
+Research Paper       :
+Piezoelectricity of Strongly Polarized Ferroelectrics in Prototropic Organic Crystals
+Journal of Materials Chemistry C (2018)
+
+DOI                 : 10.1039/C8TC01046C
+
+Space Group          : Pn (No. 7)
+
+Crystal System       : Monoclinic
+
+Piezoelectric Coefficient :
+d33 = 7.3 ± 0.8 pC/N (Direct piezoelectric measurement)
+
+Maximum Coefficient  :
+7.3 pC/N
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD REFCODE: TAPZIT01.
+• CCDC Deposition Number: 796166.
+• Crystal structure deposited by S. Horiuchi, R. Kumai and Y. Tokura.
+• Crystal structure DOI: 10.5517/ccvqgss.
+• Associated publication: Advanced Materials (2011), 23, 2098–2103.
+• The deposited structure corresponds to the ferroelectric α-polymorph used in subsequent piezoelectric investigations.
+• Piezoelectricity was experimentally confirmed in Journal of Materials Chemistry C (2018) using both direct and converse piezoelectric measurements.
+• Reported direct longitudinal piezoelectric coefficient: d33 = 7.3 ± 0.8 pC/N.
+• The crystal is a single-component organic molecular crystal containing neutral 3-hydroxy-1H-phenalen-1-one molecules.
+• This crystal is an experimentally verified ferroelectric and piezoelectric molecular crystal suitable for inclusion in the molecular piezoelectric crystal database.

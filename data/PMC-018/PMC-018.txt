@@ -1,0 +1,45 @@
+Crystal ID: PMC-018
+
+CCDC ID:
+2325682
+
+CSD REFCODE:
+ASPARM27
+
+CIF File Name:
+ PMC-018-L-asparagine-monohydrate.cif
+
+Molecule Name:
+L-Asparagine monohydrate
+
+Chemical Formula:
+C4H8N2O3·H2O
+
+Crystal Type:
+Pure Molecular Crystal (Hydrate)
+
+Property:
+Piezoelectric
+
+Evidence:
+Experimental piezoelectric characterization reported in Phys. Rev. Lett. 133, 137001 (2024)
+
+Space Group:
+P212121 (No. 19)
+
+Crystal System:
+Orthorhombic
+
+DOI (Property Paper):
+10.1103/PhysRevLett.133.137001
+
+Research Paper Name:
+Molded, Solid-State Biomolecular Assemblies with Programmable Electromechanical Properties
+
+CIF DOI:
+10.5517/ccdc.csd.cc2j220q
+
+Notes:
+Modern CCDC crystal structure of L-asparagine monohydrate suitable for pairing with the PRL piezoelectric study.
+
+

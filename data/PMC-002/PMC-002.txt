@@ -1,0 +1,45 @@
+Crystal ID: PMC-002
+
+Molecule Name: β-Glycine (Beta Glycine)
+
+Chemical Formula: C2H5NO2
+
+Crystal Type: Organic Molecular Crystal (Single Crystal)
+
+Piezoelectric Property: Yes
+
+Evidence:
+The research experimentally confirms the piezoelectric behavior of β-glycine. β-Glycine/PCL composite films exhibited an effective piezoelectric coefficient of 10.3 pm/V and were successfully used as the active material in a piezoelectric nanogenerator (PENG). The device generated electrical output under mechanical pressure and ultrasound stimulation, demonstrating the intrinsic piezoelectric nature of β-glycine crystals.
+
+Research Paper:
+Controlled Preparation of β-Glycine Crystals and Composite Films for Piezoelectric Nanogenerators
+
+CIF File Name:
+beta-glycine.cif
+
+Space Group:
+P21 (Space Group No. 4)
+
+Crystal System:
+Monoclinic
+
+Piezoelectric Coefficient:
+10.3 pm/V (Effective piezoelectric coefficient of β-Glycine/PCL composite film)
+
+Notes:
+• Organic amino acid molecular crystal.
+• Chemical Formula: C2H5NO2.
+• Crystal structure refined by single-crystal X-ray diffraction.
+• Unit Cell Parameters:
+  - a = 5.0757 Å
+  - b = 6.1737 Å
+  - c = 5.3882 Å
+  - α = 90°
+  - β = 113.422°
+  - γ = 90°
+• Space Group: P21 (No. 4).
+• Crystal System: Monoclinic.
+• Atomic coordinates are available in the CIF file.
+• Used as the active piezoelectric material in a piezoelectric nanogenerator (PENG).
+• Demonstrated excellent electrical output under mechanical pressure and ultrasound stimulation.
+• Exhibited good biocompatibility, making it suitable for implantable bioelectronic devices.

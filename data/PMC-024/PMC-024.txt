@@ -1,0 +1,45 @@
+Crystal ID           : PMC-024
+
+CIF File Name        : PMC-024-Imidazolium-Perchlorate.cif
+CCDC ID              : 981006
+CSD REFCODE          : YOCVAP01
+Crystal Structure DOI: 10.1002/anie.201400348
+Crystal Structure Reference :
+Zhang, Y.; Liu, Y.; Ye, H.-Y.; Fu, D.-W.; Gao, W.; Ma, H.; Liu, Z.; Liu, Y.; Zhang, W.; Li, J.; Yuan, G.-L.; Xiong, R.-G.
+Angewandte Chemie International Edition (2014)
+
+Molecule Name        : Imidazolium Perchlorate
+Chemical Formula     : C3H5N2ClO4
+Crystal Type         : Organic Molecular Salt Crystal
+Piezoelectric Property : Yes
+
+Evidence             :
+• Quantitative piezoelectric measurements were reported for both single crystals and highly oriented thin films of imidazolium perchlorate.
+• The crystal exhibits robust ferroelectric polarization switching and room-temperature piezoelectric response.
+• Imidazolium perchlorate crystallizes in the non-centrosymmetric trigonal space group R3m (No. 160), which is crystallographically compatible with piezoelectricity.
+• The crystal is an organic molecular salt composed of discrete imidazolium cations and perchlorate anions and is recognized as an organic molecular ferroelectric.
+
+Research Paper       :
+A molecular ferroelectric thin film of imidazolium perchlorate on silicon
+Nature Communications (2024)
+DOI: 10.1038/s41467-024-52207-7
+
+Space Group          : R3m (No. 160)
+
+Crystal System       : Trigonal
+
+Piezoelectric Coefficient :
+Single crystal d33 ≈ 15–16 pC/N.
+Highly oriented thin film inverse piezoelectric coefficient ≈ 55.7 pm/V.
+
+Maximum Coefficient  :
+≈55.7 pm/V (inverse piezoelectric coefficient reported for the highly oriented thin film).
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD REFCODE: YOCVAP01.
+• CCDC Deposition Number: 981006.
+• Crystal structure originally reported by Zhang et al. in Angewandte Chemie International Edition (2014).
+• The deposited CIF corresponds to perdeuteroimidazolium perchlorate (C3D5N2ClO4), which is crystallographically equivalent to the hydrogen analogue (C3H5N2ClO4) investigated in the 2024 Nature Communications study.
+• The 2024 Nature Communications paper reports the ferroelectric and piezoelectric properties but does not report a new crystal structure or deposit a new CIF.
+• The 2014 CSD structure (YOCVAP01) is therefore the appropriate crystallographic reference for the material used in the piezoelectric study.

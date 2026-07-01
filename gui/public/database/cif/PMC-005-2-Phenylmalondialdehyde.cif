@@ -1,0 +1,86 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_PROLON
+#This CIF has been generated from an entry in the Cambridge Structural Database
+_database_code_depnum_ccdc_archive 'CCDC 1238105'
+_database_code_CSD               PROLON
+loop_
+_citation_id
+_citation_doi
+_citation_year
+1 10.3891/acta.chem.scand.31b-0114 1977
+_audit_creation_method           'Created from the CSD'
+_audit_update_record             
+;
+2026-06-26 downloaded from the CCDC.
+;
+_database_code_NBS               522819
+_chemical_name_common            Phenylmalondialdehyde
+_chemical_formula_moiety         'C9 H8 O2'
+_chemical_name_systematic        2-Phenyl-2-propen-3-ol-1-one
+_chemical_absolute_configuration unk
+_diffrn_ambient_temperature      111
+_exptl_crystal_density_diffrn    1.373
+#These two values have been output from a single CSD field.
+_refine_ls_R_factor_gt           0.032
+_refine_ls_wR_factor_gt          0.032
+_diffrn_radiation_probe          x-ray
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_H-M   'P n a 21'
+_symmetry_Int_Tables_number      33
+_space_group_name_Hall           'P 2c -2n'
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 1/2-x,1/2+y,1/2+z
+3 1/2+x,1/2-y,z
+4 -x,-y,1/2+z
+_cell_length_a                   7.523(2)
+_cell_length_b                   17.165(3)
+_cell_length_c                   5.552(2)
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_volume                     716.943
+_cell_formula_units_Z            4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+O1 O 0.41117 -0.29119 0.00000
+O2 O 0.05582 -0.30266 0.69520
+C1 C 0.32362 -0.26383 0.16890
+C2 C 0.14700 -0.26836 0.52308
+C3 C 0.23727 -0.30953 0.35000
+C4 C 0.24500 -0.39599 0.34906
+C5 C 0.32366 -0.43596 0.54082
+C6 C 0.33270 -0.51729 0.53786
+C7 C 0.25805 -0.55868 0.34677
+C8 C 0.17887 -0.51924 0.15734
+C9 C 0.17245 -0.43794 0.15641
+H1 H 0.30960 -0.20780 0.17150
+H2 H 0.37450 -0.40670 0.67590
+H3 H 0.26520 -0.61550 0.36090
+H4 H 0.11840 -0.41240 0.02790
+H5 H 0.14450 -0.21130 0.49740
+H6 H 0.39400 -0.54290 0.67580
+H7 H 0.12250 -0.54820 0.02810
+H8 H 0.01020 -0.26920 0.79440
+
+#END

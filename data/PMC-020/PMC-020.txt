@@ -1,0 +1,43 @@
+Crystal ID: PMC-020
+
+CIF File Name      : PMC-020-L-Valine.cif
+CCDC ID            : 1208818
+CSD REFCODE        : LVALIN01
+Molecule Name      : L-Valine
+Chemical Formula   : C5H11NO2
+Crystal Type       : Organic Molecular Crystal (Amino Acid Single Crystal)
+Piezoelectric Property : Yes
+
+Evidence           :
+• First-principles (DFT) calculations predict intrinsic piezoelectricity.
+• Piezoelectric tensor and energy-harvesting performance were calculated.
+• The crystal belongs to the non-centrosymmetric space group P21, allowing piezoelectricity.
+• The study reports piezoelectric coefficients and electromechanical coupling for the single crystal.
+
+Research Paper     :
+Ab-Initio Predictions of the Energy Harvesting Performance of L-Arginine and L-Valine Single Crystals
+Frontiers in Mechanical Engineering (2021)
+DOI: 10.3389/fmech.2021.738446
+
+Space Group        : P21 (No. 4)
+
+Crystal System     : Monoclinic
+
+Piezoelectric Coefficient :
+d16 = 3.28 pC/N
+d22 = 9.89 pC/N
+d23 = -1.24 pC/N
+d34 = -1.60 pC/N
+d35 = -2.46 pC/N
+
+Maximum coefficient:
+d22 = 9.89 pC/N
+
+Notes              :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD Refcode: LVALIN01.
+• CCDC Deposition Number: 1208818.
+• Crystal structure originally determined by Dalhus & Görbitz (Acta Chemica Scandinavica, 1996).
+• The 2021 paper performs DFT geometry optimization on the experimental structure before calculating the piezoelectric tensor.
+• This paper provides computational (not experimental) evidence for piezoelectricity.
+• Experimental piezoelectric performance of L-Valine was later demonstrated in ACS Applied Materials & Interfaces (2022), DOI: 10.1021/acsami.2c13399.

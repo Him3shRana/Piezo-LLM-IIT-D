@@ -1,0 +1,69 @@
+Crystal ID: PMC-011 
+
+Crystal File Name Web : BZDMAZ01
+
+CCDC ID               : 1118210
+
+Molecule Name         : Benzimidazole
+
+Chemical Formula      : C7H6N2
+
+Crystal Type          : Organic Hydrogen-Bonded Molecular Crystal
+
+Piezoelectric Property: YES
+
+Evidence              : Experimentally confirmed using a PM200 piezometer.
+                        The piezoelectric coefficients d33 and d31 were
+                        measured, confirming the piezoelectric nature of the
+                        crystal.
+
+Research Paper        : N. Vijayan,
+                        G. Bhagavannarayana,
+                        S. K. Halder,
+                        S. Verma,
+                        J. Philip,
+                        R. Philip,
+                        Brijesh Rathi
+
+                        "X-ray topography, photopyroelectric and
+                        two-photon absorption studies on solution
+                        grown benzimidazole single crystal"
+
+                        Applied Physics A
+                        110 (2013) 55–58
+
+                        DOI: 10.1007/s00339-012-7448-7
+
+CIF File Name         : PMC-011-Benzimidazole.cif
+
+Structure Reference   : A. Escande,
+                        J. L. Galigne
+
+                        Acta Crystallographica Section B
+                        30 (1974) 1647
+
+                        DOI: 10.1107/S0567740874005528
+
+Space Group           : Pna21 (No. 33)
+
+Crystal System        : Orthorhombic
+
+Piezoelectric
+Coefficient           : d33 = 0.10 pC/N
+                        d31 = 1.85 pC/N
+
+Notes                 :
+• Pure metal-free molecular crystal.
+• Alpha polymorph.
+• Organic hydrogen-bonded crystal.
+• Non-centrosymmetric crystal structure (Pna21).
+• Exhibits second-harmonic generation (SHG) efficiency
+  approximately 4.5 times higher than KDP.
+• Piezoelectricity experimentally verified by direct
+  piezometer measurements.
+• Crystal structure corresponds to CSD refcode BZDMAZ01.
+
+                        Journal of Synchrotron Radiation
+                        Volume 13 (2006)
+                        Pages 435–439
+                        DOI: 10.1107/S0909049506033061

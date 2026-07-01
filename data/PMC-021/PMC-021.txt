@@ -1,0 +1,39 @@
+Crystal ID           : PMC-021
+
+CIF File Name        : PMC-021-L-Leucine.cif
+CCDC ID              : 1206031
+CSD REFCODE          : LEUCIN01
+Molecule Name        : L-Leucine
+Chemical Formula     : C6H13NO2
+Crystal Type         : Organic Molecular Crystal (Amino Acid Single Crystal)
+Piezoelectric Property : Yes
+
+Evidence             :
+• First quantitative experimental demonstration of the direct piezoelectric effect in L-leucine single crystals.
+• Extensive electromechanical characterization confirms the intrinsic piezoelectricity of L-leucine.
+• The crystal belongs to the non-centrosymmetric space group P21 (No. 4), which permits piezoelectricity.
+• The study identifies L-leucine as a promising piezoactive bioelectret for electromechanical and energy-harvesting applications.
+
+Research Paper       :
+Piezoelectricity in the Proteinogenic Amino Acid L-Leucine: A Novel Piezoactive Bioelectret
+IEEE Transactions on Dielectrics and Electrical Insulation (2020)
+DOI: 10.1109/TDEI.2020.008908
+
+Space Group          : P21 (No. 4)
+
+Crystal System       : Monoclinic
+
+Piezoelectric Coefficient :
+Quantitative direct piezoelectric measurements were experimentally reported.
+Individual piezoelectric tensor components (e.g., d16, d22, d33) were not reported in the publication.
+
+Maximum Coefficient  :
+Not Reported
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD Refcode: LEUCIN01.
+• CCDC Deposition Number: 1206031.
+• Crystal structure originally determined by Coll, Solans, Font-Altaba, and Subirana (Acta Crystallographica Section C, 1986).
+• The 2020 IEEE paper uses the previously reported experimental crystal structure and does not report a new CIF.
+• This paper provides experimental (not computational) evidence for the piezoelectricity of L-leucine.

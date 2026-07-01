@@ -1,0 +1,391 @@
+[
+  {
+    "id": "PMC-001",
+    "molecule_name": "γ-Glycine",
+    "aliases": [
+      "1169370",
+      "GLYCIN18",
+      "Gamma Glycine",
+      "PMC-001",
+      "γ-Glycine",
+      "γ-phase glycine"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-001/PMC-001.json",
+    "document": "γ-Glycine γ-Glycine γ-Glycine γ-Glycine γ-Glycine 1169370 GLYCIN18 Gamma Glycine PMC-001 γ-Glycine γ-phase glycine 1169370 GLYCIN18 Gamma Glycine PMC-001 γ-Glycine γ-phase glycine 1169370 GLYCIN18 Gamma Glycine PMC-001 γ-Glycine γ-phase glycine PMC-001 C2H5NO2 GLYCIN18 1169370 P3_1 Trigonal 10.1088/1402-4896/ace861  PMC-001 γ-Glycine C2H5NO2 Organic Molecular Crystal P3_1 Trigonal 10.1088/1402-4896/ace861 1169370 GLYCIN18 Gamma Glycine PMC-001 γ-Glycine γ-phase glycine piezoelectric ferroelectric Gamma-glycine (γ-glycine), chemical formula C2H5NO2, molecular weight 75.07, is a single-component organic molecular crystal. It crystallizes in the non-centrosymmetric, polar trigonal space group P3_1 (No. 144), with unit cell a = b = 7.037 Å, c = 5.478 Å and γ = 120°, Z = 3. The structure is built from hydrogen-bonded glycine zwitterions. The crystal is piezoelectric: piezoresponse force microscopy (PFM) on the as-grown (100) face measured an effective shear (in-plane, d15) coefficient of about 1 pm/V and an effective longitudinal (out-of-plane, d33) coefficient of about 3 pm/V. Local mechanical polishing enhanced these roughly five-fold and three-fold, to about 5 and 10 pm/V respectively, and switching-spectroscopy PFM (SS-PFM) revealed local ferroelectric switching in the polished regions with a coercive field of about 3 GV/m. Gamma-glycine is biocompatible. The crystal structure corresponds to CSD refcode GLYCIN18 (CCDC 1169370), determined by single-crystal X-ray diffraction at 295 K with an R factor of 2.29% and a density of 1.592 g/cm3. The piezoelectric and local ferroelectric characterization was reported by Ivanov et al. in Physica Scripta (2023)."
+  },
+  {
+    "id": "PMC-002",
+    "molecule_name": "β-Glycine",
+    "aliases": [
+      "Beta Glycine",
+      "PMC-002",
+      "β-Glycine",
+      "β-phase glycine"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-002/PMC-002.json",
+    "document": "β-Glycine β-Glycine β-Glycine β-Glycine β-Glycine Beta Glycine PMC-002 β-Glycine β-phase glycine Beta Glycine PMC-002 β-Glycine β-phase glycine Beta Glycine PMC-002 β-Glycine β-phase glycine PMC-002 C2H5NO2   P2_1 Monoclinic 10.1016/j.nanoen.2026.112075 10.1039/d1cc02608a PMC-002 β-Glycine C2H5NO2 Organic Molecular Crystal P2_1 Monoclinic 10.1016/j.nanoen.2026.112075 10.1039/d1cc02608a Beta Glycine PMC-002 β-Glycine β-phase glycine piezoelectric ferroelectric Beta-glycine (β-glycine), chemical formula C2H5NO2, molecular weight 75.07, is a single-component organic molecular crystal and a metastable polymorph of glycine. It crystallizes in the non-centrosymmetric, polar monoclinic space group P2_1 (No. 4), with unit cell a = 5.0757 Å, b = 6.1737 Å, c = 5.3882 Å and β = 113.422°, Z = 2. The structure is built from hydrogen-bonded glycine zwitterions. Beta-glycine is piezoelectric and is known for a giant shear piezoelectric coefficient (d16) of about 178 pm/V. In this work, dual-AC-resonance-tracking piezoresponse force microscopy (PFM) measured an effective piezoelectric coefficient of about 9.9 pm/V for the beta-glycine crystal and 10.3 pm/V for a flexible beta-glycine/polycaprolactone (PCL) composite film, and ferroelectric hysteresis-loop measurements demonstrated ferroelectric switching. The composite film was used to build a biocompatible piezoelectric nanogenerator (PENG) that produced electrical output under mechanical pressure and ultrasound. The crystal structure (Crystallography Open Database entry 7128793) was determined by single-crystal X-ray diffraction at 100 K with an R factor of 2.29%, a density of 1.609 g/cm3, a colorless needle habit, and was reported by Hoser et al. in Chemical Communications (2021). The piezoelectric and nanogenerator characterization was reported by Bai et al. in Nano Energy (2026)."
+  },
+  {
+    "id": "PMC-003",
+    "molecule_name": "Croconic Acid",
+    "aliases": [
+      "147324",
+      "4,5-dihydroxy-4-cyclopentene-1,2,3-trione",
+      "Croconic Acid",
+      "H2C5O5",
+      "PMC-003"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-003/PMC-003.json",
+    "document": "Croconic Acid Croconic Acid Croconic Acid Croconic Acid Croconic Acid 147324 4,5-dihydroxy-4-cyclopentene-1,2,3-trione Croconic Acid H2C5O5 PMC-003 147324 4,5-dihydroxy-4-cyclopentene-1,2,3-trione Croconic Acid H2C5O5 PMC-003 147324 4,5-dihydroxy-4-cyclopentene-1,2,3-trione Croconic Acid H2C5O5 PMC-003 PMC-003 C5H2O5  147324 Pca2_1 Orthorhombic 10.1063/1.4813500 10.1039/b100020i PMC-003 Croconic Acid C5H2O5 Organic Molecular Crystal Pca2_1 Orthorhombic 10.1063/1.4813500 10.1039/b100020i 147324 4,5-dihydroxy-4-cyclopentene-1,2,3-trione Croconic Acid H2C5O5 PMC-003 piezoelectric ferroelectric Croconic acid (4,5-dihydroxy-4-cyclopentene-1,2,3-trione), chemical formula C5H2O5, molecular weight 142.07, is a single-component organic molecular crystal and a prototypical proton-transfer-type organic ferroelectric. It crystallizes in the non-centrosymmetric, polar orthorhombic space group Pca2_1 (No. 29), with unit cell a = 8.7108 Å, b = 5.1683 Å, c = 10.9562 Å, Z = 4. Molecules are linked into chains by resonance-assisted O-H...O hydrogen bonds. Croconic acid shows a large room-temperature spontaneous polarization (about 21 microC/cm2 experimentally) arising from intermolecular proton transfer and charge redistribution along the hydrogen bonds. In this work, first-principles density functional theory (DFT, GGA) with the Berry-phase method computed a spontaneous polarization of about 22.3-24.7 microC/cm2 along the c axis, and a one-dimensional Hamiltonian with Monte Carlo simulation predicted a Curie temperature of about 756 K, with polarization stable to roughly 400 K. The crystal structure (CCDC 147324) was determined by single-crystal X-ray diffraction at 293 K with an R factor of 5.49%, a density of 1.913 g/cm3, and a yellow hexagonal-prism habit. The ferroelectric-mechanism study was reported by Cai et al. in The Journal of Chemical Physics (2013)."
+  },
+  {
+    "id": "PMC-004",
+    "molecule_name": "2-Methylbenzimidazole",
+    "aliases": [
+      "2-Methylbenzimidazole",
+      "2-methyl-1H-benzimidazole",
+      "909441",
+      "KOWYEA02",
+      "MBI",
+      "PMC-004"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-004/PMC-004.json",
+    "document": "2-Methylbenzimidazole 2-Methylbenzimidazole 2-Methylbenzimidazole 2-Methylbenzimidazole 2-Methylbenzimidazole 2-Methylbenzimidazole 2-methyl-1H-benzimidazole 909441 KOWYEA02 MBI PMC-004 2-Methylbenzimidazole 2-methyl-1H-benzimidazole 909441 KOWYEA02 MBI PMC-004 2-Methylbenzimidazole 2-methyl-1H-benzimidazole 909441 KOWYEA02 MBI PMC-004 PMC-004 C8H8N2 KOWYEA02 909441 Pn Monoclinic   PMC-004 2-Methylbenzimidazole C8H8N2 Organic Molecular Crystal Pn Monoclinic 2-Methylbenzimidazole 2-methyl-1H-benzimidazole 909441 KOWYEA02 MBI PMC-004 piezoelectric ferroelectric 2-Methylbenzimidazole (MBI), chemical formula C8H8N2, molecular weight 132.16, is a single-component organic molecular crystal and a proton-transfer-type biaxial ferroelectric that remains ferroelectric above room temperature. It crystallizes in the non-centrosymmetric, polar monoclinic space group Pn (No. 7) with a pseudo-tetragonal metric, unit cell a = 13.9639 Å, b = 7.2107 Å, c = 13.9639 Å, Z = 8. MBI molecules lie flat in the a-b plane and form hydrogen-bonded chains, with two polar axes along the [110] and [1-10] directions and van der Waals contacts linking the chains. MBI single crystals have a remanent polarization of about 5.2 microC/cm2 and a low coercive field (~11 kV/cm). In this work, micron-thick MBI films were grown by low-temperature physical vapor deposition (~230 K) followed by restrained crystallization on warming; crystallization near 287 K produced ferroelectric films with remanent polarization up to about 2.5-2.6 microC/cm2 and an effective coercive field of about 87 kV/cm, with the [110] polar axis aligned out-of-plane. Ferroelectric switching was confirmed by polarization-electric-field hysteresis loops measured in situ. The crystal structure (CCDC 909441) was determined by single-crystal synchrotron X-ray diffraction at 300 K with an R factor of 5.11%, a density of 1.249 g/cm3, and a colorless plate habit. The film-fabrication study was reported by Yuan et al."
+  },
+  {
+    "id": "PMC-005",
+    "molecule_name": "2-Phenylmalondialdehyde",
+    "aliases": [
+      "1238105",
+      "2-Phenylmalondialdehyde",
+      "PMC-005",
+      "PROLON",
+      "PhMDA",
+      "Phenylmalondialdehyde"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-005/PMC-005.json",
+    "document": "2-Phenylmalondialdehyde 2-Phenylmalondialdehyde 2-Phenylmalondialdehyde 2-Phenylmalondialdehyde 2-Phenylmalondialdehyde 1238105 2-Phenylmalondialdehyde PMC-005 PROLON PhMDA Phenylmalondialdehyde 1238105 2-Phenylmalondialdehyde PMC-005 PROLON PhMDA Phenylmalondialdehyde 1238105 2-Phenylmalondialdehyde PMC-005 PROLON PhMDA Phenylmalondialdehyde PMC-005 C9H8O2 PROLON 1238105 Pna2_1 Orthorhombic 10.7567/JJAP.53.09PD07  PMC-005 2-Phenylmalondialdehyde C9H8O2 Organic Molecular Crystal Pna2_1 Orthorhombic 10.7567/JJAP.53.09PD07 1238105 2-Phenylmalondialdehyde PMC-005 PROLON PhMDA Phenylmalondialdehyde piezoelectric ferroelectric 2-Phenylmalondialdehyde (PhMDA), chemical formula C9H8O2, molecular weight 148.16, is a single-component hydrogen-bonded organic molecular crystal and a room-temperature ferroelectric. It crystallizes in the non-centrosymmetric, polar orthorhombic space group Pna2_1 (No. 33), with unit cell a = 7.523 Å, b = 17.165 Å, c = 5.552 Å, Z = 4. Molecules carrying the beta-diketone enol O=C-C=C-OH group are connected by O-H...O hydrogen bonds along the [102] and [1 0 -2] directions; asymmetric off-center proton configurations break inversion symmetry and give a spontaneous polarization of about 9 microC/cm2 along the c axis, with a Curie temperature above 363 K (values from earlier ferroelectric studies). In this work, room-temperature terahertz radiation from PhMDA single crystals was generated by femtosecond-laser optical rectification, a second-order nonlinear optical effect; the emitted single-cycle terahertz pulse had an amplitude comparable to that of a ZnTe reference emitter, attributed to a long coherence length of about 130-800 microns. No piezoelectric coefficient was measured. The crystal structure (CCDC 1238105, CSD refcode PROLON) was determined by single-crystal X-ray diffraction at 111 K with an R factor of 3.2% and a density of 1.373 g/cm3. The terahertz-radiation study was reported by Guan et al. in the Japanese Journal of Applied Physics (2014)."
+  },
+  {
+    "id": "PMC-006",
+    "molecule_name": "5,6-Dichloro-2-methylbenzimidazole",
+    "aliases": [
+      "5,6-Dichloro-2-methylbenzimidazole",
+      "5,6-dichloro-2-methyl-1H-benzimidazole",
+      "909439",
+      "DC-MBI",
+      "PMC-006",
+      "REZBOP"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-006/PMC-006.json",
+    "document": "5,6-Dichloro-2-methylbenzimidazole 5,6-Dichloro-2-methylbenzimidazole 5,6-Dichloro-2-methylbenzimidazole 5,6-Dichloro-2-methylbenzimidazole 5,6-Dichloro-2-methylbenzimidazole 5,6-Dichloro-2-methylbenzimidazole 5,6-dichloro-2-methyl-1H-benzimidazole 909439 DC-MBI PMC-006 REZBOP 5,6-Dichloro-2-methylbenzimidazole 5,6-dichloro-2-methyl-1H-benzimidazole 909439 DC-MBI PMC-006 REZBOP 5,6-Dichloro-2-methylbenzimidazole 5,6-dichloro-2-methyl-1H-benzimidazole 909439 DC-MBI PMC-006 REZBOP PMC-006 C8H6Cl2N2 REZBOP 909439 Pca2_1 Orthorhombic 10.1021/jacs.8b08591  PMC-006 5,6-Dichloro-2-methylbenzimidazole C8H6Cl2N2 Organic Molecular Crystal Pca2_1 Orthorhombic 10.1021/jacs.8b08591 5,6-Dichloro-2-methylbenzimidazole 5,6-dichloro-2-methyl-1H-benzimidazole 909439 DC-MBI PMC-006 REZBOP piezoelectric ferroelectric 5,6-Dichloro-2-methylbenzimidazole (DC-MBI), chemical formula C8H6Cl2N2, molecular weight 201.07, is a single-component hydrogen-bonded organic molecular crystal and an above-room-temperature ferroelectric. At room temperature it crystallizes in the non-centrosymmetric, polar orthorhombic space group Pca2_1 (No. 29), with unit cell a = 14.238 Å, b = 5.6866 Å, c = 10.398 Å, Z = 4. DC-MBI molecules link through intermolecular N-H...N hydrogen bonds into chains stacked along the b axis, with the polarity of each chain directed along the c axis; ferroelectricity arises from positional ordering of the bridging protons. In this work, variable-temperature powder and single-crystal X-ray diffraction combined with symmetry-adapted distortion-mode analysis showed that DC-MBI undergoes an unusual first-order, symmetry-lowering transition on warming from orthorhombic Pca2_1 (T below about 400 K) to monoclinic, still-polar Pc; second-harmonic-generation measurements confirmed the crystal remains non-centrosymmetric up to sublimation. No piezoelectric coefficient was measured, and the high room-temperature coercive field prevented ferroelectric hysteresis switching except at elevated temperature. The crystal structure (CCDC 909439) was determined by single-crystal X-ray diffraction at 295 K with an R factor of 4.27%, a density of 1.586 g/cm3, and a colorless block habit. The phase-transition study was reported by Liu et al. in the Journal of the American Chemical Society (2018); the structure and ferroelectricity were originally reported by Horiuchi et al. in Nature Communications (2012)."
+  },
+  {
+    "id": "PMC-007",
+    "molecule_name": "L-Alanine",
+    "aliases": [
+      "(S)-Alanine",
+      "1203201",
+      "L-2-aminopropanoic acid",
+      "L-Alanine",
+      "LALNIN01",
+      "PMC-007"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-007/PMC-007.json",
+    "document": "L-Alanine L-Alanine L-Alanine L-Alanine L-Alanine (S)-Alanine 1203201 L-2-aminopropanoic acid L-Alanine LALNIN01 PMC-007 (S)-Alanine 1203201 L-2-aminopropanoic acid L-Alanine LALNIN01 PMC-007 (S)-Alanine 1203201 L-2-aminopropanoic acid L-Alanine LALNIN01 PMC-007 PMC-007 C3H7NO2 LALNIN01 1203201 P2_12_12_1 Orthorhombic 10.1016/j.msec.2019.110468  PMC-007 L-Alanine C3H7NO2 Organic Molecular Crystal P2_12_12_1 Orthorhombic 10.1016/j.msec.2019.110468 (S)-Alanine 1203201 L-2-aminopropanoic acid L-Alanine LALNIN01 PMC-007 piezoelectric L-Alanine, chemical formula C3H7NO2, molecular weight 89.09, is a single-component organic amino-acid molecular crystal. It crystallizes in the non-centrosymmetric, non-polar (enantiomorphic) orthorhombic space group P2_1 2_1 2_1 (No. 19, point group 222), with unit cell a = 6.032 Å, b = 12.343 Å, c = 5.784 Å, Z = 4. Zwitterionic alanine molecules are linked by a three-dimensional network of hydrogen bonds. Because the 222 point group is non-polar, L-alanine is piezoelectric but not pyroelectric or ferroelectric; its only non-zero piezoelectric coefficients (d14, d25, d36) are shear terms, so a piezoelectric response is activated solely by shear strain. In this work, L-alanine nanocrystals grown inside anodized-alumina nanopores with preferred [001] orientation produced a piezoelectric current that detected mechanical pressures as low as about 3 Pa at atmospheric ambient, with current amplitude increasing linearly with applied pressure; the sensitivity is attributed to easily deformed hydrogen bonds. No numerical piezoelectric coefficient was reported. The crystal structure (CCDC 1203201, CSD refcode LALNIN01) was determined by single-crystal X-ray diffraction at 295 K with an R factor of 6.1% and a density of 1.374 g/cm3. The piezoelectric pressure-sensing study, which also covered beta-glycine nanocrystals, was reported by Bishara et al. in Materials Science & Engineering C (2020)."
+  },
+  {
+    "id": "PMC-008",
+    "molecule_name": "meta-Nitroaniline",
+    "aliases": [
+      "1212672",
+      "3-Nitroaniline",
+      "MNIANL10",
+      "PMC-008",
+      "m-Nitroaniline",
+      "mNA",
+      "meta-Nitroaniline"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-008/PMC-008.json",
+    "document": "meta-Nitroaniline meta-Nitroaniline meta-Nitroaniline meta-Nitroaniline meta-Nitroaniline 1212672 3-Nitroaniline MNIANL10 PMC-008 m-Nitroaniline mNA meta-Nitroaniline 1212672 3-Nitroaniline MNIANL10 PMC-008 m-Nitroaniline mNA meta-Nitroaniline 1212672 3-Nitroaniline MNIANL10 PMC-008 m-Nitroaniline mNA meta-Nitroaniline PMC-008 C6H6N2O2 MNIANL10 1212672 Pbc2_1 Orthorhombic 10.1103/PhysRevLett.81.5426 10.1039/P29730001197 PMC-008 meta-Nitroaniline C6H6N2O2 Organic Molecular Crystal Pbc2_1 Orthorhombic 10.1103/PhysRevLett.81.5426 10.1039/P29730001197 1212672 3-Nitroaniline MNIANL10 PMC-008 m-Nitroaniline mNA meta-Nitroaniline piezoelectric meta-Nitroaniline (mNA, 3-nitroaniline), chemical formula C6H6N2O2, molecular weight 138.12, is a single-component polar organic molecular crystal widely studied as a nonlinear-optical material. It crystallizes in the non-centrosymmetric, polar orthorhombic space group Pbc2_1 (No. 29, point group mm2), with unit cell a = 6.501 Å, b = 19.330 Å, c = 5.082 Å, Z = 4, and the polar axis along c. Because the mm2 point group is polar, mNA is piezoelectric and pyroelectric-compatible. In this work, three piezoelectric coefficients of mNA single crystals were measured at room temperature by synchrotron X-ray multiple diffraction, monitoring field-induced lattice strain via the converse piezoelectric effect: the transverse |d31| = 7.3 x 10^-11 m/V (about 73 pm/V), |d32| = 16.5 x 10^-11 m/V (about 165 pm/V, confirmed as 14.9 x 10^-11 m/V in a second reflection), and the longitudinal |d33| = 10.3 x 10^-11 m/V (about 103 pm/V); strain varied linearly and reversibly with applied field. The authors note these inverse-effect values run larger than direct-effect literature values and are presented as a feasibility demonstration rather than precise determinations. The crystal structure (CCDC 1212672, CSD refcode MNIANL10) was determined by single-crystal X-ray diffraction at 295 K with an R factor of 8.4% and a density of 1.437 g/cm3, reported by Skapski and Stevenson (1973). The piezoelectric-coefficient measurement was reported by Avanci et al. in Physical Review Letters (1998)."
+  },
+  {
+    "id": "PMC-009",
+    "molecule_name": "L-Histidine Hydrochloride Monohydrate",
+    "aliases": [
+      "1176648",
+      "CAS 5934-29-2",
+      "HISTCM12",
+      "L-Histidine Hydrochloride Monohydrate",
+      "L-Histidine monohydrochloride monohydrate",
+      "L-Histidine·HCl·H₂O",
+      "L-Histidinium chloride monohydrate",
+      "PMC-009"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-009/PMC-009.json",
+    "document": "L-Histidine Hydrochloride Monohydrate L-Histidine Hydrochloride Monohydrate L-Histidine Hydrochloride Monohydrate L-Histidine Hydrochloride Monohydrate L-Histidine Hydrochloride Monohydrate 1176648 CAS 5934-29-2 HISTCM12 L-Histidine Hydrochloride Monohydrate L-Histidine monohydrochloride monohydrate L-Histidine·HCl·H₂O L-Histidinium chloride monohydrate PMC-009 1176648 CAS 5934-29-2 HISTCM12 L-Histidine Hydrochloride Monohydrate L-Histidine monohydrochloride monohydrate L-Histidine·HCl·H₂O L-Histidinium chloride monohydrate PMC-009 1176648 CAS 5934-29-2 HISTCM12 L-Histidine Hydrochloride Monohydrate L-Histidine monohydrochloride monohydrate L-Histidine·HCl·H₂O L-Histidinium chloride monohydrate PMC-009 PMC-009 C6H10N3O2+·Cl−·H2O HISTCM12 1176648 P2₁2₁2₁ orthorhombic 10.1088/0953-8984/19/10/106218 10.1107/S0567740877004415 PMC-009 L-Histidine Hydrochloride Monohydrate C6H10N3O2+·Cl−·H2O Organic Hydrogen-Bonded Molecular Salt Crystal P2₁2₁2₁ orthorhombic 10.1088/0953-8984/19/10/106218 10.1107/S0567740877004415 1176648 CAS 5934-29-2 HISTCM12 L-Histidine Hydrochloride Monohydrate L-Histidine monohydrochloride monohydrate L-Histidine·HCl·H₂O L-Histidinium chloride monohydrate PMC-009 piezoelectric L-Histidine hydrochloride monohydrate is an organic molecular salt (histidinium cation + chloride anion + water) that crystallizes in the non-centrosymmetric orthorhombic space group P2₁2₁2₁ (point group 222). It is piezoelectric: synchrotron X-ray multiple diffraction (Renninger scanning) measured its three symmetry-allowed shear coefficients d14 = 2.25(9)×10⁻¹⁰, d25 = 4.1(5)×10⁻¹¹ and d36 = 2.3(2)×10⁻¹⁰ C/N."
+  },
+  {
+    "id": "PMC-010",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-010"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-010/PMC-010.json",
+    "document": "     PMC-010 PMC-010 PMC-010 PMC-010        PMC-010 PMC-010 "
+  },
+  {
+    "id": "PMC-011",
+    "molecule_name": "Benzimidazole",
+    "aliases": [
+      "1,3-benzodiazole",
+      "1118210",
+      "1H-benzimidazole",
+      "BMZ",
+      "BZDMAZ01",
+      "Benzimidazole",
+      "DrugBank: DB02962",
+      "PMC-011",
+      "benzoglyoxaline",
+      "o-phenyleneformamidine"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-011/PMC-011.json",
+    "document": "Benzimidazole Benzimidazole Benzimidazole Benzimidazole Benzimidazole 1,3-benzodiazole 1118210 1H-benzimidazole BMZ BZDMAZ01 Benzimidazole DrugBank: DB02962 PMC-011 benzoglyoxaline o-phenyleneformamidine 1,3-benzodiazole 1118210 1H-benzimidazole BMZ BZDMAZ01 Benzimidazole DrugBank: DB02962 PMC-011 benzoglyoxaline o-phenyleneformamidine 1,3-benzodiazole 1118210 1H-benzimidazole BMZ BZDMAZ01 Benzimidazole DrugBank: DB02962 PMC-011 benzoglyoxaline o-phenyleneformamidine PMC-011 C7H6N2 BZDMAZ01 1118210 Pna2₁ orthorhombic 10.1007/s00339-012-7448-7 10.1107/S0567740874005528 PMC-011 Benzimidazole C7H6N2 Organic Hydrogen-Bonded Molecular Crystal Pna2₁ orthorhombic 10.1007/s00339-012-7448-7 10.1107/S0567740874005528 1,3-benzodiazole 1118210 1H-benzimidazole BMZ BZDMAZ01 Benzimidazole DrugBank: DB02962 PMC-011 benzoglyoxaline o-phenyleneformamidine piezoelectric Benzimidazole (BMZ) is an organic hydrogen-bonded molecular crystal that crystallizes in the non-centrosymmetric, polar orthorhombic space group Pna2₁ (point group mm2). It is a nonlinear optical material (SHG ~4.5× KDP) and is piezoelectric: a PM200 piezometer measured d33 = 0.1 pC/N and d31 = 1.85 pC/N."
+  },
+  {
+    "id": "PMC-012",
+    "molecule_name": "Imidazolium D-camphorsulfonate",
+    "aliases": [
+      "2083426",
+      "D-ImCS",
+      "Imidazolium D-camphorsulfonate",
+      "JANCAG",
+      "PMC-012",
+      "imidazolium D-camphorsulfonate"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-012/PMC-012.json",
+    "document": "Imidazolium D-camphorsulfonate Imidazolium D-camphorsulfonate Imidazolium D-camphorsulfonate Imidazolium D-camphorsulfonate Imidazolium D-camphorsulfonate 2083426 D-ImCS Imidazolium D-camphorsulfonate JANCAG PMC-012 imidazolium D-camphorsulfonate 2083426 D-ImCS Imidazolium D-camphorsulfonate JANCAG PMC-012 imidazolium D-camphorsulfonate 2083426 D-ImCS Imidazolium D-camphorsulfonate JANCAG PMC-012 imidazolium D-camphorsulfonate PMC-012 C13H20N2O4S JANCAG 2083426 P2₁ monoclinic 10.1021/acs.chemmater.1c01663 10.1021/acs.chemmater.1c01663 PMC-012 Imidazolium D-camphorsulfonate C13H20N2O4S Organic Molecular Ionic Crystal P2₁ monoclinic 10.1021/acs.chemmater.1c01663 10.1021/acs.chemmater.1c01663 2083426 D-ImCS Imidazolium D-camphorsulfonate JANCAG PMC-012 imidazolium D-camphorsulfonate piezoelectric ferroelectric pyroelectric Imidazolium D-camphorsulfonate (D-ImCS) is a metal-free organic molecular ionic crystal: an imidazolium cation paired with a homochiral D-camphorsulfonate anion, linked by N–H···O hydrogen-bonded chains. It crystallizes in the chiral-polar monoclinic space group P2₁ (point group 2) at 173 K and is a molecular ferroelectric, undergoing a 222F2-type ferroelectric phase transition at Tc = 370 K. Ferroelectricity is confirmed by PFM domain switching and hysteresis loops; the quasi-static (Berlincourt) piezoelectric coefficient along the polar [010] axis is ±20 pC/N, comparable to triglycine sulfate."
+  },
+  {
+    "id": "PMC-013",
+    "molecule_name": "Imidazolium L-camphorsulfonate",
+    "aliases": [
+      "1H-imidazol-3-ium L-camphorsulfonate",
+      "2083425",
+      "Imidazolium L-camphorsulfonate",
+      "L-ImCS",
+      "PMC-013",
+      "PONQEP01",
+      "imidazolium L-camphorsulfonate"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-013/PMC-013.json",
+    "document": "Imidazolium L-camphorsulfonate Imidazolium L-camphorsulfonate Imidazolium L-camphorsulfonate Imidazolium L-camphorsulfonate Imidazolium L-camphorsulfonate 1H-imidazol-3-ium L-camphorsulfonate 2083425 Imidazolium L-camphorsulfonate L-ImCS PMC-013 PONQEP01 imidazolium L-camphorsulfonate 1H-imidazol-3-ium L-camphorsulfonate 2083425 Imidazolium L-camphorsulfonate L-ImCS PMC-013 PONQEP01 imidazolium L-camphorsulfonate 1H-imidazol-3-ium L-camphorsulfonate 2083425 Imidazolium L-camphorsulfonate L-ImCS PMC-013 PONQEP01 imidazolium L-camphorsulfonate PMC-013 C13H20N2O4S PONQEP01 2083425 P2₁ monoclinic 10.1021/acs.chemmater.1c01663 10.1021/acs.chemmater.1c01663 PMC-013 Imidazolium L-camphorsulfonate C13H20N2O4S Organic Molecular Ionic Crystal P2₁ monoclinic 10.1021/acs.chemmater.1c01663 10.1021/acs.chemmater.1c01663 1H-imidazol-3-ium L-camphorsulfonate 2083425 Imidazolium L-camphorsulfonate L-ImCS PMC-013 PONQEP01 imidazolium L-camphorsulfonate piezoelectric ferroelectric pyroelectric Imidazolium L-camphorsulfonate (L-ImCS) is a metal-free organic molecular ionic crystal: an imidazolium cation paired with a homochiral L-camphorsulfonate anion, linked by N–H···O hydrogen-bonded chains. It crystallizes in the chiral-polar monoclinic space group P2₁ (point group 2) at 173 K and is a molecular ferroelectric, undergoing a 222F2-type ferroelectric phase transition at Tc = 367 K. Ferroelectricity is confirmed directly on L-ImCS by PFM domain imaging, polarization switching, and hysteresis loops; the quasi-static (Berlincourt) piezoelectric coefficient along the polar [010] axis is ±19 pC/N (local PFM: 15.8 pC/N), comparable to triglycine sulfate. L-ImCS is the enantiomer of D-ImCS (PMC-012)."
+  },
+  {
+    "id": "PMC-014",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-014"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-014/PMC-014.json",
+    "document": "     PMC-014 PMC-014 PMC-014 PMC-014        PMC-014 PMC-014 "
+  },
+  {
+    "id": "PMC-015",
+    "molecule_name": "Triglycine Sulfate (TGS)",
+    "aliases": [
+      "2144163",
+      "PMC-015",
+      "TGLYSU32",
+      "TGS",
+      "Triglycine Sulfate (TGS)",
+      "bis(glycinium) sulfate–glycine (1/1)",
+      "triglycine sulphate",
+      "tris(glycine) sulfuric acid"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-015/PMC-015.json",
+    "document": "Triglycine Sulfate (TGS) Triglycine Sulfate (TGS) Triglycine Sulfate (TGS) Triglycine Sulfate (TGS) Triglycine Sulfate (TGS) 2144163 PMC-015 TGLYSU32 TGS Triglycine Sulfate (TGS) bis(glycinium) sulfate–glycine (1/1) triglycine sulphate tris(glycine) sulfuric acid 2144163 PMC-015 TGLYSU32 TGS Triglycine Sulfate (TGS) bis(glycinium) sulfate–glycine (1/1) triglycine sulphate tris(glycine) sulfuric acid 2144163 PMC-015 TGLYSU32 TGS Triglycine Sulfate (TGS) bis(glycinium) sulfate–glycine (1/1) triglycine sulphate tris(glycine) sulfuric acid PMC-015 (C2H5NO2)3·H2SO4 TGLYSU32 2144163 P2₁ monoclinic 10.1143/JJAP.1.13 10.1107/S2056989022000858 PMC-015 Triglycine Sulfate (TGS) (C2H5NO2)3·H2SO4 Organic Hydrogen-Bonded Molecular Salt Crystal P2₁ monoclinic 10.1143/JJAP.1.13 10.1107/S2056989022000858 2144163 PMC-015 TGLYSU32 TGS Triglycine Sulfate (TGS) bis(glycinium) sulfate–glycine (1/1) triglycine sulphate tris(glycine) sulfuric acid piezoelectric ferroelectric pyroelectric Triglycine sulfate (TGS) is the archetypal organic hydrogen-bonded molecular ferroelectric: two glycinium cations, one neutral glycine, and one sulfate anion linked by N–H···O and O–H···O hydrogen bonds. Below its Curie point (≈47.5 °C ≈ 321 K) it adopts the polar monoclinic space group P2₁ (point group 2) and is ferroelectric, pyroelectric, and piezoelectric; above Tc it transforms to the centrosymmetric paraelectric P2₁/m phase (point group 2/m), which is non-piezoelectric. The room-temperature (298 K) ferroelectric structure here was determined by time-of-flight neutron diffraction (Terasawa et al., 2022); the piezoelectric constants were measured by Ikeda, Tanaka & Toyoda (1962)."
+  },
+  {
+    "id": "PMC-016",
+    "molecule_name": "L-Histidinium tetrafluoroborate",
+    "aliases": [
+      "L-Histidinium tetrafluoroborate",
+      "PMC-016",
+      "YEFPUV"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-016/PMC-016.json",
+    "document": "L-Histidinium tetrafluoroborate L-Histidinium tetrafluoroborate L-Histidinium tetrafluoroborate L-Histidinium tetrafluoroborate L-Histidinium tetrafluoroborate L-Histidinium tetrafluoroborate PMC-016 YEFPUV L-Histidinium tetrafluoroborate PMC-016 YEFPUV L-Histidinium tetrafluoroborate PMC-016 YEFPUV PMC-016 C6H10N3O2·BF4 YEFPUV   Monoclinic   PMC-016 L-Histidinium tetrafluoroborate C6H10N3O2·BF4 Organic molecular crystal (amino acid molecular salt) Monoclinic L-Histidinium tetrafluoroborate PMC-016 YEFPUV "
+  },
+  {
+    "id": "PMC-018",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-018"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-018/PMC-018.json",
+    "document": "     PMC-018 PMC-018 PMC-018 PMC-018        PMC-018 PMC-018 "
+  },
+  {
+    "id": "PMC-019",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-019"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-019/PMC-019.json",
+    "document": "     PMC-019 PMC-019 PMC-019 PMC-019        PMC-019 PMC-019 "
+  },
+  {
+    "id": "PMC-020",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-020"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-020/PMC-020.json",
+    "document": "     PMC-020 PMC-020 PMC-020 PMC-020        PMC-020 PMC-020 "
+  },
+  {
+    "id": "PMC-021",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-021"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-021/PMC-021.json",
+    "document": "     PMC-021 PMC-021 PMC-021 PMC-021        PMC-021 PMC-021 "
+  },
+  {
+    "id": "PMC-022",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-022"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-022/PMC-022.json",
+    "document": "     PMC-022 PMC-022 PMC-022 PMC-022        PMC-022 PMC-022 "
+  },
+  {
+    "id": "PMC-023",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-023"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-023/PMC-023.json",
+    "document": "     PMC-023 PMC-023 PMC-023 PMC-023        PMC-023 PMC-023 "
+  },
+  {
+    "id": "PMC-024",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-024"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-024/PMC-024.json",
+    "document": "     PMC-024 PMC-024 PMC-024 PMC-024        PMC-024 PMC-024 "
+  },
+  {
+    "id": "PMC-025",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-025"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-025/PMC-025.json",
+    "document": "     PMC-025 PMC-025 PMC-025 PMC-025        PMC-025 PMC-025 "
+  },
+  {
+    "id": "PMC-026",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-026"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-026/PMC-026.json",
+    "document": "     PMC-026 PMC-026 PMC-026 PMC-026        PMC-026 PMC-026 "
+  },
+  {
+    "id": "PMC-027",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-027"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-027/PMC-027.json",
+    "document": "     PMC-027 PMC-027 PMC-027 PMC-027        PMC-027 PMC-027 "
+  },
+  {
+    "id": "PMC-028",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-028"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-028/PMC-028.json",
+    "document": "     PMC-028 PMC-028 PMC-028 PMC-028        PMC-028 PMC-028 "
+  },
+  {
+    "id": "PMC-029",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-029"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-029/PMC-029.json",
+    "document": "     PMC-029 PMC-029 PMC-029 PMC-029        PMC-029 PMC-029 "
+  },
+  {
+    "id": "PMC-030",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-030"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-030/PMC-030.json",
+    "document": "     PMC-030 PMC-030 PMC-030 PMC-030        PMC-030 PMC-030 "
+  },
+  {
+    "id": "PMC-031",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-031"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-031/PMC-031.json",
+    "document": "     PMC-031 PMC-031 PMC-031 PMC-031        PMC-031 PMC-031 "
+  },
+  {
+    "id": "PMC-032",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-032"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-032/PMC-032.json",
+    "document": "     PMC-032 PMC-032 PMC-032 PMC-032        PMC-032 PMC-032 "
+  },
+  {
+    "id": "PMC-033",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-033"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-033/PMC-033.json",
+    "document": "     PMC-033 PMC-033 PMC-033 PMC-033        PMC-033 PMC-033 "
+  },
+  {
+    "id": "PMC-034",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-034"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-034/PMC-034.json",
+    "document": "     PMC-034 PMC-034 PMC-034 PMC-034        PMC-034 PMC-034 "
+  },
+  {
+    "id": "PMC-035",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-035"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-035/PMC-035.json",
+    "document": "     PMC-035 PMC-035 PMC-035 PMC-035        PMC-035 PMC-035 "
+  },
+  {
+    "id": "PMC-036",
+    "molecule_name": null,
+    "aliases": [
+      "PMC-036"
+    ],
+    "json_path": "/home/pravega2/Documents/Piezo-LLM/data/PMC-036/PMC-036.json",
+    "document": "     PMC-036 PMC-036 PMC-036 PMC-036        PMC-036 PMC-036 "
+  }
+]

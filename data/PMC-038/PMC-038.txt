@@ -1,0 +1,173 @@
+==========================================
+PMC-038 : L-Tyrosine
+==========================================
+
+Crystal ID
+----------
+PMC-038
+
+Crystal Name
+------------
+L-Tyrosine
+
+Synonyms
+--------
+L-Tyr
+L-4-hydroxyphenylalanine
+(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid
+tyrosine
+
+Chemical Formula
+----------------
+C9H11NO3
+
+Molecular Weight
+----------------
+181.19 g/mol
+
+Crystal Category
+----------------
+Pure Molecular Crystal
+Aromatic Amino Acid Molecular Crystal
+
+Crystal System
+--------------
+Orthorhombic
+
+Space Group
+-----------
+P212121 (No. 19)
+
+CSD Refcode
+-----------
+LTYROS10
+
+CCDC Number
+-----------
+1208549
+
+Unit Cell Parameters
+--------------------
+a = 6.913(5) Å
+b = 21.116(3) Å
+c = 5.829(4) Å
+
+α = 90°
+β = 90°
+γ = 90°
+
+Cell Volume
+-----------
+850.888 Å³
+
+Z Value
+-------
+4
+
+Z'
+--
+1
+
+Crystal Habit
+-------------
+Needle-like (small needles, 1-10 µm in width)
+
+Crystal Colour
+--------------
+Colorless
+
+Calculated Density
+------------------
+1.414 g/cm³
+
+Experimental Method
+-------------------
+Single Crystal X-ray Diffraction
+
+Temperature
+-----------
+295 K
+
+Radiation
+---------
+X-ray
+
+R-factor
+--------
+4.9 %
+
+Structure Determination
+-----------------------
+A. Mostad
+H. M. Nissen
+C. Rømming
+
+Primary Crystal Structure Publication
+-------------------------------------
+Mostad, A.; Nissen, H. M.; Rømming, C.
+
+Acta Chemica Scandinavica
+1972
+Volume 26
+Pages 3819-3833
+
+DOI:
+10.3891/acta.chem.scand.26-3819
+
+Piezoelectric Status
+--------------------
+Piezoelectric
+
+Symmetry Compatibility
+----------------------
+Compatible (non-centrosymmetric, chiral space group P212121)
+
+Evidence
+--------
+DFT-predicted and experimentally validated piezoelectric response
+reported for L-Tyrosine (L-Tyr) crystals in:
+
+DOI:
+10.1021/acsnano.9b08217
+
+Piezoelectric Properties (from property reference)
+--------------------------------------------------
+Method (computational)   : Density Functional Theory (DFT)
+Method (experimental)    : Piezoelectric nanogenerator (sandwich device)
+Strain constants (DFT)   : 5.0 - 9.7 pC/N
+Device output            : 0.5 V open-circuit voltage; 35 nA short-circuit current
+Applied force            : 31 N
+Dielectric constant      : low (typical of biomolecular assemblies)
+Young's modulus          : 177.03 ± 54.39 GPa (highest among L-Phe, L-Tyr, L-DOPA)
+Thermal stability        : Tm = 312.0 °C (highest of three aromatic amino acids)
+Point stiffness          : 632.77 ± 220.44 N/m (metallic-like rigidity)
+
+Optical Properties
+------------------
+Intrinsic fluorescence   : Excitation/emission maxima ~400 nm / ~450 nm (blue fluorescence)
+Waveguiding             : Active optical waveguiding demonstrated with dye incorporation
+                         (Rhodamine B); photoluminescence propagated along needle axis
+
+Remarks
+-------
+The CIF corresponds to the classical L-Tyrosine crystal structure
+(refcode LTYROS10, 1972) with face-to-face dimer building blocks as
+the basic unit. In the 2019 ACS Nano study, L-Tyr was identified as
+the least soluble among three aromatic amino acids (L-Phe, L-Tyr,
+L-DOPA) due to strong hydroxyl-mediated dimer formation, creating a
+three-dimensional hydrogen-bonded network. This unique packing
+accounts for the highest thermal stability and mechanical rigidity.
+L-Tyr crystals are mechanically and optically functional: a film-based
+nanogenerator produced high piezoelectric outputs; incorporation of
+rigid L-Tyr needles in soft PDMS polymer enabled mechano-responsive
+bending and surface patterning; and simple dye incorporation allowed
+optical waveguiding—demonstrating potential for energy harvesting,
+soft robotics, photonic devices, and stretchable electronics.
+
+Database Status
+---------------
+Included
+
+Last Updated
+------------
+1 July 2026

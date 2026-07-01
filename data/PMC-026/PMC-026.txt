@@ -1,0 +1,45 @@
+Crystal ID           : PMC-026
+
+CIF File Name        : PMC-026-Glycinium-Sulfamate-Glycine.cif
+CCDC ID              : 2090689
+CSD REFCODE          : IBUHEW
+Crystal Structure DOI: 10.1021/acs.cgd.1c00702
+Crystal Structure Reference :
+Guerin, S.; Khorasani, S.; Gleeson, M.; O'Donnell, J.; Sanii, R.; Zwane, R.; Reilly, A. M.; Silien, C.; Tofail, S. A. M.; Liu, N.; Zaworotko, M.; Thompson, D.
+Crystal Growth & Design (2021)
+
+Molecule Name        : Glycinium Sulfamate–Glycine
+Chemical Formula     : C2H6NO2+·C2H5NO2·H2NO3S−
+Crystal Type         : Organic Ionic Molecular Cocrystal
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental piezoelectric measurements were performed using piezoresponse force microscopy (PFM), second harmonic generation (SHG), and a commercial d33 meter.
+• The crystal exhibited a measurable longitudinal piezoelectric response of approximately 2 pC/N as a single crystal.
+• Glycinium sulfamate–glycine crystallizes in the non-centrosymmetric orthorhombic space group Pn (No. 7), which is crystallographically compatible with piezoelectricity.
+• The crystal is composed entirely of discrete molecular species (glycinium cations, neutral glycine molecules, and sulfamate anions) held together by hydrogen bonding and ionic interactions, confirming its molecular crystal nature.
+
+Research Paper       :
+A Piezoelectric Ionic Cocrystal of Glycine and Sulfamic Acid
+Crystal Growth & Design (2021)
+DOI: 10.1021/acs.cgd.1c00702
+
+Space Group          : Pn (No. 7)
+
+Crystal System       : Orthorhombic
+
+Piezoelectric Coefficient :
+Single-crystal longitudinal piezoelectric coefficient ≈ 2 pC/N.
+Polycrystalline films exhibited piezoelectric coefficients ≥ 0.2 pC/N.
+
+Maximum Coefficient  :
+≈2 pC/N (single crystal)
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD REFCODE: IBUHEW.
+• CCDC Deposition Number: 2090689.
+• Crystal structure originally determined by Guerin et al. (Crystal Growth & Design, 2021).
+• The deposited crystal consists of one glycinium cation, one neutral glycine molecule, and one sulfamate anion (C2H6NO2+·C2H5NO2·H2NO3S−).
+• The material is an organic ionic molecular cocrystal rather than a single-component molecular crystal.
+• The paper reports both the crystal structure and the experimental piezoelectric characterization, making it a suitable entry for the molecular piezoelectric crystal database.

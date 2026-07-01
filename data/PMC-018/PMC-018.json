@@ -1,0 +1,324 @@
+{
+  "id": "PMC-018",
+  "schema_version": "1.1",
+  "text": "L-Asparagine monohydrate (C4H8N2O3·H2O), chemical formula C4H10N2O4, molecular weight 150.14, is a pure molecular crystal hydrate (amino acid with incorporated water molecule) and experimentally demonstrated as a piezoelectric biomolecular crystal. It crystallizes in the non-centrosymmetric, chiral orthorhombic space group P212121 (No. 19), with unit cell a = 5.58370 Å, b = 9.76460 Å, c = 11.74040 Å, Z = 4. The crystal was grown using a molded, substrate-free fabrication technique at room temperature from saturated aqueous solutions. L-asparagine monohydrate shows piezoelectric shear response due to its non-centrosymmetric space group symmetry. The crystal structure (CCDC 2325682) was determined by single-crystal X-ray diffraction at 179.99 K with an R factor of 2.88%, a density of 1.558 g/cm3, and a block habit. The piezoelectric and electromechanical properties were experimentally measured and reported by Hari et al. in Physical Review Letters (2024) as part of a comprehensive study on molded, solid-state biomolecular assemblies with programmable electromechanical properties.",
+
+  "molecule_name": "L-Asparagine Monohydrate",
+  "synonyms": ["L-asparagine·H2O", "L-asparagine hydrate", "ASPARM27"],
+  "chemical_formula": "C4H8N2O3·H2O",
+  "molecular_weight": 150.14,
+  "crystal_type": "Pure Molecular Crystal (Hydrate)",
+  "component_count": 2,
+
+  "csd_refcode": "ASPARM27",
+  "ccdc_number": 2325682,
+  "cif_file_name": "PMC-018-L-asparagine-monohydrate.cif",
+  "structure_doi": "10.5517/ccdc.csd.cc2j220q",
+  "deposition_date": "2024-01-15",
+
+  "crystal_system": "Orthorhombic",
+  "space_group_symbol": "P212121",
+  "space_group_number": 19,
+  "centrosymmetric": false,
+  "cell_a": 5.58370,
+  "cell_b": 9.76460,
+  "cell_c": 11.74040,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.0,
+  "cell_gamma": 90.0,
+  "cell_volume": 640.117,
+  "cell_z": 4,
+  "cell_z_prime": 1,
+
+  "habit": "Block",
+  "colour": "Colourless",
+  "density_g_cm3": 1.558,
+  "temperature_k": 179.99,
+  "radiation": "Mo Kα (1.54184 Å)",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 2.88,
+  "cod_code": null,
+
+  "intermolecular_interactions": [
+    "hydrogen bonding (N-H···O)",
+    "hydrogen bonding (O-H···O)",
+    "water-mediated interactions"
+  ],
+  "isostructural_analogues": [
+    "L-alanine P212121",
+    "trans-4-hydroxy-L-proline P212121",
+    "L-arginine dihydrate P212121",
+    "γ-glycine P32"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Piezoelectric charge coefficient (d33) measurement, open circuit voltage measurement, stress-strain compression testing",
+  "computational_method": null,
+  "shear_qualitative": "Measured (permitted by P212121 symmetry)",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "Observed in polycrystalline assemblies",
+  "longitudinal_value": null,
+  "longitudinal_unit": null,
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": [
+    "Krishna Hari",
+    "Tara Ryan",
+    "Suman Bhattacharya",
+    "Sarah Guerin"
+  ],
+  "structure_ref_journal": "Physical Review Letters",
+  "structure_ref_year": 2024,
+  "structure_ref_volume": "133",
+  "structure_ref_doi": "10.1103/PhysRevLett.133.137001",
+
+  "property_ref_title": "Molded, Solid-State Biomolecular Assemblies with Programmable Electromechanical Properties",
+  "property_ref_journal": "Physical Review Letters",
+  "property_ref_year": 2024,
+  "property_ref_doi": "10.1103/PhysRevLett.133.137001",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "crystal_data_collection": {
+    "measurement_temperature": 179.99,
+    "measurement_theta_min": 3.7530,
+    "measurement_theta_max": 72.0510,
+    "radiation_wavelength": 1.54184,
+    "detector_type": "Hybrid Pixel Array Detector (HyPix)",
+    "measurement_reflns_used": 9475,
+    "total_reflns_measured": 10207,
+    "independent_reflns": null,
+    "laue_measured_fraction_full": 0.997,
+    "laue_measured_fraction_max": 0.972
+  },
+
+  "refinement_data": {
+    "r_factor_all": 0.0288,
+    "r_factor_gt": 0.0259,
+    "wr_factor_gt": 0.0635,
+    "goodness_of_fit": 1.061,
+    "av_r_equivalents": 0.0175,
+    "av_unetI_netI": 0.0077,
+    "reflns_number_total": null,
+    "reflns_number_gt": null,
+    "theta_full": 67.684,
+    "theta_max": 72.193,
+    "theta_min": 5.894
+  },
+
+  "absorption": {
+    "coefficient_mm_inv": 1.205,
+    "correction_type": "multi-scan",
+    "t_min": 0.89623,
+    "t_max": 1.00000,
+    "estimated_t_min": 0.714,
+    "estimated_t_max": 0.795,
+    "correction_details": "CrysAlisPro empirical absorption correction using spherical harmonics"
+  },
+
+  "crystal_growth_methodology": {
+    "method": "Molded, substrate-free fabrication technique",
+    "solvent": "Distilled water (aqueous solution)",
+    "growth_temperature": "Room temperature (298 K)",
+    "evaporation": "Slow evaporation at room temperature",
+    "mold_material": "Silicone",
+    "sample_form": "Circular disc",
+    "sample_diameter_cm": 2.2,
+    "reproducibility": "Facile, scalable, repeatable process",
+    "no_byproducts": true
+  },
+
+  "physical_properties_experimental": {
+    "mechanical": {
+      "young_modulus_gpa": null,
+      "crystal_nature": "Fragile",
+      "handling_difficulty": "Very fragile - difficult to carry out contact characterization",
+      "compression_testing_possible": false,
+      "notes": "Assemblies prone to breakage due to sharp distinct edges between single crystals"
+    },
+    "piezoelectric": {
+      "measurement_method": "Longitudinal piezoelectric coefficient (d33) measurement",
+      "piezoresponse_pC_N": null,
+      "piezoresponse_type": "Shear permitted by space group P212121",
+      "longitudinal_response_observed": "Yes - in polycrystalline assemblies",
+      "open_circuit_voltage_mV": null,
+      "voltage_constant_g33_mV_m_N": null,
+      "capacitance_pF": null,
+      "measurement_notes": "Modified molding techniques needed for fragile materials"
+    },
+    "thermal": {
+      "operational_temperature_range_k": null,
+      "decomposition_onset_k": null,
+      "phase_transitions": "Likely thermal transitions around 450+ K"
+    }
+  },
+
+  "microscale_structure": {
+    "packing_type": "Assemblies of single crystals with sharp distinct edges",
+    "crystal_fusion": "Limited - maintains individual crystal boundaries",
+    "grain_size": "Variable",
+    "crystallite_orientation": "Random orientation of crystallites",
+    "crystal_interfacing": "Sharp interfaces between individual crystals",
+    "cohesiveness": "Less cohesive than some other amino acids",
+    "morphology_notes": "Fragile assembly prone to fracture at grain boundaries"
+  },
+
+  "comparison_with_other_amino_acids": {
+    "gamma_glycine": {
+      "space_group": "P32",
+      "piezoelectric_type": "Longitudinal and Shear",
+      "material_property": "Highest Young's modulus, stable",
+      "max_d33_pC_N": 11.11,
+      "status": "Best candidate for testing"
+    },
+    "trans_4_hydroxy_L_proline": {
+      "space_group": "P212121",
+      "piezoelectric_type": "Shear",
+      "material_property": "High mechanical strength",
+      "max_d33_pC_N": 2.2,
+      "status": "Good candidate for testing"
+    },
+    "L_alanine": {
+      "space_group": "P212121",
+      "piezoelectric_type": "Shear",
+      "material_property": "Very fragile",
+      "max_d33_pC_N": null,
+      "status": "Modified techniques needed"
+    },
+    "L_arginine_dihydrate": {
+      "space_group": "P212121",
+      "piezoelectric_type": "Shear",
+      "material_property": "Sticky, gluelike appearance",
+      "max_d33_pC_N": null,
+      "status": "Easy to remove from molds"
+    },
+    "L_asparagine_monohydrate_THIS": {
+      "space_group": "P212121",
+      "piezoelectric_type": "Shear",
+      "material_property": "Very fragile",
+      "max_d33_pC_N": null,
+      "status": "Modified techniques needed"
+    }
+  },
+
+  "applications_potential": [
+    "Piezoelectric transducers",
+    "Energy harvesting",
+    "Piezoelectric sensors",
+    "Biomedical devices",
+    "Eco-friendly alternatives to ceramics",
+    "Self-powered wearable technologies",
+    "Earthquake detection",
+    "Environmental monitoring"
+  ],
+
+  "sustainability_advantages": {
+    "material_type": "Nontoxic, biocompatible biomolecular amino acid",
+    "biodegradability": "Decomposes into nontoxic and biocompatible wastes",
+    "environmental_safety": "Inherently safer than ceramic piezoelectrics",
+    "processing": "Low-cost, low-temperature growth method",
+    "fabrication_steps": 4,
+    "toxic_components": "None - no lead, barium, bismuth, or niobium",
+    "recyclability": "Easily recyclable, no toxic byproducts",
+    "comparison_to_ceramics": "Outperforms conventional piezoelectrics in eco-friendliness, cost-effectiveness, biodegradability"
+  },
+
+  "key_findings": {
+    "first_report": "First molded, substrate-free amino acid-based piezoelectric material",
+    "methodology_novelty": "Novel molding technique for fabricating amino acid-based piezoelectric materials as rigid molds",
+    "scalability": "Facile, scalable, substrate-free manner allowing any desired shape and size",
+    "customization": "Electromechanical properties embedded by fine-tuning chemistry and space group",
+    "material_advantages": [
+      "Nontoxic",
+      "Biocompatible",
+      "Environmentally benign",
+      "Low-cost production",
+      "Low-temperature processing",
+      "Customizable dimensions",
+      "High-performance potential"
+    ]
+  },
+
+  "synthesis_and_characterization": {
+    "precursor_chemistry": "L-asparagine and deionized water",
+    "solution_preparation": "Saturated aqueous solution from L-asparagine",
+    "crystallization_temperature": "Room temperature (298 K)",
+    "crystallization_time": "Variable (typically days to weeks for slow evaporation)",
+    "characterization_methods": [
+      "Thermal analysis (DSC/TGA)",
+      "Powder X-ray diffraction",
+      "Single-crystal X-ray diffraction",
+      "Scanning Electron Microscopy (SEM)",
+      "Mechanical testing (compression)",
+      "Piezoelectric measurements",
+      "Voltage and capacitance measurements"
+    ]
+  },
+
+  "hydrogen_bonding_network": {
+    "primary_interactions": [
+      "N-H···O hydrogen bonds",
+      "O-H···O hydrogen bonds (water-mediated)",
+      "C-H···O weak interactions"
+    ],
+    "water_role": "Integrated water molecule participates in hydrogen bonding network",
+    "network_structure": "3D hydrogen bonding network stabilizing crystal structure"
+  },
+
+  "structural_uniqueness": {
+    "space_group_symmetry": "Non-centrosymmetric P212121 - essential for piezoelectricity",
+    "water_integration": "Water molecule incorporated in stoichiometric ratio (monohydrate)",
+    "biomolecular_nature": "Amino acid derivative with biological relevance",
+    "chiral_structure": "Chiral orthorhombic system with biological L-isomer"
+  },
+
+  "future_development": {
+    "current_status": "Fragile - requires modified molding techniques for enhanced macroscopic mechanical strength",
+    "research_directions": "Work with fragile amino acids to enhance their mechanical properties",
+    "broader_application": "Technique extensible to other eco-friendly molecular crystals",
+    "target_goal": "Phase in biomolecular piezoelectrics as high-performance, eco-friendly alternatives to ceramics"
+  },
+
+  "publication_details": {
+    "title": "Molded, Solid-State Biomolecular Assemblies with Programmable Electromechanical Properties",
+    "authors": [
+      "Krishna Hari",
+      "Tara Ryan",
+      "Suman Bhattacharya",
+      "Sarah Guerin"
+    ],
+    "journal": "Physical Review Letters",
+    "volume": "133",
+    "article_number": "137001",
+    "publication_date": "27 September 2024",
+    "received_date": "25 March 2024",
+    "accepted_date": "30 July 2024",
+    "doi": "10.1103/PhysRevLett.133.137001",
+    "pages": "137001-1 to 137001-7",
+    "institution": "Department of Chemical Sciences, Bernal Institute, University of Limerick, Ireland",
+    "funding": [
+      "Science Foundation Ireland grant No. 21/PATH-S/9737",
+      "Science Foundation Ireland Award No. 12/RC/2275_P2",
+      "European Union ERC Starting Grant No. 101039636"
+    ],
+    "supplementary_material": "Supplemental Material available at http://link.aps.org/supplemental/10.1103/PhysRevLett.133.137001"
+  },
+
+  "data_availability": {
+    "structure_deposited": true,
+    "ccdc_entry": 2325682,
+    "csd_refcode": "ASPARM27",
+    "cif_file_available": true,
+    "supplemental_data_available": true
+  }
+}

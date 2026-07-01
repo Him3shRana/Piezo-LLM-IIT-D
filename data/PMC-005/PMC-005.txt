@@ -1,0 +1,27 @@
+Crystal ID: PMC-005
+
+DOI: 10.7567/JJAP.53.09PD07
+
+Molecule Name: 2-Phenylmalondialdehyde (Phenylmalondialdehyde, PhMDA)
+
+Chemical Formula: C₉H₈O₂
+
+Crystal Type: Organic hydrogen-bonded molecular ferroelectric crystal
+
+Piezoelectric Property: Yes
+
+Evidence: The crystal is a hydrogen-bonded organic ferroelectric with a non-centrosymmetric Pna2₁ (No. 33) crystal structure. The paper demonstrates terahertz-wave generation through optical rectification, a second-order nonlinear optical effect that occurs only in non-centrosymmetric crystals, supporting its piezoelectric nature. The crystal is experimentally established as a ferroelectric material.
+
+Research Paper: Terahertz radiation by an optical rectification process in a hydrogen-bonded organic molecular ferroelectric crystal, 2-phenylmalondialdehyde, Japanese Journal of Applied Physics, 2014, DOI: 10.7567/JJAP.53.09PD07
+
+CIF File Name: PROLON
+
+CCDC ID: 1238105
+
+Space Group: Pna2₁ (No. 33)
+
+Crystal System: Orthorhombic
+
+Piezoelectric Coefficient: Not Reported (NR)
+
+Notes: The crystal structure was originally reported by D. Semmingsen (1977) (CSD Refcode: PROLON, CCDC Deposition 1238105). The 2014 paper investigates its terahertz emission via optical rectification rather than directly measuring piezoelectric coefficients. However, because the crystal is experimentally confirmed to be ferroelectric and belongs to the non-centrosymmetric space group Pna2₁, it is classified as a piezoelectric molecular crystal.

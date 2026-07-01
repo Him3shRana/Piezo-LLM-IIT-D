@@ -1,0 +1,51 @@
+Crystal ID: PMC-034
+
+CCDC ID: 1207696
+
+CSD REFCODE: LISLEU
+
+CIF File Name: PMC-34-L-isoleucine.cif
+
+Molecule Name: L-Isoleucine
+
+Chemical Formula: C6H13NO2
+
+Crystal Type: Pure Molecular Crystal
+
+Property: Piezoelectric
+
+Evidence:
+Experimental piezoelectricity demonstrated through piezoresponse force microscopy (PFM) and piezoelectric nanogenerator measurements using ordered L-isoleucine crystal arrays. The study confirms that L-isoleucine exhibits piezoelectric behavior suitable for energy harvesting applications.
+
+Space Group: P21 (No. 4)
+
+Crystal System: Monoclinic
+
+DOI:
+10.1021/acsami.2c13399
+
+Research Paper:
+Modified Stranski–Krastanov Growth of Amino Acid Arrays toward Piezoelectric Energy Harvesting
+
+Authors:
+Qian Fu et al.
+
+Journal:
+ACS Applied Materials & Interfaces
+
+Year:
+2022
+
+Piezoelectric Coefficient:
+Not individually reported for L-isoleucine in the paper.
+(The highest measured effective piezoelectric coefficient reported in the study is approximately 11.4 pm/V for L-valine.)
+
+Notes:
+• Pure molecular crystal.
+• Single-crystal X-ray structure.
+• No solvent molecules.
+• No hydrate.
+• No metal ions.
+• No co-crystal.
+• CIF corresponds to the standard crystal structure of pure L-isoleucine.
+• The piezoelectric study uses this molecular crystal for ordered crystal-array growth rather than reporting a new crystal structure.

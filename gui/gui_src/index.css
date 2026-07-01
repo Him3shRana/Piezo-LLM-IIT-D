@@ -1,0 +1,77 @@
+@import "tailwindcss"; /* Import Tailwind CSS */
+
+:root {
+  /* Enable dark mode styling */
+  color-scheme: dark;
+
+  /* Default font for the entire application */
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  /* Disable fake bold/italic fonts */
+  font-synthesis: none;
+
+  /* Improve text readability */
+  text-rendering: optimizeLegibility;
+
+  /* Smooth fonts on Chrome/Safari */
+  -webkit-font-smoothing: antialiased;
+
+  /* Smooth fonts on Firefox/macOS */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply border-box sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Make the app fill the entire browser window */
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the default page background and text color */
+body {
+  background: #f0ae16;
+  color: #2c89e7;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Make form elements use the app font */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove default link styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make images responsive */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Change text selection color */
+::selection {
+  background: #edf63b;
+  color: white;
+}

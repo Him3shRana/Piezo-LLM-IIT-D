@@ -1,0 +1,58 @@
+Crystal ID: PMC-035
+
+Molecule Name:
+L-Arginine
+
+Chemical Formula:
+C6H14N4O2
+
+Crystal Type:
+Pure Molecular Crystal
+
+CCDC ID:
+855058
+
+CSD REFCODE:
+TAQBIY
+
+CIF File Name:
+PMC-035-L-arginine.cif
+
+Space Group:
+P21 (No. 4)
+
+Crystal System:
+Monoclinic
+
+Property:
+Piezoelectric
+
+Evidence:
+L-Arginine is a non-centrosymmetric molecular crystal. Experimental piezoelectric energy harvesting performance has been demonstrated in ACS Applied Materials & Interfaces (2022), and first-principles piezoelectric calculations were reported in Frontiers in Mechanical Engineering (2021).
+
+Piezoelectric Coefficient:
+d33 ≈ 1.6 pm/V (reported experimentally)
+
+DOI:
+10.5517/ccxprjv
+10.3389/fmech.2021.738446
+10.1021/acsami.2c13399
+
+Research Papers:
+1. Courvoisier, E.; Williams, P. A.; Lim, G. K.; Hughes, C. E.; Harris, K. D. M.
+Chemical Communications, 2012.
+DOI: 10.1039/c2cc17203h
+
+2. A Computational Investigation into the Piezoelectric Properties of Amino Acids.
+Frontiers in Mechanical Engineering, 2021.
+DOI: 10.3389/fmech.2021.738446
+
+3. Piezoelectric Properties of Amino Acid Crystals for Energy Harvesting.
+ACS Applied Materials & Interfaces, 2022.
+DOI: 10.1021/acsami.2c13399
+
+Notes:
+• Pure molecular crystal.
+• Experimental crystal structure deposited in the CCDC.
+• Powder diffraction refined structure.
+• Suitable for inclusion in the Molecular Piezoelectric Crystal Database.

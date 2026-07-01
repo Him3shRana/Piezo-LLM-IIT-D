@@ -1,0 +1,44 @@
+Crystal ID           : PMC-025
+
+CIF File Name        : PMC-025-Brucinium-Chlorate-Dihydrate (BCDH).cif
+CCDC ID              : 1823610
+CSD REFCODE          : VOYVAJ
+Crystal Structure DOI: 10.1016/j.optmat.2018.07.006
+Crystal Structure Reference :
+S. Kandhan; P. Krishnan; R. Jagan; S. Aravindhan; S. Srinivasan; S. Gunasekaran.
+Optical Materials (2018)
+
+Molecule Name        : Brucinium Chloride Dihydrate
+Chemical Formula     : C23H27N2O4Cl·2H2O
+Crystal Type         : Organic Molecular Salt Crystal (Hydrated)
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental piezoelectric measurements were performed using a piezoelectric d33 meter.
+• The crystal exhibited a measured piezoelectric charge coefficient (d33) of approximately 4 pC/N.
+• Brucinium chloride dihydrate crystallizes in the non-centrosymmetric monoclinic space group C2 (No. 5), which is crystallographically compatible with piezoelectricity.
+• The crystal is composed of discrete brucinium cations, chloride anions and water molecules, confirming its molecular crystal nature.
+
+Research Paper       :
+Structural, optical and piezoelectric investigation on new Brucinium Chloride Dihydrate single crystal for optoelectronic, piezo-sensor, transducer and OLED applications
+Optical Materials (2018)
+DOI: 10.1016/j.optmat.2018.07.006
+
+Space Group          : C2 (No. 5)
+
+Crystal System       : Monoclinic
+
+Piezoelectric Coefficient :
+d33 ≈ 4 pC/N (experimentally measured)
+
+Maximum Coefficient  :
+≈4 pC/N
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD REFCODE: VOYVAJ.
+• CCDC Deposition Number: 1823610.
+• Crystal structure originally determined by Kandhan et al. (Optical Materials, 2018).
+• The deposited crystal structure corresponds to Brucinium Chloride Dihydrate (C23H27N2O4Cl·2H2O).
+• Although the publication title refers to "Brucinium Chlorate Dihydrate", the deposited CIF (CCDC 1823610) clearly identifies the compound as the chloride salt. The CIF has been treated as the authoritative crystallographic source.
+• The crystal exhibits experimentally measured piezoelectricity with a reported d33 value of approximately 4 pC/N.

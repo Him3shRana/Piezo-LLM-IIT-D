@@ -1,0 +1,39 @@
+Crystal ID: PMC-016
+
+CCDC ID: 285490
+
+CSD REFCODE: YEFPUV
+
+Molecule Name: L-Histidinium tetrafluoroborate
+
+IUPAC Name: 2-Ammonio-3-(1H-imidazol-3-ium-5-yl)propanoate tetrafluoroborate
+
+Chemical Formula: C₆H₁₀N₃O₂⁺·BF₄⁻
+
+Crystal Type: Organic molecular crystal (amino acid salt)
+
+Piezoelectric Property: Yes
+
+Evidence: The crystal belongs to the non-centrosymmetric space group P2₁, and the 2024 paper explicitly investigates it as a piezoelectric single crystal, including crystal structure analysis, Hirshfeld topology analysis, energy framework analysis, and DFT studies. Earlier studies also reported its nonlinear optical (SHG) behavior, consistent with a non-centrosymmetric crystal.
+
+Research Paper: Crystal structure, Hirshfeld topology analysis, enrichment ratio, energy framework and DFT computational studies of piezoelectric L-histidinium tetrafluoroborate single crystal
+
+DOI: 10.1007/s00339-024-07369-y
+
+CIF File Name (System): PMC-016-L-Histidinium-tetrafluoroborate (LHFB).cif (or whatever naming convention you use)
+
+CIF File Name (Web): YEFPUV.cif
+
+Space Group: P2₁ (No. 4)
+
+Crystal System: Monoclinic
+
+Piezoelectric Coefficient: Not reported in this paper (no direct d
+ij values were measured).
+
+Notes:
+
+Pure organic amino acid molecular crystal (tetrafluoroborate salt).
+Non-centrosymmetric crystal structure (P2₁), compatible with piezoelectricity.
+Original crystal structure deposited in 2006 (CCDC 285490; CSD refcode YEFPUV).
+The 2024 paper provides modern computational and crystallographic analysis and explicitly treats it as a piezoelectric crystal.

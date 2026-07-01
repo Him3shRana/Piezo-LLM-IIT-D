@@ -1,0 +1,50 @@
+Crystal ID: PMC-015
+
+DOI: 10.1143/JJAP.1.13
+
+CIF File Name:
+PMC-015-Triglycine-Sulfate.cif
+
+CCDC ID:
+2144163
+
+CSD REFCODE:
+TGLYSU32
+
+Molecule Name:
+Triglycine Sulfate (TGS)
+
+Chemical Formula:
+(C₂H₅NO₂)₃·H₂SO₄
+(Equivalent crystallographic formula: 2(C₂H₆NO₂⁺)·C₂H₅NO₂·SO₄²⁻)
+
+Crystal Type:
+Organic Molecular Crystal (Hydrogen-Bonded Molecular Crystal)
+
+Piezoelectric Property (Yes / No):
+Yes
+
+Evidence:
+Experimental measurements of the converse/direct piezoelectric effect and piezoelectric coefficients demonstrate that triglycine sulfate is piezoelectric in its ferroelectric phase. The crystal adopts the non-centrosymmetric space group **P2₁** below its Curie temperature (~322 K), which permits piezoelectricity.
+
+Research Paper:
+Piezoelectric Properties of Triglycine Sulfate
+DOI: 10.1143/JJAP.1.13
+
+Space Group:
+P2₁ (No. 4)
+
+Crystal System:
+Monoclinic
+
+Piezoelectric Coefficient:
+The paper reports experimentally measured piezoelectric coefficients, including d₁₄, and their temperature dependence. (No single constant value should be entered unless your database stores the complete temperature-dependent dataset.)*
+
+Notes:
+
+One of the best-known organic molecular ferroelectric crystals.
+Piezoelectric below the Curie temperature (~322 K).
+Crystal structure consists of three glycine molecules and one sulfuric acid molecule linked through an extensive hydrogen-bonding network.
+The CIF TGLYSU32 (CCDC 2144163) represents the 298 K ferroelectric polymorph, making it an appropriate structural reference for the piezoelectric phase.
+Systematic crystallographic name: bis(glycinium) glycine sulfate.
+

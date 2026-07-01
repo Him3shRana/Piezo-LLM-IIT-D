@@ -1,0 +1,90 @@
+{
+  "id": "PMC-021",
+  "schema_version": "1.1",
+  "text": "L-Leucine (C6H13NO2), chemical formula C6H13NO2, molecular weight 131.17, is a proteinogenic amino acid and essential organic molecular crystal. It crystallizes in the non-centrosymmetric, chiral monoclinic space group P21 (No. 4), with unit cell a = 14.666 Å, b = 5.324 Å, c = 9.606 Å, β = 94.06°, Z = 4. L-Leucine exhibits intrinsic piezoelectricity that has been experimentally demonstrated through quantitative direct piezoelectric measurements on crystalline films. The crystal structure (CCDC 1206031) was determined by single-crystal X-ray diffraction at 295 K with an R factor of 5.8% and a density of 1.165 g/cm³. The piezoelectric and electromechanical properties were investigated experimentally and computationally by O'Donnell et al. using DFT calculations and direct piezoelectric measurements in IEEE Transactions on Dielectrics and Electrical Insulation (2020). L-Leucine demonstrates a measured piezoelectric d₃₃ coefficient of approximately 1.57 pC/N with a predicted Young's Modulus of 21 GPa, making it a promising biocompatible, biodegradable alternative to toxic inorganic piezoelectrics for flexible energy harvesting and sensing devices.",
+
+  "molecule_name": "L-Leucine",
+  "synonyms": ["L-leucine", "2-amino-4-methylpentanoic acid", "LEUCIN01"],
+  "chemical_formula": "C6H13NO2",
+  "molecular_weight": 131.17,
+  "crystal_type": "Organic Molecular Crystal (Amino Acid Crystal)",
+  "component_count": 1,
+
+  "csd_refcode": "LEUCIN01",
+  "ccdc_number": 1206031,
+  "cif_file_name": "PMC-021-L-Leucine.cif",
+  "structure_doi": "10.1107/S0108270186095240",
+  "deposition_date": "1986-01-01",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "P21",
+  "space_group_number": 4,
+  "centrosymmetric": false,
+  "cell_a": 14.666,
+  "cell_b": 5.324,
+  "cell_c": 9.606,
+  "cell_alpha": 90.0,
+  "cell_beta": 94.06,
+  "cell_gamma": 90.0,
+  "cell_volume": 748.171,
+  "cell_z": 4,
+  "cell_z_prime": 1,
+
+  "habit": "Colourless block",
+  "colour": "Colourless",
+  "density_g_cm3": 1.165,
+  "temperature_k": 295,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 5.8,
+  "cod_code": null,
+
+  "intermolecular_interactions": [
+    "hydrogen bonding (N-H···O)",
+    "directional hydrogen bond networks",
+    "zwitterionic interactions",
+    "Van der Waals forces"
+  ],
+  "isostructural_analogues": [
+    "L-valine",
+    "L-arginine",
+    "Other proteinogenic amino acids in P21 space group",
+    "L-leucine derivatives"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": true,
+  "experimental_method": "Quantitative direct piezoelectric measurements using commercial d33 piezometer (PiezoTest), quasi-static longitudinal measurement on crystalline films between copper electrodes, optical microscopy characterization",
+  "computational_method": "Density Functional Theory (DFT) using VASP, PBE functional with GGA exchange-correlation, DFPT for piezoelectric tensor calculation, finite differences method for stiffness tensor",
+  "shear_qualitative": "Computed (shear coefficients d16, d25, d34, d36 predicted)",
+  "shear_value": 20,
+  "shear_unit": "pC/N",
+  "longitudinal_qualitative": "Experimentally measured in polycrystalline films",
+  "longitudinal_value": 1.57,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": "Maximum piezoelectric strain constant d22 ≈ 8.6 pC/N, d23 ≈ 1.5 pC/N",
+
+  "structure_ref_authors": [
+    "Görbitz, C.H.",
+    "Dalhus, B."
+  ],
+  "structure_ref_journal": "Acta Crystallographica Section C",
+  "structure_ref_year": 1986,
+  "structure_ref_volume": "52",
+  "structure_ref_doi": "10.1107/S0108270186095240",
+
+  "property_ref_title": "Piezoelectricity in the Proteinogenic Amino Acid L-Leucine: A Novel Piezoactive Bioelectret",
+  "property_ref_journal": "IEEE Transactions on Dielectrics and Electrical Insulation",
+  "property_ref_year": 2020,
+  "property_ref_doi": "10.1109/TDEI.2020.008908",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true
+}

@@ -1,0 +1,88 @@
+{
+  "id": "PMC-020",
+  "schema_version": "1.1",
+  "text": "L-Valine (C5H11NO2), chemical formula C5H11NO2, molecular weight 117.15, is a proteinogenic amino acid and organic molecular crystal. It crystallizes in the non-centrosymmetric, chiral monoclinic space group P21 (No. 4), with unit cell a = 9.682 Å, b = 5.247 Å, c = 11.930 Å, β = 90.57°, Z = 4. L-Valine is predicted by first-principles Density Functional Theory (DFT) calculations to have intrinsic piezoelectric properties suitable for energy harvesting applications, despite showing lower piezoelectric response compared to other biological crystals. The crystal structure (CCDC 1208818) was determined by single-crystal X-ray diffraction at 120 K with an R factor of 3.4% and a density of 1.284 g/cm³. The piezoelectric and electromechanical properties were computationally predicted by Guerin using ab-initio DFT methods in Frontiers in Mechanical Engineering (2021). L-Valine demonstrates a maximum piezoelectric voltage constant of gij ≈ 62 mV·m/N with a Young's Modulus of 19.8 GPa, making it suitable as an eco-friendly energy harvesting material.",
+
+  "molecule_name": "L-Valine",
+  "synonyms": ["L-valine", "2-amino-3-methylbutanoic acid", "LVALIN01"],
+  "chemical_formula": "C5H11NO2",
+  "molecular_weight": 117.15,
+  "crystal_type": "Organic Molecular Crystal (Amino Acid Crystal)",
+  "component_count": 1,
+
+  "csd_refcode": "LVALIN01",
+  "ccdc_number": 1208818,
+  "cif_file_name": "PMC-020-L-Valine.cif",
+  "structure_doi": "10.3891/acta.chem.scand.50-0544",
+  "deposition_date": "1996-01-01",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "P21",
+  "space_group_number": 4,
+  "centrosymmetric": false,
+  "cell_a": 9.682,
+  "cell_b": 5.247,
+  "cell_c": 11.930,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.57,
+  "cell_gamma": 90.0,
+  "cell_volume": 606.031,
+  "cell_z": 4,
+  "cell_z_prime": 1,
+
+  "habit": "Colourless block",
+  "colour": "Colourless",
+  "density_g_cm3": 1.284,
+  "temperature_k": 120,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 3.4,
+  "cod_code": null,
+
+  "intermolecular_interactions": [
+    "hydrogen bonding (N-H···O)",
+    "directional hydrogen bond networks",
+    "zwitterionic interactions"
+  ],
+  "isostructural_analogues": [
+    "L-arginine",
+    "Other proteinogenic amino acids in P21 space group",
+    "L-valine derivatives"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": false,
+  "has_computational": true,
+  "experimental_method": null,
+  "computational_method": "Density Functional Theory (DFT) using VASP, PBE functional with Grimme-D3 dispersion corrections, DFPT for piezoelectric tensor calculation",
+  "shear_qualitative": "Computed (shear response permitted by P21 symmetry)",
+  "shear_value": 62,
+  "shear_unit": "mV·m/N",
+  "longitudinal_qualitative": "Low longitudinal response due to inhibited hydrogen bonding along b axis",
+  "longitudinal_value": null,
+  "longitudinal_unit": null,
+  "dft_shear_qualitative": "Maximum piezoelectric voltage constant g34 ≈ 62 mV·m/N",
+
+  "structure_ref_authors": [
+    "Moitra, S.",
+    "Kar, T."
+  ],
+  "structure_ref_journal": "Crystal Research and Technology",
+  "structure_ref_year": 1996,
+  "structure_ref_volume": "45",
+  "structure_ref_doi": "10.3891/acta.chem.scand.50-0544",
+
+  "property_ref_title": "Ab-Initio Predictions of the Energy Harvesting Performance of L-Arginine and L-Valine Single Crystals",
+  "property_ref_journal": "Frontiers in Mechanical Engineering",
+  "property_ref_year": 2021,
+  "property_ref_doi": "10.3389/fmech.2021.738446",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": false,
+  "cif_matches_paper": true
+}

@@ -1,0 +1,95 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_BENZIL
+#This CIF has been generated from an entry in the Cambridge Structural Database
+_database_code_depnum_ccdc_archive 'CCDC 1108763'
+_database_code_CSD               BENZIL
+loop_
+_citation_id
+_citation_doi
+_citation_year
+1 10.1107/S0365110X65000403 1965
+_audit_creation_method           'Created from the CSD'
+_audit_update_record             
+;
+2026-06-28 downloaded from the CCDC.
+;
+_database_code_NBS               502922
+_chemical_name_common            'Teaching Subset: Fundamental Chemistry'
+_chemical_formula_moiety         'C14 H10 O2'
+_chemical_name_systematic        Benzil
+_chemical_absolute_configuration unk
+_diffrn_ambient_temperature      295
+_exptl_crystal_density_diffrn    1.25816
+#These two values have been output from a single CSD field.
+_refine_ls_R_factor_gt           0.078
+_refine_ls_wR_factor_gt          0.078
+_diffrn_radiation_probe          x-ray
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_H-M   'P 31 2 1'
+_symmetry_Int_Tables_number      152
+_space_group_name_Hall           'P 31 2"'
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -y,x-y,1/3+z
+3 -x+y,-x,2/3+z
+4 y,x,-z
+5 x-y,-y,2/3-z
+6 -x,-x+y,1/3-z
+_cell_length_a                   8.376
+_cell_length_b                   8.376
+_cell_length_c                   13.700
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_volume                     832.386
+_cell_formula_units_Z            3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+C1 C 0.23130 0.02240 0.07660
+C2 C 0.28410 0.00250 0.16930
+C3 C 0.28620 -0.15700 0.19470
+C4 C 0.23390 -0.29460 0.12490
+C5 C 0.17980 -0.27520 0.03110
+C6 C 0.17830 -0.11560 0.00610
+C7 C 0.22700 0.19270 0.05250
+H1 H 0.32400 0.11160 0.22220
+H2 H 0.32750 -0.17350 0.26690
+H3 H 0.23510 -0.41930 0.14350
+H4 H 0.13910 -0.38450 -0.02170
+H5 H 0.13730 -0.09830 -0.06610
+O1 O 0.25880 0.31110 0.11250
+C7C C 0.19270 0.22700 -0.05250
+C1C C 0.02240 0.23130 -0.07660
+O1C O 0.31110 0.25880 -0.11250
+C2C C 0.00250 0.28410 -0.16930
+C6C C -0.11560 0.17830 -0.00610
+C3C C -0.15700 0.28620 -0.19470
+H1C H 0.11160 0.32400 -0.22220
+C5C C -0.27520 0.17980 -0.03110
+H5C H -0.09830 0.13730 0.06610
+C4C C -0.29460 0.23390 -0.12490
+H2C H -0.17350 0.32750 -0.26690
+H4C H -0.38450 0.13910 0.02170
+H3C H -0.41930 0.23510 -0.14350
+
+#END

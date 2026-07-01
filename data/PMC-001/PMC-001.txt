@@ -1,0 +1,48 @@
+γ-Glycine (Gamma Glycine) – Database Entry
+
+Material Name: γ-Glycine (Gamma Glycine)
+
+Chemical Formula: C₂H₅NO₂
+
+Material Class: Organic molecular crystal (Amino acid crystal)
+
+Polymorph: γ-phase (Gamma)
+
+Crystal Type: Single Crystal
+
+CSD Refcode: GLYCIN18
+
+CCDC Number: 1169370
+
+CIF File: Available (Provided)
+
+Crystal System: Trigonal
+
+Space Group: P3₁ (No. 144)
+
+Hall Symbol: P 31
+
+Point Group: 32
+
+Centrosymmetric: No
+
+Polar Crystal: Yes
+
+Piezoelectric: Yes (Intrinsic)
+
+Ferroelectric: Local ferroelectric behavior observed after mechanical polishing; as-grown crystal is primarily piezoelectric.
+
+Unit Cell Parameters:
+
+a = 7.037 Å
+b = 7.037 Å
+c = 5.478 Å
+α = 90°
+β = 90°
+γ = 120°
+Unit Cell Volume = 234.924 Å³
+Z = 3
+
+Density: 1.592 g/cm³
+
+Structure Determination Temperature: 295 K

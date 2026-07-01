@@ -1,0 +1,122 @@
+{
+    "metadata": {
+        "generated_on": "2026-07-01T01:18:49",
+        "total_folders": 36,
+        "successful": 35,
+        "warnings": 1
+    },
+    "folders": {
+        "PMC-001": {
+            "status": "OK"
+        },
+        "PMC-002": {
+            "status": "OK"
+        },
+        "PMC-003": {
+            "status": "OK"
+        },
+        "PMC-004": {
+            "status": "OK"
+        },
+        "PMC-005": {
+            "status": "OK"
+        },
+        "PMC-006": {
+            "status": "OK"
+        },
+        "PMC-007": {
+            "status": "OK"
+        },
+        "PMC-008": {
+            "status": "OK"
+        },
+        "PMC-009": {
+            "status": "OK"
+        },
+        "PMC-010": {
+            "status": "OK"
+        },
+        "PMC-011": {
+            "status": "OK"
+        },
+        "PMC-012": {
+            "status": "OK"
+        },
+        "PMC-013": {
+            "status": "OK"
+        },
+        "PMC-014": {
+            "status": "OK"
+        },
+        "PMC-015": {
+            "status": "OK"
+        },
+        "PMC-016": {
+            "status": "OK"
+        },
+        "PMC-017": {
+            "status": "WARNING",
+            "missing": [
+                "JSON",
+                "CIF"
+            ]
+        },
+        "PMC-018": {
+            "status": "OK"
+        },
+        "PMC-019": {
+            "status": "OK"
+        },
+        "PMC-020": {
+            "status": "OK"
+        },
+        "PMC-021": {
+            "status": "OK"
+        },
+        "PMC-022": {
+            "status": "OK"
+        },
+        "PMC-023": {
+            "status": "OK"
+        },
+        "PMC-024": {
+            "status": "OK"
+        },
+        "PMC-025": {
+            "status": "OK"
+        },
+        "PMC-026": {
+            "status": "OK"
+        },
+        "PMC-027": {
+            "status": "OK"
+        },
+        "PMC-028": {
+            "status": "OK"
+        },
+        "PMC-029": {
+            "status": "OK"
+        },
+        "PMC-030": {
+            "status": "OK"
+        },
+        "PMC-031": {
+            "status": "OK"
+        },
+        "PMC-032": {
+            "status": "OK"
+        },
+        "PMC-033": {
+            "status": "OK"
+        },
+        "PMC-034": {
+            "status": "OK"
+        },
+        "PMC-035": {
+            "status": "OK"
+        },
+        "PMC-036": {
+            "status": "OK"
+        }
+    }
+}

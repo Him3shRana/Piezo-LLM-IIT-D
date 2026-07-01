@@ -1,0 +1,194 @@
+{
+  "id": "PMC-030",
+  "schema_version": "1.1",
+  "text": "2-Methyl-4-nitroaniline (MNA), chemical formula C7H8N2O2, molecular weight 152.15, is a single-component organic molecular crystal exhibiting strong piezoelectric and nonlinear optical properties. It crystallizes in the non-centrosymmetric, polar monoclinic space group Ia (No. 9, alternative setting of Cc), with unit cell a = 7.611 Å, b = 11.630 Å, c = 8.229 Å, β = 94.05°, Z = 4. The structure features discrete MNA molecules held together by intermolecular hydrogen bonding interactions; the non-centrosymmetric polar architecture is compatible with piezoelectricity. Molecules exhibit an electron donor-acceptor character, with charge transfer of about 0.3e between the amino NH2 donor group and the nitro NO2 acceptor group inducing a dipole moment of 6.2 D (observed), with the dipole moment closely aligned along the N-N axis. The crystal structure (CCDC 162581, CSD refcode BAJCIY01) was determined by single-crystal X-ray diffraction at 150 K with an R factor of 4.3% and a calculated density of 1.391 g/cm³. Experimental X-ray diffraction studies using the Barsch equation and three-step modulation method revealed an exceptional piezoelectric tensor dominated by one coefficient: d₁₁ = 13.8(1) × 10⁻¹² C/N, making it the largest ever observed in an organic molecular crystal at the time—six times greater than the largest coefficient of quartz and comparable to strong inorganic piezoelectrics.",
+
+  "molecule_name": "2-Methyl-4-nitroaniline",
+  "synonyms": ["MNA", "2-methyl-4-nitroaniline", "4-nitro-o-toluidine"],
+  "chemical_formula": "C7H8N2O2",
+  "molecular_weight": 152.15,
+  "crystal_type": "Organic Molecular Crystal",
+  "component_count": 1,
+
+  "csd_refcode": "BAJCIY01",
+  "ccdc_number": 162581,
+  "cif_file_name": "PMC-030-2-Methyl-4-nitroaniline.cif",
+  "structure_doi": "10.5517/cc5g5kb",
+  "deposition_date": "2001-04-24",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "Ia",
+  "space_group_number": 9,
+  "centrosymmetric": false,
+  "cell_a": 7.611,
+  "cell_b": 11.630,
+  "cell_c": 8.229,
+  "cell_alpha": 90.0,
+  "cell_beta": 94.05,
+  "cell_gamma": 90.0,
+  "cell_volume": 726.60,
+  "cell_z": 4,
+  "cell_z_prime": 1,
+
+  "habit": "block",
+  "colour": "orange",
+  "density_g_cm3": 1.391,
+  "temperature_k": 150,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 4.3,
+  "cod_code": null,
+
+  "intermolecular_interactions": ["hydrogen bonding"],
+  "isostructural_analogues": [],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "X-ray diffraction measurement of piezoelectric tensor using Barsch equation and three-step modulation method",
+  "computational_method": null,
+  "shear_qualitative": null,
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "positive",
+  "longitudinal_value": 13.8,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": ["G. Ferguson", "C. Glidewell", "J. N. Low", "J. M. S. Skakle", "J. L. Wardell"],
+  "structure_ref_journal": "Acta Crystallographica Section C: Crystal Structure Communications",
+  "structure_ref_year": 2001,
+  "structure_ref_volume": null,
+  "structure_ref_doi": "10.1107/S0108270100019405",
+
+  "property_ref_title": "Measurement of the piezoelectric tensor of an organic crystal by the x-ray method: The nonlinear optical crystal 2-methyl 4-nitroaniline",
+  "property_ref_journal": "Physical Review B",
+  "property_ref_year": 1991,
+  "property_ref_doi": "10.1103/PhysRevB.43.14683",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "molecular_properties": {
+    "donor_acceptor_character": "electron donor (NH2) to acceptor (NO2) charge transfer ~0.3e",
+    "dipole_moment_observed_D": 6.2,
+    "dipole_moment_computed_D": 8.65,
+    "dipole_alignment": "closely aligned with N-N axis (component 8.64 D)"
+  },
+
+  "piezoelectric_tensor_results": {
+    "d11_value_pC_N": 13.8,
+    "d11_uncertainty": 0.1,
+    "measurement_method": "X-ray Bragg angle shifts via Barsch equation",
+    "modulation_frequency_Hz": "55-56",
+    "field_magnitude_kV_mm": "2.50",
+    "field_direction": "E1 (polar axis, along 2a+c)",
+    "precision_delta_theta_deg": "10^-5 to 10^-6"
+  },
+
+  "strain_analysis": {
+    "external_strain": "macroscopic lattice deformation",
+    "internal_strain": "atomic coordinate relaxation",
+    "induced_strain_order": "10^-5 for 10^6 V/m electric field",
+    "cell_dimension_change_angstrom": "10^-4 to 10^-5"
+  },
+
+  "crystal_structure_features": {
+    "layer_structure": "molecules arranged in layers perpendicular to E2 direction",
+    "interlayer_distance_angstrom": 4.0,
+    "interlayer_interaction": "weak, evident from easy cleavage",
+    "molecular_separation_angstrom": 8.802,
+    "separation_direction": "along E1 direction",
+    "molecular_orientation": "heads make ±19.5° with E1 direction",
+    "hydrogen_bonding_pattern": "head-to-tail between NH2 and NO2 groups along E1"
+  },
+
+  "nonlinear_optical_properties": {
+    "second_harmonic_generation": "one of the largest known SHG coefficients",
+    "applications_limitation": "thin films only, due to absence of phase-matching angle in bulk crystals",
+    "linear_electro_optic_effect": "exceptionally large dc LEO effect"
+  },
+
+  "comparison_with_other_materials": {
+    "vs_quartz": "six times larger than largest quartz coefficient (d33 = 2.3 pC/N)",
+    "vs_benzil": "larger than benzil (d33 = 10.7 pC/N)",
+    "vs_KDP": "lower than KDP (d36 = 23.2 pC/N)",
+    "status": "largest piezoelectric behavior observed in organic molecular crystal at time of measurement"
+  },
+
+  "cartesian_coordinate_system": {
+    "E1_definition": "parallel to 2a+c; polar axis of crystal",
+    "E2_definition": "parallel to b; perpendicular to mirror plane",
+    "E3_definition": "parallel to -a*+2c*; in mirror plane, perpendicular to molecular plane of layers"
+  },
+
+  "measurement_conditions": {
+    "crystal_dimensions_mm": ["0.95/0.38/0.40", "1.10/0.90/0.60", "0.80/1.20/0.80"],
+    "growth_method": "50% xylene + 50% methanol evaporation",
+    "X_ray_source": ["synchrotron (NSLS)", "rotating anode"],
+    "wavelength_angstrom": ["1.00", "0.7107"],
+    "temperature_celsius": "-20 to -25",
+    "scan_type": "2θ",
+    "electric_field_frequency_Hz": "55-56",
+    "electrodes": "painted silver"
+  },
+
+  "piezoelectric_tensor_matrix_pC_N": {
+    "notation": "abbreviated Voigt notation, 10^-12 C/N units",
+    "d11": 13.8,
+    "d12": 2.5,
+    "d13": 1.4,
+    "d14": 0,
+    "d15": 5.3,
+    "d16": 0,
+    "d21": 0,
+    "d22": 0,
+    "d23": 0,
+    "d24": 9.3,
+    "d25": 0,
+    "d26": 5.1,
+    "d31": 0.8,
+    "d32": -0.9,
+    "d33": 2.4,
+    "d34": 0,
+    "d35": -2.5,
+    "d36": 0,
+    "point_group": "m"
+  },
+
+  "dominated_coefficients_summary": {
+    "primary_response": "d11 = 13.8 pC/N dominates piezoelectric response",
+    "main_effect": "tensile strain along polar axis (E1) induced by field along E1",
+    "secondary_effect": "shear strain e23 perpendicular to polar axis, induced by field along b (E2)",
+    "negligible_effect": "field along E3 (perpendicular to molecular plane) has no significant effect"
+  },
+
+  "electro_optic_interpretation": {
+    "linear_electro_optic_effect": "reinterpreted in terms of piezoelectric-photoelastic effect",
+    "electronic_contribution": "previously thought to dominate",
+    "phonon_electron_coupling": "now recognized as important due to large piezoelectric coefficients",
+    "comparison_analogue": "2-methyl-4-nitro-N-methylaniline (MNMA) shows LEO coefficients dominated by electrically-induced strains"
+  },
+
+  "additional_notes": [
+    "Monoclinic space group Ia (No. 9) is equivalent to Cc (No. 9), alternative setting",
+    "BAJCIY01 is a refined redetermination of the same polymorph as BAJCIY",
+    "R factor (all data) = 5.6%, R factor (gt) = 4.3%, wR factor = 10.6%",
+    "Crystal structure redetermined 2001 by Ferguson et al.; original piezoelectric study 1991 by Paturle et al.",
+    "Single-component organic molecular crystal with discrete molecules held by hydrogen bonding",
+    "Electron donor-acceptor (D-A) character with charge transfer ~0.3e between NH2 donor and NO2 acceptor",
+    "Non-centrosymmetric polar structure satisfies crystallographic requirement for piezoelectricity",
+    "Largest piezoelectric coefficient d11 = 13.8 pC/N for organic molecular crystal (at time of study)",
+    "X-ray diffraction method using three-step modulation allows measurement of strains as small as 10^-5",
+    "Piezoelectric tensor elements refined to high precision (R factor ~5-6%)",
+    "Strains induced by piezoelectric effect (~10^-5 for 10^6 V/m fields) lead to cell dimension changes of 10^-4 to 10^-5 Angstrom",
+    "Large piezoelectric coefficients indicate importance of electron-phonon coupling and low-frequency contributions to electro-optic effects",
+    "Suitable for inclusion in database of experimentally verified piezoelectric organic molecular crystals"
+  ]
+}

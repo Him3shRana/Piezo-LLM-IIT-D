@@ -1,0 +1,425 @@
+{
+  "id": "PMC-016",
+  "schema_version": "1.0",
+  "text": "L-Histidinium tetrafluoroborate (LHFB) single crystal - a piezoelectric amino acid molecular salt",
+
+  "molecule_name": "L-Histidinium tetrafluoroborate",
+  "synonyms": [
+    "L-histidinium tetrafluoroborate",
+    "LHFB"
+  ],
+  "chemical_formula": "C6H10N3O2·BF4",
+  "molecular_weight": 242.98,
+  "crystal_type": "Organic molecular crystal (amino acid molecular salt)",
+  "component_count": 2,
+
+  "csd_refcode": "YEFPUV",
+  "ccdc_number": 285490,
+  "cif_file_name": "PMC-016-L-Histidinium-tetrafluoroborate__LHFB_.cif",
+  "structure_doi": "10.1007/s00339-024-07369-y",
+  "deposition_date": "2005-09-30",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "P21",
+  "space_group_number": 4,
+  "centrosymmetric": false,
+  "cell_a": 5.0259,
+  "cell_b": 9.0920,
+  "cell_c": 10.2140,
+  "cell_alpha": 90.0,
+  "cell_beta": 93.329,
+  "cell_gamma": 90.0,
+  "cell_volume": 465.91,
+  "cell_z": 2,
+  "cell_z_prime": 1,
+
+  "habit": "prism",
+  "colour": "colourless",
+  "density_g_cm3": 1.738,
+  "temperature_k": 303,
+  "radiation": "Mo Kα (0.7108 Å)",
+  "experiment_type": "Single-crystal X-ray diffraction",
+  "r_factor_percent": 3.8,
+
+  "intermolecular_interactions": [
+    "N-H···O hydrogen bonds",
+    "N-H···F hydrogen bonds",
+    "C-H···π interactions"
+  ],
+  "isostructural_analogues": [
+    "L-histidine acetate",
+    "L-histidine oxalate",
+    "L-histidine maleate",
+    "L-histidinium tetrafluorophthalate",
+    "L-histidine monohydrochloride"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": true,
+  "experimental_method": "Vickers indentation hardness, dielectric studies, piezoelectric charge coefficient measurement",
+  "computational_method": "DFT/B3LYP/6-311++G(d,p)",
+  "shear_qualitative": "Not reported",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "Measured",
+  "longitudinal_value": 4,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": "Computed at B3LYP/6-311++G(d,p) level",
+
+  "structure_ref_authors": [
+    "N. Tyagi",
+    "N. Sinha",
+    "H. Yadav",
+    "P. Kumar",
+    "B. Kumar"
+  ],
+  "structure_ref_journal": "Applied Physics A",
+  "structure_ref_year": 2024,
+  "structure_ref_volume": "130",
+  "structure_ref_doi": "10.1007/s00339-024-07369-y",
+
+  "property_ref_title": "Crystal structure, Hirshfeld topology analysis, enrichment ratio, energy framework and DFT computational studies of piezoelectric L-histidinium tetrafluoroborate single crystal",
+  "property_ref_journal": "Applied Physics A",
+  "property_ref_year": 2024,
+  "property_ref_doi": "10.1007/s00339-024-07369-y",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+  "cod_code": null,
+
+  "detailed_crystal_data": {
+    "unit_cell_dimensions": {
+      "a_angstrom": 5.0259,
+      "b_angstrom": 9.089,
+      "c_angstrom": 10.214,
+      "alpha_degrees": 90.0,
+      "beta_degrees": 93.482,
+      "gamma_degrees": 90.0,
+      "volume_angstrom_cubed": 465.91
+    },
+    "refinement": {
+      "r_factor_all": 0.0253,
+      "r_factor_gt": 0.0253,
+      "wr_factor_gt": 0.0665,
+      "goodness_of_fit": 1.085,
+      "number_reflections": 903,
+      "number_parameters": 178,
+      "number_restraints": 1
+    },
+    "data_collection": {
+      "radiation_type": "CuKα",
+      "wavelength_angstrom": 1.54180,
+      "temperature_k": 293,
+      "measurement_device": "Enraf-Nonius CAD-4",
+      "theta_min_degrees": 4.33,
+      "theta_max_degrees": 67.88,
+      "measured_reflections": 1008
+    },
+    "absorption": {
+      "coefficient_mm_inv": 1.591,
+      "correction_type": "psi-scan",
+      "t_min": 0.661,
+      "t_max": 0.727
+    }
+  },
+
+  "physical_properties": {
+    "dielectric": {
+      "dielectric_constant_1kHz": 88,
+      "dielectric_constant_2MHz": 34,
+      "dielectric_loss_1kHz": 0.017,
+      "dielectric_loss_2MHz": 0.003,
+      "frequency_range_Hz": "20 Hz - 2 MHz",
+      "temperature_range_celsius": "27-70"
+    },
+    "piezoelectric": {
+      "d33_pC_per_N": 4.0,
+      "measurement_method": "Silver paste coating with DC poling field",
+      "poling_field_kV_cm": 2.5,
+      "poling_duration_min": 25,
+      "measurement_direction": "Same as poling direction"
+    },
+    "mechanical": {
+      "vickers_microhardness_number": 3.2,
+      "load_applied_grams": 50,
+      "work_hardening_coefficient": 1.7,
+      "crystal_nature": "Softer",
+      "indentation_method": "Vickers-pyramid"
+    },
+    "optical": {
+      "crystal_quality": "High optical quality at higher frequencies",
+      "emission_wavelength_nm": 238,
+      "energy_gap_eV": 5.21
+    }
+  },
+
+  "computational_dft_properties": {
+    "method": "DFT/B3LYP/6-311++G(d,p)",
+    "optimization": {
+      "minimum_energy_eV": -26507.86,
+      "energy_change_convergence": -8.97e-7,
+      "dipole_moment_debye": 13.63,
+      "charge": 0,
+      "spin": "singlet"
+    },
+    "frontier_molecular_orbitals": {
+      "homo_energy_eV": -7.38,
+      "lumo_energy_eV": -2.17,
+      "gap_eV": 5.21,
+      "homo_localization": "COO and NH3 groups, slightly on CH2 group",
+      "lumo_localization": "Imidazolium ring due to electron delocalization"
+    },
+    "global_reactivity_parameters": {
+      "electronegativity_eV": 4.78,
+      "chemical_potential_eV": -4.78,
+      "chemical_hardness_eV": 2.61,
+      "chemical_softness_eV_inv": 0.19,
+      "electrophilicity_index_eV": 4.38,
+      "classification": "Hard molecule with good stability and low reactivity"
+    },
+    "molecular_electrostatic_potential": {
+      "range_au": "-0.112 to 0.112",
+      "negative_potential_site": "F and O atoms (electrophilic attack site)",
+      "positive_potential_site": "Exterior hydrogen atoms of ring (nucleophilic attack site)"
+    },
+    "density_of_states": {
+      "method": "Gauss-sum program",
+      "homo_lumo_gap_validated": true
+    }
+  },
+
+  "hirshfeld_surface_analysis": {
+    "method": "Crystal Explorer software",
+    "intermolecular_interactions": {
+      "H_F": 43.7,
+      "H_O": 24.3,
+      "H_H": 15.6,
+      "C_F": 4.7,
+      "C_O": 1.5,
+      "C_H": 1.8,
+      "N_F": 2.3,
+      "N_O": 1.0,
+      "N_H": 1.5,
+      "O_F": 0.7
+    },
+    "fingerprint_plot_interactions": {
+      "description": "H···F (43.7%), H···O (24.3%), H···H (15.6%)",
+      "dominant": "H···F and H···O hydrogen bonding"
+    },
+    "enrichment_ratio": {
+      "H_H": 0.59,
+      "C_C": null,
+      "C_H": 0.44,
+      "N_H": 0.61,
+      "O_H": 1.7,
+      "O_C": 1.4,
+      "O_N": 1.49,
+      "F_H": 1.47,
+      "F_C": 2.03,
+      "F_N": 1.65,
+      "F_O": 0.1,
+      "F_F": 0.3,
+      "interpretation": "Polar contacts (H-O, H-F, C-O, C-F, N-O, N-F) are favored"
+    }
+  },
+
+  "energy_framework": {
+    "method": "Calculated from Hirshfeld topology",
+    "scale_factors": {
+      "k_ele": 1.057,
+      "k_pol": 0.740,
+      "k_dis": 0.871,
+      "k_rep": 0.618
+    },
+    "interaction_energies_kJ_mol": [
+      {
+        "neighbor_number": 1,
+        "distance_angstrom": 4.74,
+        "number_equivalent": 1,
+        "E_ele": -2.0,
+        "E_pol": -1.8,
+        "E_dis": -11.0,
+        "E_rep": 8.0,
+        "E_total": -8.1
+      },
+      {
+        "neighbor_number": 2,
+        "distance_angstrom": 6.72,
+        "number_equivalent": 1,
+        "E_ele": -0.7,
+        "E_pol": -0.9,
+        "E_dis": -2.4,
+        "E_rep": 0.3,
+        "E_total": -3.3
+      },
+      {
+        "neighbor_number": 3,
+        "distance_angstrom": 5.14,
+        "number_equivalent": 1,
+        "E_ele": -6.6,
+        "E_pol": -8.0,
+        "E_dis": -15.7,
+        "E_rep": 27.5,
+        "E_total": -9.6
+      }
+    ],
+    "visualization": "Red cylinders (electrostatic), green cylinders (dispersion), blue cylinders (total energy)"
+  },
+
+  "void_analysis": {
+    "method": "Pro-crystal electron density isosurface",
+    "cavity_data": [
+      {
+        "isovalue_e_au3": 0.001,
+        "volume_angstrom_cubed": 0.94,
+        "surface_area_angstrom_squared": 8.13
+      },
+      {
+        "isovalue_e_au3": 0.002,
+        "volume_angstrom_cubed": 24.22,
+        "surface_area_angstrom_squared": 129.78,
+        "note": "Suitable for detecting voids in porous materials; covers >98% electronic charge"
+      },
+      {
+        "isovalue_e_au3": 0.003,
+        "volume_angstrom_cubed": 59.0,
+        "surface_area_angstrom_squared": 236.0
+      },
+      {
+        "isovalue_e_au3": 0.005,
+        "volume_angstrom_cubed": 115.7,
+        "surface_area_angstrom_squared": 328.3
+      }
+    ],
+    "void_percentage_at_0002_au": 5.72,
+    "porous_channels": "Continuous porous channels present in crystal"
+  },
+
+  "crystal_morphology": {
+    "method": "BFDH (Bravais-Friedel-Donnay-Harker) law",
+    "developed_faces": [
+      "(010)",
+      "(001)",
+      "(0-11)",
+      "(1-21)"
+    ],
+    "face_data": [
+      {
+        "face_hkl": "(121)",
+        "d_hkl_angstrom": 3.684,
+        "growth_rate": 0.669,
+        "morphological_importance": 1.0
+      },
+      {
+        "face_hkl": "(0-11)",
+        "d_hkl_angstrom": 6.785,
+        "growth_rate": 0.539,
+        "morphological_importance": 1.241
+      },
+      {
+        "face_hkl": "(001)",
+        "d_hkl_angstrom": 10.206,
+        "growth_rate": 0.421,
+        "morphological_importance": 1.589
+      }
+    ],
+    "crystal_size_mm": {
+      "length": 5,
+      "width": 3,
+      "thickness": 2
+    },
+    "growth_time_days": "25-30",
+    "growth_method": "Slow evaporation at constant temperature"
+  },
+
+  "applications_and_significance": [
+    "Optoelectronics",
+    "Energy harvesting",
+    "Piezoelectric transducers",
+    "Patch antennae for wireless communication",
+    "Self-powered devices",
+    "Microelectronic industry (low dielectric loss)"
+  ],
+
+  "key_findings": {
+    "first_report": "Piezoelectric property reported for the first time in LHFB single crystal",
+    "quality_factors": [
+      "High optical quality (low dielectric loss at higher frequencies)",
+      "Non-centrosymmetric space group P21 (essential for piezoelectricity)",
+      "High purity of crystal structure (R factor = 0.0375)",
+      "Softer mechanical nature (Meyer's index = 1.7)"
+    ],
+    "structure_stability": "Confirmed by intermolecular H4-F22 hydrogen bond interaction"
+  },
+
+  "residual_electron_density": {
+    "method": "Structure factor difference maps",
+    "refinement_quality": "High quality refinement",
+    "minimum_value_e_angstrom_cubed": -1.52,
+    "maximum_value_e_angstrom_cubed": 1.41,
+    "contour_level": 0.1
+  },
+
+  "hydrogen_bonding": {
+    "count": 5,
+    "bonds": [
+      {
+        "donor": "N3",
+        "hydrogen": "H3C",
+        "acceptor": "O1",
+        "symmetry": "2_755",
+        "distance_dh_angstrom": 0.90,
+        "distance_ha_angstrom": 2.14,
+        "distance_da_angstrom": 3.010,
+        "angle_dha_degrees": 161
+      },
+      {
+        "donor": "N3",
+        "hydrogen": "H3A",
+        "acceptor": "O2",
+        "symmetry": "1_655",
+        "distance_dh_angstrom": 0.90,
+        "distance_ha_angstrom": 1.82,
+        "distance_da_angstrom": 2.722,
+        "angle_dha_degrees": 174
+      },
+      {
+        "donor": "N2",
+        "hydrogen": "H2'",
+        "acceptor": "O1",
+        "symmetry": "2_655",
+        "distance_dh_angstrom": 0.91,
+        "distance_ha_angstrom": 2.04,
+        "distance_da_angstrom": 2.953,
+        "angle_dha_degrees": 174
+      },
+      {
+        "donor": "N3",
+        "hydrogen": "H3B",
+        "acceptor": "F3",
+        "symmetry": "2_655",
+        "distance_dh_angstrom": 0.93,
+        "distance_ha_angstrom": 2.05,
+        "distance_da_angstrom": 2.945,
+        "angle_dha_degrees": 161
+      },
+      {
+        "donor": "N1",
+        "hydrogen": "H1'",
+        "acceptor": "F1",
+        "symmetry": "2_756",
+        "distance_dh_angstrom": 0.79,
+        "distance_ha_angstrom": 2.09,
+        "distance_da_angstrom": 2.856,
+        "angle_dha_degrees": 161
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+Crystal ID: PMC-019
+
+CIF File Name: PMC-019-Diphenylalanine.cif
+
+CCDC ID: 994055
+
+CSD REFCODE: JOQLIM
+
+Molecule Name: Diphenylalanine (L-Phe-L-Phe, FF) peptide
+
+Chemical Formula: C18H20N2O3·2(CH4O)
+
+Crystal Type: Organic Molecular Crystal (Peptide Crystal)
+
+Piezoelectric Property: Yes
+
+Evidence: Experimentally demonstrated through fabricated FF peptide microrod nanogenerators with measured open-circuit voltage (~−0.6 V), short-circuit current, and reported piezoelectric coefficient (~18 pm/V).
+
+Research Paper: K. Jenkins, S. Kelly, V. Nguyen, Y. Wu, R. Yang, "Piezoelectric diphenylalanine peptide for greatly improved flexible nanogenerators", Nano Energy, Volume 51, 2018, Pages 317–323.
+DOI: 10.1016/j.nanoen.2018.06.061
+
+Space Group: P212121 (No. 19)
+
+Crystal System: Orthorhombic
+
+Piezoelectric Coefficient: d33 ≈ 18 pm/V (reported from previous experimental studies and cited in the Nano Energy paper)
+
+Notes:
+• Crystal structure reference: CCDC 994055 (CSD Refcode JOQLIM).
+• JOQLIM corresponds to Diphenylalanine methanol solvate determined by single-crystal X-ray diffraction.
+• The Nano Energy (2018) paper does not deposit a new CIF; it uses previously established FF crystal structures while experimentally demonstrating piezoelectricity in vertically aligned FF peptide microrods.
+• The CIF serves as the crystallographic reference, while the Nano Energy paper provides the experimental evidence of piezoelectricity.

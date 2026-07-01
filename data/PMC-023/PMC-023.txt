@@ -1,0 +1,44 @@
+Crystal ID           : PMC-023
+
+CIF File Name        : PMC-023-Rochelle-Salt.cif
+CCDC ID              : 1198211
+CSD REFCODE          : KNATAR05
+Crystal Structure DOI: 10.1006/jssc.1997.7394
+Crystal Structure Reference :
+Solans, X.; Gonzalez-Silgo, C.; Ruiz-Perez, C.
+Journal of Solid State Chemistry (1997)
+
+Molecule Name        : Rochelle Salt (Potassium Sodium Tartrate Tetrahydrate)
+Chemical Formula     : KNaC4H4O6·4H2O
+Crystal Type         : Organic Molecular Salt Crystal (Hydrated)
+Piezoelectric Property : Yes
+
+Evidence             :
+• Quantitative experimental measurements of the piezoelectric constants were reported for Rochelle salt single crystals.
+• Rochelle salt is one of the earliest known molecular crystals exhibiting both piezoelectricity and ferroelectricity.
+• Rochelle salt crystallizes in the ferroelectric monoclinic phase with the non-centrosymmetric space group P21 (No. 4), which is crystallographically compatible with piezoelectricity.
+• The crystal has been extensively studied as a benchmark molecular piezoelectric material.
+
+Research Paper       :
+A Dynamic Measurement of the Elastic, Electric and Piezoelectric Constants of Rochelle Salt
+Physical Review (1939)
+DOI: 10.1103/PhysRev.55.775
+
+Space Group          : P21 (No. 4)
+
+Crystal System       : Monoclinic
+
+Piezoelectric Coefficient :
+Quantitative piezoelectric constants were experimentally measured in the study.
+
+Maximum Coefficient  :
+Reported in the publication (tensor components depend on crystal orientation).
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD Refcode: KNATAR05.
+• CCDC Deposition Number: 1198211.
+• Crystal structure originally determined by Solans, Gonzalez-Silgo and Ruiz-Perez (Journal of Solid State Chemistry, 1997).
+• The crystal corresponds to the ferroelectric monoclinic polymorph of Rochelle salt.
+• The 1939 Physical Review paper experimentally characterizes the piezoelectric properties of Rochelle salt and does not report a new crystal structure or CIF.
+• This paper provides experimental evidence for the piezoelectricity of Rochelle salt.

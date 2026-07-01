@@ -1,0 +1,25 @@
+Crystal ID: PMC-004
+
+CCDC 909441 (CSD Refcode: KOWYEA02)
+
+Molecule Name: 2-Methyl-1H-benzimidazole (MBI)
+
+Chemical Formula: C₈H₈N₂
+
+Crystal Type: Organic hydrogen-bonded molecular ferroelectric crystal (γ-polymorph)
+
+Piezoelectric Property: Yes
+
+Evidence: The crystal adopts the non-centrosymmetric Pn (No. 7) space group (polar point group m) and exhibits experimentally verified ferroelectricity due to proton-transfer along hydrogen-bonded chains. Ferroelectricity and polarization switching are demonstrated in the paper, making piezoelectricity symmetry-allowed.
+
+Research Paper: Above-room-temperature ferroelectricity and antiferroelectricity in benzimidazoles, Nature Communications, 2012, 3, 1308. DOI: 10.1038/ncomms2322
+
+CIF File Name: KOWYEA02 (CCDC 909441)
+
+Space Group: Pn (No. 7)
+
+Crystal System: Monoclinic
+
+Piezoelectric Coefficient: Not reported (NR)
+
+Notes: Ferroelectric γ-polymorph of MBI measured at 300 K. This updated structure supersedes the older centrosymmetric KOWYEA (P4₂/n) structure and is the correct CIF corresponding to the ferroelectric MBI reported in the paper.

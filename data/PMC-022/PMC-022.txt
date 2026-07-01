@@ -1,0 +1,46 @@
+Crystal ID           : PMC-022
+
+CIF File Name        : PMC-022-Benzil.cif
+CCDC ID              : 1108763
+CSD REFCODE          : BENZIL
+Crystal Structure DOI: 10.1107/S0365110X65000403
+Crystal Structure Reference :
+Brown, C. J.; Sadanaga, R.
+Acta Crystallographica (1965)
+
+Molecule Name        : Benzil
+Chemical Formula     : C14H10O2
+Crystal Type         : Organic Molecular Crystal
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental piezoelectricity was demonstrated by measuring the piezoelectric charge coefficients of benzil single crystals.
+• Benzil single crystals were grown using the Czochralski and slow evaporation methods and characterized experimentally.
+• Benzil crystallizes in the non-centrosymmetric space group P3121 (No. 152), which is crystallographically compatible with piezoelectricity.
+• The study demonstrates the suitability of benzil single crystals for piezoelectric sensing and energy-related applications.
+
+Research Paper       :
+Growth and Characterization of Piezoelectric Benzil Single Crystals and Its Application in Microstrip Patch Antenna
+CrystEngComm (2014)
+DOI: 10.1039/C4CE01846J
+
+Space Group          : P3121 (No. 152)
+
+Crystal System       : Trigonal
+
+Piezoelectric Coefficient :
+d(100)  = 4 pC/N
+d(010)  = 1 pC/N
+d(001)  = 6 pC/N
+d(1̄10) = 3 pC/N
+
+Maximum Coefficient  :
+d(001) = 6 pC/N
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD Refcode: BENZIL.
+• CCDC Deposition Number: 1108763.
+• Crystal structure originally determined by Brown and Sadanaga (Acta Crystallographica, 1965).
+• The 2014 CrystEngComm paper investigates the piezoelectric properties of benzil using the previously reported crystal structure. No new crystal structure determination or CIF deposition is reported.
+• This paper provides experimental (not computational) evidence for the piezoelectricity of benzil.

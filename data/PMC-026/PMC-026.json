@@ -1,0 +1,226 @@
+{
+  "id": "PMC-026",
+  "schema_version": "1.0",
+  "text": "Glycinium Sulfamate–Glycine - An organic ionic molecular cocrystal demonstrating piezoelectric response through engineered non-centrosymmetric crystal structure, combining glycine, sulfamic acid, and glycinium cation in a functional ionic crystal",
+
+  "molecule_name": "Glycinium Sulfamate–Glycine",
+  "synonyms": ["Glycine-sulfamic acid cocrystal", "Gly-SA cocrystal", "Glycinium sulfamate glycine ionic cocrystal"],
+  "chemical_formula": "C2H6NO2+·C2H5NO2·H2NO3S−",
+  "molecular_weight": 247.23,
+  "crystal_type": "Organic Ionic Molecular Cocrystal",
+  "component_count": 3,
+
+  "csd_refcode": "IBUHEW",
+  "ccdc_number": "2090689",
+  "cif_file_name": "PMC-026-Glycinium-Sulfamate-Glycine.cif",
+  "structure_doi": "10.1021/acs.cgd.1c00702",
+  "deposition_date": "2021-06-17",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "Pn",
+  "space_group_number": 7,
+  "centrosymmetric": false,
+  "cell_a": 4.8995,
+  "cell_b": 12.190,
+  "cell_c": 16.800,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.0,
+  "cell_gamma": 90.0,
+  "cell_volume": 1003.4,
+  "cell_z": 4,
+  "cell_z_prime": 1.0,
+
+  "habit": "Single crystals and polycrystalline films",
+  "colour": "Transparent/Colorless",
+  "density_g_cm3": 1.637,
+  "temperature_k": 173,
+  "radiation": "MoK-alpha (0.71073 Angstrom)",
+  "experiment_type": "Single crystal X-ray diffraction",
+  "r_factor_percent": null,
+
+  "intermolecular_interactions": [
+    "Charge-assisted N-H···O hydrogen bonds between glycinium ammonium and sulfamate anion",
+    "O-H···O hydrogen bonds from sulfamate hydroxyl group",
+    "Hydrogen bonding tapes sustained by sulfamate N-H···O interactions",
+    "Ionic interactions between glycinium cations and sulfamate anions",
+    "Supramolecular synthons stabilizing non-centrosymmetric packing"
+  ],
+  "isostructural_analogues": [
+    "α-glycine (centrosymmetric, non-piezoelectric)",
+    "γ-glycine (non-centrosymmetric piezoelectric polymorph, d33 = 10 pC/N)",
+    "β-glycine (shear piezoelectric, d33 = 180 pC/N)"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": true,
+  "experimental_method": "Piezoresponse force microscopy (PFM), Second harmonic generation (SHG), Commercial d33 piezoelectric meter",
+  "computational_method": "Density functional theory (DFT) using VASP with PBE GGA functional, density functional perturbation theory (DFPT) for piezoelectric tensor",
+  "shear_qualitative": "Moderate piezoelectric response in transverse direction",
+  "shear_value": -3.7,
+  "shear_unit": "pC/N (d12 coefficient)",
+  "longitudinal_qualitative": "Low to moderate longitudinal piezoelectric response",
+  "longitudinal_value": 2.0,
+  "longitudinal_unit": "pC/N (d33 coefficient for single crystal; polycrystalline ≥0.2 pC/N)",
+  "dft_shear_qualitative": "DFT-predicted transverse constant maximum d12 = -3.7 pC/N",
+
+  "structure_ref_authors": [
+    "Guerin, S.",
+    "Khorasani, S.",
+    "Gleeson, M.",
+    "O'Donnell, J.",
+    "Sanii, R.",
+    "Zwane, R.",
+    "Reilly, A.M.",
+    "Silien, C.",
+    "Tofail, S.A.M.",
+    "Liu, N.",
+    "Zaworotko, M.",
+    "Thompson, D."
+  ],
+  "structure_ref_journal": "Crystal Growth & Design",
+  "structure_ref_year": 2021,
+  "structure_ref_volume": "21",
+  "structure_ref_doi": "10.1021/acs.cgd.1c00702",
+
+  "property_ref_title": "A Piezoelectric Ionic Cocrystal of Glycine and Sulfamic Acid",
+  "property_ref_journal": "Crystal Growth & Design",
+  "property_ref_year": 2021,
+  "property_ref_doi": "10.1021/acs.cgd.1c00702",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "additional_properties": {
+    "cocrystal_composition": "2:1 glycine to sulfamic acid ionic cocrystal",
+    "protonation_state": "One glycine molecule protonated by sulfamic acid to form glycinium cation",
+    "formula_unit_composition": "[(Gly)2H]+[NH2SO3]−",
+    "growth_method": "Slow evaporation from aqueous solution",
+    "growth_conditions": {
+      "solvent": "2:1 molar ratio in aqueous solution",
+      "temperature_celsius": 50,
+      "growth_time_days": "3-4 days for single crystals",
+      "film_growth_time_hours": "up to 24 hours"
+    },
+    "growth_substrates": ["copper", "brass"],
+    "singular_vs_polycrystalline": {
+      "single_crystal_d33_pc_N": 2.0,
+      "polycrystalline_film_d33_pc_N": "≥0.2 (damped response)",
+      "pifm_effective_d33_pm_V": "1.6 ± 0.72 pm/V"
+    },
+    "shg_measurements": {
+      "technique": "Second harmonic generation (SHG) transmission microscopy",
+      "excitation_wavelength_nm": 1064,
+      "harmonic_wavelength_nm": 532,
+      "effective_susceptibility_mean_pm_V": 0.57,
+      "effective_susceptibility_max_pm_V": 1.77,
+      "reference_material": "KDP (0.38 pm/V)",
+      "comparison": "Higher SHG response than KDP, lower than urea (1.04 pm/V)",
+      "dft_electronic_contribution_pm_V": 0.57
+    },
+    "elastic_properties": {
+      "youngs_modulus_gpa": 17,
+      "longitudinal_stiffness_gpa": "23-33",
+      "shear_stiffness_gpa": "5-7",
+      "elastic_anisotropy": "Low"
+    },
+    "dielectric_constants": {
+      "epsilon_1": 2.32,
+      "epsilon_2": 2.27,
+      "epsilon_3": 2.32
+    },
+    "piezoelectric_tensor_constants": {
+      "d11_pc_N": -1.9,
+      "d12_pc_N": -3.7,
+      "d13_pc_N": 2.1,
+      "d31_pc_N": 1.0,
+      "d32_pc_N": -0.25,
+      "d33_pc_N": -2.0,
+      "d15_pc_N": 1.3,
+      "d24_pc_N": 2.6,
+      "d26_pc_N": 0.14,
+      "d34_pc_N": -4.7
+    },
+    "hydrogen_bonding_geometry": {
+      "charge_assisted_n_h_o_angstrom": 2.00,
+      "o_h_o_angstrom": 1.59,
+      "directions": ["a-axis", "c-axis"]
+    },
+    "supramolecular_architecture": {
+      "cation_motif": "Three-component charge-assisted hydrogen-bonded motif involving ammonium group of adjacent glycinium cations",
+      "anion_motif": "Hydrogen-bonded tapes sustained by N-H···O bonds in sulfamate anions",
+      "crystal_packing": "Non-centrosymmetric due to observed motifs precluding center of inversion"
+    },
+    "thermal_stability": {
+      "no_weight_loss_until_temperature_k": 473,
+      "endothermic_peaks_k": [398, 523],
+      "exothermic_heat_release": true
+    },
+    "comparison_with_parent_compounds": {
+      "alpha_glycine_space_group": "P21/c (No. 14) - centrosymmetric, non-piezoelectric",
+      "sulfamic_acid_space_group": "Pbca (No. 61) - centrosymmetric, non-piezoelectric",
+      "cocrystal_space_group": "Pn (No. 7) - non-centrosymmetric, piezoelectric",
+      "significance": "Cocrystallization alone induces non-centrosymmetry without requiring non-centrosymmetric parent compounds"
+    },
+    "polycrystalline_film_characterization": {
+      "morphology": ["Large flat grains", "Needle-like structures growing from nuclei"],
+      "self_assembly": "Forms dense films on copper substrates",
+      "crystal_array": "Criss-crossing arrays with ~700 nm height variations",
+      "damping_factor": "1 order of magnitude reduction from single crystal response"
+    },
+    "pfm_measurements": {
+      "probe_type": "Platinum-coated, stiff",
+      "spring_constant_N_m": 19.57,
+      "frequency_khz": 21,
+      "linear_response": true,
+      "r_squared": 0.99,
+      "max_effective_coefficient_pm_V": 3.0
+    },
+    "potential_applications": [
+      "Piezoelectric sensing devices",
+      "Autonomous ambient-powered devices in edge computing",
+      "Eco-friendly amino acid-based coatings",
+      "Tissue regeneration",
+      "Drug delivery",
+      "AI-driven health monitoring"
+    ],
+    "distinctive_features": {
+      "feature_1": "First example where centrosymmetric components form non-centrosymmetric cocrystal",
+      "feature_2": "Cocrystallization creates new functionality absent in parent compounds",
+      "feature_3": "Simple, inexpensive, sustainable materials approach",
+      "feature_4": "Demonstrates utility of polycrystalline film growth for soft organic crystal characterization"
+    }
+  },
+
+  "notes": [
+    "Crystal structure obtained from the Cambridge Structural Database (CSD)",
+    "CSD Refcode: IBUHEW, CCDC Deposition Number: 2090689",
+    "Uniquely, both pure glycine and pure sulfamic acid crystallize independently in centrosymmetric space groups",
+    "Cocrystallization induces non-centrosymmetric Pn space group solely through coformer interactions",
+    "Non-centrosymmetric space group Pn (No. 7) provides 10 nonzero piezoelectric strain constants",
+    "Crystal structure reveals 2:1 glycine to sulfamic acid stoichiometry with one glycine protonated",
+    "Glycinium cations form charge-assisted hydrogen-bonded motifs through ammonium groups",
+    "Sulfamate anions form hydrogen-bonded tapes, both precluding center of inversion",
+    "Inversion center absence is crucial for understanding cocrystal formation from first principles design",
+    "This is a demonstration that cocrystallization of achiral coformers can create non-centrosymmetric structures",
+    "Piezoelectric response is novel among amino acid crystals - longitudinal d33 response of ~2 pC/N",
+    "Only γ-glycine polymorph previously crystallized in space group permitting nonzero d33 (10 pC/N single crystal)",
+    "Polycrystalline film approach overcomes challenges of measuring soft organic crystal electromechanical properties",
+    "DFT predictions of piezoelectric tensor guided experimental SHG and PFM measurements",
+    "SHG used as suitable noncontact characterization technique for organic crystal coatings",
+    "Polycrystalline films demonstrate damped but nonzero macroscopic response (≥0.2 pC/N) - range exploited in quartz, AlN, ZnO technologies",
+    "Electronic contribution to d33 value yields 0.57 pm/V - indicates full response primarily from ionic deformation",
+    "Hydrogen-bond networks facilitate dipole moment changes during crystal deformation necessary for piezoelectricity",
+    "Piezoelectric response generally larger in directions where Young's modulus is small",
+    "Control experiments confirm sulfamic acid films alone exhibit zero piezoelectric response (centrosymmetric)",
+    "Paper reports both crystal structure determination and complete experimental piezoelectric characterization",
+    "Material demonstrates potential for applications in flexible electronics and biocompatible devices",
+    "Represents simple, widely applicable means of expanding technology applications of biopiezoelectric materials"
+  ]
+}

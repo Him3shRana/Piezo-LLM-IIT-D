@@ -1,0 +1,55 @@
+Crystal ID           : PMC-032
+
+CIF File Name        : PMC-032-2-Bromo-3-hydroxypyridine.cif
+CCDC ID              : 279641
+CSD REFCODE          : YELREN
+Crystal Structure DOI: 10.5517/cc9czp9
+
+Crystal Structure Reference :
+Saha, B. K.; Nangia, A.; Nicoud, J.-F.
+Crystal Growth & Design (2006)
+
+Molecule Name        : 2-Bromo-3-hydroxypyridine
+Synonym              : 2-Bromo-3-pyridinol
+Chemical Formula     : C5H4BrNO
+
+Crystal Type         : Organic Molecular Crystal
+
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental piezoelectricity was demonstrated using piezoresponse force microscopy (PFM) in the Matter (2025) study.
+• First-principles (DFT) calculations predicted a giant shear piezoelectric response for the crystal.
+• Experimental measurements confirmed a strong effective shear piezoelectric response together with a measurable longitudinal piezoelectric response.
+• The crystal crystallizes in the non-centrosymmetric orthorhombic space group Pna21 (No. 33), which is crystallographically compatible with piezoelectricity.
+• The crystal consists entirely of discrete 2-bromo-3-hydroxypyridine molecules linked through hydrogen bonding and halogen bonding, confirming its molecular crystal nature.
+
+Research Paper       :
+Halogen and hydrogen bonded 2-X-pyridin-3-ol (X = Cl, Br, I) organic crystals with large shear piezoelectricity
+
+Journal              : Matter
+
+Publication Year     : 2025
+
+DOI                  : 10.1016/j.matt.2025.102098
+
+Space Group          : Pna21 (No. 33)
+
+Crystal System       : Orthorhombic
+
+Piezoelectric Coefficient :
+Experimental PFM measurements confirmed large shear piezoelectricity and measurable longitudinal piezoelectricity. DFT calculations predicted a giant shear piezoelectric coefficient.
+
+Maximum Coefficient  :
+Large shear piezoelectric response reported in the Matter (2025) study.
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD Refcode: YELREN.
+• CCDC Deposition Number: 279641.
+• Crystal structure DOI: 10.5517/cc9czp9.
+• Associated crystal structure publication: Crystal Growth & Design (2006), DOI: 10.1021/cg060117k.
+• The deposited crystal is a single-component organic molecular crystal.
+• The crystal is isostructural with the iodo analogue.
+• The Matter (2025) paper experimentally demonstrates piezoelectricity using piezoresponse force microscopy (PFM) and supports the observations with first-principles calculations.
+• This entry combines the experimental crystal structure from the Cambridge Structural Database with the experimental piezoelectric characterization reported in Matter (2025), making it suitable for inclusion in the molecular piezoelectric crystal database.

@@ -1,0 +1,81 @@
+{
+  "id": "PMC-010",
+  "schema_version": "1.1",
+  "text": "L-Arginine hydrochloride monohydrate is an organic hydrogen-bonded molecular salt crystal with chemical formula C6H15N4O2+·Cl−·H2O. It crystallizes in the non-centrosymmetric monoclinic space group P21 (No. 4) with unit-cell parameters a = 11.044 Å, b = 8.481 Å, c = 11.214 Å, β = 91.31°, Z = 4. The crystal structure was determined by single-crystal X-ray diffraction at 295 K with an R factor of 3.3% and a density of 1.44647 g/cm3. Piezoelectric tensor coefficients d14, d16, d34 and d36 were experimentally determined using X-ray three-beam diffraction. The crystal is an experimentally confirmed piezoelectric molecular crystal.",
+  "molecule_name": "L-Arginine Hydrochloride Monohydrate",
+  "synonyms": [
+    "L-Arginine HCl Monohydrate",
+    "L-Arginine Hydrochloride"
+  ],
+  "chemical_formula": "C6H15N4O2+·Cl−·H2O",
+  "molecular_weight": null,
+  "crystal_type": "Organic Hydrogen-Bonded Molecular Salt Crystal",
+  "component_count": 3,
+
+  "csd_refcode": "ARGHCL10",
+  "ccdc_number": 1103560,
+  "cif_file_name": "PMC-010-L-Arginine-hydrochloride-monohydrate.cif",
+  "structure_doi": "10.1107/S0567740870004697",
+  "deposition_date": null,
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "P21",
+  "space_group_number": 4,
+  "centrosymmetric": false,
+  "cell_a": 11.044,
+  "cell_b": 8.481,
+  "cell_c": 11.214,
+  "cell_alpha": 90.0,
+  "cell_beta": 91.31,
+  "cell_gamma": 90.0,
+  "cell_volume": 1050.08,
+  "cell_z": 4,
+  "cell_z_prime": null,
+
+  "habit": null,
+  "colour": null,
+  "density_g_cm3": 1.44647,
+  "temperature_k": 295,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 3.3,
+  "cod_code": null,
+
+  "intermolecular_interactions": [
+    "Hydrogen bonding"
+  ],
+  "isostructural_analogues": [],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": null,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "X-ray Three-Beam Diffraction",
+  "computational_method": null,
+  "shear_qualitative": "Piezoelectric tensor coefficients experimentally measured",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": null,
+  "longitudinal_value": null,
+  "longitudinal_unit": null,
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": [],
+  "structure_ref_journal": null,
+  "structure_ref_year": 1970,
+  "structure_ref_volume": null,
+  "structure_ref_doi": "10.1107/S0567740870004697",
+
+  "property_ref_title": "Piezoelectric coefficients d14, d16, d34 and d36 of an L-arginine hydrochloride monohydrate crystal by X-ray three-beam diffraction",
+  "property_ref_journal": "Journal of Synchrotron Radiation",
+  "property_ref_year": 2006,
+  "property_ref_doi": "10.1107/S0909049506033061",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true
+}

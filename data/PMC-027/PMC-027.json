@@ -1,0 +1,222 @@
+{
+  "id": "PMC-027",
+  "schema_version": "1.0",
+  "text": "Cbz-4-fluoro-L-phenylalanine (Cbz-Phe(4F)) - A high piezoelectric amino acid derivative with fluorinated aromatic side chain. Non-centrosymmetric monoclinic crystal structure enabling piezoelectricity. Self-assembles into needle-like crystals with exceptional piezoelectric coefficient and versatile applications in smart agriculture and soft robotics.",
+
+  "molecule_name": "Cbz-4-fluoro-L-phenylalanine",
+  "synonyms": [
+    "Cbz-Phe(4F)",
+    "N-((benzyloxy)carbonyl)-4-fluorophenylalanine",
+    "Cbz-L-Phe(4F)"
+  ],
+  "chemical_formula": "C17H16FNO4",
+  "molecular_weight": 317.31,
+  "crystal_type": "Organic Molecular Crystal",
+  "component_count": 1,
+
+  "csd_refcode": "MOZGOB",
+  "ccdc_number": "2378828",
+  "cif_file_name": "PMC-027-Cbz-4-fluoro-L-phenylalanine (Cbz-Phe(4F)).cif",
+  "structure_doi": "10.5517/ccdc.csd.cc2kvcd6",
+  "deposition_date": "2024-08-21",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "C 1 2 1",
+  "space_group_number": 5,
+  "centrosymmetric": false,
+  "cell_a": 19.0759,
+  "cell_b": 5.0824,
+  "cell_c": 16.0832,
+  "cell_alpha": 90.0,
+  "cell_beta": 107.869,
+  "cell_gamma": 90.0,
+  "cell_volume": 1484.1,
+  "cell_z": 4,
+  "cell_z_prime": 1.0,
+
+  "habit": "needle",
+  "colour": "colourless",
+  "density_g_cm3": 1.420,
+  "temperature_k": 100.2,
+  "radiation": "CuKα (λ = 1.54178 Å)",
+  "experiment_type": "Single-crystal X-ray diffraction (SC-XRD)",
+  "r_factor_percent": 6.57,
+
+  "intermolecular_interactions": [
+    "Hydrogen bonding (C-H···O and N-H···O)",
+    "π-π stacking of aromatic rings",
+    "Hydrogen bonding between F atom on side chain and H atom on Cbz group (F-H distance ≈ 0.296 nm)"
+  ],
+  "isostructural_analogues": [
+    "L-AcI",
+    "LD-FF",
+    "Fmoc-FF (with β-sheet structure similarity)"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": null,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": true,
+  "experimental_method": "Piezoresponse Force Microscopy (PFM) measurements",
+  "computational_method": "Density Functional Theory (DFT) using VASP",
+  "shear_qualitative": "High",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "High",
+  "longitudinal_value": 17.9,
+  "longitudinal_unit": "pm/V",
+  "dft_shear_qualitative": "Predicted high (d_max ≈ 36.4 pm/V)",
+
+  "structure_ref_authors": [
+    "Tan Hu",
+    "Jin Pyo Lee",
+    "Peiwen Huang",
+    "Amanda Jiamin Ong",
+    "Jian Yu",
+    "Shuihong Zhu",
+    "Yixuan Jiang",
+    "Zhuo Zhang",
+    "Meital Reches",
+    "Pooi See Lee"
+  ],
+  "structure_ref_journal": "Advanced Materials",
+  "structure_ref_year": 2025,
+  "structure_ref_volume": "37",
+  "structure_ref_doi": "10.1002/adma.202413049",
+
+  "property_ref_title": "Promoting Piezoelectricity in Amino Acids by Fluorination",
+  "property_ref_journal": "Advanced Materials",
+  "property_ref_year": 2025,
+  "property_ref_doi": "10.1002/adma.202413049",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+  "cod_code": null,
+
+  "additional_properties": {
+    "piezoelectric_coefficient_d33": {
+      "value": 17.9,
+      "unit": "pm/V",
+      "measurement_method": "PFM (Piezoresponse Force Microscopy)",
+      "note": "Measured as effective coefficient (d_eff_33)"
+    },
+    "predicted_piezoelectric_tensor": {
+      "maximum_value": 36.4,
+      "unit": "pm/V",
+      "description": "DFT-predicted maximum tensor component",
+      "tensor_components": "8 independent components for C2 space group"
+    },
+    "nanogenerator_performance": {
+      "open_circuit_voltage": 2.4,
+      "voltage_unit": "V",
+      "applied_force": 42,
+      "force_unit": "N",
+      "short_circuit_current": 38.4,
+      "current_unit": "nA",
+      "note": "Sandwich-like device architecture with flexible substrates"
+    },
+    "young_modulus": 2.7,
+    "young_modulus_unit": "GPa",
+    "point_stiffness": 23.5,
+    "point_stiffness_unit": "N/m",
+    "molecular_dipole_moment": 2.12,
+    "molecular_dipole_moment_unit": "D",
+    "thermal_stability": {
+      "endothermic_peak_temperature": 270,
+      "endothermic_peak_unit": "°C",
+      "decomposition_temperature": 400,
+      "decomposition_unit": "°C"
+    },
+    "self_assembly_behavior": {
+      "morphology": "Needle-like crystals",
+      "diameter_min": 20,
+      "diameter_max": 50,
+      "diameter_unit": "μm",
+      "formation_method": "Slow solvent evaporation from MeOH-H2O mixture"
+    },
+    "secondary_structure": "β-sheet (antiparallel hydrogen bonding arrangement)",
+    "fluorescence_properties": {
+      "in_solution": "UV emission at 283 nm",
+      "in_crystal": "Visible light emission 400-435 nm at excitation 300-400 nm",
+      "note": "Visible photoluminescence results from crystallization"
+    },
+    "applications": [
+      "Piezoelectric nanogenerator for energy harvesting",
+      "Flexible piezoelectric sensor for nut classification",
+      "Quality sorting of agricultural products",
+      "Soft gripper performance monitoring",
+      "Smart agriculture automation"
+    ]
+  },
+
+  "crystallographic_data": {
+    "flack_parameter": 0.07,
+    "flack_parameter_uncertainty": 0.17,
+    "space_group_hall_symbol": "C 2y",
+    "measurement_temperature_celsius": -173.15,
+    "diffraction_theta_min": 2.89,
+    "diffraction_theta_max": 66.71,
+    "total_reflections": 8680,
+    "unique_reflections": 2542,
+    "reflections_gt": 2323,
+    "r_factor_all_percent": 6.94,
+    "wr_factor_gt_percent": 15.52,
+    "goodness_of_fit": 1.112,
+    "number_parameters": 209,
+    "number_restraints": 1,
+    "hydrogen_treatment": "Constrained with geometric model",
+    "diffraction_source": "Incoatec Microfocus Source",
+    "detector_type": "CCD area detector (Bruker Kappa Duo APEX2)",
+    "absorption_correction": "Multi-scan (SADABS-2016/2)"
+  },
+
+  "author_information": {
+    "corresponding_authors": [
+      {
+        "name": "Zhuo Zhang",
+        "affiliation": "Northeast Forestry University, Harbin, China",
+        "email": "zhangzhuo@nefu.edu.cn"
+      },
+      {
+        "name": "Meital Reches",
+        "affiliation": "Singapore-HUJ Alliance for Research and Enterprise (SHARE)",
+        "email": "meital.reches@mail.huji.ac.il"
+      },
+      {
+        "name": "Pooi See Lee",
+        "affiliation": "School of Materials Science and Engineering, Nanyang Technological University, Singapore",
+        "email": "pslee@ntu.edu.sg"
+      }
+    ],
+    "depositing_researcher": "Tan Hu (Nanyang Technological University)",
+    "deposit_type": "CSD Communication"
+  },
+
+  "research_context": {
+    "main_finding": "Simple fluorination of aromatic amino acids significantly enhances piezoelectric properties",
+    "comparison_compounds": {
+      "Cbz-Phe": {
+        "d33": 8.0,
+        "d33_unit": "pm/V",
+        "morphology": "Aggregated powder assembly"
+      },
+      "Cbz-pentafluoro-Phe": {
+        "d33": 2.0,
+        "d33_unit": "pm/V",
+        "morphology": "Aggregated powder assembly"
+      }
+    },
+    "design_strategy": "Introduction of fluorine at para-position (4F) of phenylalanine aromatic ring",
+    "key_mechanism": "F-H hydrogen bonding between fluorine on side chain and hydrogen on Cbz group stabilizes regular molecular packing and crystal formation"
+  },
+
+  "funding_sources": [
+    "National Research Foundation, Singapore (Campus for Research Excellence and Technological Enterprise - CREATE)",
+    "National Natural Science Foundation of China (Grant No. 32172350)"
+  ]
+}

@@ -1,0 +1,50 @@
+Crystal ID           : PMC-031
+
+CIF File Name        : PMC-031-2-Chloro-3-hydroxypyridine (2-Cl-pyridin-3-ol).cif
+CCDC ID              : 279638
+CSD REFCODE          : FUFNOJ01
+Crystal Structure DOI: 10.5517/cc9czl6
+Crystal Structure Reference :
+Wardell, J. L.; Low, J. N.; Glidewell, C.
+Crystal Growth & Design (2006)
+
+Molecule Name        : 2-Chloro-3-hydroxypyridine (2-Cl-pyridin-3-ol)
+Chemical Formula     : C5H4ClNO
+Crystal Type         : Organic Molecular Crystal
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental piezoelectricity was demonstrated in the Matter (2025) study using piezoresponse force microscopy (PFM) on single crystals.
+• Density Functional Theory (DFT) predicted a very large shear piezoelectric coefficient (d15) of approximately 99.19 pC/N for 2-chloro-3-hydroxypyridine.
+• Experimental measurements showed an effective shear piezoelectric response of approximately 54–74 pC/N and a longitudinal piezoelectric response (d33) of approximately 5–10 pC/N.
+• The crystal crystallizes in the non-centrosymmetric orthorhombic space group Fdd2 (No. 43), which is crystallographically compatible with piezoelectricity.
+• The crystal consists entirely of discrete 2-chloro-3-hydroxypyridine molecules linked by hydrogen bonding and halogen bonding, confirming its molecular crystal nature.
+
+Research Paper       :
+Halogen and hydrogen bonded 2-X-pyridin-3-ol (X = Cl, Br, I) organic crystals with large shear piezoelectricity
+
+Journal              : Matter (2025)
+
+DOI                  : 10.1016/j.matt.2025.102098
+
+Space Group          : Fdd2 (No. 43)
+
+Crystal System       : Orthorhombic
+
+Piezoelectric Coefficient :
+Predicted shear coefficient d15 ≈ 99.19 pC/N.
+Experimental effective shear response ≈ 54–74 pC/N.
+Experimental longitudinal coefficient d33 ≈ 5–10 pC/N.
+
+Maximum Coefficient  :
+Predicted shear d15 ≈ 99.19 pC/N.
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD Refcode: FUFNOJ01.
+• CCDC Deposition Number: 279638.
+• Crystal structure originally reported by Wardell, Low, and Glidewell in Crystal Growth & Design (2006).
+• Crystal structure DOI: 10.5517/cc9czl6.
+• The deposited structure is a single-component organic molecular crystal.
+• The Matter (2025) paper experimentally confirms piezoelectricity and reports exceptionally large shear piezoelectricity for this molecular crystal.
+• This entry combines the refined experimental crystal structure from the CSD with the experimental piezoelectric characterization reported in Matter (2025), making it suitable for inclusion in the molecular piezoelectric crystal database.

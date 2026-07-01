@@ -1,0 +1,162 @@
+{
+  "id": "PMC-025",
+  "schema_version": "1.0",
+  "text": "Brucinium Chlorate Dihydrate (BCDH) - A new organic molecular salt crystal with non-centrosymmetric monoclinic structure, demonstrating piezoelectric and nonlinear optical properties for optoelectronic and NLO applications",
+
+  "molecule_name": "Brucinium Chloride Dihydrate",
+  "synonyms": ["BCDH", "Brucinium Chlorate Dihydrate", "Brucine chloride hydrate"],
+  "chemical_formula": "C23H27N2O4Cl·2H2O",
+  "molecular_weight": 466.44,
+  "crystal_type": "Organic Molecular Salt Crystal (Hydrated)",
+  "component_count": 3,
+
+  "csd_refcode": "VOYVAJ",
+  "ccdc_number": "1823610",
+  "cif_file_name": "PMC-025-Brucinium-Chlorate-Dihydrate (BCDH).cif",
+  "structure_doi": "10.1016/j.optmat.2018.07.006",
+  "deposition_date": "2018-02-12",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "C2",
+  "space_group_number": 5,
+  "centrosymmetric": false,
+  "cell_a": 14.1700,
+  "cell_b": 12.3340,
+  "cell_c": 26.3458,
+  "cell_alpha": 90.0,
+  "cell_beta": 97.570,
+  "cell_gamma": 90.0,
+  "cell_volume": 4564.4,
+  "cell_z": 4,
+  "cell_z_prime": 2.0,
+
+  "habit": "Block",
+  "colour": "Yellow",
+  "density_g_cm3": 1.358,
+  "temperature_k": 291,
+  "radiation": "CuK-alpha (1.54178 Angstrom)",
+  "experiment_type": "Single crystal X-ray diffraction",
+  "r_factor_percent": 8.77,
+
+  "intermolecular_interactions": [
+    "N-H···O hydrogen bonds",
+    "N-H···Cl hydrogen bonds",
+    "O-H···O hydrogen bonds",
+    "C-H···O hydrogen bonds",
+    "Electrostatic interactions between brucinium cations and chloride anions"
+  ],
+  "isostructural_analogues": [
+    "Other brucinium-based organic salts (B5ST, BHF, BHM, DBSH)"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Piezoelectric d33 meter (PM-300 piezometer), Kurtz and Perry powder method for SHG, Nd:YAG laser for LDT measurements, Fluorescence spectroscopy",
+  "computational_method": null,
+  "shear_qualitative": "Low to moderate piezoelectric response",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "Moderate piezoelectric response",
+  "longitudinal_value": 4.0,
+  "longitudinal_unit": "pC/N (d33 coefficient)",
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": [
+    "Kandhan, S.",
+    "Krishnan, P.",
+    "Jagan, R.",
+    "Aravindhan, S.",
+    "Srinivasan, S.",
+    "Gunasekaran, S."
+  ],
+  "structure_ref_journal": "Optical Materials",
+  "structure_ref_year": 2018,
+  "structure_ref_volume": "84",
+  "structure_ref_doi": "10.1016/j.optmat.2018.07.006",
+
+  "property_ref_title": "Structural, optical and piezoelectric investigation on new Brucinium Chlorate dihydrate NLO single crystal for optoelectronic, piezo-sensor, transducer and OLED applications",
+  "property_ref_journal": "Optical Materials",
+  "property_ref_year": 2018,
+  "property_ref_doi": "10.1016/j.optmat.2018.07.006",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "additional_properties": {
+    "crystal_size_mm": [0.3, 0.2, 0.25],
+    "grown_crystal_size_mm": [11, 4, 2],
+    "growth_method": "Slow evaporation technique",
+    "growth_time_days": 45,
+    "growth_temperature_celsius": 25,
+    "solution_ph": 5.0,
+    "solvents": ["water", "ethanol"],
+    "transmittance_percent": 78,
+    "cut_off_wavelength_nm": 317,
+    "band_gap_energy_ev": 3.8,
+    "absorption_coefficient_various": "Calculated from UV-Visible analysis",
+    "shg_efficiency": "1.70 times greater than standard KDP",
+    "ldt_value_gw_cm2": 3.51,
+    "ldt_comparison": {
+      "vs_ktp": "10.96x higher than KTP (0.32 GW/cm²)",
+      "vs_kdp": "17.55x higher than KDP (0.2 GW/cm²)",
+      "vs_urea": "2.34x higher than urea (1.5 GW/cm²)"
+    },
+    "fluorescence_excitation_wavelength_nm": 317,
+    "fluorescence_emission_peaks_nm": [412, 433, 644],
+    "fluorescence_lifetimes_ns": [0.83, 1.67, 3.35],
+    "thermal_decomposition_stages": [
+      {
+        "stage": 1,
+        "temperature_celsius": 102.31,
+        "description": "Removal of water molecules and chlorine ions"
+      },
+      {
+        "stage": 2,
+        "temperature_celsius": 291.84,
+        "description": "Breaking of C-O and C-C bonds in brucine"
+      },
+      {
+        "stage": 3,
+        "temperature_celsius": 424.88,
+        "description": "Decomposition of remaining brucine ion"
+      }
+    ],
+    "morphological_faces": ["(001)", "(00-1)", "(11-1)", "(-1-1-1)"],
+    "major_growth_direction": "c-axis",
+    "supramolecular_structure": {
+      "1d_chains": "Formed along (010) direction through C-H···O hydrogen bonds",
+      "2d_sheets": "Extended parallel to (100) plane",
+      "3d_network": "Stabilized by weak O···Cl and O···O interactions"
+    },
+    "chi_squared_value": 1.079,
+    "twin_correction_applied": true,
+    "twin_ratio_basf": 0.432,
+    "disorder_present": true
+  },
+
+  "notes": [
+    "Crystal structure obtained from the Cambridge Structural Database (CSD)",
+    "CSD Refcode: VOYVAJ, CCDC Deposition Number: 1823610",
+    "Crystal grown by slow evaporation technique from equimolar ratio of Brucine and Copper(II) chloride",
+    "Non-centrosymmetric space group C2 is crystallographically compatible with piezoelectricity and SHG",
+    "Although publication title refers to 'Chlorate', deposited CIF identifies compound as chloride salt",
+    "CIF serves as authoritative crystallographic source for the compound",
+    "Paper reports both crystal structure determination and experimental piezoelectric/optical characterization",
+    "Crystal possesses two-fold twinning about (001) with twin matrix correction applied during refinement",
+    "One chlorine anion and water molecules experience positional disorder at 0.55:0.45 ratio",
+    "Asymmetric unit comprises two brucinium cations, two chlorine anions and two water molecules",
+    "Empirical formula from CIF: C46 H61 Cl2 N4 O12 (unit cell contains 4 asymmetric units, Z=4)",
+    "Supramolecular assembly through N-H···O, O-H···O, N-H···Cl and C-H···O hydrogen bonds",
+    "Crystal exhibits excellent optical properties with 78% transmittance in visible region",
+    "SHG efficiency superior to standard KDP material, suitable for NLO applications",
+    "High LDT value indicates suitability for high-power laser applications",
+    "Fluorescence studies reveal emission in visible range with potential for OLED applications"
+  ]
+}

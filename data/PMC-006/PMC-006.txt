@@ -1,0 +1,25 @@
+Crystal ID: PMC-006
+
+CCDC ID: 909439
+
+Molecule Name: 5,6-Dichloro-2-methyl-1H-benzimidazole (DC-MBI)
+
+Chemical Formula: C₈H₆Cl₂N₂
+
+Crystal Type: Organic hydrogen-bonded molecular ferroelectric crystal (chlorinated benzimidazole derivative)
+
+Piezoelectric Property: Yes
+
+Evidence: DC-MBI crystallizes in the non-centrosymmetric polar space group Pca2₁ (No. 29) and exhibits experimentally demonstrated ferroelectricity with switchable spontaneous polarization. Since all ferroelectric crystals are inherently piezoelectric, DC-MBI is classified as a piezoelectric molecular crystal. The paper experimentally verifies its ferroelectric behavior through polarization measurements and domain studies.
+
+Research Paper: Above-room-temperature ferroelectricity and antiferroelectricity in benzimidazoles, Nature Communications, 2012, 3, 1308. DOI: 10.1038/ncomms2322
+
+CIF File Name: PMC-006-5,6-Dichloro-2-methyl-1H-benzimidazole (DC-MBI).cif
+
+Space Group: Pca2₁ (No. 29)
+
+Crystal System: Orthorhombic
+
+Piezoelectric Coefficient: Not Reported (NR)
+
+Notes: CSD Refcode REZBOP, CCDC Deposition 909439. This is the experimentally determined room-temperature ferroelectric structure of DC-MBI. The crystal belongs to the polar point group mm2, making piezoelectricity symmetry-allowed. A later study reported a polar-to-polar phase transition from Pca2₁ to Pc near 400 K, indicating that the material remains polar over the transition. investigates its terahertz emission via optical rectification rather than directly measuring piezoelectric coefficients. However, because the crystal is experimentally confirmed to be ferroelectric and belongs to the non-centrosymmetric space group Pna2₁, it is classified as a piezoelectric molecular crystal.

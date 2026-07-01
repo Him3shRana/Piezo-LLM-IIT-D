@@ -1,0 +1,138 @@
+{
+  "id": "PMC-029",
+  "schema_version": "1.1",
+  "text": "3-Hydroxy-1H-phenalen-1-one (HPLN), chemical formula C13H8O2, molecular weight 196.20, is a single-component organic molecular crystal and a prototropic ferroelectric. It crystallizes in the non-centrosymmetric, polar monoclinic space group Pn (No. 7), with unit cell a = 9.088 Å, b = 17.707 Å, c = 11.604 Å, β = 93.765°, Z = 8. The α-polymorph exhibits ferroelectricity originating from cooperative proton transfer (prototropy), where a hydrogen atom is relocated and simultaneously the location of a single bond and that of an adjacent double bond are interchanged. Molecules are connected by intermolecular hydrogen bonding interactions; the non-centrosymmetric polar structure is compatible with piezoelectric properties. The crystal structure (CCDC 796166, CSD refcode TAPZIT01) was determined by single-crystal X-ray diffraction at 293 K with an R factor of 4.15% and a calculated density of 1.399 g/cm³. Experimental studies have demonstrated both direct and converse piezoelectric effects using the Berlincourt method and laser interferometry. The experimentally measured longitudinal piezoelectric coefficient is d33 = 7.3 ± 0.8 pC/N at room temperature. The piezoelectric properties show positive correlation with spontaneous polarization in the prototropic ferroelectric series.",
+
+  "molecule_name": "3-Hydroxy-1H-phenalen-1-one",
+  "synonyms": ["HPLN", "3-hydroxy-1H-phenalen-1-one", "phenalen-1-one derivative"],
+  "chemical_formula": "C13H8O2",
+  "molecular_weight": 196.20,
+  "crystal_type": "Organic Molecular Crystal",
+  "component_count": 1,
+
+  "csd_refcode": "TAPZIT01",
+  "ccdc_number": 796166,
+  "cif_file_name": "PMC-029-3-Hydroxy-1H-phenalen-1-one.cif",
+  "structure_doi": "10.5517/ccvqgss",
+  "deposition_date": "2010-10-08",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "Pn",
+  "space_group_number": 7,
+  "centrosymmetric": false,
+  "cell_a": 9.088,
+  "cell_b": 17.707,
+  "cell_c": 11.604,
+  "cell_alpha": 90.0,
+  "cell_beta": 93.765,
+  "cell_gamma": 90.0,
+  "cell_volume": 1863.3,
+  "cell_z": 8,
+  "cell_z_prime": 2,
+
+  "habit": "block",
+  "colour": "yellow",
+  "density_g_cm3": 1.399,
+  "temperature_k": 293,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 4.15,
+  "cod_code": null,
+
+  "intermolecular_interactions": ["hydrogen bonding"],
+  "isostructural_analogues": ["croconic acid", "phenylmalonaldehyde", "2-methyl-1H-benzimidazole", "5,6-dichloro-2-methyl-1H-benzimidazole"],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": true,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Direct piezoelectric measurement (Berlincourt method) and converse effect (laser interferometry)",
+  "computational_method": null,
+  "shear_qualitative": null,
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "positive",
+  "longitudinal_value": 7.3,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": ["S. Horiuchi", "R. Kumai", "Y. Tokura"],
+  "structure_ref_journal": "Advanced Materials",
+  "structure_ref_year": 2011,
+  "structure_ref_volume": "23",
+  "structure_ref_doi": "10.1002/adma.201100359",
+
+  "property_ref_title": "Piezoelectricity of strongly polarized ferroelectrics in prototropic organic crystals",
+  "property_ref_journal": "Journal of Materials Chemistry C",
+  "property_ref_year": 2018,
+  "property_ref_doi": "10.1039/c8tc01046c",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "ferroelectric_properties": {
+    "mechanism": "cooperative proton transfer (prototropy)",
+    "spontaneous_polarization": "comparable to ferroelectric polymers",
+    "coercive_field_kV_cm": "low, 0.5-50 kV/cm range",
+    "thermal_stability": "thermally robust ferroelectricity"
+  },
+
+  "piezoelectric_measurements": {
+    "d33_direct_pC_N": 7.3,
+    "d33_direct_uncertainty": 0.8,
+    "d33_converse_pm_V": 3.1,
+    "d33_converse_uncertainty": 0.8,
+    "measurement_method_direct": "Berlincourt method (stress-charge)",
+    "measurement_method_converse": "Laser interferometry (heterodyne interferometer)",
+    "electromechanical_coupling_factor": "k33 determined from resonance-antiresonance"
+  },
+
+  "crystal_properties": {
+    "Z_value": 8,
+    "molecules_per_unit_cell": 8,
+    "ferroelectric_behavior": "α-polymorph",
+    "proton_transfer_mechanism": "prototropy (proton tautomerism)",
+    "second_harmonic_generation": "strong optical nonlinearity"
+  },
+
+  "comparison_with_other_materials": {
+    "vs_small_molecule_crystals": "comparable to MNA and MBANP",
+    "vs_ferroelectric_polymers": "about half that of PVDF (12-30 pC/N)",
+    "vs_piezoceramics": "one or two orders of magnitude smaller than PZT (100-800 pC/N)",
+    "vs_ferroelectric_salts": "different behavior than Rochelle salt or TGS due to thermal stability"
+  },
+
+  "measurement_conditions": {
+    "temperature": "room temperature (293 K)",
+    "direct_effect_static_force": "0.3-1.0 N",
+    "direct_effect_dynamic_force": "0.05-0.10 N (rms)",
+    "dynamic_force_frequency": "110 Hz",
+    "converse_effect_medium": "immersed in insulating silicone oil",
+    "electric_poling": "high-voltage rectangular wave field",
+    "poling_pretreatment": "repetitive switching after heating"
+  },
+
+  "crystal_dimensions_for_measurement": {
+    "converse_effect_surface": "1.25 × 1.10 mm²",
+    "converse_effect_thickness": "0.60 mm",
+    "surface_orientation": "parallel to (101) plane"
+  },
+
+  "additional_notes": [
+    "Non-centrosymmetric polar monoclinic space group (Pn) is crystallographically compatible with piezoelectricity",
+    "Ferroelectricity originates from cooperative proton transfer (prototropy/proton tautomerism)",
+    "Experimental crystal structure obtained from the Cambridge Structural Database (CCDC 796166)",
+    "Deposited structure corresponds to the ferroelectric α-polymorph used in piezoelectric investigations",
+    "Piezoelectricity experimentally confirmed using both direct (Berlincourt method) and converse (laser interferometry) measurements",
+    "Crystal consists of discrete neutral HPLN molecules held together by hydrogen bonding",
+    "Positive correlation observed between spontaneous polarization and piezoelectric coefficient in prototropic ferroelectric series",
+    "Modest piezoelectricity despite strong polarization, attributed to thermally robust ferroelectricity and ferroelectric switching mechanism that minimizes molecular deformations",
+    "Electromechanical coupling factor (k32) determined from piezoelectric resonance-antiresonance measurements",
+    "Suitable for inclusion in experimentally verified ferroelectric and piezoelectric molecular crystal database"
+  ]
+}

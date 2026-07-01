@@ -1,0 +1,330 @@
+{
+    "metadata": {
+        "generated_on": "2026-07-01T07:10:34",
+        "total_crystals": 35,
+        "new": 0,
+        "updated": 0,
+        "unchanged": 35
+    },
+    "crystals": {
+        "PMC-001": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-002": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-003": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-004": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-005": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-006": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-007": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-008": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-009": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-010": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": false
+            }
+        },
+        "PMC-011": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-012": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-013": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-014": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-015": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-016": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-017": {
+            "status": "⚠️  WARNING",
+            "reason": "JSON file missing - cannot update"
+        },
+        "PMC-018": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-019": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-020": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-021": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-022": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-023": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-024": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-025": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-026": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-027": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-028": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-029": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-030": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-031": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-032": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-033": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-034": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-035": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        },
+        "PMC-036": {
+            "status": "OK",
+            "files": {
+                "json": true,
+                "pdf": true,
+                "cif": true,
+                "txt": true
+            }
+        }
+    }
+}

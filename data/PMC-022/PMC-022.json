@@ -1,0 +1,88 @@
+{
+  "id": "PMC-022",
+  "schema_version": "1.1",
+  "text": "Benzil (C14H10O2), chemical formula C14H10O2, molecular weight 242.23, is an organic non-linear optical (NLO) molecular crystal. It crystallizes in the non-centrosymmetric, chiral trigonal space group P3121 (No. 152), with unit cell a = b = 8.376 Å, c = 13.700 Å, γ = 120°, Z = 3. Benzil is a good NLO molecular crystal with first-order improper ferroelectric transition at 83.5 K and exhibits both NLO and piezoelectric properties. The crystal structure (CCDC 1108763) was originally determined by Brown and Sadanaga by single-crystal X-ray diffraction at 295 K with an R factor of 7.8% and a density of 1.258 g/cm³. Piezoelectric properties were experimentally demonstrated by Yadav et al. using Czochralski (Cz) and slow evaporation crystal growth techniques combined with direct piezoelectric measurements in CrystEngComm (2014). Benzil demonstrates measured piezoelectric d33 coefficients of 4, 1, 6, and 3 pC/N along different crystal planes with maximum value of 6 pC/N along [001] direction. The crystal exhibits π-π stacking interactions and hydrogen bonding networks contributing to its piezoelectric and optical properties, making it suitable for sensor, energy harvesting, and microwave antenna applications.",
+
+  "molecule_name": "Benzil",
+  "synonyms": ["benzil", "phenylglyoxal dimer", "diphenyl-1,2-ethanedione", "BENZIL"],
+  "chemical_formula": "C14H10O2",
+  "molecular_weight": 242.23,
+  "crystal_type": "Organic Molecular Crystal (Non-linear Optical)",
+  "component_count": 1,
+
+  "csd_refcode": "BENZIL",
+  "ccdc_number": 1108763,
+  "cif_file_name": "PMC-022-Benzil.cif",
+  "structure_doi": "10.1107/S0365110X65000403",
+  "deposition_date": "1965-01-01",
+
+  "crystal_system": "Trigonal",
+  "space_group_symbol": "P3121",
+  "space_group_number": 152,
+  "centrosymmetric": false,
+  "cell_a": 8.376,
+  "cell_b": 8.376,
+  "cell_c": 13.700,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.0,
+  "cell_gamma": 120.0,
+  "cell_volume": 832.386,
+  "cell_z": 3,
+  "cell_z_prime": 1,
+
+  "habit": "Transparent block",
+  "colour": "Colourless",
+  "density_g_cm3": 1.258,
+  "temperature_k": 295,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 7.8,
+  "cod_code": null,
+
+  "intermolecular_interactions": [
+    "π-π stacking (C···C and H···H interactions)",
+    "hydrogen bonding (H···O and O···H)",
+    "C-H···π interactions"
+  ],
+  "isostructural_analogues": [
+    "Benzil-doped stilbene",
+    "o-nitroaniline-doped benzil",
+    "Other aromatic diketones"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": true,
+  "is_pyroelectric": true,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Direct piezoelectric measurement using piezometer (PM 300 Piezotest) at tapping frequency of 110 Hz with tapping force 0.25 N on polycrystalline films grown by Czochralski (Cz) and slow evaporation techniques",
+  "computational_method": null,
+  "shear_qualitative": "Measured along multiple crystal planes",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "Measured with maximum response along [001] plane",
+  "longitudinal_value": 6,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": "Not computed",
+
+  "structure_ref_authors": [
+    "Brown, C.J.",
+    "Sadanaga, R."
+  ],
+  "structure_ref_journal": "Acta Crystallographica",
+  "structure_ref_year": 1965,
+  "structure_ref_volume": "18",
+  "structure_ref_doi": "10.1107/S0365110X65000403",
+
+  "property_ref_title": "Growth and characterization of piezoelectric benzil single crystals and its application in microstrip patch antenna",
+  "property_ref_journal": "CrystEngComm",
+  "property_ref_year": 2014,
+  "property_ref_doi": "10.1039/C4CE01846J",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true
+}

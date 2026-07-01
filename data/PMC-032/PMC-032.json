@@ -1,0 +1,233 @@
+{
+  "id": "PMC-032",
+  "schema_version": "1.1",
+  "text": "2-Bromo-3-hydroxypyridine (2-Br-pyridin-3-ol), chemical formula C5H4BrNO, molecular weight 174.00, is a single-component organic molecular crystal exhibiting large shear piezoelectric properties. It crystallizes in the non-centrosymmetric, polar orthorhombic space group Pna21 (No. 33), with unit cell a = 11.556 Å, b = 12.729 Å, c = 3.8875 Å, Z = 4. The crystal structure is sustained by both hydrogen bonding (O–H···N) and type II halogen–halogen (Br···Br) interactions; the non-centrosymmetric polar architecture is compatible with piezoelectricity. Discrete 2-bromo-3-hydroxypyridine molecules are linked by directional hydrogen bonds and halogen–halogen interactions, creating electromechanical anisotropy with high polarization along one crystallographic axis and mechanical flexibility along others. The crystal is isostructural with the iodo analogue (1I), demonstrating that halogen substitution modulates piezoelectric response while maintaining crystal packing geometry. The crystal structure (CCDC 279641, CSD refcode YELREN) was determined by single-crystal X-ray diffraction at 100 K with an R factor of 1.98% and a calculated density of 2.021 g/cm³. Density functional theory calculations predicted a giant shear piezoelectric coefficient d₁₅ = 70.55 pC/N, while experimental piezoresponse force microscopy (PFM) measurements confirmed effective shear piezoelectric responses of 54–74 pC/N and longitudinal coefficients (d₃₃) of 5–10 pC/N.",
+
+  "molecule_name": "2-Bromo-3-hydroxypyridine",
+  "synonyms": ["2-Br-pyridin-3-ol", "2-bromo-3-pyridinol", "1Br"],
+  "chemical_formula": "C5H4BrNO",
+  "molecular_weight": 174.00,
+  "crystal_type": "Organic Molecular Crystal",
+  "component_count": 1,
+
+  "csd_refcode": "YELREN",
+  "ccdc_number": 279641,
+  "cif_file_name": "PMC-032-2-Bromo-3-hydroxypyridine.cif",
+  "structure_doi": "10.5517/cc9czp9",
+  "deposition_date": "2005-07-27",
+
+  "crystal_system": "Orthorhombic",
+  "space_group_symbol": "Pna21",
+  "space_group_number": 33,
+  "centrosymmetric": false,
+  "cell_a": 11.556,
+  "cell_b": 12.729,
+  "cell_c": 3.8875,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.0,
+  "cell_gamma": 90.0,
+  "cell_volume": 571.83,
+  "cell_z": 4,
+  "cell_z_prime": 1,
+
+  "habit": "block",
+  "colour": "colorless",
+  "density_g_cm3": 2.021,
+  "temperature_k": 100,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 1.98,
+  "cod_code": null,
+
+  "intermolecular_interactions": ["hydrogen bonding", "halogen bonding"],
+  "isostructural_analogues": ["2-Iodo-3-hydroxypyridine (1I)"],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": true,
+  "experimental_method": "Piezoresponse force microscopy (PFM) - direct and converse piezoelectric measurements",
+  "computational_method": "Density functional theory (DFT) using VASP with periodic boundary conditions",
+  "shear_qualitative": "positive",
+  "shear_value": 70.55,
+  "shear_unit": "pC/N",
+  "longitudinal_qualitative": "positive",
+  "longitudinal_value": 5.0,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": "positive",
+
+  "structure_ref_authors": ["B. K. Saha", "A. Nangia", "J.-F. Nicoud"],
+  "structure_ref_journal": "Crystal Growth & Design",
+  "structure_ref_year": 2006,
+  "structure_ref_volume": null,
+  "structure_ref_doi": "10.1021/cg060117k",
+
+  "property_ref_title": "Halogen and hydrogen bonded 2-X-pyridin-3-ol (X = Cl, Br, I) organic crystals with large shear piezoelectricity",
+  "property_ref_journal": "Matter",
+  "property_ref_year": 2025,
+  "property_ref_doi": "10.1016/j.matt.2025.102098",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "dft_predictions": {
+    "d15_shear_pC_N": 70.55,
+    "d24_shear_pC_N": 6.61,
+    "d31_longitudinal_pC_N": 1.92,
+    "d32_longitudinal_pC_N": 5.03,
+    "d33_longitudinal_pC_N": 4.99,
+    "methodology": "VASP periodic DFT with PBE functional and DFPT for piezoelectric tensors",
+    "basis_set": "PAW pseudopotentials with 800 eV plane wave cutoff"
+  },
+
+  "experimental_pfm_measurements": {
+    "d33_longitudinal_pm_V": 5.7,
+    "shear_response_pm_V": 55.0,
+    "measurement_technique": "Piezoresponse force microscopy with NT-MDT HA_NC/W2S cantilever",
+    "cantilever_spring_constant_N_m": 12,
+    "calibration": "PFM calibrated against periodically poled lithium niobate (PPLN)",
+    "note_isostructural": "Near-identical response to isostructural 1I (d33=6.8 pm/V, shear=55 pm/V)"
+  },
+
+  "piezoelectric_tensor_comparison": {
+    "1Br_vs_ZnO": "d15 of 1Br (70.55 pC/N) ~6× higher than ZnO d15 (11.7 pC/N)",
+    "1Br_vs_gamma_glycine": "d15 of 1Br (70.55 pC/N) ~13× higher than γ-glycine d15 (5.33 pC/N)",
+    "1Br_in_halogen_series": "Middle member between 1Cl (d15=99.19 pC/N) and 1I (d15=40.17 pC/N)",
+    "trend_with_halogen_size": "Shear piezoelectricity decreases with increasing halogen size"
+  },
+
+  "bonding_and_crystal_structure": {
+    "hydrogen_bonding": {
+      "type": "O1–H1···N1 (pyridine N and hydroxyl O)",
+      "distance_angstrom": 2.676,
+      "donor_hydrogen_distance_angstrom": 2.07,
+      "angle_degrees": 151,
+      "pattern": "Chains running along crystallographic a-axis"
+    },
+    "halogen_bonding": {
+      "type": "Type II Br···Br interactions",
+      "distance_angstrom": 3.637,
+      "angle_degrees": 121.25,
+      "role": "Links anti-parallel hydrogen-bonded chains; sustains structure along b-axis"
+    },
+    "secondary_interactions": {
+      "type": "C–H···O and Br···π interactions",
+      "function": "Provide structural rigidity along specific crystallographic directions"
+    },
+    "crystal_packing": "Hydrogen-bonded chains stacked via π-interactions to form layers parallel to ac-plane"
+  },
+
+  "mechanical_properties_DFT": {
+    "elastic_stiffness_1Br": {
+      "C11_GPa": 62.61,
+      "C22_GPa": 24.23,
+      "C33_GPa": 11.22,
+      "C44_GPa": 3.84,
+      "C55_GPa": 0.87,
+      "C66_GPa": 3.48
+    },
+    "bulk_modulus_GPa": 13.04,
+    "young_modulus_GPa": 12.41,
+    "shear_modulus_GPa": 4.62,
+    "poisson_ratio": 0.34,
+    "anisotropy": "High C11 (strong along a-axis due to O–H···N bonds); very low C55 (soft along c-axis due to weak π-interactions)"
+  },
+
+  "dielectric_properties": {
+    "relative_permittivity_1Br": {
+      "e11": 4.08,
+      "e22": 3.66,
+      "e33": 2.73,
+      "average": 3.49
+    },
+    "piezoelectric_voltage_constant_g15_mV_m_N": 1740.84,
+    "voltage_generation_capability": "Energy-harvesting performance between 1Cl and 1I"
+  },
+
+  "isostructurality_and_halogen_series": {
+    "1Cl": {
+      "space_group": "Fdd2",
+      "predicted_d15": 99.19,
+      "measured_d15": 73.69,
+      "bonding": "Type I Cl···Cl interactions"
+    },
+    "1Br": {
+      "space_group": "Pna21",
+      "predicted_d15": 70.55,
+      "measured_d15": 55.6,
+      "bonding": "Type II Br···Br interactions",
+      "isostructural_with": "1I"
+    },
+    "1I": {
+      "space_group": "Pna21",
+      "predicted_d15": 40.17,
+      "measured_d15": 54.5,
+      "bonding": "Type II I···I interactions (strongest halogen bonding)",
+      "isostructural_with": "1Br"
+    },
+    "structure_and_symmetry": "1Br and 1I share Pna21 space group and isostructural crystal packing; 1Cl differs in space group (Fdd2) due to different halogen bonding geometry"
+  },
+
+  "design_principles": {
+    "achiral_molecule": "Small, simple, achiral pyridinol structure",
+    "non_centrosymmetric_requirement": "Halogen substitution at position 2 of 3-hydroxypyridine induces non-centrosymmetric crystal packing",
+    "orthogonal_bonding_axes": "O–H···N hydrogen bonds along a-axis; Br···Br halogen bonds along b-axis create directional anisotropy",
+    "flexibility_vs_rigidity_balance": "Strong bonding along a and b axes maintains high polarization; weak π-interactions along c-axis enable mechanical compliance and ionic displacement"
+  },
+
+  "comparative_performance": {
+    "vs_ZnO": "d33: 1Br measured 5.7 pC/N vs ZnO 9.9 pC/N (comparable); d15: 1Br 55.6 pC/N superior for shear",
+    "vs_gamma_glycine": "d33: 1Br 5.7 pC/N vs γ-glycine 10.0 pC/N (similar); d15: 1Br 55.6 pC/N far exceeds γ-glycine",
+    "in_halogen_series": "Bridging the performance gap between ultra-high shear (1Cl: d15=73.69 pC/N) and moderate shear (1I: d15=54.5 pC/N)",
+    "application_potential": "Excellent for shear-based sensing and energy harvesting applications"
+  },
+
+  "applications_and_sustainability": {
+    "advantages": [
+      "Lead-free alternative to PZT ceramics",
+      "Biodegradable and environmentally benign",
+      "Designed from bottom-up crystal engineering principles",
+      "Giant shear piezoelectric response suitable for sensing and actuation",
+      "Isostructural series enables systematic property tuning through halogenation"
+    ],
+    "use_cases": [
+      "Vibrational energy harvesting",
+      "Shear-stress sensors",
+      "Pressure and force transducers",
+      "Mechanical energy conversion",
+      "Composite piezoelectric enhancement",
+      "Medical device applications"
+    ]
+  },
+
+  "crystal_morphology": {
+    "BFDH_analysis": "Crystal faces (110), (1–10), (020), (0–20) show strong O–H···N and Br···Br interactions—resistant to deformation",
+    "compliant_faces": "Faces (011), (0–11) sustained by weaker π-interactions—prone to deformation under applied force",
+    "mechanical_implications": "Faces along weak bonding directions facilitate ionic displacement, enhancing piezoelectric output"
+  },
+
+  "additional_notes": [
+    "Orthorhombic space group Pna21 (No. 33) is non-centrosymmetric and polar, satisfying crystallographic requirement for piezoelectricity",
+    "YELREN crystal structure originally reported by Saha et al. (2006); piezoelectric properties experimentally validated 2025",
+    "R factor (all data) = 2.07%, R factor (gt) = 1.98%, wR factor = 5.07%—excellent refinement quality",
+    "Z = 4 molecules per unit cell; Z' = 1 molecule in asymmetric unit",
+    "Measurement temperature: 100 K (cryogenic, typical for high-resolution synchrotron studies); improved crystal stability",
+    "Isostructural with 1I (CCDC YELQUC) - same Pna21 space group and similar unit cell parameters",
+    "Predicted vs measured d15 correlation: excellent agreement with DFT predictions (slope = 1.1585, R² = 0.9499)",
+    "Type II Br···Br interactions (polarization-dependent) differ from Type I Cl···Cl in 1Cl, explaining different space groups",
+    "Halogen bonding geometry modulates piezoelectric response: Br···Br (type II) yield intermediate d15 between Cl···Cl (type I) and I···I (type II)",
+    "Crystal fragility necessitates PFM over traditional Berlincourt method",
+    "Experimental shear response (55 pm/V) slightly lower than 1Cl (73.69 pm/V) but higher than 1I (54.5 pm/V)",
+    "Density (2.021 g/cm³) among highest in organic piezoelectric crystals due to heavy bromine atom",
+    "Accessible from commercial sources (Sigma-Aldrich); readily crystallized from ethyl acetate solution",
+    "High absorption coefficient (μ = 7.074 cm⁻¹) due to bromine; multi-scan absorption correction applied",
+    "Non-halogenated 3-hydroxypyridine (1) shows zero piezoelectric response—confirms halogens essential for non-centrosymmetry",
+    "Demonstrates halogenation as powerful tool for crystal engineering and property modulation",
+    "Suitable for inclusion in database of experimentally verified high-performance organic piezoelectric molecular crystals"
+  ]
+}

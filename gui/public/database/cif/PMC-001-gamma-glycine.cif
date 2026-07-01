@@ -1,0 +1,69 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_GLYCIN18
+#This CIF has been generated from an entry in the Cambridge Structural Database
+_database_code_depnum_ccdc_archive 'CCDC 1169370'
+_database_code_CSD               GLYCIN18
+_audit_creation_method           'Created from the CSD'
+_audit_update_record             
+;
+2026-06-26 downloaded from the CCDC.
+;
+_database_code_NBS               576192
+_chemical_formula_moiety         'C2 H5 N1 O2'
+_chemical_name_systematic        \g-Glycine
+_diffrn_ambient_temperature      295
+_exptl_crystal_density_diffrn    1.592
+#These two values have been output from a single CSD field.
+_refine_ls_R_factor_gt           0.0229
+_refine_ls_wR_factor_gt          0.0229
+_diffrn_radiation_probe          x-ray
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_H-M   'P 31'
+_symmetry_Int_Tables_number      144
+_space_group_name_Hall           'P 31'
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -y,x-y,1/3+z
+3 -x+y,-x,2/3+z
+_cell_length_a                   7.037
+_cell_length_b                   7.037
+_cell_length_c                   5.478
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_volume                     234.924
+_cell_formula_units_Z            3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+C1 C -0.7314(1) -1.0889(1) -0.1256
+C2 C -0.7253(1) -1.0584(1) -0.4006(1)
+N1 N -0.5792(1) -0.8835(1) -0.0012(2)
+O1 O -0.8755(1) -1.2096(1) -0.5202(1)
+O2 O -0.5668(1) -0.8879(1) -0.4878(1)
+H1 H -0.6183(14) -0.7875(13) -0.0318(21)
+H2 H -0.5958(13) -0.9093(13) -0.1678(21)
+H3 H -0.8620(17) -1.1332(18) -0.0642(24)
+H4 H -0.6838(19) -1.1991(21) -0.0867(23)
+H5 H -0.4435(17) -0.8357(16) -0.0424(16)
+
+#END

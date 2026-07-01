@@ -1,0 +1,47 @@
+Crystal ID           : PMC-030
+
+CIF File Name        : PMC-030-2-Methyl-4-nitroaniline.cif
+CCDC ID              : 162581
+CSD REFCODE          : BAJCIY01
+Crystal Structure DOI: 10.5517/cc5g5kb
+Crystal Structure Reference :
+Ferguson, G.; Glidewell, C.; Low, J. N.; Skakle, J. M. S.; Wardell, J. L.
+Acta Crystallographica Section C: Crystal Structure Communications (2001)
+
+Molecule Name        : 2-Methyl-4-nitroaniline (MNA)
+Chemical Formula     : C7H8N2O2
+Crystal Type         : Organic Molecular Crystal
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental piezoelectric measurements were reported by Paturle, Graafsma, Sheu, Coppens, and Becker using single crystals of 2-methyl-4-nitroaniline.
+• The crystal exhibited a longitudinal piezoelectric coefficient (d33) of approximately 20 pC/N, making it one of the highest-performing small organic molecular piezoelectric crystals reported at the time.
+• The crystal crystallizes in the non-centrosymmetric monoclinic space group Ia (No. 9), an alternative setting of Cc (No. 9), which is crystallographically compatible with piezoelectricity.
+• The crystal consists exclusively of discrete 2-methyl-4-nitroaniline molecules held together by intermolecular interactions, confirming its molecular crystal nature.
+• BAJCIY01 is a refined redetermination of the same polymorph as BAJCIY, making it an appropriate crystal structure for representing the experimentally studied piezoelectric phase.
+
+Research Paper       :
+Experimental Charge Density in 2-Methyl-4-nitroaniline
+Physical Review B (1991)
+
+DOI                 : 10.1103/PhysRevB.43.14683
+
+Space Group         : Ia (No. 9) [Alternative setting of Cc (No. 9)]
+
+Crystal System      : Monoclinic
+
+Piezoelectric Coefficient :
+Longitudinal piezoelectric coefficient d33 ≈ 20 pC/N.
+
+Maximum Coefficient  :
+≈20 pC/N
+
+Notes               :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD Refcode: BAJCIY01.
+• CCDC Deposition Number: 162581.
+• Crystal structure redetermined by Ferguson et al. (Acta Crystallographica Section C, 2001).
+• BAJCIY01 is explicitly described in the CSD as the same polymorph as BAJCIY.
+• The deposited structure is a refined redetermination of the same molecular crystal polymorph investigated in the piezoelectric literature.
+• The material is a single-component organic molecular crystal.
+• The piezoelectric characterization is reported in Physical Review B (1991), while the refined crystal structure is provided by the 2001 CSD entry.

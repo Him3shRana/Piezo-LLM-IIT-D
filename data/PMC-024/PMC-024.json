@@ -1,0 +1,133 @@
+{
+  "id": "PMC-024",
+  "schema_version": "1.0",
+  "text": "Imidazolium Perchlorate - A molecular ferroelectric thin film on silicon substrate demonstrating high piezoelectric response",
+
+  "molecule_name": "Imidazolium Perchlorate",
+  "synonyms": ["ImClO4", "Imidazole Perchlorate"],
+  "chemical_formula": "C3H5N2ClO4",
+  "molecular_weight": 164.54,
+  "crystal_type": "Organic Molecular Salt Crystal",
+  "component_count": 2,
+
+  "csd_refcode": "YOCVAP01",
+  "ccdc_number": "981006",
+  "cif_file_name": "PMC-024-Imidazolium-Perchlorate.cif",
+  "structure_doi": "10.1002/anie.201400348",
+  "deposition_date": "2014-01-10",
+
+  "crystal_system": "Trigonal",
+  "space_group_symbol": "R3m",
+  "space_group_number": 160,
+  "centrosymmetric": false,
+  "cell_a": 8.1291,
+  "cell_b": 8.1291,
+  "cell_c": 8.6284,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.0,
+  "cell_gamma": 120.0,
+  "cell_volume": 493.79,
+  "cell_z": 1,
+  "cell_z_prime": 1.0,
+
+  "habit": "Transparent single crystals",
+  "colour": "Transparent",
+  "density_g_cm3": 1.901,
+  "temperature_k": 293,
+  "radiation": "MoK-alpha (0.71073 Angstrom)",
+  "experiment_type": "X-ray diffraction (single crystal)",
+  "r_factor_percent": 5.37,
+
+  "intermolecular_interactions": [
+    "Hydrogen bonding between imidazolium cations and perchlorate anions",
+    "Van der Waals interactions",
+    "Discrete ionic salt packing"
+  ],
+  "isostructural_analogues": [
+    "Perdeuteroimidazolium perchlorate (C3D5N2ClO4) - crystallographically equivalent"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": true,
+  "is_pyroelectric": true,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": true,
+  "experimental_method": "Piezoelectric force microscopy (PFM), Second harmonic generation (SHG), Polarization-electric field (P-E) measurements",
+  "computational_method": "Phase-field simulations using Ginzburg-Landau equations",
+  "shear_qualitative": "High piezoelectric response observed in thin films",
+  "shear_value": 55.7,
+  "shear_unit": "pm/V (inverse piezoelectric coefficient for thin film)",
+  "longitudinal_qualitative": "High direct piezoelectric coefficient",
+  "longitudinal_value": 15.2,
+  "longitudinal_unit": "pC/N (single crystal d33 at room temperature)",
+  "dft_shear_qualitative": "Phase-field simulations confirm domain switching mechanisms",
+
+  "structure_ref_authors": [
+    "Zhang, Y.",
+    "Liu, Y.",
+    "Ye, H.-Y.",
+    "Fu, D.-W.",
+    "Gao, W.",
+    "Ma, H.",
+    "Liu, Z.",
+    "Liu, Y.",
+    "Zhang, W.",
+    "Li, J.",
+    "Yuan, G.-L.",
+    "Xiong, R.-G."
+  ],
+  "structure_ref_journal": "Angewandte Chemie International Edition",
+  "structure_ref_year": 2014,
+  "structure_ref_volume": "53",
+  "structure_ref_doi": "10.1002/anie.201400348",
+
+  "property_ref_title": "A molecular ferroelectric thin film of imidazolium perchlorate on silicon",
+  "property_ref_journal": "Nature Communications",
+  "property_ref_year": 2024,
+  "property_ref_doi": "10.1038/s41467-024-52207-7",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "additional_properties": {
+    "curie_temperature_k": 372.0,
+    "spontaneous_polarization_uc_cm2": 1.81,
+    "coercive_field_kv_cm": 8.5,
+    "domain_structure": [
+      {
+        "type": "Type-I bands",
+        "orientation": "~60 degrees to horizontal",
+        "domain_walls": "180 degree and 71 degree",
+        "wall_type": "Curved charged domain walls"
+      },
+      {
+        "type": "Type-II bands",
+        "orientation": "Perpendicular to horizontal axis",
+        "domain_walls": "180 degree and 109 degree",
+        "wall_type": "Straight non-charged domain walls"
+      }
+    ],
+    "thin_film_preparation": "Sol-gel spin-coating with sodium alginate assistance",
+    "thin_film_orientation": "(110)-oriented on Si substrate",
+    "thin_film_thickness_um": 1.0,
+    "crystal_size_cm": [1.2, 0.8, 0.4],
+    "ferroelectric_phase_transition": "First-order transition",
+    "dielectric_permittivity_1kHz": 119.86,
+    "dielectric_permittivity_1MHz": 31.3
+  },
+
+  "notes": [
+    "Experimental crystal structure obtained from the Cambridge Structural Database (CSD)",
+    "Deposited CIF corresponds to perdeuteroimidazolium perchlorate (C3D5N2ClO4), crystallographically equivalent to hydrogen analogue",
+    "2024 Nature Communications paper experimentally characterizes ferroelectric and piezoelectric properties without depositing new crystal structure",
+    "2014 CSD structure (YOCVAP01) is appropriate crystallographic reference for material used in piezoelectric study",
+    "Crystal is non-centrosymmetric (R3m, No. 160), crystallographically compatible with piezoelectricity",
+    "Organic molecular salt composed of discrete imidazolium cations and perchlorate anions",
+    "Single crystals synthesized using facile solution-evaporation method",
+    "High-quality highly-oriented thin films grown on Si substrates using SA-assisted spin-coating"
+  ]
+}

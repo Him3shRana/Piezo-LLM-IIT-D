@@ -1,0 +1,127 @@
+{
+  "id": "PMC-028",
+  "schema_version": "1.1",
+  "text": "L-Methionine, chemical formula C5H11NO2S, molecular weight 149.21, is a single-component amino acid organic molecular crystal. It crystallizes in the non-centrosymmetric, polar monoclinic space group P21 (No. 4), with unit cell a = 9.512 Å, b = 5.209 Å, c = 14.858 Å, β = 99.703°, Z = 4. Molecules are connected by hydrogen bonding interactions; the non-centrosymmetric polar structure is compatible with piezoelectric properties. The crystal structure (CCDC 276855, CSD refcode LMETON11) was determined by single-crystal X-ray diffraction at 258 K with an R factor of 5.29% and a calculated density of 1.366 g/cm³. Recent experimental studies have demonstrated piezoelectric behavior in L-methionine crystals using piezoelectric nanogenerator devices. Sublimated polycrystalline films of L-Methionine show enhanced piezoelectric performance with oriented crystal growth along the b-axis, achieving a maximum piezoelectric response of 6.57 pC/N and voltage outputs exceeding 8 V. The crystals exhibit low cross-sample variability and reproducible behavior, making them suitable for piezoelectric sensing and energy harvesting applications.",
+
+  "molecule_name": "L-Methionine",
+  "synonyms": ["L-Met", "Methionine", "2-amino-4-methylthiobutanoic acid"],
+  "chemical_formula": "C5H11NO2S",
+  "molecular_weight": 149.21,
+  "crystal_type": "Organic Molecular Crystal",
+  "component_count": 1,
+
+  "csd_refcode": "LMETON11",
+  "ccdc_number": 276855,
+  "cif_file_name": "PMC-028-_L-Methionine.cif",
+  "structure_doi": "10.5517/cc992tg",
+  "deposition_date": "2005-06-24",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "P21",
+  "space_group_number": 4,
+  "centrosymmetric": false,
+  "cell_a": 9.512,
+  "cell_b": 5.209,
+  "cell_c": 14.858,
+  "cell_alpha": 90.0,
+  "cell_beta": 99.703,
+  "cell_gamma": 90.0,
+  "cell_volume": 725.68,
+  "cell_z": 4,
+  "cell_z_prime": 1,
+
+  "habit": "plate",
+  "colour": "colourless",
+  "density_g_cm3": 1.366,
+  "temperature_k": 258,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 5.29,
+  "cod_code": null,
+
+  "intermolecular_interactions": ["hydrogen bonding"],
+  "isostructural_analogues": ["L-Valine", "L-Leucine"],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": null,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Piezoelectric measurements on sublimated films",
+  "computational_method": null,
+  "shear_qualitative": null,
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "positive",
+  "longitudinal_value": 6.57,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": ["P. Sadler", "S. Bihari", "S. Parsons", "D. Messenger"],
+  "structure_ref_journal": "CSD Communication",
+  "structure_ref_year": 2005,
+  "structure_ref_volume": null,
+  "structure_ref_doi": "10.5517/cc992tg",
+
+  "property_ref_title": "Sublimation of orientated amino acid films for reliable, amplified piezoelectric performance",
+  "property_ref_journal": "Nature Communications / Research Publication",
+  "property_ref_year": 2024,
+  "property_ref_doi": null,
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "piezoelectric_measurements": {
+    "d33_max_pC_N": 6.57,
+    "d33_min_pC_N": 3.31,
+    "d33_average_pC_N": 5.43,
+    "voltage_max_V": 8.4,
+    "voltage_min_V": 1.4,
+    "measurement_method": "Commercial PiezoTest d33 meter",
+    "measurement_accuracy": "±0.01 pC/N"
+  },
+
+  "sublimation_parameters": {
+    "optimal_temperature_C": 160,
+    "optimal_time_hrs": 12,
+    "mass_gain_mg": 6,
+    "elastic_modulus_GPa": {
+      "min": 1.3,
+      "max": 14.1
+    },
+    "film_morphology": "uniformly oriented crystals along b-axis",
+    "repetitivity": "high - low standard deviation across samples"
+  },
+
+  "crystal_orientation": {
+    "preferred_axis": "b-axis",
+    "growth_direction": "hydrogen bond driven",
+    "tensor_component": "d22"
+  },
+
+  "mechanical_properties": {
+    "stress_strain_response": "near-continuous linear response up to 100% strain",
+    "flexibility": "adjustable by controlling sublimation temperature and time"
+  },
+
+  "energy_harvesting_capability": {
+    "output_voltage": "1.46 ± 0.13 V",
+    "sample_reproducibility": "high",
+    "applications": ["medical devices", "energy harvesting", "piezoelectric sensing"]
+  },
+
+  "additional_notes": [
+    "Non-centrosymmetric polar monoclinic space group (P21) is crystallographically compatible with piezoelectricity",
+    "Sublimated films exceed performance of single crystals in some conditions",
+    "Low cross-sample variability compared to conventional solution-based crystallization",
+    "Crystal structure consists of discrete neutral L-methionine molecules held together by hydrogen bonding",
+    "Experimental studies have demonstrated piezoelectric energy harvesting using L-methionine crystals in nanogenerator devices",
+    "Oriented L-methionine thin films show enhanced piezoelectric performance",
+    "Sublimation is a solvent-free 'green' alternative suitable for industrial scale-up",
+    "Natural self-assembly results in crystals oriented perpendicular to growth substrate, maximizing piezoelectric output"
+  ]
+}

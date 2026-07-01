@@ -1,0 +1,161 @@
+==========================================
+PMC-037 : N-Acetyl-L-Tryptophan
+==========================================
+
+Crystal ID
+----------
+PMC-037
+
+Crystal Name
+------------
+N-Acetyl-L-Tryptophan
+
+Synonyms
+--------
+L-AcW
+N-Acetyl-L-tryptophan
+acetylated tryptophan
+(2S)-2-acetamido-3-(1H-indol-3-yl)propanoic acid
+
+Chemical Formula
+----------------
+C13H14N2O3
+
+Molecular Weight
+----------------
+246.26 g/mol
+
+Crystal Category
+----------------
+Pure Molecular Crystal
+Acetylated Amino Acid Molecular Crystal (aromatic)
+
+Crystal System
+--------------
+Orthorhombic
+
+Space Group
+-----------
+P212121 (No. 19)
+
+CSD Refcode
+-----------
+ACLTRY
+
+CCDC Number
+-----------
+1100754
+
+Unit Cell Parameters
+--------------------
+a = 7.470(1) Å
+b = 25.912(4) Å
+c = 6.247(1) Å
+
+α = 90°
+β = 90°
+γ = 90°
+
+Cell Volume
+-----------
+1209.19 Å³
+
+Z Value
+-------
+4
+
+Z'
+--
+1
+
+Crystal Habit
+-------------
+Needle-like (needles 20-70 µm in width)
+
+Crystal Colour
+--------------
+Colorless
+
+Calculated Density
+------------------
+1.353 g/cm³
+
+Experimental Method
+-------------------
+Single Crystal X-ray Diffraction
+
+Temperature
+-----------
+295 K
+
+Radiation
+---------
+X-ray
+
+R-factor
+--------
+6.0 %
+
+Structure Determination
+-----------------------
+T. Yamane
+T. Andou
+T. Ashida
+
+Primary Crystal Structure Publication
+-------------------------------------
+Yamane, T.; Andou, T.; Ashida, T.
+
+Acta Crystallographica Section B
+1977
+Volume 33
+Pages 1650-1653
+
+DOI:
+10.1107/S0567740877006815
+
+Piezoelectric Status
+--------------------
+Piezoelectric
+
+Symmetry Compatibility
+----------------------
+Compatible (non-centrosymmetric, chiral space group P212121)
+
+Evidence
+--------
+DFT-predicted and experimentally validated piezoelectric response
+reported for N-Acetyl-L-Tryptophan (L-AcW) crystals in:
+
+DOI:
+10.1021/jacs.3c02993
+
+Piezoelectric Properties (from property reference)
+--------------------------------------------------
+Method (computational)   : Density Functional Theory (DFT)
+Method (experimental)    : Piezoelectric nanogenerator (open-circuit voltage)
+Max piezoelectric strain : d25 = 47.3 pm/V  (shear; highest among 15 crystals)
+Piezoelectric voltage    : g25 = 1719 mV m/N
+Dielectric constant      : εr = 2.94
+Young's modulus          : 4.7 GPa
+Device output            : open-circuit voltage > 1.4 V (up to 1.46 V at 52 N);
+                           powered illumination of an LED
+
+Remarks
+-------
+The CIF corresponds to the pure N-Acetyl-L-Tryptophan crystal
+(historical single-crystal structure, refcode ACLTRY, 1977).
+In the piezoelectric study (JACS 2023), L-AcW was reported to adopt
+the same packing as this previously reported structure (identical
+PXRD patterns) and was identified as the highest-performing acetylated
+amino acid crystal, whose nanogenerator directly powered an LED.
+This crystal structure is the appropriate reference CIF for the
+pure material.
+
+Database Status
+---------------
+Included
+
+Last Updated
+------------
+1 July 2026

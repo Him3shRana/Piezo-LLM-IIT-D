@@ -1,0 +1,126 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_ARGHCL10
+#This CIF has been generated from an entry in the Cambridge Structural Database
+_database_code_depnum_ccdc_archive 'CCDC 1103560'
+_database_code_CSD               ARGHCL10
+loop_
+_citation_id
+_citation_doi
+_citation_year
+1 10.1107/S0567740870004697 1970
+_audit_creation_method           'Created from the CSD'
+_audit_update_record             
+;
+2026-06-27 downloaded from the CCDC.
+;
+_database_code_NBS               501981
+_chemical_formula_moiety         'C6 H15 N4 O2 1+,Cl1 1-,H2 O1'
+_chemical_name_systematic        'L-Arginine hydrochloride monohydrate'
+_chemical_absolute_configuration unk
+_diffrn_ambient_temperature      295
+_exptl_crystal_density_diffrn    1.44647
+#These two values have been output from a single CSD field.
+_refine_ls_R_factor_gt           0.033
+_refine_ls_wR_factor_gt          0.033
+_diffrn_radiation_probe          x-ray
+_symmetry_cell_setting           monoclinic
+_symmetry_space_group_name_H-M   'P 21'
+_symmetry_Int_Tables_number      4
+_space_group_name_Hall           'P 2yb'
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,1/2+y,-z
+_cell_length_a                   11.044(2)
+_cell_length_b                   8.481(1)
+_cell_length_c                   11.214(2)
+_cell_angle_alpha                90
+_cell_angle_beta                 91.31(1)
+_cell_angle_gamma                90
+_cell_volume                     1050.08
+_cell_formula_units_Z            4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Cl1 Cl 0.16061 -0.24266 -0.13112
+Cl2 Cl 0.13138 0.10463 0.36241
+C1 C -0.42123 0.43397 0.42981
+C5 C -0.47575 0.42437 0.55514
+C6 C -0.61224 0.44430 0.54862
+C7 C -0.67273 0.43032 0.67008
+C8 C -0.80791 0.40616 0.65116
+C9 C -0.88428 0.25673 0.82191
+H1 H -0.33200 0.56400 0.61700
+H2 H -0.82900 0.30400 0.60000
+H3 H -0.90500 0.44500 0.78300
+H4 H -0.78100 0.13500 0.73400
+H5 H -0.84800 0.03700 0.82000
+H6 H -1.00500 0.33200 0.92100
+H7 H -0.94500 0.17600 0.96600
+H12 H -0.41200 0.51100 0.71300
+H23 H -0.46400 0.63800 0.63300
+H29 H -0.45600 0.31800 0.59200
+H30 H -0.63400 0.55200 0.50900
+H31 H -0.64100 0.36300 0.49900
+H32 H -0.65900 0.51500 0.71700
+H33 H -0.63800 0.33600 0.71400
+H34 H -0.84600 0.48800 0.60900
+N1 N -0.41708 0.54346 0.63526
+N2 N -0.87289 0.38969 0.76163
+N3 N -0.81973 0.13017 0.79442
+N4 N -0.95964 0.24939 0.91205
+O1 O -0.34910 0.54125 0.40903
+O2 O -0.45684 0.32939 0.35765
+C2 C -0.68443 0.38601 0.15751
+C3 C -0.81034 0.45648 0.14746
+C4 C -0.86647 0.61279 0.32316
+C10 C -0.44146 0.33536 -0.08595
+C11 C -0.49460 0.32535 0.03959
+C12 C -0.62663 0.37687 0.03555
+H10 H -0.34100 0.41000 0.11100
+H11 H -0.43500 0.39800 0.20500
+H13 H -0.44600 0.52400 0.11100
+H14 H -0.48800 0.22200 0.07000
+H15 H -0.62900 0.48000 -0.00900
+H16 H -0.67200 0.30400 -0.01100
+H17 H -0.63500 0.45200 0.21800
+H18 H -0.68300 0.28700 0.19600
+H19 H -0.79900 0.54600 0.11100
+H20 H -0.86300 0.38700 0.09900
+H21 H -0.90900 0.39900 0.28400
+H22 H -0.74100 0.71600 0.25600
+H24 H -0.81500 0.81800 0.31200
+H25 H -0.99000 0.56200 0.42500
+H26 H -0.93200 0.69900 0.46400
+N5 N -0.42174 0.42518 0.12437
+N6 N -0.86619 0.47946 0.26285
+N7 N -0.79472 0.73265 0.29656
+N8 N -0.94043 0.62803 0.41391
+O4 O -0.38657 0.45851 -0.11315
+O5 O -0.46206 0.22103 -0.15332
+H8 H 0.13200 -0.18500 -0.33800
+H9 H 0.17300 -0.08200 -0.42300
+O3 O 0.11956 -0.14311 -0.40430
+H27 H 0.12000 0.05600 0.16100
+H28 H 0.17700 0.00100 0.08200
+O6 O 0.12423 0.02641 0.09134
+
+#END

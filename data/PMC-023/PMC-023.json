@@ -1,0 +1,96 @@
+{
+  "id": "PMC-023",
+  "schema_version": "1.1",
+  "text": "Rochelle salt (potassium sodium tartrate tetrahydrate, KNaC4H4O6·4H2O), chemical formula KNaC4H4O6·4H2O, molecular weight 282.18, is an organic molecular salt crystal (hydrated). It crystallizes in the non-centrosymmetric, chiral monoclinic space group P21 (No. 4), with unit cell a = 11.869 Å, b = 14.316 Å, c = 6.223 Å, β = 89.26°, Z = 4. Rochelle salt is one of the earliest known molecular crystals exhibiting both piezoelectricity and ferroelectricity, with a first-order ferroelectric transition. The crystal structure (CCDC 1198211) was determined by Solans, Gonzalez-Silgo, and Ruiz-Perez by single-crystal X-ray diffraction at 274 K with an R factor of 7.2% and a density of 1.773 g/cm³. Piezoelectric properties were experimentally demonstrated by W. P. Mason at Bell Telephone Laboratories (Physical Review, 1939), establishing quantitative values for elastic, dielectric, and piezoelectric constants using dynamic resonance measurements. Rochelle salt demonstrates measured piezoelectric d constants with temperature-dependent behavior and exhibits significant electromechanical coupling, making it historically important as a model material for piezoelectric resonators and transducers.",
+
+  "molecule_name": "Rochelle Salt",
+  "synonyms": ["Rochelle salt", "potassium sodium tartrate tetrahydrate", "KNaC4H4O6·4H2O", "tartaric acid potassium sodium salt tetrahydrate", "KNATAR05"],
+  "chemical_formula": "KNaC4H4O6·4H2O",
+  "molecular_weight": 282.18,
+  "crystal_type": "Organic Molecular Salt Crystal (Hydrated)",
+  "component_count": 3,
+
+  "csd_refcode": "KNATAR05",
+  "ccdc_number": 1198211,
+  "cif_file_name": "PMC-023-Rochelle-Salt.cif",
+  "structure_doi": "10.1006/jssc.1997.7394",
+  "deposition_date": "1997-01-01",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "P21",
+  "space_group_number": 4,
+  "centrosymmetric": false,
+  "cell_a": 11.869,
+  "cell_b": 14.316,
+  "cell_c": 6.223,
+  "cell_alpha": 90.0,
+  "cell_beta": 89.26,
+  "cell_gamma": 90.0,
+  "cell_volume": 1057.3,
+  "cell_z": 4,
+  "cell_z_prime": 2,
+
+  "habit": "Transparent prism",
+  "colour": "Colourless",
+  "density_g_cm3": 1.773,
+  "temperature_k": 274,
+  "radiation": "X-ray",
+  "experiment_type": "Single Crystal X-ray Diffraction",
+  "r_factor_percent": 7.2,
+  "cod_code": null,
+
+  "intermolecular_interactions": [
+    "Hydrogen bonding (water-mediated)",
+    "Ionic interactions (K+, Na+ with tartrate)",
+    "Coordination bonds (metal-ligand)"
+  ],
+  "isostructural_analogues": [
+    "Potassium sodium tartrate monohydrate",
+    "Ammonium sodium tartrate tetrahydrate",
+    "Other tartrate salts"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": true,
+  "is_pyroelectric": true,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Dynamic measurement of elastic and piezoelectric constants using resonant frequencies and impedance of vibrating crystals at low field strengths (below 40 V/cm). Longitudinal and shear vibrations measured electrically.",
+  "computational_method": null,
+  "shear_qualitative": "Measured along crystallographic axes",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "Temperature-dependent measurements showing significant variation through Curie transition",
+  "longitudinal_value": null,
+  "longitudinal_unit": null,
+  "dft_shear_qualitative": "Not computed",
+
+  "structure_ref_authors": [
+    "Solans, X.",
+    "Gonzalez-Silgo, C.",
+    "Ruiz-Perez, C."
+  ],
+  "structure_ref_journal": "Journal of Solid State Chemistry",
+  "structure_ref_year": 1997,
+  "structure_ref_volume": "132",
+  "structure_ref_doi": "10.1006/jssc.1997.7394",
+
+  "property_ref_title": "A Dynamic Measurement of the Elastic, Electric and Piezoelectric Constants of Rochelle Salt",
+  "property_ref_journal": "Physical Review",
+  "property_ref_year": 1939,
+  "property_ref_doi": "10.1103/PhysRev.55.775",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+
+  "historical_significance": "Rochelle salt is one of the first materials discovered to exhibit piezoelectricity (Coulomb, 1881) and ferroelectricity. Mason's 1939 work established the foundations of dynamic piezoelectric theory, demonstrating that measured resonant frequencies differ significantly from static predictions due to electromechanical coupling. The work showed that piezoelectric stress is proportional to charge density on electrodes rather than applied potential gradient, introducing novel theoretical framework for piezoelectric resonators.",
+
+  "curie_temperature_k": 255,
+  "transition_type": "First-order improper ferroelectric transition",
+  "electromechanical_coupling": "Large (highly coupled crystal)",
+  "key_results": "Nine elastic constants, three piezoelectric constants, and three dielectric constants experimentally determined. Dynamic constants show significant differences from static measurements attributed to finite relaxation time. d14 shows maximum near Curie point. Demonstrated 70% optimal plating for crystal efficiency."
+}

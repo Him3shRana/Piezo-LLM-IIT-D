@@ -1,0 +1,320 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_sx1034_structure_1_of_1
+_audit_block_doi                 10.5517/cc4br7f
+_database_code_depnum_ccdc_archive 'CCDC 129494'
+loop_
+_citation_id
+_citation_doi
+_citation_year
+1 10.1107/S0108270197011414 1997
+_audit_update_record             
+;
+1999-07-02 deposited with the CCDC.	2026-06-28 downloaded from the CCDC.
+;
+#data_1
+
+
+
+_chemical_compound_source        'Aldrich Chemical Co.'
+_chemical_name_common            L-threonine
+_chemical_formula_iupac          C4H9NO3
+_chemical_formula_moiety         CH3CH(OH)CH(NH2)COOH
+_chemical_formula_structural     'see scheme (I)'
+_chemical_formula_sum            'C4 H9 N O3'
+_chemical_formula_weight         119.12
+
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_oxidation_number
+_atom_type_number_in_cell
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C ? 0 16 .002014 .002014 Int._Tables_Vol_IV_Tables_2.2B_and_2.3.1
+H ? 0 36 0 0 Int._Tables_Vol_IV_Tables_2.2B_and_2.3.1
+O ? 0 12 .007996 .005981 Int._Tables_Vol_IV_Tables_2.2B_and_2.3.1
+N ? 0 4 .004028 .002991 Int._Tables_Vol_IV_Tables_2.2B_and_2.3.1
+
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_H-M   'P 21 21 21'
+_symmetry_space_group_name_Hall  'P 2ac 2ab'
+loop_
+_symmetry_equiv_pos_as_xyz
+'  +x,+y,+z  '
+' 1/2-x,-y,1/2+z  '
+' 1/2+x,1/2-y,-z  '
+' -x,1/2+y,1/2-z  '
+
+_cell_length_a                   13.628(2)
+_cell_length_b                   7.618(1)
+_cell_length_c                   5.110(1)
+_cell_angle_alpha                90.00(1)
+_cell_angle_beta                 90.00(1)
+_cell_angle_gamma                90.00(1)
+_cell_volume                     530.5(1)
+_cell_formula_units_Z            4
+_cell_measurement_temperature    12
+_cell_measurement_reflns_used    30
+_cell_measurement_theta_min      15
+_cell_measurement_theta_max      30
+
+_exptl_crystal_description       prism
+_exptl_crystal_colour            colourless
+_exptl_crystal_size_max          0.58
+_exptl_crystal_size_mid          0.36
+_exptl_crystal_size_min          0.33
+_exptl_crystal_density_diffrn    1.491
+_exptl_crystal_density_meas      1.45
+_exptl_crystal_density_method    
+;
+floation in C~6~H~6~/CCl~4~ at room
+temperature
+;
+_exptl_crystal_F_000             256
+
+_exptl_absorpt_process_details   none
+_exptl_absorpt_coefficient_mu    0.077
+_exptl_absorpt_correction_type   none
+_exptl_absorpt_correction_T_min  ?
+_exptl_absorpt_correction_T_max  ?
+_diffrn_ambient_temperature      12
+_diffrn_radiation_wavelength     0.5609
+_diffrn_radiation_type           AgK\a_(X-ray_tube)
+_diffrn_radiation_source         Ag
+_diffrn_measurement_device       'Stoe AED or Huber 4-circle?'
+_diffrn_radiation_monochromator  Pd-filter
+_diffrn_measurement_method       '\w--2\q scans'
+
+_diffrn_standards_number         3
+_diffrn_standards_interval_time  90
+_diffrn_standards_decay_%        0.9
+_diffrn_reflns_number            2141
+_diffrn_reflns_av_R_equivalents  .021
+_diffrn_reflns_av_sigmaI/netI    .031
+_diffrn_reflns_limit_h_min       -20
+_diffrn_reflns_limit_h_max       0
+_diffrn_reflns_limit_k_min       -11
+_diffrn_reflns_limit_k_max       11
+_diffrn_reflns_limit_l_min       0
+_diffrn_reflns_limit_l_max       7
+_diffrn_reflns_theta_min         2.5
+_diffrn_reflns_theta_max         25.0
+_diffrn_reflns_reduction_process 'Stoe AED diffractometer software'
+_reflns_number_total             1132
+_reflns_number_observed          1066
+_reflns_observed_criterion       >2sigma(F)
+
+_computing_data_collection       'Huber 4-circle diffractometer software(?)'
+_computing_cell_refinement       'Stoe AED diffractometer software(?)'
+_computing_data_reduction        'Stoe AED diffractometer software(?)'
+_computing_structure_solution    'xtal3.2 (Hall, Flack & Stewart, 1992)'
+_computing_structure_refinement  xtal3.2_CRYLSQ
+_computing_molecular_graphics    
+;
+ORTEPII (Johnson, 1971), SCHAKAL92 (Keller, 1992)
+;
+_computing_publication_material  xtal3.2_BONDLA_CIFIO
+_cell_special_details            
+;
+The lattice parameters were refined using Ag K\a~1~ (\l=0.55942\%A)
+;
+_refine_ls_structure_factor_coef F
+_refine_ls_matrix_type           full
+_refine_ls_weighting_scheme      sigma
+_refine_ls_hydrogen_treatment    H-isotropic
+_refine_ls_extinction_method     none
+_refine_ls_abs_structure_details 'Flack (1983) parameter = 0.0(1)'
+_refine_ls_abs_structure_Flack   0.0(1)
+_refine_ls_number_reflns         1066
+_refine_ls_number_parameters     109
+_refine_ls_number_restraints     0
+_refine_ls_number_constraints    0
+_refine_ls_R_factor_all          .034
+_refine_ls_R_factor_obs          .026
+_refine_ls_wR_factor_all         .063
+_refine_ls_wR_factor_obs         .030
+_refine_ls_goodness_of_fit_all   5.856
+_refine_ls_goodness_of_fit_obs   2.866
+_refine_ls_shift/esd_max         .00276
+_refine_ls_shift/esd_mean        .00036
+_refine_diff_density_min         -.336
+_refine_diff_density_max         .406
+
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_thermal_displace_type
+C1 .49723(7) .1780(2) .3011(2) .0047(4) Uani
+C2 .39881(7) .1014(2) .3943(2) .0041(4) Uani
+C3 .31954(6) .2421(2) .4281(2) .0051(4) Uani
+C4 .29324(7) .3347(2) .1741(2) .0078(4) Uani
+N1 .41238(6) .0079(2) .6482(2) .0051(4) Uani
+O1 .55951(5) .2099(2) .4745(2) .0070(3) Uani
+O2 .50549(5) .2032(1) .0591(1) .0069(3) Uani
+O3 .23687(5) .1472(1) .5280(2) .0064(3) Uani
+H1 .446(1) .066(4) .758(4) .013(5) Uiso
+H2 .354(1) -.014(4) .722(3) .009(4) Uiso
+H3 .444(1) -.083(3) .613(4) .009(4) Uiso
+H4 .376(1) .016(4) .273(4) .012(4) Uiso
+H5 .341(1) .328(4) .545(4) .014(4) Uiso
+H6 .188(1) .224(4) .541(4) .017(5) Uiso
+H7 .237(1) .395(3) .201(4) .014(4) Uiso
+H8 .348(1) .425(4) .109(4) .015(5) Uiso
+H9 .279(1) .242(4) .042(4) .014(4) Uiso
+
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+C1 .0043(3) .0038(5) .0060(4) .0000(3) .0005(3) -.0007(4)
+C2 .0045(3) .0047(5) .0032(3) -.0005(4) .0002(3) .0005(4)
+C3 .0045(3) .0047(5) .0061(4) -.0004(3) .0001(3) -.0004(4)
+C4 .0076(3) .0080(6) .0077(4) .0012(4) .0003(3) .0030(4)
+N1 .0053(3) .0052(5) .0050(4) .0005(3) .0001(3) .0016(4)
+O1 .0057(3) .0092(4) .0061(3) -.0016(3) -.0010(2) -.0005(3)
+O2 .0078(3) .0078(4) .0052(3) -.0024(3) .0009(2) .0008(3)
+O3 .0034(2) .0068(4) .0090(3) .0004(3) .0017(2) .0021(3)
+
+
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_publ_flag
+C1 C2 1.538(1) yes
+C1 O1 1.251(1) yes
+C1 O2 1.257(1) yes
+C2 C3 1.532(2) yes
+C2 N1 1.491(2) yes
+C2 H4 0.95(2) yes
+C3 C4 1.520(2) yes
+C3 O3 1.433(1) yes
+C3 H5 0.93(3) yes
+C4 H7 0.91(2) yes
+C4 H8 1.07(2) yes
+C4 H9 1.00(2) yes
+N1 H1 0.85(2) yes
+N1 H2 0.90(2) yes
+N1 H3 0.84(2) yes
+O3 H6 0.89(2) yes
+
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_publ_flag
+C2 C1 O1 116.51(9) yes
+C2 C1 O2 116.15(9) yes
+O1 C1 O2 127.3(1) yes
+C1 C2 C3 112.6(1) yes
+C1 C2 N1 110.01(8) yes
+C1 C2 H4 110(1) yes
+C3 C2 N1 108.88(8) yes
+C3 C2 H4 108(1) yes
+N1 C2 H4 106(1) yes
+C2 C3 C4 113.24(9) yes
+C2 C3 O3 104.0(1) yes
+C2 C3 H5 110(1) yes
+C4 C3 O3 110.68(8) yes
+C4 C3 H5 107(2) yes
+O3 C3 H5 112(1) yes
+C3 C4 H7 108(1) yes
+C3 C4 H8 113(1) yes
+C3 C4 H9 107(1) yes
+H7 C4 H8 109(2) yes
+H7 C4 H9 107(2) yes
+H8 C4 H9 113(2) yes
+C2 N1 H1 113(2) yes
+C2 N1 H2 110(1) yes
+C2 N1 H3 106(1) yes
+H1 N1 H2 107(2) yes
+H1 N1 H3 107(2) yes
+H2 N1 H3 114(2) yes
+C3 O3 H6 107(2) yes
+
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_publ_flag
+O1 C1 C2 C3 96.3(1) yes
+O1 C1 C2 N1 -25.3(2) yes
+O1 C1 C2 H4 -142(1) no
+O2 C1 C2 C3 -82.9(1) yes
+O2 C1 C2 N1 155.5(1) yes
+O2 C1 C2 H4 38(1) no
+C1 C2 C3 C4 62.9(1) yes
+C1 C2 C3 O3 -176.91(8) yes
+C1 C2 C3 H5 -57(1) no
+N1 C2 C3 C4 -174.82(9) yes
+N1 C2 C3 O3 -54.6(1) yes
+N1 C2 C3 H5 65(1) no
+H4 C2 C3 C4 -60(1) no
+H4 C2 C3 O3 61(1) no
+H4 C2 C3 H5 -179(2) no
+C1 C2 N1 H1 46(1) no
+C1 C2 N1 H2 166(2) no
+C1 C2 N1 H3 -70(1) no
+C3 C2 N1 H1 -78(1) no
+C3 C2 N1 H2 43(2) no
+C3 C2 N1 H3 166(1) no
+H4 C2 N1 H1 165(2) no
+H4 C2 N1 H2 -74(2) no
+H4 C2 N1 H3 49(2) no
+C2 C3 C4 H7 166(2) no
+C2 C3 C4 H8 -74(1) no
+C2 C3 C4 H9 51(1) no
+O3 C3 C4 H7 50(2) no
+O3 C3 C4 H8 170(1) no
+O3 C3 C4 H9 -65(1) no
+H5 C3 C4 H7 -73(2) no
+H5 C3 C4 H8 48(2) no
+H5 C3 C4 H9 173(2) no
+C2 C3 O3 H6 -177(1) no
+C4 C3 O3 H6 -55(1) no
+H5 C3 O3 H6 65(2) no
+loop_
+_geom_bond_atom_site_label_D
+_geom_bond_atom_site_label_H
+_geom_contact_atom_site_label_A
+_geom_bond_distance_DH
+_geom_contact_distance_HA
+_geom_contact_distance_DA
+_geom_angle_DHA
+_geom_contact_site_symmetry_A
+#
+#
+N1 H1 O2 0.85(2) 2.03(2) 2.869(1) 170(2) 1_556
+N1 H2 O3 0.90(2) 2.23(2) 3.050(1) 150(2) 2_555
+N1 H3 O2 0.84(2) 1.97(2) 2.786(2) 163(2) 4_645
+O3 H6 O1 0.89(2) 1.82(2) 2.651(1) 154(3) 3_456
+
+
+
+

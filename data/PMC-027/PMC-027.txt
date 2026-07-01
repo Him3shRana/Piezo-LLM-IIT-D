@@ -1,0 +1,44 @@
+Crystal ID           : PMC-027
+
+CIF File Name        : PMC-027-Cbz-4-fluoro-L-phenylalanine (Cbz-Phe(4F)).cif
+CCDC ID              : 2378828
+CSD REFCODE          : MOZGOB
+Crystal Structure DOI: 10.5517/ccdc.csd.cc2kvcd6
+Crystal Structure Reference :
+Tan Hu
+CSD Communication (2024)
+
+Molecule Name        : Cbz-4-fluoro-L-phenylalanine (Cbz-Phe(4F))
+Chemical Formula     : C17H16FNO4
+Crystal Type         : Organic Molecular Crystal
+Piezoelectric Property : Not Reported (Symmetry-Allowed)
+
+Evidence             :
+• The crystal crystallizes in the non-centrosymmetric monoclinic space group C2 (No. 5), which is crystallographically compatible with piezoelectricity.
+• The crystal consists of discrete neutral Cbz-4-fluoro-L-phenylalanine molecules held together by intermolecular interactions, confirming its molecular crystal nature.
+• No experimental piezoelectric characterization (e.g., PFM, SHG, d33 measurements) has been reported for this crystal.
+• Therefore, the crystal is considered a symmetry-allowed piezoelectric candidate rather than an experimentally confirmed piezoelectric molecular crystal.
+
+Research Paper       :
+CSD Communication (2024)
+DOI: 10.5517/ccdc.csd.cc2kvcd6
+
+Space Group          : C2 (No. 5)
+
+Crystal System       : Monoclinic
+
+Piezoelectric Coefficient :
+Not reported.
+
+Maximum Coefficient  :
+Not reported.
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD REFCODE: MOZGOB.
+• CCDC Deposition Number: 2378828.
+• Crystal structure deposited by Tan Hu (Nanyang Technological University) as a CSD Communication (2024).
+• The deposited structure corresponds to Cbz-4-fluoro-L-phenylalanine (Cbz-Phe(4F)), also known as N-((benzyloxy)carbonyl)-4-fluorophenylalanine.
+• The crystal belongs to the polar, non-centrosymmetric space group C2 (No. 5), making piezoelectricity symmetry-allowed.
+• No literature currently reports experimental or computational piezoelectric properties for this compound.
+• This entry is suitable for a database of non-centrosymmetric molecular crystals or potential piezoelectric candidates, but it should not be included in a database restricted to experimentally verified piezoelectric molecular crystals.

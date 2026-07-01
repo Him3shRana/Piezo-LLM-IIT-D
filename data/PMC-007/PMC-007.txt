@@ -1,0 +1,52 @@
+Crystal ID: PMC-007
+
+CCDC ID: LALNIN01
+
+Molecule Name: L-Alanine
+
+Chemical Formula: C₃H₇NO₂
+
+Crystal Type: Molecular Crystal (Amino Acid Crystal)
+
+Piezoelectric Property: YES ✅
+
+Evidence:
+
+The paper experimentally demonstrates that L-alanine nanocrystals generate piezoelectric current under applied mechanical pressure.
+The authors detected mechanical pressures as low as 3 Pa using L-alanine nanocrystals.
+The paper explicitly states that L-alanine possesses a non-centrosymmetric crystal structure (Space Group P2₁2₁2₁), which allows piezoelectricity.
+It also gives the piezoelectric tensor corresponding to the crystal symmetry and explains that polarization originates from deformation of hydrogen bonds under mechanical stress.
+
+Research Paper:
+Hanna Bishara, Alina Nagel, Maya Levanon, Shlomo Berger,
+Amino acids nanocrystals for piezoelectric detection of ultra-low mechanical pressure,
+Materials Science & Engineering C 108 (2020) 110468,
+DOI: 10.1016/j.msec.2019.110468
+
+CIF File Name: PMC-007-L-Alanine.cif
+
+Space Group: P2₁2₁2₁ (No. 19)
+
+Crystal System: Orthorhombic rectification rather than directly measuring piezoelectric coefficients. However, because the crystal is experimentally confirmed to be ferroelectric and belongs to the non-centrosymmetric space group Pna2₁, it is classified as a piezoelectric molecular crystal.
+
+Piezoelectric Coefficient:
+The paper does not experimentally measure numerical piezoelectric coefficients (dij).
+
+Instead, it provides the tensor allowed by symmetry:
+
+​000​000​000​d14​00​0d25​0​00d36​​
+​
+
+
+Only the symmetry-allowed coefficients (d14, d25, d36) are discussed.
+No numerical values (e.g., pC/N) are reported.
+
+Notes:
+
+Single-crystal molecular crystal.
+Naturally non-centrosymmetric.
+Piezoelectricity arises from deformation of the hydrogen-bond network between zwitterionic L-alanine molecules.
+Nanocrystals were grown inside anodic alumina nanopores with preferred crystallographic orientation.
+Used as an ultra-sensitive piezoelectric pressure sensor.
+Detects pressures down to 3 Pa.
+The crystal structure used in the paper matches the standard L-alanine crystal reported in the literature (Acta Crystallographica, 1966), corresponding to LALNIN01 in the CSD.

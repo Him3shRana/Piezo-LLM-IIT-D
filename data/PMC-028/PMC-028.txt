@@ -1,0 +1,46 @@
+Crystal ID           : PMC-028
+
+CIF File Name        : PMC-028-L-Methionine.cif
+CCDC ID              : 276855
+CSD REFCODE          : LMETON11
+Crystal Structure DOI: 10.5517/cc992tg
+Crystal Structure Reference :
+P. Sadler; S. Bihari; S. Parsons; D. Messenger
+CSD Communication (2005)
+
+Molecule Name        : L-Methionine
+Chemical Formula     : C5H11NO2S
+Crystal Type         : Organic Molecular Crystal
+Piezoelectric Property : Yes
+
+Evidence             :
+• Experimental crystal structure determined by single-crystal X-ray diffraction and deposited in the Cambridge Structural Database (CCDC 276855).
+• L-Methionine crystallizes in the non-centrosymmetric monoclinic space group P21 (No. 4), which is crystallographically compatible with piezoelectricity.
+• The crystal consists of discrete neutral L-methionine molecules connected through hydrogen-bonding interactions, confirming its molecular crystal nature.
+• Experimental studies have demonstrated the piezoelectric behavior of L-methionine crystals through piezoelectric nanogenerator devices, producing measurable electrical output under mechanical deformation.
+• Recent studies have also investigated oriented L-methionine thin films for enhanced piezoelectric performance.
+
+Research Paper       :
+Rational Design of Biological Crystals with Enhanced Physical Properties by Hydrogen Bonding Interactions
+Research (2023)
+DOI: 10.34133/research.0046
+
+Space Group          : P21 (No. 4)
+
+Crystal System       : Monoclinic
+
+Piezoelectric Coefficient :
+Not explicitly reported.
+
+Maximum Coefficient  :
+Not reported.
+
+Notes                :
+• Experimental crystal structure obtained from the Cambridge Structural Database.
+• CSD REFCODE: LMETON11.
+• CCDC Deposition Number: 276855.
+• Crystal structure deposited by P. Sadler, S. Bihari, S. Parsons and D. Messenger as a CSD Communication (2005).
+• The deposited structure is a single-component L-methionine molecular crystal (C5H11NO2S).
+• The crystal belongs to the polar, non-centrosymmetric space group P21 (No. 4), making piezoelectricity symmetry-allowed.
+• Experimental studies have demonstrated piezoelectric energy harvesting using L-methionine crystals, confirming their piezoelectric molecular crystal behavior.
+• This crystal is suitable for inclusion in an experimentally verified molecular piezoelectric crystal database.

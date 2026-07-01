@@ -1,0 +1,87 @@
+============================================================
+PMC-033 : 2-Iodo-3-hydroxypyridine
+============================================================
+
+Basic Information
+-----------------
+Crystal ID              : PMC-033
+Crystal Name            : 2-Iodo-3-hydroxypyridine
+Common Name             : 2-Iodo-3-pyridinol
+Chemical Formula        : C5H4INO
+Molecular Weight        : 220.99 g/mol
+
+Database Information
+--------------------
+CSD Refcode             : YELQUC
+CCDC Deposition Number  : 279639
+CCDC DOI                : 10.5517/cc9czm7
+Date Deposited          : 06 September 2006
+
+Publication
+-----------
+Authors                 : B. K. Saha, A. Nangia, J.-F. Nicoud
+Journal                 : Crystal Growth & Design
+Year                    : 2006
+Volume                  : 6
+Pages                   : 1278
+Publication DOI         : 10.1021/cg060117k
+
+Crystal Structure
+-----------------
+Crystal System          : Orthorhombic
+Space Group             : Pna21
+Space Group Number      : 33
+
+Unit Cell Parameters
+--------------------
+a                       : 11.5329 Å
+b                       : 12.8331 Å
+c                       : 4.2475 Å
+
+α                       : 90°
+β                       : 90°
+γ                       : 90°
+
+Cell Volume             : 628.64 Å³
+Z                       : 4
+Z'                      : 1
+
+Crystal Properties
+------------------
+Crystal Habit           : Block
+Crystal Colour          : Colorless
+Density                 : 2.335 g/cm³
+Measurement Temperature : 100 K
+Radiation               : X-ray
+Experiment Type         : Single Crystal X-ray Diffraction
+
+Refinement
+----------
+R-factor                : 1.72 %
+
+Chemical Features
+-----------------
+Hydrogen Bonding        : Yes
+Analogue                : Isostructural with the bromo analogue
+
+Classification
+--------------
+Material Type           : Organic Molecular Crystal
+Piezoelectric           : Yes
+Ferroelectric           : No
+Pyroelectric            : No
+
+Database Status
+---------------
+Structure Verified      : Yes
+Paper Verified          : Yes
+Piezoelectric Verified  : Yes
+CIF Matches Paper       : Yes
+
+Remarks
+-------
+This crystal belongs to the family of halogen-substituted
+3-hydroxypyridines reported by Saha, Nangia and Nicoud.
+The crystal crystallizes in the polar space group Pna21,
+making it suitable for inclusion in the piezoelectric
+molecular crystal database.

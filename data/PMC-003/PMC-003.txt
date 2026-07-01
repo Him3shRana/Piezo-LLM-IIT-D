@@ -1,0 +1,12 @@
+Crystal ID            : PMC-003
+Molecule Name         : Croconic Acid
+Chemical Formula      : C5H2O5
+Crystal Type          : Pure Molecular Crystal
+Piezoelectric         : Yes
+Evidence              : Non-centrosymmetric polar space group (Pca21) and experimentally confirmed ferroelectricity. Since all ferroelectrics are piezoelectric, croconic acid is piezoelectric.
+Research Paper        : The Ferroelectric Mechanism of Croconic Acid in Terms of the Electronic Structure and the Molecular Structure (DFT study; based on experimentally discovered ferroelectric croconic acid)
+CIF File Name         : PMC-003-croconic-acid.cif
+Space Group           : Pca21 (No. 29)
+Crystal System        : Orthorhombic
+Piezoelectric Coefficient : Not Reported (N/A)
+Notes                 : Hydrogen-bonded organic molecular crystal exhibiting room-temperature ferroelectricity with large spontaneous polarization due to proton transfer along hydrogen bonds.

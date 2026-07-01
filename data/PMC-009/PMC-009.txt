@@ -1,0 +1,108 @@
+Crystal ID: PMC-009
+
+Crystal ID            : HISTCM12
+
+CCDC / Deposition ID  : 1176648
+(CSD Refcode: HISTCM12)
+
+Molecule Name         : L-Histidine Hydrochloride Monohydrate
+
+Chemical Formula      : C6H10N3O2+ · Cl− · H2O
+(Equivalent molecular formula: C6H11ClN3O3)
+
+Crystal Type          : Organic Molecular Salt Crystal
+                        (Hydrogen-bonded Molecular Crystal)
+
+Piezoelectric Property: YES
+
+Evidence              : Direct experimental determination of piezoelectric tensor
+                        coefficients using synchrotron X-ray Renninger multiple
+                        diffraction. The measured non-zero piezoelectric tensor
+                        confirms that L-histidine hydrochloride monohydrate is
+                        piezoelectric.
+
+Research Paper        : A. S. de Menezes,
+                        A. O. dos Santos,
+                        J. M. A. Almeida,
+                        J. M. Sasaki,
+                        L. P. Cardoso
+
+                        "Piezoelectric coefficients of L-histidine hydrochloride
+                        monohydrate obtained by synchrotron X-ray Renninger scanning"
+
+                        Journal of Physics: Condensed Matter
+                        Volume 19 (2007)
+                        Article 106218
+                        DOI: 10.1088/0953-8984/19/10/106218
+
+CIF File Name         : HISTCM12.cif
+
+Structure Reference   : H. Fuess,
+                        D. Hohlwein,
+                        S. A. Mason
+
+                        Acta Crystallographica Section B
+                        33 (1977) 654–659
+                        DOI: 10.1107/S0567740877004415
+
+Space Group           : P212121 (No. 19)
+
+Crystal System        : Orthorhombic
+
+Point Group           : 222
+
+Piezoelectric
+Coefficient           : The paper reports experimental piezoelectric tensor
+                        coefficients determined by synchrotron X-ray
+                        Renninger scanning. The exact tensor values should
+                        be extracted directly from the paper's results table
+                        (they are not contained in the CIF).
+
+Unit Cell             : a = 15.36 Å
+                        b = 8.92 Å
+                        c = 6.88 Å
+                        α = β = γ = 90°
+
+Z                     : 4
+
+Experimental Method   : Single-crystal neutron diffraction
+                        (structure)
+                        Synchrotron X-ray Renninger scanning
+                        (piezoelectric measurement)
+
+Notes                 :
+• Organic amino-acid molecular salt crystal.
+• Non-centrosymmetric space group P212121 enables piezoelectricity.
+• Hydrogen-bond network involving histidinium, chloride ions and water
+  molecules contributes to the electromechanical response.
+• This is an experimentally verified piezoelectric molecular crystal,
+  not merely predicted from symmetry.
+• HISTCM12 is the recommended CIF corresponding to this material.
+RSC Advances (2018)
+DOI: 10.1039/C8RA01499J
+
+CIF File Name: PMC-008-meta-nitroaniline.cif
+
+CIF File Name (Web/CSD): MNIANL10
+
+Space Group: Pbc2₁ (No. 29)
+
+Crystal System: Orthorhombic
+
+Piezoelectric Coefficient:
+
+Experimentally measured in the Physical Review Letters (1998) study.
+The 2018 RSC Advances paper reports the following calculated piezoelectric strain coefficients (pm/V):
+d₁₅ ≈ 31 pm/V
+d₂₄ ≈ 18 pm/V
+d₃₃ ≈ 6 pm/V
+These values are in good agreement with the experimental measurements and indicate that mNA has one of the largest piezoelectric responses among organic molecular crystals.
+
+Notes:
+
+Single-crystal organic molecular crystal.
+Non-centrosymmetric structure is responsible for its piezoelectric and electro-optic (Pockels) properties.
+One of the most extensively studied organic piezoelectric crystals.
+Frequently used as a benchmark material for nonlinear optics and molecular piezoelectricity.
+The crystal structure deposited as MNIANL10 is the structure used in subsequent experimental and theoretical piezoelectric investigations.
+Crystal System: Orthorhombic rectification rather than directly measuring piezoelectric coefficients. However, because the crystal is experimentally confirmed to be ferroelectric and belongs to the non-centrosymmetric space group Pna2₁, it is classified as a piezoelectric molecular crystal.

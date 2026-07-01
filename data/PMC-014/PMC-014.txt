@@ -1,0 +1,66 @@
+Crystal ID: PMC-014
+
+DOI: 10.1126/science.adj1946
+
+CIF File Name:
+PMC-014-2,2,3,3,4,4-Hexafluoropentane-1,5-diol.cif
+
+CCDC ID:
+Not assigned
+
+CSD REFCODE:
+HFPD
+
+Molecule Name:
+2,2,3,3,4,4-Hexafluoropentane-1,5-diol (HFPD)
+
+Chemical Formula:
+C₅H₆F₆O₂
+[HOCH₂(CF₂)₃CH₂OH]
+
+Crystal Type:
+Organic Molecular Crystal (Hydrogen-Bonded Ferroelectric)
+
+Piezoelectric Property (Yes / No):
+Yes
+
+Evidence:
+HFPD exhibits exceptional piezoelectric response with a measured longitudinal piezoelectric coefficient d₃₃ of ~138 pC/N on the (02̄1) plane, which is remarkably high for organic molecular crystals and competitive with commercial piezoelectric polymers like PVDF. The crystal adopts the non-centrosymmetric polar space group P1 at room temperature, which enables piezoelectricity. The material demonstrates strong ferroelectric properties with well-shaped P-E hysteresis loops and reversible domain switching behavior confirmed via piezoresponse force microscopy (PFM).
+
+Research Paper:
+Biodegradable ferroelectric molecular crystal with large piezoelectric response
+DOI: 10.1126/science.adj1946
+Published in Science, Volume 383, Issue 6690, March 29, 2024
+
+Space Group:
+P1 (No. 1)
+
+Crystal System:
+Triclinic
+
+Piezoelectric Coefficients:
+d₃₃ values measured via Berlincourt method:
+- ~90 pC/N on the (010) plane
+- ~70 pC/N on the (012) plane
+- ~138 pC/N on the (02̄1) plane (maximum)
+
+Piezoelectric voltage coefficient g₃₃: ~2450 × 10⁻³ Vm/N (nine times higher than PVDF)
+
+Notes:
+
+- First single-component organic molecular crystal with d₃₃ > 100 pC/N
+- Forms flexible piezoelectric films when composited with polyvinyl alcohol (PVA)
+- HFPD-PVA (2:1) films show d₃₃ of ~34.3 pC/N with excellent flexibility
+- Demonstrates complete biocompatibility toward mammalian cells (>90% viability even at 10 mg/ml)
+- Fully biodegradable in physiological environments - fluorine levels in blood decrease within 48 hours post-injection
+- Crystal structure features 2D hydrogen-bonding network through O-H···O interactions
+- Shows thermal phase transition at ~282 K and pressure-induced phase transition at ~0.36 GPa
+- Undergoes reversible ferroelectric domain switching with coercive fields lower than PVDF
+- Acoustic impedance (4.08 × 10⁶ kg/m²s) matches biological tissue well for implantable applications
+- Young's modulus shows strong anisotropy with values of 4.30-8.85 GPa depending on crystal orientation
+- Ferroelectric saturation polarization: 0.73, 4.88, and 6.34 mC/cm² along a, b, and c axes respectively
+- Successfully demonstrated in vivo piezoelectric performance - implanted device generated ~300 mV under mechanical stress
+- HFPD-PVA films degraded controllably over several days when encapsulated with polylactic acid (PLA)
+- Outstanding g₃₃ value (1587.6 × 10⁻³ Vm/N for HFPD-PVA films) indicates high voltage output for sensor applications
+- Material shows no neurotoxicity and does not impact neural stem cell differentiation
+- Represents breakthrough in transient implantable bioelectronics for drug delivery, tissue regeneration, and therapeutic devices
