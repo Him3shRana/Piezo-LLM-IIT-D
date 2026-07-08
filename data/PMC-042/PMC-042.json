@@ -1,0 +1,91 @@
+{
+  "id": "PMC-042",
+  "schema_version": "1.0",
+  "text": "L-Phenylalanyl-L-leucine (Phe-Leu) dipeptide crystal - a biocompatible organic piezoelectric material studied by piezoresponse force microscopy",
+
+  "molecule_name": "L-Phenylalanyl-L-leucine",
+  "synonyms": [
+    "Phe-Leu",
+    "L-Phe-L-Leu",
+    "L-phenylalanyl-L-leucine hydrate"
+  ],
+  "chemical_formula": "C15H22N2O3",
+  "molecular_weight": 278.35,
+  "crystal_type": "Organic molecular crystal (dipeptide)",
+  "component_count": 1,
+
+  "csd_refcode": "IFAJUV",
+  "ccdc_number": 163339,
+  "cif_file_name": "PMC-042-L-phenylalanyl-L-leucine__Phe_Leu_.cif",
+  "structure_doi": "10.1002/1521-3765(20011203)7:23<5153::AID-CHEM5153>3.0.CO;2-N",
+  "deposition_date": "2001-05-08",
+
+  "crystal_system": "Orthorhombic",
+  "space_group_symbol": "P212121",
+  "space_group_number": 19,
+  "centrosymmetric": false,
+  "cell_a": 5.2103,
+  "cell_b": 19.974,
+  "cell_c": 30.919,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.0,
+  "cell_gamma": 90.0,
+  "cell_volume": 3218.0,
+  "cell_z": 8,
+  "cell_z_prime": 2,
+
+  "habit": "needle",
+  "colour": "colourless",
+  "density_g_cm3": 1.243,
+  "temperature_k": 150,
+  "radiation": "Mo Kα (0.71073 Å)",
+  "experiment_type": "Single-crystal X-ray diffraction",
+  "r_factor_percent": 5.58,
+
+  "intermolecular_interactions": [
+    "N-H···O hydrogen bonds",
+    "N-H···O(water) hydrogen bonds",
+    "Head-to-tail hydrogen bonding between dipeptide molecules"
+  ],
+  "isostructural_analogues": [
+    "L-leucyl-L-phenylalanine (Leu-Phe)",
+    "L-phenylalanyl-L-phenylalanine (Phe-Phe)",
+    "L-valyl-L-alanine (Val-Ala)"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Piezoresponse force microscopy (PFM), atomic force microscopy (AFM), powder X-ray diffractometry (XRPD), Raman spectroscopy",
+  "computational_method": null,
+  "shear_qualitative": "Measured by lateral PFM displacement",
+  "shear_value": 73,
+  "shear_unit": "pm/V",
+  "longitudinal_qualitative": "Measured by vertical PFM displacement",
+  "longitudinal_value": 71,
+  "longitudinal_unit": "pm/V",
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": [
+    "Carl Henrik Görbitz"
+  ],
+  "structure_ref_journal": "Chemistry - A European Journal",
+  "structure_ref_year": 2001,
+  "structure_ref_volume": "7",
+  "structure_ref_doi": "10.1002/1521-3765(20011203)7:23<5153::AID-CHEM5153>3.0.CO;2-N",
+
+  "property_ref_title": "New piezoelectric materials based on Phe-Leu and Leu-Phe dipeptides",
+  "property_ref_journal": "Applied Materials Today",
+  "property_ref_year": 2025,
+  "property_ref_doi": "10.1016/j.apmt.2024.102564",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+  "cod_code": null
+}

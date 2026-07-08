@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { FC } from 'react';
-import { RefreshCw, Database, AlertCircle, CheckCircle, Loader } from 'lucide-react';
+import { RefreshCw, Database, AlertCircle, CheckCircle, Loader, Layers } from 'lucide-react';
 
 interface CrystalStatus {
   json: boolean;
@@ -37,6 +37,11 @@ const DatabaseAdminPanel: FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedCrystal, setExpandedCrystal] = useState<string | null>(null);
 
+  // Vector DB state
+  const [vectorLoading, setVectorLoading] = useState(false);
+  const [vectorSuccess, setVectorSuccess] = useState('');
+  const [vectorError, setVectorError] = useState('');
+
   // Fetch database status
   const fetchDatabaseStatus = async () => {
     setIsLoading(true);
@@ -64,7 +69,7 @@ const DatabaseAdminPanel: FC = () => {
 
     try {
       setRebuildProgress('Scanning crystal directories...');
-      
+
       const response = await fetch('http://localhost:5000/api/admin/rebuild-database', {
         method: 'POST',
         headers: {
@@ -82,7 +87,7 @@ const DatabaseAdminPanel: FC = () => {
       const data = await response.json();
 
       setRebuildProgress(`Processing ${data.processed_count || 0} crystals...`);
-      
+
       setTimeout(() => {
         setRebuildProgress('Updating master database...');
       }, 1000);
@@ -95,7 +100,7 @@ const DatabaseAdminPanel: FC = () => {
         setRebuildProgress('');
         setRebuildSuccess(true);
         fetchDatabaseStatus();
-        
+
         setTimeout(() => {
           setRebuildSuccess(false);
         }, 5000);
@@ -105,6 +110,44 @@ const DatabaseAdminPanel: FC = () => {
       console.error('Rebuild error:', error);
     } finally {
       setRebuildLoading(false);
+    }
+  };
+
+  // Rebuild Vector Database
+  const handleRebuildVectorDB = async () => {
+    setVectorLoading(true);
+    setVectorSuccess('');
+    setVectorError('');
+
+    try {
+      const response = await fetch('http://localhost:5000/api/admin/rebuild-vectordb', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || `Server error: ${response.status}`);
+      }
+
+      const skipped = data.skipped_count
+        ? `, ${data.skipped_count} skipped (empty folders)`
+        : '';
+      setVectorSuccess(
+        `Indexed ${data.total_in_db} molecules (${data.new} new, ${data.updated} updated)${skipped}.`
+      );
+
+      setTimeout(() => {
+        setVectorSuccess('');
+      }, 8000);
+    } catch (error) {
+      setVectorError(`Failed to rebuild vector database: ${error}`);
+      console.error('Vector rebuild error:', error);
+    } finally {
+      setVectorLoading(false);
     }
   };
 
@@ -186,6 +229,71 @@ const DatabaseAdminPanel: FC = () => {
               <li>Updates master_database.json with latest data</li>
               <li>Validates crystal properties (piezoelectric, ferroelectric, etc.)</li>
               <li>Updates timestamp for all processed entries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Vector Database Section */}
+      <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl p-8">
+        <div className="flex items-start justify-between mb-4">
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
+              <Layers className="w-6 h-6 text-purple-400" />
+              Vector Database (AI Search)
+            </h2>
+            <p className="text-gray-400">
+              Rebuild the embeddings used by the AI chat to search crystal data
+            </p>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <button
+            onClick={handleRebuildVectorDB}
+            disabled={vectorLoading}
+            className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 disabled:from-gray-600 disabled:to-gray-600 text-white font-bold py-4 px-6 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {vectorLoading ? (
+              <>
+                <Loader className="w-5 h-5 animate-spin" />
+                Building Vector Database...
+              </>
+            ) : (
+              <>
+                <RefreshCw className="w-5 h-5" />
+                Rebuild Vector Database
+              </>
+            )}
+          </button>
+
+          {/* Success Message */}
+          {vectorSuccess && (
+            <div className="bg-green-900/40 border border-green-500/50 rounded-lg p-4 text-green-300 flex items-center gap-3">
+              <CheckCircle className="w-5 h-5" />
+              {vectorSuccess}
+            </div>
+          )}
+
+          {/* Error Message */}
+          {vectorError && (
+            <div className="bg-red-900/40 border border-red-500/50 rounded-lg p-4 text-red-300 flex items-center gap-3">
+              <AlertCircle className="w-5 h-5" />
+              {vectorError}
+            </div>
+          )}
+
+          {/* Info Box */}
+          <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-4 text-sm text-gray-300">
+            <p className="mb-2">
+              <strong>What this does:</strong>
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-gray-400">
+              <li>Reads the "text" summary of every molecule's JSON</li>
+              <li>Converts each into a vector embedding for semantic search</li>
+              <li>Updates the Chroma vector store (add new / update existing, no duplicates)</li>
+              <li>Skips empty placeholder folders automatically</li>
+              <li>Run this after adding or editing crystal data so AI search stays current</li>
             </ul>
           </div>
         </div>

@@ -10,7 +10,7 @@ CSD Communication (2024)
 
 Molecule Name        : Cbz-4-fluoro-L-phenylalanine (Cbz-Phe(4F))
 Chemical Formula     : C17H16FNO4
-Crystal Type         : Organic Molecular Crystal
+Crystal Type         : Organic Molecular Crystal 
 Piezoelectric Property : Not Reported (Symmetry-Allowed)
 
 Evidence             :

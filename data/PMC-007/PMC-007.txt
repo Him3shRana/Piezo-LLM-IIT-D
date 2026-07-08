@@ -8,7 +8,7 @@ Chemical Formula: C₃H₇NO₂
 
 Crystal Type: Molecular Crystal (Amino Acid Crystal)
 
-Piezoelectric Property: YES ✅
+Piezoelectric Property: YES 
 
 Evidence:
 

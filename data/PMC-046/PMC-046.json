@@ -1,0 +1,99 @@
+{
+  "id": "PMC-046",
+  "schema_version": "1.0",
+  "text": "Cyclo-glycine-L-tryptophan (cyclo-GW) single crystal - a piezoelectric cyclic dipeptide for energy harvesting",
+
+  "molecule_name": "Cyclo-glycine-L-tryptophan",
+  "synonyms": [
+    "cyclo-GW",
+    "cyclo(Gly-Trp)",
+    "3-(1H-indol-3-ylmethyl)piperazine-2,5-dione"
+  ],
+  "chemical_formula": "C13H13N3O2",
+  "molecular_weight": 243.26,
+  "crystal_type": "Organic molecular crystal (cyclic dipeptide / diketopiperazine)",
+  "component_count": 1,
+
+  "csd_refcode": null,
+  "ccdc_number": 1823369,
+  "cif_file_name": "PMC-046-glycine-L-tryptophan__cyclo-GW__.cif",
+  "structure_doi": "10.1002/adma.201807481",
+  "deposition_date": "2018-07-05",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "P21",
+  "space_group_number": 4,
+  "centrosymmetric": false,
+  "cell_a": 7.5382,
+  "cell_b": 6.1498,
+  "cell_c": 12.1288,
+  "cell_alpha": 90.0,
+  "cell_beta": 91.569,
+  "cell_gamma": 90.0,
+  "cell_volume": 562.06,
+  "cell_z": 2,
+  "cell_z_prime": 1,
+
+  "habit": "needle",
+  "colour": "colourless",
+  "density_g_cm3": 1.437,
+  "temperature_k": 100,
+  "radiation": "Mo Kα (0.71073 Å)",
+  "experiment_type": "Single-crystal X-ray diffraction",
+  "r_factor_percent": 4.03,
+
+  "intermolecular_interactions": [
+    "N-H···O=C hydrogen bonds (parallel β-sheet, 2.83 Å)",
+    "Herringbone edge-to-face aromatic interactions (indole C···N ≈ 3.4 Å)",
+    "Antiparallel stacking of diketopiperazine rings (≈4.0 Å along a)"
+  ],
+  "isostructural_analogues": [],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": true,
+  "experimental_method": "Piezoelectric power generator device (open-circuit voltage and short-circuit current measurements under cyclic compressive force)",
+  "computational_method": "DFT (piezoelectric charge constant tensor calculation)",
+  "shear_qualitative": "Computed",
+  "shear_value": 14.1,
+  "shear_unit": "pC/N",
+  "longitudinal_qualitative": "Computed",
+  "longitudinal_value": null,
+  "longitudinal_unit": null,
+  "dft_shear_qualitative": "Computed; d36 = 14.1 pC/N, d16 = 13.8 pC/N (highest predicted coefficients)",
+
+  "structure_ref_authors": [
+    "K. Tao",
+    "W. Hu",
+    "B. Xue",
+    "D. Chovan",
+    "N. Brown",
+    "L. J. W. Shimon",
+    "O. Maraba",
+    "Y. Cao",
+    "S. A. M. Tofail",
+    "D. Thompson",
+    "J. Li",
+    "R. Yang",
+    "E. Gazit"
+  ],
+  "structure_ref_journal": "Advanced Materials",
+  "structure_ref_year": 2019,
+  "structure_ref_volume": "31",
+  "structure_ref_doi": "10.1002/adma.201807481",
+
+  "property_ref_title": "Bioinspired Stable and Photoluminescent Assemblies for Power Generation",
+  "property_ref_journal": "Advanced Materials",
+  "property_ref_year": 2019,
+  "property_ref_doi": "10.1002/adma.201807481",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+  "cod_code": null
+}

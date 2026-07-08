@@ -1,0 +1,46 @@
+Crystal ID: PMC-042
+
+CCDC ID: 163339
+
+CSD REFCODE: IFAJUV
+
+Molecule Name: L-Phenylalanyl-L-leucine
+
+IUPAC Name: (2S)-2-[[(2S)-2-Amino-3-phenylpropanoyl]amino]-4-methylpentanoic acid
+
+Chemical Formula: C₁₅H₂₂N₂O₃ (anhydrous); C₁₅H₂₄.₅₃N₂O₄.₂₇ (hydrate, as refined)
+
+Crystal Type: Organic molecular crystal (dipeptide)
+
+Piezoelectric Property: Yes
+
+Evidence: The crystal belongs to the non-centrosymmetric space group P2₁2₁2₁ (orthorhombic), which is compatible with piezoelectricity. The 2025 paper by Morozova et al. in Applied Materials Today reports the first piezoresponse force microscopy (PFM) study of Phe-Leu micro- and nanocrystals. Both vertical and lateral piezoelectric signals were detected. The effective piezoelectric coefficients were determined as d_eff ≈ 71 pm V⁻¹ (vertical displacement) and d_eff ≈ −73 pm V⁻¹ (lateral displacement). These values are comparable to or exceed those reported for diphenylalanine (Phe-Phe) nanocrystals (d_eff = 30 pm V⁻¹ lateral, d₃₃ = 20 pm V⁻¹).
+
+Research Paper: New piezoelectric materials based on Phe-Leu and Leu-Phe dipeptides
+
+DOI: 10.1016/j.apmt.2024.102564
+
+CIF File Name (System): PMC-042-L-phenylalanyl-L-leucine__Phe_Leu_.cif
+
+CIF File Name (Web): CCDC 163339
+
+Space Group: P2₁2₁2₁ (No. 19)
+
+Crystal System: Orthorhombic
+
+Piezoelectric Coefficient: d_eff ≈ 71 pm V⁻¹ (vertical), d_eff ≈ −73 pm V⁻¹ (lateral), measured by PFM on individual nanocrystals (~20 nm height).
+
+Notes:
+
+Pure organic dipeptide molecular crystal (hydrophobic dipeptide).
+Non-centrosymmetric crystal structure (P2₁2₁2₁), compatible with piezoelectricity.
+Original crystal structure reported by Görbitz (2001) in the context of nanotube formation by hydrophobic dipeptides (CCDC 163339).
+The crystal cell is elongated along the c-axis, consistent with the needle-like crystal habit observed by AFM.
+Two independent molecules (Z' = 2) in the asymmetric unit, with Z = 8.
+The 2025 paper by Morozova et al. reports the first measurement of piezoelectric properties of Phe-Leu crystals using PFM.
+Crystals were grown on silicon substrates by methanol vapor saturation of spin-coated amorphous dipeptide films.
+Phe-Leu crystals: elongated structures up to 10 μm long, 0.3–0.5 μm wide, up to 30 nm high.
+The polarization vector of the piezoelectric domains is oriented at an angle to the surface, as both vertical and lateral PFM signals are present.
+The piezoelectric coefficients (71 and 73 pm V⁻¹) significantly exceed those of polyhydroxybutyrate fibrillar structures (d₃₃ ≤ 2.5 pm V⁻¹).
+Companion dipeptide L-leucyl-L-phenylalanine (Leu-Phe) forms monoclinic crystals with d_eff ≈ 87 pm V⁻¹ (vertical) and ≈ −19 pm V⁻¹ (lateral).
+Biocompatible material with potential applications in biomedicine, green energy, and piezoelectric nanodevices.

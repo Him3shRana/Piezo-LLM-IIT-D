@@ -1,0 +1,248 @@
+==========================================
+PMC-010 : L-Arginine Hydrochloride Monohydrate
+==========================================
+
+Crystal ID
+----------
+PMC-010
+
+Crystal Name
+------------
+L-Arginine Hydrochloride Monohydrate
+
+Synonyms
+--------
+L-Arginine HCl Monohydrate
+L-Arginine Hydrochloride
+L-AHCL
+L-AHCL.H2O
+
+Chemical Formula
+----------------
+C6H15N4O2+·Cl−·H2O
+(C6H14N4O2HCl.H2O)
+
+Molecular Weight
+----------------
+Not reported
+
+Crystal Category
+----------------
+Organic Hydrogen-Bonded Molecular Salt Crystal
+Semi-organic non-linear optical crystal (zwitterionic dipolar ion)
+
+Component Count
+---------------
+3 (L-arginine cation, chloride anion, water molecule)
+
+Crystal System
+--------------
+Monoclinic
+
+Space Group
+-----------
+P21 (No. 4)
+
+Centrosymmetric
+---------------
+No
+
+CSD Refcode
+-----------
+ARGHCL10
+
+CCDC Number
+-----------
+1103560
+
+Unit Cell Parameters
+--------------------
+a = 11.044(2) Å
+b = 8.481(1) Å
+c = 11.214(2) Å
+
+α = 90°
+β = 91.31(1)°
+γ = 90°
+
+Cell Volume
+-----------
+1050.08 Å³
+
+Z Value
+-------
+4
+
+Z'
+--
+Not reported
+
+Crystal Habit
+-------------
+Parallelepipeds (cut and polished from slow evaporation growth)
+Typical sizes: 4.0 mm × 2.5 mm × 1.5 mm (a-cut)
+               4.0 mm × 3.0 mm × 2.0 mm (c-cut)
+
+Crystal Colour
+--------------
+Not reported
+
+Calculated Density
+------------------
+1.44647 g/cm³
+
+Experimental Method
+-------------------
+Single Crystal X-ray Diffraction (structure determination)
+X-ray Three-Beam Diffraction (piezoelectric measurements)
+
+Temperature
+-----------
+295 K (structure), ~298 K (piezoelectric measurements)
+
+Radiation
+---------
+X-ray (structure); Synchrotron radiation at 9608 eV (piezoelectric)
+
+R-factor
+--------
+3.3 %
+
+Structure Determination
+-----------------------
+J. Dow
+L. H. Jensen
+
+Primary Crystal Structure Publication
+-------------------------------------
+Dow, J.; Jensen, L. H.
+
+Acta Crystallographica Section B
+1970
+
+DOI:
+10.1107/S0567740870004697
+
+Piezoelectric Status
+--------------------
+Piezoelectric (experimentally confirmed)
+
+Symmetry Compatibility
+----------------------
+Compatible (non-centrosymmetric, chiral space group P21)
+
+Crystal Polar Axis
+------------------
+Along the crystallographic b axis
+
+Evidence
+--------
+Complete piezoelectric tensor experimentally determined via
+X-ray three-beam diffraction at the Brazilian National
+Synchrotron Light Source (XRD1 beamline). Renninger scan
+technique used with polarimeter-like diffractometer. Silver
+electrodes painted on crystal faces; DC electric field
+applied via variable-voltage low-current power supply.
+Maximum electric field: 5 × 10⁴ V/m (75 V for a-cut,
+100 V for c-cut).
+
+Piezoelectric Properties (experimental)
+----------------------------------------
+Method: X-ray Three-Beam Diffraction (Renninger scan technique)
+
+Complete piezoelectric tensor (monoclinic point group 2):
+
+        [100]     [010]     [001]     [011]     [101]     [110]
+Ex (    0         0         0         4(2)      0         230(4)   ) × 10⁻¹¹ C/N
+Ey (    510(5)    220(3)    62(8)     0         14(1)     0        ) × 10⁻¹¹ C/N
+Ez (    0         0         0         110(2)    0         220(4)   ) × 10⁻¹¹ C/N
+
+Individual coefficients:
+d14 = (4.0 ± 0.2) × 10⁻¹¹ C/N
+d16 = (2.3 ± 0.4) × 10⁻⁹ C/N
+d21 = (6.5 ± 0.8) × 10⁻⁹ C/N  (confirmed by rocking-curve measurement)
+d22 = (2.20 ± 0.03) × 10⁻⁹ C/N
+d23 = (0.62 ± 0.08) × 10⁻⁹ C/N
+d25 = (0.14 ± 0.01) × 10⁻⁹ C/N
+d34 = (1.1 ± 0.2) × 10⁻⁹ C/N
+d36 = (2.2 ± 0.4) × 10⁻⁹ C/N
+
+Measurement directions:
+  Electric field in [100] (X): d14 and d16 measured
+  Electric field in [010] (Y): d21, d22, d23, d25 measured (previous work)
+  Electric field in [001] (Z): d34 and d36 measured
+
+Primary reflections used:
+  (0,0,10) for E applied along X
+  (5,0,0) for E applied along Z
+  (800) for rocking-curve d21 confirmation
+
+Property Reference
+------------------
+Almeida, J. M. A.; Miranda, M. A. R.; Avanci, L. H.;
+de Menezes, A. S.; Cardoso, L. P.; Sasaki, J. M.
+
+"Piezoelectric coefficients d14, d16, d34 and d36 of an
+L-arginine hydrochloride monohydrate crystal by X-ray
+three-beam diffraction"
+
+Journal of Synchrotron Radiation
+2006
+Volume 13
+Pages 435–439
+
+DOI:
+10.1107/S0909049506033061
+
+Related Prior Work
+------------------
+Almeida et al. (2003) — J. Appl. Cryst. 36, 1348–1351
+  (d21, d22, d23, d25 coefficients via E along [010])
+Avanci et al. (1998) — Phys. Rev. Lett. 81, 5426–5429
+Avanci et al. (2000) — Phys. Rev. B, 61, 6507–6514
+
+Intermolecular Interactions
+---------------------------
+Hydrogen bonding (chloride–guanidyl group interactions)
+
+Isostructural Analogues
+-----------------------
+L-Arginine Hydrobromide Monohydrate (L-AHBR.H2O)
+  Note: L-AHBR.H2O is softer than L-AHCL.H2O due to weaker
+  hydrogen-bond strength between bromide and guanidyl group
+  compared to chloride and guanidyl group. Piezoelectric
+  coefficients differ significantly between the two.
+
+Non-Linear Optical Properties
+-----------------------------
+L-AHCL belongs to the group of semi-organic crystals with
+non-linear optical properties. Extensively studied for
+frequency conversion applications (Monaco et al., 1987).
+Synthesized originally as one of ten L-arginine salts with
+NLO properties for Nd:YAG laser frequency conversion.
+
+Crystal Growth
+--------------
+Slow evaporation of an aqueous solution of commercial powder
+at controlled temperature. Single crystals of good optical
+quality (rocking-curve FWHM ~30 arcsec by synchrotron
+radiation).
+
+Remarks
+-------
+The CIF corresponds to the original 1970 structure
+determination by Dow & Jensen (refcode ARGHCL10).
+The complete piezoelectric tensor was successfully measured
+using X-ray three-beam diffraction, completing the
+characterization started in 2003. The L-arginine molecule
+is present as a dipolar ion (zwitterion) in the crystal.
+This is the first complete piezoelectric tensor measurement
+for L-AHCL.H2O using three-beam diffraction techniques.
+
+Database Status
+---------------
+Included
+
+Last Updated
+------------
+3 July 2026

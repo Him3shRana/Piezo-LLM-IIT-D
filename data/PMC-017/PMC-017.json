@@ -1,0 +1,232 @@
+{
+  "id": "PMC-017",
+  "schema_version": "1.0",
+  "text": "trans-4-Hydroxy-L-proline - a piezoelectric biomolecular amino acid crystal used in molded solid-state assemblies",
+
+  "molecule_name": "trans-4-Hydroxy-L-proline",
+  "synonyms": [
+    "4-hydroxy-L-proline",
+    "Hyp",
+    "trans-4-hydroxy-L-proline",
+    "L-hydroxyproline"
+  ],
+  "chemical_formula": "C5H9NO3",
+  "molecular_weight": 131.13,
+  "crystal_type": "Organic molecular crystal (amino acid)",
+  "component_count": 1,
+
+  "csd_refcode": "HOPROL12",
+  "ccdc_number": 1177934,
+  "cif_file_name": "PMC-017-trans-4-Hydroxy-L-proline.cif",
+  "structure_doi": "10.1103/PhysRevLett.133.137001",
+  "deposition_date": "1952-01-01",
+
+  "crystal_system": "Orthorhombic",
+  "space_group_symbol": "P212121",
+  "space_group_number": 19,
+  "centrosymmetric": false,
+  "cell_a": 5.00,
+  "cell_b": 8.31,
+  "cell_c": 14.20,
+  "cell_alpha": 90.0,
+  "cell_beta": 90.0,
+  "cell_gamma": 90.0,
+  "cell_volume": 590.01,
+  "cell_z": 4,
+  "cell_z_prime": 1,
+
+  "habit": "disc/plate (molded polycrystalline assembly)",
+  "colour": "colourless",
+  "density_g_cm3": 1.476,
+  "temperature_k": 295,
+  "radiation": "X-ray",
+  "experiment_type": "Single-crystal X-ray diffraction",
+  "r_factor_percent": 14.8,
+
+  "intermolecular_interactions": [
+    "O-H···O hydrogen bonds",
+    "N-H···O hydrogen bonds",
+    "Van der Waals interactions"
+  ],
+  "isostructural_analogues": [
+    "L-alanine",
+    "L-arginine dihydrate",
+    "L-asparagine monohydrate"
+  ],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": false,
+  "is_pyroelectric": false,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Berlincourt-type d33 piezometer, compression testing (stress-strain), open-circuit voltage measurement, powder X-ray diffraction, differential scanning calorimetry",
+  "computational_method": null,
+  "shear_qualitative": "Permitted by symmetry (orthorhombic P212121)",
+  "shear_value": null,
+  "shear_unit": null,
+  "longitudinal_qualitative": "Measured on polycrystalline molded assemblies",
+  "longitudinal_value": 2.2,
+  "longitudinal_unit": "pC/N",
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": [
+    "Krishna Hari",
+    "Tara Ryan",
+    "Suman Bhattacharya",
+    "Sarah Guerin"
+  ],
+  "structure_ref_journal": "Physical Review Letters",
+  "structure_ref_year": 2024,
+  "structure_ref_volume": "133",
+  "structure_ref_doi": "10.1103/PhysRevLett.133.137001",
+
+  "property_ref_title": "Molded, Solid-State Biomolecular Assemblies with Programmable Electromechanical Properties",
+  "property_ref_journal": "Physical Review Letters",
+  "property_ref_year": 2024,
+  "property_ref_doi": "10.1103/PhysRevLett.133.137001",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+  "cod_code": null,
+
+  "detailed_crystal_data": {
+    "unit_cell_dimensions": {
+      "a_angstrom": 5.00,
+      "b_angstrom": 8.31,
+      "c_angstrom": 14.20,
+      "alpha_degrees": 90.0,
+      "beta_degrees": 90.0,
+      "gamma_degrees": 90.0,
+      "volume_angstrom_cubed": 590.01
+    },
+    "refinement": {
+      "r_factor_all": 0.148,
+      "r_factor_gt": 0.148,
+      "wr_factor_gt": null,
+      "goodness_of_fit": null,
+      "number_reflections": null,
+      "number_parameters": null,
+      "number_restraints": null
+    },
+    "data_collection": {
+      "radiation_type": "X-ray",
+      "wavelength_angstrom": null,
+      "temperature_k": 295,
+      "measurement_device": null,
+      "theta_min_degrees": null,
+      "theta_max_degrees": null,
+      "measured_reflections": null
+    },
+    "absorption": {
+      "coefficient_mm_inv": null,
+      "correction_type": null,
+      "t_min": null,
+      "t_max": null
+    }
+  },
+
+  "physical_properties": {
+    "dielectric": {
+      "dielectric_constant_1kHz": null,
+      "dielectric_constant_2MHz": null,
+      "dielectric_loss_1kHz": null,
+      "dielectric_loss_2MHz": null,
+      "frequency_range_Hz": null,
+      "temperature_range_celsius": null
+    },
+    "piezoelectric": {
+      "d33_pC_per_N": 2.2,
+      "measurement_method": "Berlincourt-type d33 piezometer on molded polycrystalline disc assemblies",
+      "poling_field_kV_cm": null,
+      "poling_duration_min": null,
+      "measurement_direction": "Longitudinal (d33)",
+      "d33_range_pC_per_N": "0.43–1.02 (average), max 2.2",
+      "piezoelectric_type_permitted": "Shear (single crystal); Longitudinal observed in polycrystalline assembly"
+    },
+    "mechanical": {
+      "vickers_microhardness_number": null,
+      "load_applied_grams": null,
+      "work_hardening_coefficient": null,
+      "crystal_nature": "Brittle (thinner plates, more brittle than γ-glycine counterparts)",
+      "indentation_method": null,
+      "youngs_modulus_GPa": 19,
+      "compression_testing": "Stress-strain curves measured; Young's modulus 12–26 GPa across samples"
+    },
+    "optical": {
+      "crystal_quality": null,
+      "emission_wavelength_nm": null,
+      "energy_gap_eV": null
+    }
+  },
+
+  "computational_dft_properties": null,
+
+  "hirshfeld_surface_analysis": null,
+
+  "energy_framework": null,
+
+  "void_analysis": null,
+
+  "crystal_morphology": {
+    "method": "Silicone mold evaporative crystallization",
+    "developed_faces": null,
+    "face_data": null,
+    "crystal_size_mm": {
+      "disc_diameter_cm": 3.3,
+      "thickness_range_mm": "1.31–1.94"
+    },
+    "growth_time_days": null,
+    "growth_method": "Supersaturated solution poured into silicone molds, slow evaporation at room temperature"
+  },
+
+  "applications_and_significance": [
+    "Eco-friendly piezoelectric elements",
+    "Energy harvesting",
+    "Sensing and actuation",
+    "Biocompatible piezoelectric devices",
+    "Self-powered wearable technologies",
+    "Lead-free alternative to ceramic piezoelectrics"
+  ],
+
+  "key_findings": {
+    "first_report": "First molded, substrate-free polycrystalline piezoelectric assembly of trans-4-hydroxy-L-proline",
+    "quality_factors": [
+      "Non-centrosymmetric space group P212121 (permits shear piezoelectricity)",
+      "Polycrystalline assembly demonstrates longitudinal piezoelectricity despite orthorhombic symmetry",
+      "Maximum d33 of 2.2 pC/N exceeds previous reports on flexible copper substrates",
+      "Maximum peak-to-peak open circuit voltage of 700 mV",
+      "Operational temperature range 298–568 K (wider than γ-glycine)",
+      "Crystals fuse together during crystallization into cohesive polycrystalline bulk"
+    ],
+    "structure_stability": "Confirmed by powder X-ray diffraction and DSC thermal analysis; decomposition onset ~568 K"
+  },
+
+  "residual_electron_density": {
+    "method": null,
+    "refinement_quality": null,
+    "minimum_value_e_angstrom_cubed": null,
+    "maximum_value_e_angstrom_cubed": null,
+    "contour_level": null
+  },
+
+  "hydrogen_bonding": {
+    "count": null,
+    "bonds": null
+  },
+
+  "polycrystalline_assembly_data": {
+    "capacitance_pF": 0.418,
+    "capacitance_disc_diameter_cm": 3.3,
+    "g33_mV_m_per_N": 26,
+    "max_open_circuit_voltage_mV": 700,
+    "d33_average_range_pC_per_N": "0.43–1.02",
+    "d33_maximum_pC_per_N": 2.2,
+    "thickness_range_mm": "1.31–1.94",
+    "operational_temperature_range_K": "298–568",
+    "decomposition_onset_K": 568
+  }
+}

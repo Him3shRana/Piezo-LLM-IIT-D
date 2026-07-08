@@ -1,0 +1,97 @@
+{
+  "id": "PMC-045",
+  "schema_version": "1.0",
+  "text": "Fmoc-diphenylalanine (Fmoc-FF) hydrate - a piezoelectric self-assembling peptide nanomaterial",
+
+  "molecule_name": "Fmoc-diphenylalanine hydrate",
+  "synonyms": [
+    "Fmoc-FF",
+    "FmocFF",
+    "Fmoc-PhePhe",
+    "fluorenylmethyloxycarbonyl diphenylalanine",
+    "N-(fluorenyl-9-methoxycarbonyl)-L-phenylalanyl-L-phenylalanine"
+  ],
+  "chemical_formula": "C33H30N2O5·0.875(H2O)",
+  "molecular_weight": 550.35,
+  "crystal_type": "Organic molecular crystal (self-assembling peptide derivative hydrate)",
+  "component_count": 2,
+
+  "csd_refcode": null,
+  "ccdc_number": 1027570,
+  "cif_file_name": "PMC-045-Fmoc-diphenylalanine__Fmoc-FF_.cif",
+  "structure_doi": "10.1039/C4SM02256D",
+  "deposition_date": "2014-11-12",
+
+  "crystal_system": "Monoclinic",
+  "space_group_symbol": "C2",
+  "space_group_number": 5,
+  "centrosymmetric": false,
+  "cell_a": 52.27,
+  "cell_b": 5.010,
+  "cell_c": 22.83,
+  "cell_alpha": 90.0,
+  "cell_beta": 105.49,
+  "cell_gamma": 90.0,
+  "cell_volume": 5761,
+  "cell_z": 8,
+  "cell_z_prime": 2,
+
+  "habit": "needle",
+  "colour": "colourless",
+  "density_g_cm3": 1.269,
+  "temperature_k": 100,
+  "radiation": "Synchrotron (0.6889 Å)",
+  "experiment_type": "Single-crystal X-ray diffraction (synchrotron)",
+  "r_factor_percent": 10.27,
+
+  "intermolecular_interactions": [
+    "N-H···O hydrogen bonds",
+    "π−π stacking (fluorenyl and phenyl groups)",
+    "Antiparallel β-sheet hydrogen bonding",
+    "Van der Waals interactions"
+  ],
+  "isostructural_analogues": [],
+
+  "is_piezoelectric": true,
+  "is_ferroelectric": null,
+  "is_pyroelectric": null,
+  "property_symmetry_compatible": true,
+
+  "has_experimental": true,
+  "has_computational": false,
+  "experimental_method": "Piezoresponse force microscopy (lateral PFM / LPFM)",
+  "computational_method": null,
+  "shear_qualitative": "Measured",
+  "shear_value": 1.7,
+  "shear_unit": "pm/V",
+  "longitudinal_qualitative": "Not reported",
+  "longitudinal_value": null,
+  "longitudinal_unit": null,
+  "dft_shear_qualitative": null,
+
+  "structure_ref_authors": [
+    "J. Raeburn",
+    "C. Mendoza-Cuenca",
+    "B. N. Cattoz",
+    "M. A. Little",
+    "A. E. Terry",
+    "A. Zamith Cardoso",
+    "P. C. Griffiths",
+    "D. J. Adams"
+  ],
+  "structure_ref_journal": "Soft Matter",
+  "structure_ref_year": 2015,
+  "structure_ref_volume": "11",
+  "structure_ref_doi": "10.1039/C4SM02256D",
+
+  "property_ref_title": "Nanoscale Piezoelectric Properties of Self-Assembled Fmoc-FF Peptide Fibrous Networks",
+  "property_ref_journal": "ACS Applied Materials & Interfaces",
+  "property_ref_year": 2015,
+  "property_ref_doi": "10.1021/acsami.5b01251",
+
+  "structure_verified": true,
+  "paper_verified": true,
+  "piezoelectricity_verified": true,
+  "cif_matches_paper": true,
+  "cod_code": null
+}

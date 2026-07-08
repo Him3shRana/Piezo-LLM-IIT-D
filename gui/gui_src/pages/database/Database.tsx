@@ -2,10 +2,13 @@ import { useState } from 'react';
 import type { FC } from 'react';
 import CrystalExplorer from '../crystals/CrystalExplorer';
 import DatabaseAdminPanel from './DatabaseAdminPanel';
-import { Database as DatabaseIcon, Settings, LogOut } from 'lucide-react';
+import PiezoClassification from './PiezoClassification';
+
+import VectorDBViewer from './VectorDBViewer';
+import { Database as DatabaseIcon, Settings, LogOut, FlaskConical, Layers } from 'lucide-react';
 
 const DatabasePage: FC = () => {
-  const [activeTab, setActiveTab] = useState<'explorer' | 'admin'>('explorer');
+  const [activeTab, setActiveTab] = useState<'explorer' | 'classification' | 'vectordb' | 'admin'>('explorer');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [loginId, setLoginId] = useState('');
@@ -66,6 +69,32 @@ const DatabasePage: FC = () => {
           <DatabaseIcon className="w-5 h-5" />
           Crystal Explorer
         </button>
+
+        <button
+          onClick={() => setActiveTab('classification')}
+          className={`flex items-center gap-2 px-4 py-3 font-semibold transition-colors ${
+            activeTab === 'classification'
+              ? 'text-cyan-400 border-b-2 border-cyan-400'
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          <FlaskConical className="w-5 h-5" />
+          Classification
+        </button>
+
+
+        <button
+          onClick={() => setActiveTab('vectordb')}
+          className={`flex items-center gap-2 px-4 py-3 font-semibold transition-colors ${
+            activeTab === 'vectordb'
+              ? 'text-cyan-400 border-b-2 border-cyan-400'
+              : 'text-gray-400 hover:text-white'
+          }`}
+        >
+          <Layers className="w-5 h-5" />
+          Vector DB
+        </button>
+        
         
         <button
           onClick={handleAdminClick}
@@ -91,6 +120,8 @@ const DatabasePage: FC = () => {
       </div>
 
       {activeTab === 'explorer' && <CrystalExplorer />}
+      {activeTab === 'classification' && <PiezoClassification />}
+      {activeTab === 'vectordb' && <VectorDBViewer />}
       {activeTab === 'admin' && isAuthenticated && <DatabaseAdminPanel />}
 
       {showLoginModal && (

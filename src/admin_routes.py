@@ -43,25 +43,25 @@ admin_bp = Blueprint('admin', __name__, url_prefix='/api/admin')
 def run_database_builder(pmc_id=None, full_scan=True):
     """
     Run the Python database builder script
-    
+
     Args:
         pmc_id: If provided, update only this crystal
         full_scan: If True, scan all crystals
-    
+
     Returns:
         dict with success status and statistics
     """
     try:
         # Change to src directory to run script
         src_dir = os.path.dirname(DATABASE_BUILDER_SCRIPT)
-        
+
         # Build command arguments
         cmd = [sys.executable, DATABASE_BUILDER_SCRIPT]
-        
+
         # For now, the script is interactive
         # We'll need to modify it to accept command-line arguments
         # For the initial implementation, we'll just run a full scan
-        
+
         result = subprocess.run(
             cmd,
             capture_output=True,
@@ -78,7 +78,7 @@ def run_database_builder(pmc_id=None, full_scan=True):
 
         # Parse output to extract statistics
         output = result.stdout
-        
+
         # Count occurrences in output
         new_count = output.count("✨ NEW ENTRY")
         updated_count = output.count("🔄 UPDATED")
@@ -111,7 +111,7 @@ def load_master_database():
     try:
         if not os.path.exists(OUTPUT_DATABASE):
             return None
-        
+
         with open(OUTPUT_DATABASE, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
@@ -139,7 +139,7 @@ def save_master_database(db):
 def rebuild_database():
     """
     Rebuild master database (full scan or single crystal update)
-    
+
     Request body:
     {
         "full_scan": true,  # or provide pmc_id for single update
@@ -188,6 +188,45 @@ def rebuild_database():
         }), 500
 
 
+@admin_bp.route('/rebuild-vectordb', methods=['POST'])
+def rebuild_vectordb():
+    """
+    Rebuild / update the Chroma vector database from the per-molecule JSONs.
+
+    Uses the incremental (upsert-by-pmc_id) builder, so it is safe to call
+    repeatedly: existing molecules are updated, new ones added, no duplicates.
+    """
+    try:
+        # Lazy import: only load the embedding stack when this route is hit.
+        from build_rich_vectors import build_rich_vector_db
+
+        result = build_rich_vector_db()
+
+        if not result["success"]:
+            return jsonify({
+                "status": "error",
+                "message": result["error"] or "Vector DB build failed"
+            }), 400
+
+        return jsonify({
+            "status": "success",
+            "message": "Vector database updated successfully",
+            "total_in_db": result["total_in_db"],
+            "processed": result["processed"],
+            "new": result["new"],
+            "updated": result["updated"],
+            "skipped": result["skipped"],
+            "skipped_count": len(result["skipped"]),
+            "timestamp": datetime.now().isoformat()
+        })
+
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+
+
 @admin_bp.route('/database-status', methods=['GET'])
 def database_status():
     """
@@ -195,7 +234,7 @@ def database_status():
     """
     try:
         db = load_master_database()
-        
+
         if not db:
             return jsonify({
                 "status": "empty",
@@ -228,7 +267,7 @@ def database_status():
 def remove_crystal():
     """
     Remove a crystal from the database
-    
+
     Request body:
     {
         "pmc_id": "PMC-001"
@@ -261,7 +300,7 @@ def remove_crystal():
 
         # Remove crystal
         del crystals[pmc_id]
-        
+
         # Update metadata
         db['metadata']['total_crystals'] = len(crystals)
         db['metadata']['last_update'] = datetime.now().isoformat(timespec='seconds')
@@ -290,14 +329,14 @@ def remove_crystal():
 def get_crystals():
     """
     Get all crystals from database (with optional filtering)
-    
+
     Query parameters:
     - filter: 'all', 'complete', 'incomplete'
     - search: search term
     """
     try:
         db = load_master_database()
-        
+
         if not db:
             return jsonify({
                 "crystals": [],
@@ -305,7 +344,7 @@ def get_crystals():
             })
 
         crystals = list(db.get('crystals', {}).values())
-        
+
         # Apply filters if requested
         filter_type = request.args.get('filter', 'all')
         search_term = request.args.get('search', '').lower()
@@ -373,7 +412,7 @@ def validation_report():
             os.path.dirname(OUTPUT_DATABASE),
             "validation_report.json"
         )
-        
+
         if not os.path.exists(validation_path):
             return jsonify({
                 "status": "error",
@@ -399,11 +438,11 @@ def validation_report():
 def register_admin_routes(app: Flask):
     """
     Register admin routes with your Flask app
-    
+
     Usage in your main app.py:
     ----
     from admin_routes import register_admin_routes
-    
+
     app = Flask(__name__)
     register_admin_routes(app)
     ----
@@ -418,15 +457,16 @@ def register_admin_routes(app: Flask):
 
 if __name__ == "__main__":
     from flask import Flask
-    
+
     app = Flask(__name__)
     register_admin_routes(app)
-    
+
     # Test the endpoints
     print("Starting test server on http://localhost:5000")
     print("Test endpoints:")
     print("  GET  http://localhost:5000/api/admin/database-status")
     print("  GET  http://localhost:5000/api/admin/crystals")
     print("  POST http://localhost:5000/api/admin/rebuild-database")
-    
+    print("  POST http://localhost:5000/api/admin/rebuild-vectordb")
+
     app.run(debug=True, port=5000)

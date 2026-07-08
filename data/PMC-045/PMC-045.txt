@@ -1,0 +1,46 @@
+Crystal ID: PMC-045
+
+CCDC ID: 1027570
+
+CSD REFCODE: Not yet determined (CCDC 1027570)
+
+Molecule Name: Fmoc-diphenylalanine hydrate (Fmoc-FF)
+
+IUPAC Name: N-(9-Fluorenylmethoxycarbonyl)-L-phenylalanyl-L-phenylalanine hydrate
+
+Chemical Formula: C₃₃H₃₀N₂O₅·0.875(H₂O)
+
+Crystal Type: Organic molecular crystal (self-assembling peptide derivative hydrate)
+
+Piezoelectric Property: Yes
+
+Evidence: The crystal belongs to the non-centrosymmetric space group C2 (No. 5), which is compatible with piezoelectricity. Ryan et al. (2015) directly measured shear piezoelectricity in self-assembled Fmoc-FF nanofibrils using lateral piezoresponse force microscopy (LPFM). The effective shear piezoelectric coefficient d₁₅' was determined to be 1.7 ± 0.5 pm V⁻¹, significantly above the detection limit of the measurement system (0.002 ± 0.103 pm V⁻¹ on non-piezoelectric glass). The piezoelectric response is attributed to the noncentrosymmetric nature of the underlying antiparallel β-sheet topology of the nanofibrils.
+
+Research Paper (Piezoelectric Property): Nanoscale Piezoelectric Properties of Self-Assembled Fmoc-FF Peptide Fibrous Networks
+
+DOI (Property): 10.1021/acsami.5b01251
+
+Research Paper (Crystal Structure): The effect of solvent choice on the gelation and final hydrogel properties of Fmoc-diphenylalanine
+
+DOI (Structure): 10.1039/C4SM02256D
+
+CIF File Name (System): PMC-045-Fmoc-diphenylalanine__Fmoc-FF_.cif
+
+Space Group: C2 (No. 5)
+
+Crystal System: Monoclinic
+
+Piezoelectric Coefficient: d₁₅' = 1.7 ± 0.5 pm V⁻¹ (shear, measured by LPFM on nanofibrils)
+
+Notes:
+
+Organic self-assembling peptide crystal consisting of Fmoc-diphenylalanine with partial water of crystallisation (0.875 H₂O per molecule).
+Non-centrosymmetric crystal structure (space group C2), compatible with piezoelectricity.
+Crystal structure determined from crystals grown from an H₂O–acetone gel phase at 100 K using synchrotron radiation (λ = 0.6889 Å) at Diamond Light Source (beamline I19).
+The asymmetric unit contains two independent Fmoc-FF molecules, one fully occupied and one partially occupied water molecule (Z' = 2).
+The R factor (R₁ = 10.27% for observed reflections) is relatively high due to the very small crystal size (0.070 × 0.009 × 0.008 mm³) and the inherent disorder/flexibility of the peptide.
+Fmoc-FF self-assembles into nanofibrils via molecular stacking facilitated by the Fmoc moiety and mediated by noncovalent interactions including π-π stacking, hydrogen bonds, and van der Waals forces.
+The molecular structure adopts a β-sheet conformation with a high degree of π-π stacking, forming antiparallel β-sheets that roll into cylindrical nanofibrils (~3 nm individual, ~66 nm in bundles).
+Shear piezoelectricity was measured using lateral PFM; for comparison, FF nanotubes gave d₁₅' = 33.7 ± 0.7 pm V⁻¹ under identical conditions.
+The piezoelectric response arises from net polarisation along the fibril axis due to the noncentrosymmetric arrangement of β-strands.
+Fmoc-FF hydrogels are biomimetic materials with potential applications as piezoelectric scaffolds for tissue engineering, bone remodelling, and nerve regeneration.

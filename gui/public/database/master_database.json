@@ -9,7 +9,7 @@
       ],
       "chemical_formula": "C2H5NO2",
       "molecular_weight": 75.07,
-      "crystal_type": "Organic Molecular Crystal",
+      "crystal_type": "Organic Molecular Crystal (Amino Acid Based)",
       "component_count": 1,
       "ccdc_number": 1169370,
       "csd_refcode": "GLYCIN18",
@@ -38,7 +38,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.889051"
+      "last_updated": "2026-07-06T15:31:01.365799"
     },
     "PMC-002": {
       "pmc_id": "PMC-002",
@@ -49,7 +49,7 @@
       ],
       "chemical_formula": "C2H5NO2",
       "molecular_weight": 75.07,
-      "crystal_type": "Organic Molecular Crystal",
+      "crystal_type": "Organic Molecular Crystal (Amino Acid Based)",
       "component_count": 1,
       "ccdc_number": null,
       "csd_refcode": null,
@@ -64,8 +64,8 @@
       "structure_ref_doi": "10.1039/d1cc02608a",
       "json_schema_version": "1.0",
       "json_path": "../data/PMC-002/PMC-002.json",
-      "pdf_path": "../data/PMC-002/PMC-002-bita-glycine.pdf",
-      "cif_path": "../data/PMC-002/PMC-002-beta-glicine.cif",
+      "pdf_path": "../data/PMC-002/PMC-002-beta-glycine.pdf",
+      "cif_path": "../data/PMC-002/PMC-002-beta-glycine.cif",
       "txt_path": "../data/PMC-002/PMC-002.txt",
       "aliases": [
         "PMC-002"
@@ -78,7 +78,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.889245"
+      "last_updated": "2026-07-06T15:31:01.375251"
     },
     "PMC-003": {
       "pmc_id": "PMC-003",
@@ -118,7 +118,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.889406"
+      "last_updated": "2026-07-06T15:31:01.375545"
     },
     "PMC-004": {
       "pmc_id": "PMC-004",
@@ -129,7 +129,7 @@
       ],
       "chemical_formula": "C8H8N2",
       "molecular_weight": 132.16,
-      "crystal_type": "Organic Molecular Crystal",
+      "crystal_type": "Organic Molecular Crystal (Amino Acid Based)",
       "component_count": 1,
       "ccdc_number": 909441,
       "csd_refcode": "KOWYEA02",
@@ -158,7 +158,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.889559"
+      "last_updated": "2026-07-06T15:31:01.375703"
     },
     "PMC-005": {
       "pmc_id": "PMC-005",
@@ -198,7 +198,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.889711"
+      "last_updated": "2026-07-06T15:31:01.375854"
     },
     "PMC-006": {
       "pmc_id": "PMC-006",
@@ -209,7 +209,7 @@
       ],
       "chemical_formula": "C8H6Cl2N2",
       "molecular_weight": 201.07,
-      "crystal_type": "Organic Molecular Crystal",
+      "crystal_type": "Organic Molecular Crystal (Amino Acid Based)",
       "component_count": 1,
       "ccdc_number": 909439,
       "csd_refcode": "REZBOP",
@@ -238,7 +238,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.889861"
+      "last_updated": "2026-07-06T15:31:01.376048"
     },
     "PMC-007": {
       "pmc_id": "PMC-007",
@@ -249,7 +249,7 @@
       ],
       "chemical_formula": "C3H7NO2",
       "molecular_weight": 89.09,
-      "crystal_type": "Organic Molecular Crystal",
+      "crystal_type": "Organic Molecular Crystal (Amino Acid Based)",
       "component_count": 1,
       "ccdc_number": 1203201,
       "csd_refcode": "LALNIN01",
@@ -278,7 +278,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.890006"
+      "last_updated": "2026-07-06T15:31:01.376208"
     },
     "PMC-008": {
       "pmc_id": "PMC-008",
@@ -319,7 +319,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.890153"
+      "last_updated": "2026-07-06T15:31:01.376349"
     },
     "PMC-009": {
       "pmc_id": "PMC-009",
@@ -361,7 +361,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.890299"
+      "last_updated": "2026-07-06T15:31:01.376491"
     },
     "PMC-010": {
       "pmc_id": "PMC-010",
@@ -398,10 +398,10 @@
         "json": true,
         "pdf": true,
         "cif": true,
-        "txt": false
+        "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.890464"
+      "last_updated": "2026-07-06T15:31:01.376689"
     },
     "PMC-011": {
       "pmc_id": "PMC-011",
@@ -445,7 +445,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.890617"
+      "last_updated": "2026-07-06T15:31:01.376840"
     },
     "PMC-012": {
       "pmc_id": "PMC-012",
@@ -485,7 +485,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.890760"
+      "last_updated": "2026-07-06T15:31:01.376984"
     },
     "PMC-013": {
       "pmc_id": "PMC-013",
@@ -526,7 +526,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.890897"
+      "last_updated": "2026-07-06T15:31:01.377133"
     },
     "PMC-014": {
       "pmc_id": "PMC-014",
@@ -566,7 +566,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.891041"
+      "last_updated": "2026-07-06T15:31:01.377287"
     },
     "PMC-015": {
       "pmc_id": "PMC-015",
@@ -608,7 +608,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.891188"
+      "last_updated": "2026-07-06T15:31:01.377444"
     },
     "PMC-016": {
       "pmc_id": "PMC-016",
@@ -648,44 +648,49 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.891438"
+      "last_updated": "2026-07-06T15:31:01.377695"
     },
     "PMC-017": {
       "pmc_id": "PMC-017",
-      "molecule_name": null,
-      "synonyms": [],
-      "chemical_formula": null,
-      "molecular_weight": null,
-      "crystal_type": null,
-      "component_count": null,
-      "ccdc_number": null,
-      "csd_refcode": null,
-      "space_group_symbol": null,
-      "space_group_number": null,
-      "crystal_system": null,
-      "centrosymmetric": null,
-      "is_piezoelectric": null,
-      "is_ferroelectric": null,
-      "is_pyroelectric": null,
-      "property_ref_doi": null,
-      "structure_ref_doi": null,
+      "molecule_name": "trans-4-Hydroxy-L-proline",
+      "synonyms": [
+        "4-hydroxy-L-proline",
+        "Hyp",
+        "trans-4-hydroxy-L-proline",
+        "L-hydroxyproline"
+      ],
+      "chemical_formula": "C5H9NO3",
+      "molecular_weight": 131.13,
+      "crystal_type": "Organic molecular crystal (amino acid)",
+      "component_count": 1,
+      "ccdc_number": 1177934,
+      "csd_refcode": "HOPROL12",
+      "space_group_symbol": "P212121",
+      "space_group_number": 19,
+      "crystal_system": "Orthorhombic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": false,
+      "is_pyroelectric": false,
+      "property_ref_doi": "10.1103/PhysRevLett.133.137001",
+      "structure_ref_doi": "10.1103/PhysRevLett.133.137001",
       "json_schema_version": "1.0",
       "json_path": "../data/PMC-017/PMC-017.json",
       "pdf_path": "../data/PMC-017/PMC-017-trans-4-Hydroxy-L-proline.pdf",
-      "cif_path": null,
+      "cif_path": "../data/PMC-017/PMC-017-trans-4-Hydroxy-L-proline.cif",
       "txt_path": "../data/PMC-017/PMC-017.txt",
       "aliases": [
         "PMC-017"
       ],
-      "search_text": "PMC-017",
+      "search_text": "PMC-017 trans-4-Hydroxy-L-proline C5H9NO3",
       "status": {
-        "json": false,
+        "json": true,
         "pdf": true,
-        "cif": false,
-        "txt": false
+        "cif": true,
+        "txt": true
       },
-      "validated": false,
-      "last_updated": "2026-07-01T07:31:16.891544"
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.377910"
     },
     "PMC-018": {
       "pmc_id": "PMC-018",
@@ -726,7 +731,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.891760"
+      "last_updated": "2026-07-06T15:31:01.378134"
     },
     "PMC-019": {
       "pmc_id": "PMC-019",
@@ -768,7 +773,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.891911"
+      "last_updated": "2026-07-06T15:31:01.378294"
     },
     "PMC-020": {
       "pmc_id": "PMC-020",
@@ -809,7 +814,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.892055"
+      "last_updated": "2026-07-06T15:31:01.378441"
     },
     "PMC-021": {
       "pmc_id": "PMC-021",
@@ -850,7 +855,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.892205"
+      "last_updated": "2026-07-06T15:31:01.378637"
     },
     "PMC-022": {
       "pmc_id": "PMC-022",
@@ -892,7 +897,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.892349"
+      "last_updated": "2026-07-06T15:31:01.378821"
     },
     "PMC-023": {
       "pmc_id": "PMC-023",
@@ -935,7 +940,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.892494"
+      "last_updated": "2026-07-06T15:31:01.378988"
     },
     "PMC-024": {
       "pmc_id": "PMC-024",
@@ -975,7 +980,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.892643"
+      "last_updated": "2026-07-06T15:31:01.379219"
     },
     "PMC-025": {
       "pmc_id": "PMC-025",
@@ -1016,7 +1021,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.892805"
+      "last_updated": "2026-07-06T15:31:01.379440"
     },
     "PMC-026": {
       "pmc_id": "PMC-026",
@@ -1057,7 +1062,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.892994"
+      "last_updated": "2026-07-06T15:31:01.379651"
     },
     "PMC-027": {
       "pmc_id": "PMC-027",
@@ -1069,7 +1074,7 @@
       ],
       "chemical_formula": "C17H16FNO4",
       "molecular_weight": 317.31,
-      "crystal_type": "Organic Molecular Crystal",
+      "crystal_type": "Organic Molecular Crystal (Amino Ccid Based)",
       "component_count": 1,
       "ccdc_number": "2378828",
       "csd_refcode": "MOZGOB",
@@ -1098,7 +1103,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.893176"
+      "last_updated": "2026-07-06T15:31:01.379881"
     },
     "PMC-028": {
       "pmc_id": "PMC-028",
@@ -1110,7 +1115,7 @@
       ],
       "chemical_formula": "C5H11NO2S",
       "molecular_weight": 149.21,
-      "crystal_type": "Organic Molecular Crystal",
+      "crystal_type": "Organic Molecular Crystal (Amino Acid Based)",
       "component_count": 1,
       "ccdc_number": 276855,
       "csd_refcode": "LMETON11",
@@ -1139,7 +1144,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.893338"
+      "last_updated": "2026-07-06T15:31:01.380045"
     },
     "PMC-029": {
       "pmc_id": "PMC-029",
@@ -1180,7 +1185,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.893494"
+      "last_updated": "2026-07-06T15:31:01.380201"
     },
     "PMC-030": {
       "pmc_id": "PMC-030",
@@ -1221,7 +1226,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.893661"
+      "last_updated": "2026-07-06T15:31:01.380397"
     },
     "PMC-031": {
       "pmc_id": "PMC-031",
@@ -1262,7 +1267,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.893849"
+      "last_updated": "2026-07-06T15:31:01.380654"
     },
     "PMC-032": {
       "pmc_id": "PMC-032",
@@ -1303,7 +1308,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.894036"
+      "last_updated": "2026-07-06T15:31:01.380889"
     },
     "PMC-033": {
       "pmc_id": "PMC-033",
@@ -1343,7 +1348,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.894186"
+      "last_updated": "2026-07-06T15:31:01.381043"
     },
     "PMC-034": {
       "pmc_id": "PMC-034",
@@ -1384,7 +1389,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.894310"
+      "last_updated": "2026-07-06T15:31:01.381171"
     },
     "PMC-035": {
       "pmc_id": "PMC-035",
@@ -1425,7 +1430,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.894431"
+      "last_updated": "2026-07-06T15:31:01.381296"
     },
     "PMC-036": {
       "pmc_id": "PMC-036",
@@ -1465,13 +1470,455 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-01T07:31:16.894559"
+      "last_updated": "2026-07-06T15:31:01.381437"
+    },
+    "PMC-037": {
+      "pmc_id": "PMC-037",
+      "molecule_name": "N-Acetyl-L-Tryptophan",
+      "synonyms": [
+        "L-AcW",
+        "N-Acetyl-L-tryptophan",
+        "acetylated tryptophan",
+        "(2S)-2-acetamido-3-(1H-indol-3-yl)propanoic acid"
+      ],
+      "chemical_formula": "C13H14N2O3",
+      "molecular_weight": 246.26,
+      "crystal_type": "Pure Molecular Crystal",
+      "component_count": 1,
+      "ccdc_number": 1100754,
+      "csd_refcode": "ACLTRY",
+      "space_group_symbol": "P212121",
+      "space_group_number": 19,
+      "crystal_system": "Orthorhombic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": false,
+      "is_pyroelectric": false,
+      "property_ref_doi": "10.1021/jacs.3c02993",
+      "structure_ref_doi": "10.1107/S0567740877006815",
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-037/PMC-037.json",
+      "pdf_path": "../data/PMC-037/PMC-037-N-Acetyl-L-Tryptophan (L-AcW).pdf",
+      "cif_path": "../data/PMC-037/PMC-037-N-Acetyl-L-Tryptophan (L-AcW).cif",
+      "txt_path": "../data/PMC-037/PMC-037.txt",
+      "aliases": [
+        "PMC-037"
+      ],
+      "search_text": "PMC-037 N-Acetyl-L-Tryptophan C13H14N2O3",
+      "status": {
+        "json": true,
+        "pdf": true,
+        "cif": true,
+        "txt": true
+      },
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.381525"
+    },
+    "PMC-038": {
+      "pmc_id": "PMC-038",
+      "molecule_name": "L-Tyrosine",
+      "synonyms": [
+        "L-Tyr",
+        "L-4-hydroxyphenylalanine",
+        "(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid",
+        "tyrosine"
+      ],
+      "chemical_formula": "C9H11NO3",
+      "molecular_weight": 181.19,
+      "crystal_type": "Pure Molecular Crystal",
+      "component_count": 1,
+      "ccdc_number": 1208549,
+      "csd_refcode": "LTYROS10",
+      "space_group_symbol": "P212121",
+      "space_group_number": 19,
+      "crystal_system": "Orthorhombic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": false,
+      "is_pyroelectric": false,
+      "property_ref_doi": "10.1021/acsnano.9b08217",
+      "structure_ref_doi": "10.3891/acta.chem.scand.26-3819",
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-038/PMC-038.json",
+      "pdf_path": "../data/PMC-038/PMC-038-L-Tyrosine.pdf",
+      "cif_path": "../data/PMC-038/PMC-038-L-Tyrosine.cif",
+      "txt_path": "../data/PMC-038/PMC-038.txt",
+      "aliases": [
+        "PMC-038"
+      ],
+      "search_text": "PMC-038 L-Tyrosine C9H11NO3",
+      "status": {
+        "json": true,
+        "pdf": true,
+        "cif": true,
+        "txt": true
+      },
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.381597"
+    },
+    "PMC-039": {
+      "pmc_id": "PMC-039",
+      "molecule_name": "DL-Alanine",
+      "synonyms": [
+        "DL-Ala",
+        "dl-alanine",
+        "racemic alanine",
+        "(\u00b1)-2-aminopropionic acid",
+        "2-aminopropanoic acid"
+      ],
+      "chemical_formula": "C3H7NO2",
+      "molecular_weight": 89.1,
+      "crystal_type": "Pure Molecular Crystal",
+      "component_count": 2,
+      "ccdc_number": 164668,
+      "csd_refcode": null,
+      "space_group_symbol": "Pna21",
+      "space_group_number": 33,
+      "crystal_system": "Orthorhombic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": false,
+      "is_pyroelectric": false,
+      "property_ref_doi": "10.1103/PhysRevLett.122.047701",
+      "structure_ref_doi": "10.1107/S010827010100261X",
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-039/PMC-039.json",
+      "pdf_path": "../data/PMC-039/PMC-039-DL-Alanine.pdf",
+      "cif_path": "../data/PMC-039/PMC-039-DL-Alanine.cif",
+      "txt_path": "../data/PMC-039/PMC-039.txt",
+      "aliases": [
+        "PMC-039"
+      ],
+      "search_text": "PMC-039 DL-Alanine C3H7NO2",
+      "status": {
+        "json": true,
+        "pdf": true,
+        "cif": true,
+        "txt": true
+      },
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.381668"
+    },
+    "PMC-040": {
+      "pmc_id": "PMC-040",
+      "molecule_name": "L-Argininium phosphite",
+      "synonyms": [
+        "LAPI",
+        "L-argininium hydrogen phosphite",
+        "L-argininium phosphite salt",
+        "L-Arginine phosphite"
+      ],
+      "chemical_formula": "C6H17N4O5P",
+      "molecular_weight": 256.2,
+      "crystal_type": "Organic-Inorganic Hybrid Molecular Crystal",
+      "component_count": 2,
+      "ccdc_number": 1026960,
+      "csd_refcode": null,
+      "space_group_symbol": "P21",
+      "space_group_number": 4,
+      "crystal_system": "Monoclinic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": false,
+      "is_pyroelectric": true,
+      "property_ref_doi": "10.1007/s00339-019-2642-5",
+      "structure_ref_doi": "10.1107/S2053229615006956",
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-040/PMC-040.json",
+      "pdf_path": "../data/PMC-040/PMC-040-L-argininium phosphite.pdf",
+      "cif_path": "../data/PMC-040/PMC-040-L-argininium phosphite.cif",
+      "txt_path": "../data/PMC-040/PMC-040.txt",
+      "aliases": [
+        "PMC-040"
+      ],
+      "search_text": "PMC-040 L-Argininium phosphite C6H17N4O5P",
+      "status": {
+        "json": true,
+        "pdf": true,
+        "cif": true,
+        "txt": true
+      },
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.381825"
+    },
+    "PMC-041": {
+      "pmc_id": "PMC-041",
+      "molecule_name": null,
+      "synonyms": [],
+      "chemical_formula": null,
+      "molecular_weight": null,
+      "crystal_type": null,
+      "component_count": null,
+      "ccdc_number": null,
+      "csd_refcode": null,
+      "space_group_symbol": null,
+      "space_group_number": null,
+      "crystal_system": null,
+      "centrosymmetric": null,
+      "is_piezoelectric": null,
+      "is_ferroelectric": null,
+      "is_pyroelectric": null,
+      "property_ref_doi": null,
+      "structure_ref_doi": null,
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-041/PMC-041.json",
+      "pdf_path": "../data/PMC-041/PMC-041-L-leucyl-L-phenylalanine (Leu\u2013Phe).pdf",
+      "cif_path": null,
+      "txt_path": "../data/PMC-041/PMC-041.txt",
+      "aliases": [
+        "PMC-041"
+      ],
+      "search_text": "PMC-041",
+      "status": {
+        "json": false,
+        "pdf": true,
+        "cif": false,
+        "txt": false
+      },
+      "validated": false,
+      "last_updated": "2026-07-06T15:31:01.381882"
+    },
+    "PMC-042": {
+      "pmc_id": "PMC-042",
+      "molecule_name": "L-Phenylalanyl-L-leucine",
+      "synonyms": [
+        "Phe-Leu",
+        "L-Phe-L-Leu",
+        "L-phenylalanyl-L-leucine hydrate"
+      ],
+      "chemical_formula": "C15H22N2O3",
+      "molecular_weight": 278.35,
+      "crystal_type": "Organic molecular crystal (dipeptide)",
+      "component_count": 1,
+      "ccdc_number": 163339,
+      "csd_refcode": "IFAJUV",
+      "space_group_symbol": "P212121",
+      "space_group_number": 19,
+      "crystal_system": "Orthorhombic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": false,
+      "is_pyroelectric": false,
+      "property_ref_doi": "10.1016/j.apmt.2024.102564",
+      "structure_ref_doi": "10.1002/1521-3765(20011203)7:23<5153::AID-CHEM5153>3.0.CO;2-N",
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-042/PMC-042.json",
+      "pdf_path": "../data/PMC-042/PMC-042-L-phenylalanyl-L-leucine (Phe\u2013Leu).pdf",
+      "cif_path": "../data/PMC-042/PMC-042-L-phenylalanyl-L-leucine (Phe\u2013Leu).cif",
+      "txt_path": "../data/PMC-042/PMC-042.txt",
+      "aliases": [
+        "PMC-042"
+      ],
+      "search_text": "PMC-042 L-Phenylalanyl-L-leucine C15H22N2O3",
+      "status": {
+        "json": true,
+        "pdf": true,
+        "cif": true,
+        "txt": true
+      },
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.382030"
+    },
+    "PMC-043": {
+      "pmc_id": "PMC-043",
+      "molecule_name": null,
+      "synonyms": [],
+      "chemical_formula": null,
+      "molecular_weight": null,
+      "crystal_type": null,
+      "component_count": null,
+      "ccdc_number": null,
+      "csd_refcode": null,
+      "space_group_symbol": null,
+      "space_group_number": null,
+      "crystal_system": null,
+      "centrosymmetric": null,
+      "is_piezoelectric": null,
+      "is_ferroelectric": null,
+      "is_pyroelectric": null,
+      "property_ref_doi": null,
+      "structure_ref_doi": null,
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-043/PMC-043.json",
+      "pdf_path": "../data/PMC-043/PMC-043-ZPF (fluorinated N-Cbz-L-Phenylalanine).pdf",
+      "cif_path": null,
+      "txt_path": "../data/PMC-043/PMC-043.txt",
+      "aliases": [
+        "PMC-043"
+      ],
+      "search_text": "PMC-043",
+      "status": {
+        "json": false,
+        "pdf": true,
+        "cif": false,
+        "txt": false
+      },
+      "validated": false,
+      "last_updated": "2026-07-06T15:31:01.382075"
+    },
+    "PMC-044": {
+      "pmc_id": "PMC-044",
+      "molecule_name": null,
+      "synonyms": [],
+      "chemical_formula": null,
+      "molecular_weight": null,
+      "crystal_type": null,
+      "component_count": null,
+      "ccdc_number": null,
+      "csd_refcode": null,
+      "space_group_symbol": null,
+      "space_group_number": null,
+      "crystal_system": null,
+      "centrosymmetric": null,
+      "is_piezoelectric": null,
+      "is_ferroelectric": null,
+      "is_pyroelectric": null,
+      "property_ref_doi": null,
+      "structure_ref_doi": null,
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-044/PMC-044.json",
+      "pdf_path": "../data/PMC-044/PMC-044-HPF (fluorinated L-Phenylalanine).pdf",
+      "cif_path": null,
+      "txt_path": "../data/PMC-044/PMC-044.txt",
+      "aliases": [
+        "PMC-044"
+      ],
+      "search_text": "PMC-044",
+      "status": {
+        "json": false,
+        "pdf": true,
+        "cif": false,
+        "txt": false
+      },
+      "validated": false,
+      "last_updated": "2026-07-06T15:31:01.382117"
+    },
+    "PMC-045": {
+      "pmc_id": "PMC-045",
+      "molecule_name": "Fmoc-diphenylalanine hydrate",
+      "synonyms": [
+        "Fmoc-FF",
+        "FmocFF",
+        "Fmoc-PhePhe",
+        "fluorenylmethyloxycarbonyl diphenylalanine",
+        "N-(fluorenyl-9-methoxycarbonyl)-L-phenylalanyl-L-phenylalanine"
+      ],
+      "chemical_formula": "C33H30N2O5\u00b70.875(H2O)",
+      "molecular_weight": 550.35,
+      "crystal_type": "Organic molecular crystal (self-assembling peptide derivative hydrate)",
+      "component_count": 2,
+      "ccdc_number": 1027570,
+      "csd_refcode": null,
+      "space_group_symbol": "C2",
+      "space_group_number": 5,
+      "crystal_system": "Monoclinic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": null,
+      "is_pyroelectric": null,
+      "property_ref_doi": "10.1021/acsami.5b01251",
+      "structure_ref_doi": "10.1039/C4SM02256D",
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-045/PMC-045.json",
+      "pdf_path": "../data/PMC-045/PMC-045-Fmoc-diphenylalanine (Fmoc-FF).pdf",
+      "cif_path": "../data/PMC-045/PMC-045-Fmoc-diphenylalanine (Fmoc-FF).cif",
+      "txt_path": "../data/PMC-045/PMC-045.txt",
+      "aliases": [
+        "PMC-045"
+      ],
+      "search_text": "PMC-045 Fmoc-diphenylalanine hydrate C33H30N2O5\u00b70.875(H2O)",
+      "status": {
+        "json": true,
+        "pdf": true,
+        "cif": true,
+        "txt": true
+      },
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.382295"
+    },
+    "PMC-046": {
+      "pmc_id": "PMC-046",
+      "molecule_name": "Cyclo-glycine-L-tryptophan",
+      "synonyms": [
+        "cyclo-GW",
+        "cyclo(Gly-Trp)",
+        "3-(1H-indol-3-ylmethyl)piperazine-2,5-dione"
+      ],
+      "chemical_formula": "C13H13N3O2",
+      "molecular_weight": 243.26,
+      "crystal_type": "Organic molecular crystal (cyclic dipeptide / diketopiperazine)",
+      "component_count": 1,
+      "ccdc_number": 1823369,
+      "csd_refcode": null,
+      "space_group_symbol": "P21",
+      "space_group_number": 4,
+      "crystal_system": "Monoclinic",
+      "centrosymmetric": false,
+      "is_piezoelectric": true,
+      "is_ferroelectric": false,
+      "is_pyroelectric": null,
+      "property_ref_doi": "10.1002/adma.201807481",
+      "structure_ref_doi": "10.1002/adma.201807481",
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-046/PMC-046.json",
+      "pdf_path": "../data/PMC-046/PMC-046-glycine-L-tryptophan (cyclo-GW).pdf",
+      "cif_path": "../data/PMC-046/PMC-046-glycine-L-tryptophan (cyclo-GW)..cif",
+      "txt_path": "../data/PMC-046/PMC-046.txt",
+      "aliases": [
+        "PMC-046"
+      ],
+      "search_text": "PMC-046 Cyclo-glycine-L-tryptophan C13H13N3O2",
+      "status": {
+        "json": true,
+        "pdf": true,
+        "cif": true,
+        "txt": true
+      },
+      "validated": true,
+      "last_updated": "2026-07-06T15:31:01.382432"
+    },
+    "PMC-047": {
+      "pmc_id": "PMC-047",
+      "molecule_name": null,
+      "synonyms": [],
+      "chemical_formula": null,
+      "molecular_weight": null,
+      "crystal_type": null,
+      "component_count": null,
+      "ccdc_number": null,
+      "csd_refcode": null,
+      "space_group_symbol": null,
+      "space_group_number": null,
+      "crystal_system": null,
+      "centrosymmetric": null,
+      "is_piezoelectric": null,
+      "is_ferroelectric": null,
+      "is_pyroelectric": null,
+      "property_ref_doi": null,
+      "structure_ref_doi": null,
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-047/PMC-047.json",
+      "pdf_path": "../data/PMC-047/PMC-047-Cyclo-phenylalanyl-tryptophyl (cyclo FW).pdf",
+      "cif_path": null,
+      "txt_path": "../data/PMC-047/PMC-047.txt",
+      "aliases": [
+        "PMC-047"
+      ],
+      "search_text": "PMC-047",
+      "status": {
+        "json": false,
+        "pdf": true,
+        "cif": false,
+        "txt": false
+      },
+      "validated": false,
+      "last_updated": "2026-07-06T15:31:01.382476"
     }
   },
   "metadata": {
     "version": "2.0",
-    "total_crystals": 36,
-    "last_updated": "2026-07-01T07:31:16.894573",
+    "total_crystals": 47,
+    "last_updated": "2026-07-06T15:31:01.382493",
     "source": "admin_panel_rebuild"
   }
 }

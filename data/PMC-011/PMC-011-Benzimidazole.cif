@@ -13,49 +13,44 @@
 # 
 #######################################################################
 
-data_BZDMAZ01
+data_BZDMAZ
 #This CIF has been generated from an entry in the Cambridge Structural Database
-_database_code_depnum_ccdc_archive 'CCDC 1118210'
-_database_code_CSD               BZDMAZ01
-loop_
-_citation_id
-_citation_doi
-_citation_year
-1 10.1107/S0567740874005528 1974
+_database_code_depnum_ccdc_archive 'CCDC 1118209'
+_database_code_CSD               BZDMAZ
 _audit_creation_method           'Created from the CSD'
 _audit_update_record             
 ;
-2026-06-27 downloaded from the CCDC.
+2026-07-02 downloaded from the CCDC.
 ;
-_database_code_NBS               504459
+_database_code_NBS               504458
 _chemical_name_common            'DrugBank: DB02962'
 _chemical_formula_moiety         'C7 H6 N2'
 _chemical_name_systematic        Benzimidazole
 _chemical_absolute_configuration unk
 _diffrn_ambient_temperature      295
-_exptl_crystal_density_diffrn    1.233
+_exptl_crystal_density_diffrn    1.23
 #These two values have been output from a single CSD field.
-_refine_ls_R_factor_gt           0.045
-_refine_ls_wR_factor_gt          0.045
+_refine_ls_R_factor_gt           0.04
+_refine_ls_wR_factor_gt          0.04
 _diffrn_radiation_probe          x-ray
 _symmetry_cell_setting           orthorhombic
-_symmetry_space_group_name_H-M   'P n a 21'
+_symmetry_space_group_name_H-M   'P 21 n b'
 _symmetry_Int_Tables_number      33
-_space_group_name_Hall           'P 2c -2n'
+_space_group_name_Hall           'P -2bc 2a'
 loop_
 _symmetry_equiv_pos_site_id
 _symmetry_equiv_pos_as_xyz
 1 x,y,z
-2 1/2-x,1/2+y,1/2+z
-3 1/2+x,1/2-y,z
-4 -x,-y,1/2+z
-_cell_length_a                   13.507(10)
-_cell_length_b                   6.789(5)
-_cell_length_c                   6.940(5)
+2 1/2+x,1/2-y,1/2+z
+3 x,1/2+y,1/2-z
+4 1/2+x,-y,-z
+_cell_length_a                   6.940(1)
+_cell_length_b                   13.498(1)
+_cell_length_c                   6.808(1)
 _cell_angle_alpha                90
 _cell_angle_beta                 90
 _cell_angle_gamma                90
-_cell_volume                     636.391
+_cell_volume                     637.747
 _cell_formula_units_Z            4
 loop_
 _atom_site_label
@@ -63,14 +58,20 @@ _atom_site_type_symbol
 _atom_site_fract_x
 _atom_site_fract_y
 _atom_site_fract_z
-C1 C -0.25780 -0.39590 0.42880
-C2 C -0.13510 -0.50950 0.26460
-C3 C -0.05590 -0.53740 0.14000
-C4 C -0.00770 -0.71770 0.14740
-C5 C -0.03900 -0.86560 0.27570
-C6 C -0.11710 -0.84030 0.39900
-C7 C -0.16450 -0.65710 0.39280
-N1 N -0.24300 -0.58200 0.49570
-N2 N -0.19610 -0.34660 0.29050
+C1 C 0.21680 0.13560 0.01010
+C2 C 0.34050 0.05600 0.03850
+C3 C 0.33430 0.00790 0.21840
+C4 C 0.20680 0.03880 0.36570
+C5 C 0.08290 0.11750 0.34060
+C6 C 0.08950 0.16450 0.15730
+C7 C 0.05370 0.25720 -0.10230
+H1 H 0.42120 0.03920 -0.06720
+H2 H 0.43710 -0.04410 0.24400
+H3 H 0.24360 0.00670 0.50490
+H4 H -0.00130 0.13960 0.44750
+H5 H -0.00480 0.31150 -0.19080
+H6 H -0.10850 0.27540 0.14180
+N1 N -0.01280 0.24250 0.08110
+N2 N 0.19120 0.19590 -0.15420
 
 #END

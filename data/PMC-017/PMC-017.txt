@@ -1,0 +1,43 @@
+Crystal ID: PMC-017
+
+CCDC ID: 1177934
+
+CSD REFCODE: HOPROL12
+
+Molecule Name: trans-4-Hydroxy-L-proline
+
+IUPAC Name: (2S,4R)-4-Hydroxypyrrolidine-2-carboxylic acid
+
+Chemical Formula: C₅H₉NO₃
+
+Crystal Type: Organic molecular crystal (amino acid)
+
+Piezoelectric Property: Yes
+
+Evidence: The crystal belongs to the non-centrosymmetric space group P2₁2₁2₁, which permits shear piezoelectricity. The 2024 Physical Review Letters paper by Hari et al. demonstrates that molded polycrystalline assemblies of trans-4-hydroxy-L-proline exhibit measurable longitudinal piezoelectricity (d₃₃ up to 2.2 pC/N) despite the orthorhombic symmetry only formally permitting shear response in single crystals. This longitudinal response arises from the random orientation of crystallites in the polycrystalline assembly. The assemblies also produced a maximum peak-to-peak open circuit voltage of 700 mV under manual tapping.
+
+Research Paper: Molded, Solid-State Biomolecular Assemblies with Programmable Electromechanical Properties
+
+DOI: 10.1103/PhysRevLett.133.137001
+
+CIF File Name (System): PMC-017-trans-4-Hydroxy-L-proline.cif
+
+CIF File Name (Web): HOPROL01.cif (original 1952 deposition); HOPROL12 referenced in paper
+
+Space Group: P2₁2₁2₁ (No. 19)
+
+Crystal System: Orthorhombic
+
+Piezoelectric Coefficient: d₃₃ = 2.2 pC/N (maximum, polycrystalline molded disc of 3.3 cm diameter); average range 0.43–1.02 pC/N.
+
+Notes:
+
+Pure organic amino acid molecular crystal (no co-former or salt).
+Non-centrosymmetric crystal structure (P2₁2₁2₁), compatible with shear piezoelectricity.
+Original crystal structure deposited in 1952 (CCDC 1177934; CSD refcode HOPROL01); HOPROL12 is the reference used in the 2024 paper (Table I).
+The 2024 paper presents a novel molded polycrystalline fabrication technique and reports longitudinal piezoelectric response (d₃₃) for the first time in substrate-free trans-4-hydroxy-L-proline assemblies.
+Young's modulus of polycrystalline assembly: ~19 GPa (compression testing).
+Piezoelectric voltage constant g₃₃ = 26 mV m/N (for disc of 3.3 cm diameter).
+Operational temperature range: 298–568 K (decomposition onset ~568 K from DSC).
+Crystals fuse together during crystallization into a cohesive polycrystalline bulk, making them good candidates for device integration.
+Known biological role: conotoxin component, collagen constituent.

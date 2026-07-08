@@ -1,0 +1,240 @@
+==========================================
+PMC-040 : L-Argininium Phosphite
+==========================================
+
+Crystal ID
+----------
+PMC-040
+
+Crystal Name
+------------
+L-Argininium Phosphite
+
+Synonyms
+--------
+LAPI
+L-argininium hydrogen phosphite
+L-argininium phosphite salt
+L-Arginine phosphite
+
+Chemical Formula
+----------------
+C6H17N4O5P
+
+Molecular Weight
+----------------
+256.20 g/mol
+
+Crystal Category
+----------------
+Organic-Inorganic Hybrid Molecular Crystal
+Amino Acid Salt Crystal (L-arginine + phosphite ion)
+
+Crystal System
+--------------
+Monoclinic
+
+Space Group
+-----------
+P21 (No. 4)
+
+CCDC Number
+-----------
+1026960
+
+Unit Cell Parameters
+--------------------
+a = 9.3993(3) Å
+b = 4.8638(13) Å
+c = 13.2395(4) Å
+
+α = 90.00°
+β = 105.249(3)°
+γ = 90.00°
+
+Cell Volume
+-----------
+583.95 Å³
+
+Z Value
+-------
+2
+
+Z'
+--
+1
+
+Crystal Habit
+-------------
+Prism (0.100 × 0.300 × 0.300 mm)
+
+Crystal Colour
+--------------
+Colorless
+
+Calculated Density
+------------------
+1.457 g/cm³
+
+Experimental Method
+-------------------
+Single Crystal X-ray Diffraction
+
+Temperature
+-----------
+296 K
+
+Radiation
+---------
+X-ray (MoKα, λ = 0.71073 Å)
+
+R-factor
+--------
+3.65 % (R all)
+(wR = 9.26%, GooF = 1.052)
+
+Deposition Date
+---------------
+29 April 2015
+
+Structure Determination
+-----------------------
+Sonia
+N. Vijayan
+Mahak Vij
+Anuj Krishna
+Harsh Yadav
+K. K. Maurya
+S. A. Martin Britto Dhas
+Prashant Kumar
+
+Primary Crystal Structure Publication
+-------------------------------------
+Sonia et al.
+
+Acta Crystallographica Section C
+2015
+Volume 71
+Pages 252-255
+
+DOI:
+10.1107/S2053229615006956
+
+Database DOI:
+10.5517/cc13gmry
+
+Piezoelectric Status
+--------------------
+Piezoelectric
+
+Additional Nonlinear Optical Properties
+---------------------------------------
+Pyroelectric (yes)
+Second Harmonic Generation (SHG) active
+
+Symmetry Compatibility
+----------------------
+Compatible (non-centrosymmetric, chiral space group P21)
+
+Supramolecular Structure
+------------------------
+L-argininium cations form 1D hydrogen-bonded chains parallel to the
+crystallographic b-axis. These chains are linked to phosphite anions via
+strong O—H, N—H, and H—H interactions, creating a 3D hydrogen-bonded
+supramolecular network. The major intermolecular contacts are:
+  - O—H interactions    : 47.7% (dominant, red colour on Hirshfeld surface)
+  - H—H interactions    : 41.5%
+  - N—H interactions    : 5.0%
+  - C—H interactions    : 4.0%
+  - N—O interactions    : 1.0%
+  - O—C interactions    : 0.5%
+
+Evidence
+--------
+DFT-predicted and experimentally validated piezoelectric and nonlinear
+optical response reported for L-Argininium Phosphite in:
+
+DOI:
+10.1007/s00339-019-2642-5
+
+Piezoelectric Properties (from property reference)
+--------------------------------------------------
+Method (computational)   : Density Functional Theory (DFT)
+Method (experimental)    : Piezoelectric coefficient measurement 
+                           (silver paste electrodes, (010) plane)
+
+Piezoelectric Coefficient:
+  d22 (shear)           : 12 pC/N  (along (010) plane)
+                          (comparable to quartz 2.17 pC/N; 
+                           superior to ammonium dihydrogen phosphate ADP)
+
+Nonlinear Optical (SHG) Properties:
+  SHG efficiency        : 20 mV (Kurtz-Perry technique, standard KDP as reference)
+  SHG efficiency ratio  : 0.84 times KDP (84% of KDP)
+
+Optical Properties:
+  UV cutoff wavelength  : ~240 nm
+  Optical bandgap (Eg)  : ~5.1 eV  (direct, forbidden transition)
+  Laser damage threshold: 6.3 J/cm²  (single shot, 1 pulse per second)
+                        : 0.63 GW/cm²  (single shot, 1 pulse per second)
+                        : 5.5 J/cm²  (multiple shots, 10 pulses per second)
+                        : 0.55 GW/cm²  (multiple shots, 10 pulses per second)
+  Laser wavelength      : 1064 nm (Nd:YAG nanosecond laser)
+
+Mechanical Properties:
+  Vickers Hardness (Hv) : up to 9 kg/mm²  (along (100) plane)
+  Meyer's hardness index: n = 1.75 (softer category per Ontich's classification)
+  Crystalline perfection: FWHM of (200) diffraction = 46 arcsec
+                          (indicates high quality, SHG active)
+  Shock Damage Threshold: up to 12 shocks (Mach 2.2) without crack formation
+
+Dielectric Properties:
+  Dielectric constant   : ~22-58 (frequency-dependent, 100 Hz to 100 kHz)
+  Dielectric loss       : decreases with frequency (good uniformity)
+
+Remarks
+-------
+The CIF corresponds to the L-Argininium Phosphite (LAPI) structure 
+(CCDC 1026960, 2015). This is an organic-inorganic hybrid material 
+combining a natural amino acid (L-arginine) with the phosphite ion.
+
+Key findings from the 2019 Applied Physics A study:
+
+(1) LAPI demonstrates simultaneous piezoelectric (d22 = 12 pC/N) and
+    nonlinear optical (SHG = 20 mV ≈ 84% KDP) activity, making it a
+    multifunctional material for integrated photonic devices.
+
+(2) The 3D hydrogen-bonded supramolecular network (analyzed by Hirshfeld
+    surface) is the key structural feature enabling both piezo and NLO
+    properties through anisotropic polarization.
+
+(3) Mechanical strength is excellent: hardness up to 9 kg/mm², robust
+    laser resistance (6.3 J/cm² at single shot; 0.63 GW/cm²), and ability
+    to withstand 12 shock pulses (Mach 2.2) without fracture.
+
+(4) High crystalline perfection (FWHM = 46 arcsec for (200) Bragg peak)
+    confirms low defect concentration—essential for NLO applications.
+
+(5) The 1D chain structure along b-axis, combined with 3D network linking,
+    produces strong anisotropic properties. The optical bandgap of ~5.1 eV
+    ensures low absorption in the visible-NIR range, suitable for photonic
+    systems.
+
+(6) Compared to conventional NLO materials (KDP, ADP, urea, lithium
+    niobate), LAPI offers biocompatibility, ease of synthesis from
+    naturally available amino acids, and a unique combination of
+    piezoelectricity + pyroelectricity + SHG activity in one material.
+
+This work establishes LAPI as a promising candidate for:
+  - Nonlinear optical (NLO) devices
+  - Piezoelectric energy harvesting and sensing
+  - Image processing and ultrasonic transducers
+  - Integrated photonic systems combining multiple functionalities
+
+Database Status
+---------------
+Included
+
+Last Updated
+------------
+1 July 2026

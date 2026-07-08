@@ -1,0 +1,49 @@
+Crystal ID: PMC-046
+
+CCDC ID: 1823369
+
+CSD REFCODE: Not yet determined (CCDC 1823369)
+
+Molecule Name: Cyclo-glycine-L-tryptophan (cyclo-GW)
+
+IUPAC Name: 3-(1H-Indol-3-ylmethyl)piperazine-2,5-dione
+
+Chemical Formula: C₁₃H₁₃N₃O₂
+
+Crystal Type: Organic molecular crystal (cyclic dipeptide / diketopiperazine)
+
+Piezoelectric Property: Yes
+
+Evidence: The crystal belongs to the non-centrosymmetric space group P2₁ (No. 4), which is compatible with piezoelectricity. Tao et al. (2019) reported both computational and experimental evidence for high piezoelectricity. DFT calculations predicted the full piezoelectric charge constant tensor, with the highest coefficients being d₃₆ = 14.1 pC N⁻¹ and d₁₆ = 13.8 pC N⁻¹, exceeding those of ZnO (d₃₃ = 12 pC N⁻¹), γ-glycine (d₃₃ = 10 pC N⁻¹), bone (6 pC N⁻¹), and M13 bacteriophage (8 pC N⁻¹). Experimentally, a coin-size power generator using cyclo-GW crystals as active components produced a sustained open-circuit voltage of 1.2 V and short-circuit current of 1.75 nA under a cyclic compressive force of 65 N at 1 Hz, with linear voltage-force dependence (18.8 mV N⁻¹) and no degradation over 2500+ press/release cycles. Switching connection tests confirmed the piezoelectric origin of the signal.
+
+Research Paper: Bioinspired Stable and Photoluminescent Assemblies for Power Generation
+
+DOI: 10.1002/adma.201807481
+
+CIF File Name (System): PMC-046-glycine-L-tryptophan__cyclo-GW__.cif
+
+Space Group: P2₁ (No. 4)
+
+Crystal System: Monoclinic
+
+Piezoelectric Coefficient: d₃₆ = 14.1 pC N⁻¹, d₁₆ = 13.8 pC N⁻¹ (DFT-computed; highest tensor components)
+
+Full computed piezoelectric tensor (pC N⁻¹):
+  d₁₄ = 4.6,  d₁₆ = 13.8
+  d₂₁ = 3.4,  d₂₂ = −0.4,  d₂₃ = −2.0,  d₂₅ = 2.8
+  d₃₄ = 6.3,  d₃₆ = 14.1
+
+Notes:
+
+Pure organic cyclic dipeptide (diketopiperazine) crystal with no solvent of crystallisation.
+Non-centrosymmetric crystal structure (space group P2₁), compatible with piezoelectricity.
+Crystal structure determined by Linda Shimon at the Weizmann Institute of Science; deposited with CCDC on 2018-07-05.
+Needlelike crystals grown by dissolving cyclo-GW powder in 10% (v/v) methanol in water, heating to 80 °C, and cooling gradually.
+Dense packing along the b direction with parallel β-sheet hydrogen bonding (N−H···O=C, 2.83 Å donor···acceptor) and herringbone edge-to-face aromatic interactions between indole rings (C···N ≈ 3.4 Å).
+Excellent R factor (R₁ = 4.03%) indicating high-quality crystal structure determination.
+Thermally stable up to 370 °C (TGA), significantly exceeding FF nanotubes (degrade at 303 °C).
+High Young's modulus of 24.0 ± 7.3 GPa, shear modulus of 2.9 ± 1.1 GPa, and breaking modulus of 238.9 ± 97.6 GPa.
+DFT-computed relative permittivity εᵣ = 2.9, similar to γ-glycine (εᵣ = 2.5).
+Crystals exhibit aggregation-induced blue emission at 420 nm, optical waveguiding, and stable photoluminescence (no decline over 10 min continuous excitation; fluorescence lifetime 2.1 ± 0.6 ns).
+Applications: eco-friendly optoelectronic energy harvesting devices, piezoelectric sensing (e.g. heartbeat detection), touch screens, biointegrated microdevices.
+Both structure and piezoelectric property reported in the same paper (Tao et al., Adv. Mater. 2019, 31, 1807481).
