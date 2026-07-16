@@ -687,11 +687,11 @@ def run_md_stage(
     print(f"    💾 Saved restart: {restart_path}")
     print(f"    💾 Saved state:   {state_path}")
     final_T = atoms.get_temperature()
-final_ke = atoms.get_kinetic_energy()
-final_pe = atoms.get_potential_energy()
-final_E = final_ke + final_pe
-final_V = atoms.get_volume()
-cell = atoms.get_cell().cellpar()
+    final_ke = atoms.get_kinetic_energy()
+    final_pe = atoms.get_potential_energy()
+    final_E = final_ke + final_pe
+    final_V = atoms.get_volume()
+    cell = atoms.get_cell().cellpar()
 
 try:
     stress = atoms.get_stress(voigt=True)

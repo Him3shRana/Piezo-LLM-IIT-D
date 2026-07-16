@@ -90,8 +90,13 @@ def run_nvt_pipeline(pmc_id: str, temperatures: list, size: int,
     atoms_raw = read(str(cif_path))
     print(f"  Loaded: {len(atoms_raw)} atoms")
 
-    from mace.calculators import mace_off
-    calc = mace_off(model=mace_model, device=device, default_dtype="float64")
+    from mace.calculators import mace_polar
+    calc = mace_polar(model=mace_model, device=device, default_dtype="float64")
+    # PolarMACE requires these on the Atoms object -- mace_off never needed
+    # them, which is why loading with mace_off was silently the wrong call.
+    atoms_raw.info["charge"] = 0
+    atoms_raw.info["spin"] = 1  # unpaired electrons + 1
+    atoms_raw.info["external_field"] = [0.0, 0.0, 0.0]
     atoms_raw.calc = calc
 
     results_dir = mc.SIM_DIR / pmc_id / "NVT_results"
@@ -170,7 +175,7 @@ def run_nvt_pipeline(pmc_id: str, temperatures: list, size: int,
                 "minimised": (min_total, "C2"),
             },
             rdf_plot_path,
-            f"RDF vs R — {pmc_id} @ {temp} K (NVT production)",
+            f"RDF vs R - {pmc_id} @ {temp} K (NVT production)",
         )
         print(f"    💾 Saved plot (RDF vs R): {rdf_plot_path}")
 
@@ -200,7 +205,12 @@ def main():
     parser.add_argument("--eq-steps", type=int, default=mc.DEFAULT_EQ_STEPS)
     parser.add_argument("--steps", type=int, default=mc.DEFAULT_PROD_STEPS,
                          help="NVT production steps")
-    parser.add_argument("--model", default="medium", choices=["small", "medium", "large"])
+    parser.add_argument(
+    "--model",
+    default="/home/chemistry/phd/cyz218376/himesh_work/mace_models/MACE-POLAR-1-S.model",
+    help="MACE-POLAR model name (polar-1-s / polar-1-m / polar-1-l) "
+         "or a local path to a .model checkpoint file",
+        )
     parser.add_argument("--slice-steps", type=int, default=None,
                          help="Cap on MD/optimiser steps run in this invocation "
                               "(run the same command again to continue).")

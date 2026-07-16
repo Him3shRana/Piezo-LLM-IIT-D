@@ -202,7 +202,7 @@ def run_npt_pipeline(pmc_id: str, temperatures: list, size: int,
                 "minimised": (min_total, "C2"),
             },
             rdf_plot_path,
-            f"RDF vs R — {pmc_id} @ {temp} K, {pressure_bar} bar (NPT production)",
+            f"RDF vs R - {pmc_id} @ {temp} K, {pressure_bar} bar (NPT production)",
         )
         print(f"    💾 Saved plot (RDF vs R): {rdf_plot_path}")
 
@@ -214,8 +214,10 @@ def run_npt_pipeline(pmc_id: str, temperatures: list, size: int,
             combined_pairs[f"actual_{k}"] = actual_pairs[k]
         for k in min_pairs:
             combined_pairs[f"min_{k}"] = min_pairs[k]
-        mc.save_rdf_xvg(xvg_path, r_grid, sim_total, combined_pairs,
-                         f"RDF all pairs — {pmc_id} @ {temp} K, {pressure_bar} bar (NPT production)")
+        mc.save_rdf_xvg(
+            xvg_path, r_grid, sim_total, combined_pairs,
+                f"RDF all pairs - {pmc_id} @ {temp} K (NVT production)"
+                    )
         print(f"    💾 Saved RDF xvg (all pairs): {xvg_path}")
 
         # summary

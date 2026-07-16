@@ -1,0 +1,452 @@
+cat > ~/himesh_work/run_all.py << 'ENDOFFILE'
+"""
+run_all.py — One command to simulate any crystal
+─────────────────────────────────────────────────
+
+Usage:
+  python3 run_all.py PMC-007                        # single molecule, 300K
+  python3 run_all.py PMC-007 --temps 100 200 300    # custom temperatures
+  python3 run_all.py PMC-007 --size 3               # 3x3x3 supercell
+  python3 run_all.py PMC-007 --ensemble npt         # let the box move (production)
+  python3 run_all.py PMC-007 --steps 100000         # shorter production
+  python3 run_all.py all                            # ALL molecules
+  python3 run_all.py --list                         # show available molecules
+
+Timing (timestep is fixed at 0.5 fs):
+  Equilibration : 20000 steps  -> 10 ps
+  Production    : 200000 steps -> 100 ps
+
+Ensembles:
+  Equilibration is ALWAYS NVT (fixed cell) — its only job is to thermalise
+  the system before production.
+  Production defaults to NVT (fixed cell). Pass --ensemble npt to let the
+  box respond to temperature/pressure so lattice parameters (a, b, c,
+  alpha, beta, gamma, volume) show real thermal-expansion behaviour instead
+  of staying frozen at their T=0K minimised values.
+
+Outputs (per temperature):
+  minimisation.log              minimiser log
+  {pmc}_minimised.xyz           last minimised structure (viewable)
+  equilibration_{T}K.xyz        equilibration trajectory (viewable)
+  production_{T}K.xyz           production trajectory (viewable)
+  thermo_{T}K.csv               full thermo log (T, E, P, V, a/b/c/...)
+"""
+
+import os
+import sys
+import time
+import argparse
+import numpy as np
+from pathlib import Path
+from datetime import datetime
+
+# ── Paths ──────────────────────────────────────────
+PROJECT_ROOT = Path.home() / "himesh_work"
+DATA_DIR = PROJECT_ROOT / "data"
+SIM_DIR = PROJECT_ROOT / "simulations"
+
+# ── Timestep / step counts (all in ONE place) ──────
+# timestep * steps = total simulated time.
+TIMESTEP_FS = 0.5                 # femtoseconds per step
+EQUILIBRATION_STEPS = 20000       # 20000 * 0.5 fs = 10 ps
+PRODUCTION_STEPS = 200000         # 200000 * 0.5 fs = 100 ps
+TRAJECTORY_INTERVAL = 100         # write an xyz frame every N steps (50 fs)
+LOG_INTERVAL = 50                 # write a thermo row every N steps
+
+# ── NPT settings (only used when --ensemble npt) ───
+# External pressure target (ambient). ttime/ptime control how fast the
+# thermostat/barostat respond. bulk_modulus_gpa is a rough stiffness
+# estimate for the barostat -- doesn't need to be exact, just the right
+# order of magnitude for a molecular organic crystal.
+NPT_EXTERNAL_PRESSURE_GPA = 0.0
+NPT_TTIME_FS = 25.0
+NPT_PTIME_FS = 75.0
+NPT_BULK_MODULUS_GPA = 100.0
+
+
+def find_cif(pmc_id: str) -> Path:
+    """Find the CIF file for a given PMC ID."""
+    folder = DATA_DIR / pmc_id
+    if not folder.exists():
+        return None
+    cif_files = list(folder.glob("*.cif"))
+    return cif_files[0] if cif_files else None
+
+
+def get_available_molecules() -> list:
+    """List all PMC folders that have a CIF file."""
+    molecules = []
+    if not DATA_DIR.exists():
+        return molecules
+    for folder in sorted(DATA_DIR.iterdir()):
+        if folder.is_dir() and folder.name.startswith("PMC-"):
+            cif = list(folder.glob("*.cif"))
+            json_f = list(folder.glob("*.json"))
+            name = ""
+            if json_f:
+                try:
+                    import json
+                    with open(json_f[0]) as f:
+                        name = json.load(f).get("molecule_name", "")
+                except:
+                    pass
+            molecules.append({
+                "pmc_id": folder.name,
+                "has_cif": bool(cif),
+                "has_json": bool(json_f),
+                "molecule_name": name,
+                "cif_file": cif[0].name if cif else "MISSING",
+            })
+    return molecules
+
+
+def generate_supercell(pmc_id: str, size: int = 2) -> dict:
+    """Generate supercell from CIF."""
+    from ase.io import read, write
+    from ase.build import make_supercell
+
+    cif_path = find_cif(pmc_id)
+    if not cif_path:
+        return {"status": "error", "message": f"No CIF file found for {pmc_id}"}
+
+    size_str = f"{size}x{size}x{size}"
+    sim_dir = SIM_DIR / pmc_id
+    sim_dir.mkdir(parents=True, exist_ok=True)
+
+    output_path = sim_dir / f"{pmc_id}_supercell_{size_str}.cif"
+
+    # Skip if already exists
+    if output_path.exists():
+        atoms = read(str(output_path))
+        print(f"  Supercell already exists: {len(atoms)} atoms")
+        return {"status": "exists", "atoms": len(atoms), "path": str(output_path)}
+
+    print(f"  Reading CIF: {cif_path.name}")
+    atoms = read(str(cif_path))
+    print(f"  Unit cell: {len(atoms)} atoms")
+
+    P = np.diag([size, size, size])
+    supercell = make_supercell(atoms, P)
+    print(f"  Supercell: {len(supercell)} atoms ({size_str})")
+
+    write(str(output_path), supercell, format="cif")
+    print(f"  Saved: {output_path.name}")
+
+    return {"status": "success", "atoms": len(supercell), "path": str(output_path)}
+
+
+def _make_xyz_writer(atoms_ref, path):
+    """Return a callback that appends the current frame to an extxyz file."""
+    from ase.io import write
+
+    def write_frame():
+        write(str(path), atoms_ref, format="extxyz", append=True)
+    return write_frame
+
+
+def run_simulation(pmc_id: str, temperatures: list, size: int = 2,
+                   production_steps: int = PRODUCTION_STEPS,
+                   equilibration_steps: int = EQUILIBRATION_STEPS,
+                   ensemble: str = "nvt", mace_model: str = "medium"):
+    """Run full MACE-OFF23 simulation for one molecule."""
+    from ase.io import read, write
+    from ase.optimize import LBFGS
+    from ase.md.nvtberendsen import NVTBerendsen
+    from ase.md.npt import NPT
+    from ase.md.velocitydistribution import MaxwellBoltzmannDistribution
+    from ase import units
+    from mace.calculators import mace_off
+    import torch
+    import csv
+
+    ensemble = ensemble.lower()
+    size_str = f"{size}x{size}x{size}"
+    cif_path = SIM_DIR / pmc_id / f"{pmc_id}_supercell_{size_str}.cif"
+
+    if not cif_path.exists():
+        print(f"  ❌ Supercell not found: {cif_path}")
+        return False
+
+    # Setup
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"  Device: {device}")
+
+    atoms = read(str(cif_path))
+    print(f"  Loaded: {len(atoms)} atoms")
+
+    calc = mace_off(model=mace_model, device=device, default_dtype="float64")
+    atoms.calc = calc
+
+    output_dir = SIM_DIR / pmc_id / "md_results"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    eq_ps = equilibration_steps * TIMESTEP_FS / 1000.0
+    prod_ps = production_steps * TIMESTEP_FS / 1000.0
+
+    # ── Minimisation ──
+    print(f"\n  ── Minimisation ──")
+    atoms_min = atoms.copy()
+    atoms_min.calc = calc
+    opt = LBFGS(atoms_min, logfile=str(output_dir / "minimisation.log"))
+    t0 = time.time()
+    opt.run(fmax=0.05, steps=500)
+    t_min = time.time() - t0
+    e_min = atoms_min.get_potential_energy()
+    print(f"  Energy: {e_min:.2f} eV | Steps: {opt.nsteps} | Time: {t_min:.0f}s")
+    # last minimised structure (viewable)
+    write(str(output_dir / f"{pmc_id}_minimised.xyz"), atoms_min, format="xyz")
+
+    ref_a, ref_b, ref_c, *_ = atoms_min.get_cell().cellpar()
+    print(f"  Reference lattice (minimised): a={ref_a:.4f} b={ref_b:.4f} c={ref_c:.4f} Å")
+
+    # ── Per temperature ──
+    for temp in temperatures:
+        print(f"\n  ── {temp} K ──")
+        temp_dir = output_dir / f"{temp}K"
+        temp_dir.mkdir(parents=True, exist_ok=True)
+
+        # Check if already done
+        csv_path = temp_dir / f"thermo_{temp}K.csv"
+        if csv_path.exists():
+            print(f"  Already completed, skipping. Delete {csv_path} to re-run.")
+            continue
+
+        # Fresh xyz files (extxyz writers APPEND, so clear any leftovers)
+        eq_xyz = temp_dir / f"equilibration_{temp}K.xyz"
+        prod_xyz = temp_dir / f"production_{temp}K.xyz"
+        for f in (eq_xyz, prod_xyz):
+            if f.exists():
+                f.unlink()
+
+        # ── Equilibration — NVT (fixed cell), always ──
+        print(f"  Equilibrating ({equilibration_steps} steps = {eq_ps:.1f} ps, "
+              f"NVT, fixed cell)...")
+        atoms_eq = atoms_min.copy()
+        atoms_eq.calc = calc
+        MaxwellBoltzmannDistribution(atoms_eq, temperature_K=temp)
+        dyn_eq = NVTBerendsen(atoms_eq, timestep=TIMESTEP_FS * units.fs,
+                              temperature_K=temp, taut=100 * units.fs)
+        dyn_eq.attach(_make_xyz_writer(atoms_eq, eq_xyz), interval=TRAJECTORY_INTERVAL)
+        t0 = time.time()
+        dyn_eq.run(equilibration_steps)
+        t_eq = time.time() - t0
+        print(f"  Done: {t_eq:.0f}s | T = {atoms_eq.get_temperature():.1f} K")
+
+        # ── Production — NVT (default) or NPT (--ensemble npt) ──
+        atoms_prod = atoms_eq.copy()
+        atoms_prod.calc = calc
+
+        if ensemble == "npt":
+            print(f"  Production ({production_steps} steps = {prod_ps:.1f} ps, "
+                  f"NPT, {NPT_EXTERNAL_PRESSURE_GPA} GPa)...")
+            # ASE NPT requires an upper-triangular cell.
+            from ase.build import make_supercell  # noqa (kept local)
+            cell = atoms_prod.get_cell()
+            if abs(cell[1, 0]) + abs(cell[2, 0]) + abs(cell[2, 1]) > 1e-8:
+                print("  Converting cell to upper-triangular for NPT...")
+                atoms_prod.set_cell(cell.standard_form()[0], scale_atoms=True)
+
+            ttime = NPT_TTIME_FS * units.fs
+            ptime = NPT_PTIME_FS * units.fs
+            pfactor = ptime**2 * NPT_BULK_MODULUS_GPA * units.GPa
+            dyn_prod = NPT(
+                atoms_prod,
+                timestep=TIMESTEP_FS * units.fs,
+                temperature_K=temp,
+                externalstress=NPT_EXTERNAL_PRESSURE_GPA * units.GPa,
+                ttime=ttime,
+                pfactor=pfactor,
+            )
+        else:
+            print(f"  Production ({production_steps} steps = {prod_ps:.1f} ps, "
+                  f"NVT, fixed cell)...")
+            dyn_prod = NVTBerendsen(atoms_prod, timestep=TIMESTEP_FS * units.fs,
+                                    temperature_K=temp, taut=100 * units.fs)
+
+        # trajectory (xyz, viewable)
+        dyn_prod.attach(_make_xyz_writer(atoms_prod, prod_xyz),
+                        interval=TRAJECTORY_INTERVAL)
+
+        log_data = []
+
+        def make_logger(atoms_ref, dyn_ref, log_ref):
+            def log_thermo():
+                step = dyn_ref.nsteps
+                t = atoms_ref.get_temperature()
+                ke = atoms_ref.get_kinetic_energy()
+                pe = atoms_ref.get_potential_energy()
+                vol = atoms_ref.get_volume()
+                cell = atoms_ref.get_cell().cellpar()
+                try:
+                    stress = atoms_ref.get_stress(voigt=True)
+                    p = -(stress[0] + stress[1] + stress[2]) / 3.0 * 160.21766
+                except:
+                    p = 0.0
+                log_ref.append({
+                    "step": step, "time_fs": step * TIMESTEP_FS,
+                    "temperature_K": t, "kinetic_eV": ke,
+                    "potential_eV": pe, "total_eV": ke + pe,
+                    "pressure_GPa": p, "volume_A3": vol,
+                    "a_A": cell[0], "b_A": cell[1], "c_A": cell[2],
+                    "alpha_deg": cell[3], "beta_deg": cell[4], "gamma_deg": cell[5],
+                })
+                if step % 5000 == 0:
+                    print(f"    Step {step:6d} | {step*TIMESTEP_FS/1000:6.1f} ps | "
+                          f"T={t:6.1f} K | E={ke+pe:12.2f} eV | "
+                          f"V={vol:8.1f} ų | a={cell[0]:.3f} b={cell[1]:.3f} c={cell[2]:.3f}")
+            return log_thermo
+
+        dyn_prod.attach(make_logger(atoms_prod, dyn_prod, log_data), interval=LOG_INTERVAL)
+
+        t0 = time.time()
+        dyn_prod.run(production_steps)
+        t_prod = time.time() - t0
+
+        # Save CSV log
+        with open(csv_path, "w", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=log_data[0].keys())
+            writer.writeheader()
+            writer.writerows(log_data)
+
+        temps_arr = [d["temperature_K"] for d in log_data]
+        a_arr = [d["a_A"] for d in log_data]
+        b_arr = [d["b_A"] for d in log_data]
+        c_arr = [d["c_A"] for d in log_data]
+        print(f"  Done: {t_prod:.0f}s | Avg T: {np.mean(temps_arr):.1f} K | Points: {len(log_data)}")
+        print(f"  Lattice avg ({ensemble.upper()}): "
+              f"a={np.mean(a_arr):.4f} b={np.mean(b_arr):.4f} c={np.mean(c_arr):.4f} Å "
+              f"(Δ vs minimised: Δa={np.mean(a_arr)-ref_a:+.4f} "
+              f"Δb={np.mean(b_arr)-ref_b:+.4f} Δc={np.mean(c_arr)-ref_c:+.4f} Å)")
+        print(f"  Trajectories: {eq_xyz.name}, {prod_xyz.name}")
+
+    print(f"\n  ✅ {pmc_id} complete! Results: {output_dir}")
+    return True
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Piezo-LLM: Automated MD Simulation")
+    parser.add_argument("molecule", nargs="?", help="PMC ID (e.g. PMC-007) or 'all'")
+    parser.add_argument("--temps", nargs="+", type=int, default=[300],
+                        help="Temperatures in K (default: 300)")
+    parser.add_argument("--size", type=int, default=2,
+                        help="Supercell size: 2 or 3 (default: 2)")
+    parser.add_argument("--steps", type=int, default=PRODUCTION_STEPS,
+                        help=f"Production steps (default: {PRODUCTION_STEPS} = 100 ps)")
+    parser.add_argument("--eq-steps", type=int, default=EQUILIBRATION_STEPS,
+                        help=f"Equilibration steps (default: {EQUILIBRATION_STEPS} = 10 ps)")
+    parser.add_argument("--ensemble", default="nvt", choices=["nvt", "npt"],
+                        help="Production ensemble (default: nvt; npt lets the cell move)")
+    parser.add_argument("--model", default="medium",
+                        choices=["small", "medium", "large"],
+                        help="MACE model size (default: medium)")
+    parser.add_argument("--list", action="store_true",
+                        help="List available molecules")
+
+    args = parser.parse_args()
+
+    # Set environment
+    os.environ["TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD"] = "1"
+
+    print("=" * 60)
+    print("  Piezo-LLM: Automated MD Pipeline")
+    print(f"  Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 60)
+
+    # List mode
+    if args.list:
+        molecules = get_available_molecules()
+        print(f"\n  Available molecules ({len(molecules)}):\n")
+        print(f"  {'PMC ID':<12} {'Has CIF':<10} {'Molecule Name'}")
+        print(f"  {'─' * 60}")
+        for m in molecules:
+            cif_mark = "✅" if m["has_cif"] else "❌"
+            print(f"  {m['pmc_id']:<12} {cif_mark:<10} {m['molecule_name']}")
+        cif_count = sum(1 for m in molecules if m["has_cif"])
+        print(f"\n  {cif_count} molecules with CIF files (ready to simulate)")
+        return
+
+    if not args.molecule:
+        parser.print_help()
+        return
+
+    # Determine which molecules to run
+    if args.molecule.lower() == "all":
+        molecules = get_available_molecules()
+        pmc_ids = [m["pmc_id"] for m in molecules if m["has_cif"]]
+        print(f"\n  Running ALL {len(pmc_ids)} molecules")
+    else:
+        pmc_id = args.molecule.upper()
+        if not pmc_id.startswith("PMC-"):
+            pmc_id = f"PMC-{pmc_id}"
+        pmc_ids = [pmc_id]
+
+    print(f"  Temperatures: {args.temps} K")
+    print(f"  Supercell: {args.size}x{args.size}x{args.size}")
+    print(f"  Timestep: {TIMESTEP_FS} fs")
+    print(f"  Equilibration: {args.eq_steps} steps ({args.eq_steps*TIMESTEP_FS/1000:.1f} ps, NVT)")
+    print(f"  Production: {args.steps} steps ({args.steps*TIMESTEP_FS/1000:.1f} ps, {args.ensemble.upper()})")
+    print(f"  MACE model: {args.model}")
+    print(f"  Molecules: {len(pmc_ids)}")
+
+    # Run each molecule
+    results = {}
+    total_start = time.time()
+
+    for i, pmc_id in enumerate(pmc_ids, 1):
+        print(f"\n{'▓' * 60}")
+        print(f"  [{i}/{len(pmc_ids)}] {pmc_id}")
+        print(f"{'▓' * 60}")
+
+        # Check CIF exists
+        cif = find_cif(pmc_id)
+        if not cif:
+            print(f"  ❌ No CIF file found, skipping")
+            results[pmc_id] = "no_cif"
+            continue
+
+        # Generate supercell
+        print(f"\n  Generating supercell...")
+        sc = generate_supercell(pmc_id, args.size)
+        if sc["status"] == "error":
+            print(f"  ❌ {sc['message']}")
+            results[pmc_id] = "supercell_failed"
+            continue
+
+        # Run simulation
+        try:
+            success = run_simulation(
+                pmc_id, args.temps, args.size,
+                production_steps=args.steps,
+                equilibration_steps=args.eq_steps,
+                ensemble=args.ensemble,
+                mace_model=args.model,
+            )
+            results[pmc_id] = "success" if success else "failed"
+        except Exception as e:
+            print(f"  ❌ Error: {e}")
+            results[pmc_id] = f"error: {str(e)}"
+
+    total_time = time.time() - total_start
+
+    # Final summary
+    print(f"\n\n{'=' * 60}")
+    print(f"  Pipeline Complete!")
+    print(f"  Total time: {total_time / 60:.1f} minutes")
+    print(f"{'=' * 60}")
+    print(f"\n  {'PMC ID':<12} {'Status'}")
+    print(f"  {'─' * 40}")
+    for pmc_id, status in results.items():
+        icon = "✅" if status == "success" else "❌"
+        print(f"  {pmc_id:<12} {icon} {status}")
+
+    success_count = sum(1 for s in results.values() if s == "success")
+    print(f"\n  {success_count}/{len(results)} completed successfully")
+    print(f"  Results in: {SIM_DIR}")
+
+
+if __name__ == "__main__":
+    main()
+
+
+ENDOFFILE
+

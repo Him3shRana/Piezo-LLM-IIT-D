@@ -1,0 +1,29 @@
+Project: MACE-LAMMPS Molecular Dynamics Simulations (PMC-001 piezoelectric crystal)
+
+Setup:
+
+    Working directory: ~/himesh_work/MACE-LAMMPS/ on a PBS-managed HPC cluster (login node: login02, GPU compute nodes like amilan009 with NVIDIA A100)
+    Two independent pipeline scripts: run_nvt_lammps.py and run_npt_lammps.py, sharing lammps_common.py
+    MACE machine-learning interatomic potential, model alias medium → MACE-OFF23_medium.model (auto-converts to .pt MLIAP format on first use)
+    LAMMPS binary requires KOKKOS + ML-IAP packages, located at /home/chemistry/phd/cyz218376/home/software/mace-lammps-plumed/lammps-develop/build-mliap/install/bin/lmp
+    Critical: must source /home/chemistry/phd/cyz218376/home/software/mace-lammps-plumed/env.sh before running (loads CUDA, OpenMPI, conda pytorch-gpu env, sets LAMMPS_INSTALL/PATH/LD_LIBRARY_PATH) — this binary will not run on the login node (no GPU there) or without env.sh sourced (missing shared libs)
+    Results structure: PMC-001/NVT_results/01_minimisation/, 02_nvt_equilibration/<T>K/, 03_nvt_production/<T>K/ — each stage tracked via a state.json with "status": "completed" + a .restart file, enabling automatic resume/skip on re-run (same --pmc ID always reuses the same directory, never creates a new one)
+
+Bugs found and fixed this session:
+
+    --model ... was being passed literally (a copy-paste placeholder left in a command) causing FileNotFoundError — fixed by using --model medium or a real path.
+    LAMMPS command hardcodes KOKKOS flags (-k on g 1 -sf kk -pk kokkos ...) — failed when the resolved lmp binary lacked KOKKOS, or when run without sourcing env.sh / without a GPU. Resolved by using the correct binary + sourcing env.sh on a GPU compute node.
+    lammps_common.py's build_nvt_input() and build_npt_input() used restart {restart_every_steps} {output_restart}.* — the .* wildcard made LAMMPS write a new numbered restart file every checkpoint (e.g. nvt_equilibration.restart.100, .200, ...). Fixed by removing .* so it overwrites a single restart file instead. Applied via:
+
+bash
+
+   sed -i 's/f"restart         {restart_every_steps} {output_restart}\.\*"/f"restart         {restart_every_steps} {output_restart}"/g' lammps_common.py
+
+This fix only affects future stage runs — already-completed stages keep their old numbered checkpoint files, which were manually cleaned up with rm *.restart.[0-9]*.
+
+File transfer: results copied from cluster to local machine at /home/pravega2/Documents/Piezo-LLM/simulations/LAMMPS-Simulations/ via scp -r.
+
+Status as of end of session: NVT minimisation + 300K equilibration completed and skip-cached; production stage running/completed with the single-restart-file fix; local copy done, cleanup done, "Done Hogya."
+
+
+Claude is AI and can make mistakes. Please double-check responses.

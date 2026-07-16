@@ -1,0 +1,20 @@
+python3 run_all.py PMC-001 --temps 300 --timestep 0.5 --eq-steps 20000 --steps 200000 --ensemble nvt --model medium
+ For Starting Everything for a file
+
+
+
+
+python3 rdf_compare.py PMC-001 --temp 300 --skip 400
+-----Skip for Large files)
+ 
+ 
+(((python3 — run the Python interpreter. This is what executes the script.
+rdf_compare.py — the script to run. This is your RDF comparison program (the one that computes crystal-vs-simulation RDF and writes the .xvg + PNGs).
+PMC-001 — which molecule to analyse. The script takes this ID and automatically finds two things for it: the crystal CIF in data/PMC-001/ and the trajectory in simulations/PMC-001/. Change this to PMC-007, etc., for other molecules.
+--temp 300 — which temperature's trajectory to use. It tells the script to look in the 300K/ folder for production_300K.pdb. If you ran at 400 K, you'd write --temp 400.
+--skip 400 — ignore the first 400 frames of the trajectory before computing the RDF. This is the one that needs the most explanation, so here's why it matters:)))
+
+----Drag The File From GPU serv --------------
+scp -r cyz218376@pragya.iitd.ac.in:~/himesh_work/simulations/PMC-001/md_results/300K/rdf_compare/ \
+    ~/Documents/Piezo-LLM/simulations/PMC-001/md_results/300K/
+    -----Write in VS-------

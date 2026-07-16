@@ -1,0 +1,98 @@
+{
+    "models_dir": "~/himesh_work/mace_models",
+
+    "models": {
+        "mace-off23/small": {
+            "family": "mace-off23",
+            "size": "small",
+            "model_file": "MACE-OFF23_small.model",
+            "calc_type": "mace_off",
+            "lammps_pt": "MACE-OFF23_small.model-mliap_lammps.pt",
+            "lammps_style": "mliap",
+            "description": "MACE-OFF23 small — organic molecular force field"
+        },
+        "mace-off23/medium": {
+            "family": "mace-off23",
+            "size": "medium",
+            "model_file": "MACE-OFF23_medium.model",
+            "calc_type": "mace_off",
+            "lammps_pt": "MACE-OFF23_medium.model-mliap_lammps.pt",
+            "lammps_style": "mliap",
+            "description": "MACE-OFF23 medium — organic molecular force field"
+        },
+        "mace-off23/large": {
+            "family": "mace-off23",
+            "size": "large",
+            "model_file": "MACE-OFF23_large.model",
+            "calc_type": "mace_off",
+            "lammps_pt": "MACE-OFF23_large.model-mliap_lammps.pt",
+            "lammps_style": "mliap",
+            "description": "MACE-OFF23 large — organic molecular force field"
+        },
+        "polarmace/small": {
+            "family": "polarmace",
+            "size": "small",
+            "model_file": "MACE-POLAR-1-S.model",
+            "calc_type": "mace_polar",
+            "lammps_pt": null,
+            "lammps_style": null,
+            "description": "PolarMACE small — polarizable model (ASE only, no LAMMPS export)"
+        },
+        "polarmace/medium": {
+            "family": "polarmace",
+            "size": "medium",
+            "model_file": "MACE-POLAR-1-M.model",
+            "calc_type": "mace_polar",
+            "lammps_pt": null,
+            "lammps_style": null,
+            "description": "PolarMACE medium — polarizable model (ASE only, no LAMMPS export)"
+        },
+        "polarmace/large": {
+            "family": "polarmace",
+            "size": "large",
+            "model_file": "MACE-POLAR-1-L.model",
+            "calc_type": "mace_polar",
+            "lammps_pt": null,
+            "lammps_style": null,
+            "description": "PolarMACE large — polarizable model (ASE only, no LAMMPS export)"
+        },
+        "mace-mp-0/small": {
+            "family": "mace-mp-0",
+            "size": "small",
+            "model_file": "MACE-MP-0_small.model",
+            "calc_type": "mace_mp",
+            "lammps_pt": null,
+            "lammps_style": null,
+            "description": "MACE-MP-0 small — universal inorganic/materials force field"
+        },
+        "mace-mp-0/medium": {
+            "family": "mace-mp-0",
+            "size": "medium",
+            "model_file": "MACE-MP-0_medium.model",
+            "calc_type": "mace_mp",
+            "lammps_pt": null,
+            "lammps_style": null,
+            "description": "MACE-MP-0 medium — universal inorganic/materials force field"
+        }
+    },
+
+    "_comment": [
+        "This file is the SINGLE source of truth for all model registrations.",
+        "All 4 simulation scripts (all_nvt_lammps.py, all_npt_lammps.py,",
+        "all_nvt_ase.py, all_npt_ase.py) read from this file automatically.",
+        "",
+        "To add a new model:",
+        "  1. Download the .model file to ~/himesh_work/mace_models/",
+        "  2. Add an entry here with the correct calc_type",
+        "  3. That's it — all 4 scripts can use it immediately",
+        "",
+        "calc_type options:",
+        "  mace_off   — for MACE-OFF models (organic molecules)",
+        "  mace_polar — for PolarMACE (polarizable, ASE only)",
+        "  mace_mp    — for MACE-MP models (universal materials)",
+        "",
+        "lammps_pt / lammps_style:",
+        "  Set to null if the model has no LAMMPS export.",
+        "  LAMMPS scripts will refuse to run models with null lammps_pt."
+    ]
+}

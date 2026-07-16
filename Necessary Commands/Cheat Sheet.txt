@@ -1,0 +1,10 @@
+TASK                              WHERE         COMMAND
+──────────────────────────────    ──────        ──────────────────────────
+Upload new crystal data           Local    →    rsync -avz ~/Documents/Piezo-LLM/data/ cyz218376@pragya.iitd.ac.in:~/himesh_work/data/
+List available molecules          GPU           python3 run_all.py --list
+Run simulation                    GPU           python3 run_all.py PMC-XXX --temps 300
+Run all molecules                 GPU           python3 run_all.py all --temps 300
+Download results                  Local    ←    scp -r cyz218376@pragya.iitd.ac.in:~/himesh_work/simulations/PMC-XXX/ ~/Documents/Piezo-LLM/simulations/PMC-XXX/
+Generate analysis graphs          Local         python3 analyse_simulation.py
+Start GUI                         Local         python3 backend.py & cd ../gui && npm run dev
+Run agent CLI                     Local         python3 piezo_cli.py

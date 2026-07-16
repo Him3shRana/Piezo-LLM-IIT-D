@@ -16,38 +16,73 @@ Why three:
     setting was expanded. If the CIF and minimised reference curves agree, the
     CIF was read correctly and the experiment comparison is trustworthy.
 
-It finds everything from the PMC id + temperature (matching run_nvt.py /
-run_npt.py's actual output layout):
-  data/<PMC>/*.cif
-  simulations/<PMC>/NVT_results/01_minimisation/last-frame-of-trajectory.pdb
-  simulations/<PMC>/NVT_results/03_nvt_production/<T>K/production-trajectory.pdb
-  simulations/<PMC>/NPT_results/01_minimisation/last-frame-of-trajectory.pdb
-  simulations/<PMC>/NPT_results/04_npt_production/<T>K/trajectory.pdb
+Works against either pipeline via --engine (default: mace-ase):
+
+  --engine mace-ase (default, direct-ASE MACE-OFF23 pipeline):
+    data/<PMC>/*.cif
+    simulations/<PMC>/NVT_results/01_minimisation/last-frame-of-trajectory.pdb
+    simulations/<PMC>/NVT_results/03_nvt_production/<T>K/production-trajectory.pdb
+    simulations/<PMC>/NPT_results/01_minimisation/last-frame-of-trajectory.pdb
+    simulations/<PMC>/NPT_results/04_npt_production/<T>K/trajectory.pdb
+
+  --engine lammps (MACE-LAMMPS pipeline):
+    data/<PMC>/*.cif
+    MACE-LAMMPS/<PMC>/NVT_results/01_minimisation/*.lammps           (nocoeff data file; type->element
+                                                                       recovered from state.json / *.in)
+    MACE-LAMMPS/<PMC>/NVT_results/03_nvt_production/<T>K/*.lammpstrj (dump text, with 'element' column)
+    MACE-LAMMPS/<PMC>/NPT_results/01_minimisation/*.lammps
+    MACE-LAMMPS/<PMC>/NPT_results/03_npt_production/<T>K_<P>GPa/*.lammpstrj
+    (NPT on this pipeline also needs --pressure to pick the right <T>K_<P>GPa folder)
 
 Usage:
   python3 rdf_compare.py PMC-001 --temp 300
   python3 rdf_compare.py PMC-001 --temp 300 --skip 80 --nbins 200
   python3 rdf_compare.py PMC-001 --temp 300 --refs cif          # only CIF ref
   python3 rdf_compare.py PMC-001 --temp 300 --refs cif minimised # both (default)
+  python3 rdf_compare.py PMC-001 --temp 300 --engine mace-ase --model medium
+  python3 rdf_compare.py PMC-001 --temp 300 --engine lammps --ensemble npt --pressure 1.0
 
-Outputs (in simulations/<PMC>/{NVT,NPT}_results/0{3,4}_..._production/<T>K/rdf_compare/):
+Note: --engine mace-ase requires --model {small,medium} — each MACE-OFF23 model
+size (SMALL-model/, MEDIUM-model/) has its own local simulations/ folder.
+--engine lammps has no model-size variants (single MACE-LAMMPS/ root) and
+ignores --model.
+
+Outputs (in <root>/<PMC>/{NVT,NPT}_results/0{3,4}_..._production/<T>K[_<P>GPa]/rdf_compare/):
   rdf_total.png       ONE graph: total g(r) vs r — simulation vs actual (CIF) vs minimised
   rdf_all_pairs.xvg   one xmgrace file: r, then TOTAL + g_sim (+ g_cif / g_min) per pair
   rdf_<A>-<B>.png     one plot per element pair overlaying the available curves
 """
 
 import sys
+import json
 import argparse
 import itertools
 from pathlib import Path
 
 import numpy as np
 from ase.io import read
+from ase.data import atomic_numbers
 from ase.geometry.rdf import get_rdf
 
 PROJECT_ROOT = Path.home() / "himesh_work"
 DATA_DIR = PROJECT_ROOT / "data"
-SIM_DIR = PROJECT_ROOT / "simulations"
+
+# lammps: single root, no model-size variants (confirmed: MACE-LAMMPS/{pmc}/...)
+# mace-ase: root depends on which MACE-OFF23 model size was used to run the
+#           simulation — confirmed each model size has its own local simulations/
+#           folder (MACE-off-23/SMALL-model/simulations/, .../MEDIUM-model/simulations/)
+MACE_OFF23_DIR = PROJECT_ROOT / "MACE-off-23"
+MODEL_DIR_NAMES = {"small": "SMALL-model", "medium": "MEDIUM-model"}
+
+
+def resolve_sim_root(engine: str, model):
+    if engine == "lammps":
+        return PROJECT_ROOT / "MACE-LAMMPS"
+    # engine == "mace-ase"
+    if model is None:
+        sys.exit("❌ --model {small,medium} is required for --engine mace-ase "
+                  "(each MACE-OFF23 model size has its own simulations/ folder).")
+    return MACE_OFF23_DIR / MODEL_DIR_NAMES[model] / "simulations"
 
 
 def find_cif(pmc_id: str) -> Path:
@@ -56,6 +91,69 @@ def find_cif(pmc_id: str) -> Path:
         return None
     cifs = list(folder.glob("*.cif"))
     return cifs[0] if cifs else None
+
+
+def get_lammps_element_order(dir_path: Path):
+    """Recover atom-type -> element mapping order for a LAMMPS run folder.
+
+    Preferred source: a *.json state file with an 'element_order' key
+    (written by the LAMMPS launcher). Fallback: parse the 'pair_coeff * * ...'
+    line out of the corresponding *.in script.
+    """
+    for sj in sorted(dir_path.glob("*.json")):
+        try:
+            d = json.loads(sj.read_text())
+        except Exception:
+            continue
+        if isinstance(d, dict) and d.get("element_order"):
+            return list(d["element_order"])
+
+    for infile in sorted(dir_path.glob("*.in")):
+        for line in infile.read_text().splitlines():
+            line = line.strip()
+            if not line.startswith("pair_coeff"):
+                continue
+            parts = line.split()
+            star_idx = [i for i, p in enumerate(parts) if p == "*"]
+            if len(star_idx) >= 2:
+                elems = [p for p in parts[star_idx[1] + 1:] if p.isalpha()]
+                if elems:
+                    return elems
+    return None
+
+
+def find_one(dir_path: Path, pattern: str, exclude_substrings=()):
+    """Find a single file matching a glob pattern in dir_path, excluding
+    any whose name contains one of exclude_substrings. Errors out clearly
+    if zero or multiple matches remain."""
+    candidates = [p for p in sorted(dir_path.glob(pattern))
+                  if not any(x in p.name for x in exclude_substrings)]
+    if len(candidates) == 1:
+        return candidates[0]
+    if len(candidates) == 0:
+        sys.exit(f"❌ No file matching {pattern!r} found in {dir_path}")
+    sys.exit(f"❌ Multiple files matching {pattern!r} found in {dir_path}: "
+              f"{[c.name for c in candidates]} — narrow this down manually.")
+
+
+def read_lammps_trajectory(traj_path: Path, element_order, skip, stride):
+    """Read a LAMMPS dump-text trajectory. The dump includes an explicit
+    'element' column (via dump_modify ... element ...), which ASE prioritises
+    over atom type, so element_order is only used as a fallback specorder."""
+    frames = read(str(traj_path), index=":", format="lammps-dump-text",
+                  specorder=element_order, units="metal")
+    if not isinstance(frames, list):
+        frames = [frames]
+    return frames[skip::stride]
+
+
+def read_lammps_structure(path: Path, element_order):
+    """Read a LAMMPS data file (atom_style atomic, written with nocoeff),
+    mapping numeric atom types back to elements via element_order."""
+    z_of_type = {i + 1: atomic_numbers[el] for i, el in enumerate(element_order)}
+    atoms = read(str(path), format="lammps-data", style="atomic",
+                 Z_of_type=z_of_type, units="metal")
+    return atoms
 
 
 def rdf_over_frames(frames, rmax, nbins, elements):
@@ -120,6 +218,14 @@ def main():
     ap.add_argument("--temp", type=int, help="temperature in K, e.g. 300")
     ap.add_argument("--ensemble", default="nvt", choices=["nvt", "npt"],
                     help="which ensemble's run to analyse (default: nvt)")
+    ap.add_argument("--engine", default="mace-ase", choices=["lammps", "mace-ase"],
+                    help="which pipeline's output to analyse (default: mace-ase)")
+    ap.add_argument("--model", default=None, choices=["small", "medium"],
+                    help="MACE-OFF23 model size — required for --engine mace-ase "
+                         "(SMALL-model/ vs MEDIUM-model/, each with its own simulations/)")
+    ap.add_argument("--pressure", type=float, default=None,
+                    help="pressure in GPa — required for --engine lammps --ensemble npt "
+                         "(matches the {T}K_{P}GPa folder written by run_npt_lammps.py)")
     ap.add_argument("--refs", nargs="+", choices=["cif", "minimised"],
                     default=["cif", "minimised"],
                     help="reference structures to include (default: both)")
@@ -139,19 +245,70 @@ def main():
     if not pmc_id.startswith("PMC-"):
         pmc_id = f"PMC-{pmc_id}"
 
+    SIM_DIR = resolve_sim_root(args.engine, args.model)
+
+    is_lammps = args.engine == "lammps"
+
     tdir = SIM_DIR / pmc_id / f"{args.ensemble.upper()}_results"
     if args.ensemble == "nvt":
+        # Identical folder convention on both pipelines.
         tdir = tdir / "03_nvt_production" / f"{args.temp}K"
-        traj_path = tdir / "production-trajectory.pdb"
+        if is_lammps:
+            traj_path = find_one(tdir, "*.lammpstrj")
+        else:
+            traj_path = tdir / "production-trajectory.pdb"
     else:
-        tdir = tdir / "04_npt_production" / f"{args.temp}K"
-        traj_path = tdir / "trajectory.pdb"
+        if is_lammps:
+            if args.pressure is None:
+                sys.exit("❌ --pressure is required for --engine lammps --ensemble npt "
+                          "(e.g. --pressure 1.0)")
+            npt_root = tdir / "03_npt_production"
+            exact = npt_root / f"{args.temp}K_{args.pressure}GPa"
+            if exact.exists():
+                tdir = exact
+            else:
+                # Formatting of the pressure value in the folder name (e.g. "1.0" vs "1")
+                # isn't 100% pinned down yet — fall back to a glob match on temperature.
+                candidates = sorted(npt_root.glob(f"{args.temp}K_*GPa")) if npt_root.exists() else []
+                if len(candidates) == 1:
+                    tdir = candidates[0]
+                elif len(candidates) > 1:
+                    sys.exit(f"❌ Multiple pressure folders match {args.temp}K_*GPa under "
+                              f"{npt_root} — pass the exact --pressure value: "
+                              f"{[c.name for c in candidates]}")
+                else:
+                    sys.exit(f"❌ NPT folder not found: {exact} (no {args.temp}K_*GPa match either)")
+            traj_path = find_one(tdir, "*.lammpstrj")
+        else:
+            tdir = tdir / "04_npt_production" / f"{args.temp}K"
+            traj_path = tdir / "trajectory.pdb"
     if not traj_path.exists():
         sys.exit(f"❌ Trajectory not found: {traj_path}")
 
     cif_path = find_cif(pmc_id)
-    min_path = (SIM_DIR / pmc_id / f"{args.ensemble.upper()}_results"
-                / "01_minimisation" / "last-frame-of-trajectory.pdb")
+    min_dir = SIM_DIR / pmc_id / f"{args.ensemble.upper()}_results" / "01_minimisation"
+    if is_lammps:
+        # Written via `write_data ... nocoeff`; exclude the pre-minimisation
+        # starting structure, restart files, and the run log (also *.lammps).
+        preferred = min_dir / "minimised_structure.lammps"
+        if preferred.exists():
+            min_path = preferred
+        elif min_dir.exists():
+            min_path = find_one(min_dir, "*.lammps",
+                                 exclude_substrings=("starting_structure", "log."))
+        else:
+            min_path = preferred
+    else:
+        min_path = min_dir / "last-frame-of-trajectory.pdb"
+
+    lammps_elements = None
+    if is_lammps:
+        lammps_elements = get_lammps_element_order(tdir) or get_lammps_element_order(min_dir)
+        if lammps_elements is None:
+            sys.exit(f"❌ Could not determine LAMMPS type→element mapping from "
+                      f"{tdir} or {min_dir} (no state.json with element_order, "
+                      f"no pair_coeff line in a *.in file).")
+        print(f"  LAMMPS element order (type 1..N): {lammps_elements}")
 
     # Decide which references are actually available
     want_cif = "cif" in args.refs and cif_path is not None
@@ -172,10 +329,13 @@ def main():
 
     # ── Load trajectory ──
     print("Reading trajectory ...")
-    frames = read(str(traj_path), index=":")
-    if not isinstance(frames, list):
-        frames = [frames]
-    frames = frames[args.skip::args.stride]
+    if is_lammps:
+        frames = read_lammps_trajectory(traj_path, lammps_elements, args.skip, args.stride)
+    else:
+        frames = read(str(traj_path), index=":")
+        if not isinstance(frames, list):
+            frames = [frames]
+        frames = frames[args.skip::args.stride]
     if len(frames) == 0:
         sys.exit("❌ No frames left after --skip/--stride.")
     for f in frames:
@@ -203,7 +363,11 @@ def main():
         refs["cif"] = sc
         print(f"  CIF: {len(unit)} atoms -> {reps[0]}x{reps[1]}x{reps[2]} = {len(sc)} atoms")
     if want_min:
-        unit = read(str(min_path)); unit.set_pbc(True)
+        if is_lammps:
+            unit = read_lammps_structure(min_path, lammps_elements)
+        else:
+            unit = read(str(min_path))
+        unit.set_pbc(True)
         sc, reps = build_reference_supercell(unit, rmax)
         refs["min"] = sc
         print(f"  Min: {len(unit)} atoms -> {reps[0]}x{reps[1]}x{reps[2]} = {len(sc)} atoms")

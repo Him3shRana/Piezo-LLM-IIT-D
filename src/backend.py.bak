@@ -1,0 +1,221 @@
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+import json
+import os
+from pathlib import Path
+from datetime import datetime
+
+app = Flask(__name__)
+CORS(app)
+
+# Paths
+DATA_DIR = Path(os.path.expanduser('~/Documents/Piezo-LLM/data'))
+MASTER_DB_PATH = Path(os.path.expanduser('~/Documents/Piezo-LLM/gui/public/database/master_database.json'))
+
+def load_json(path):
+    """Load JSON file safely"""
+    try:
+        with open(path, 'r') as f:
+            return json.load(f)
+    except:
+        return None
+
+def save_json(path, data):
+    """Save JSON file"""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, 'w') as f:
+        json.dump(data, f, indent=2)
+
+def scan_crystal_directory(pmc_id, pmc_dir):
+    """Scan a single PMC directory and return crystal data"""
+    json_file = pmc_dir / f"{pmc_id}.json"
+    pdf_file = None
+    cif_file = None
+    txt_file = pmc_dir / f"{pmc_id}.txt"
+
+    # Find PDF (might have different name)
+    for f in pmc_dir.glob('*.pdf'):
+        pdf_file = f
+        break
+
+    # Find CIF (might have different name)
+    for f in pmc_dir.glob('*.cif'):
+        cif_file = f
+        break
+
+    # Status
+    status = {
+        'json': json_file.exists(),
+        'pdf': pdf_file is not None,
+        'cif': cif_file is not None,
+        'txt': txt_file.exists()
+    }
+
+    # Load JSON data
+    crystal_data = None
+    if json_file.exists():
+        crystal_data = load_json(json_file)
+
+    # Build entry
+    entry = {
+        'pmc_id': pmc_id,
+        'molecule_name': crystal_data.get('molecule_name') if crystal_data else None,
+        'synonyms': crystal_data.get('synonyms', []) if crystal_data else [],
+        'chemical_formula': crystal_data.get('chemical_formula') if crystal_data else None,
+        'molecular_weight': crystal_data.get('molecular_weight') if crystal_data else None,
+        'crystal_type': crystal_data.get('crystal_type') if crystal_data else None,
+        'component_count': crystal_data.get('component_count') if crystal_data else None,
+        'ccdc_number': crystal_data.get('ccdc_number') if crystal_data else None,
+        'csd_refcode': crystal_data.get('csd_refcode') if crystal_data else None,
+        'space_group_symbol': crystal_data.get('space_group_symbol') if crystal_data else None,
+        'space_group_number': crystal_data.get('space_group_number') if crystal_data else None,
+        'crystal_system': crystal_data.get('crystal_system') if crystal_data else None,
+        'centrosymmetric': crystal_data.get('centrosymmetric') if crystal_data else None,
+        'is_piezoelectric': crystal_data.get('is_piezoelectric') if crystal_data else None,
+        'is_ferroelectric': crystal_data.get('is_ferroelectric') if crystal_data else None,
+        'is_pyroelectric': crystal_data.get('is_pyroelectric') if crystal_data else None,
+        'property_ref_doi': crystal_data.get('property_ref_doi') if crystal_data else None,
+        'structure_ref_doi': crystal_data.get('structure_ref_doi') if crystal_data else None,
+        'json_schema_version': '1.0',
+        'json_path': f'../data/{pmc_id}/{pmc_id}.json',
+        'pdf_path': f'../data/{pmc_id}/{pdf_file.name}' if pdf_file else None,
+        'cif_path': f'../data/{pmc_id}/{cif_file.name}' if cif_file else None,
+        'txt_path': f'../data/{pmc_id}/{pmc_id}.txt',
+        'aliases': [pmc_id],
+        'search_text': f'{pmc_id} {crystal_data.get("molecule_name", "")} {crystal_data.get("chemical_formula", "")}' if crystal_data else pmc_id,
+        'status': status,
+        'validated': status['json'] and status['cif'],
+        'last_updated': datetime.now().isoformat()
+    }
+
+    return entry
+
+@app.route('/api/admin/rebuild-database', methods=['POST'])
+def rebuild_database():
+    """Rebuild master database by scanning all PMC directories"""
+    try:
+        master_db = {'crystals': {}}
+        processed_count = 0
+
+        # Scan all PMC folders
+        for pmc_dir in sorted(DATA_DIR.iterdir()):
+            if not pmc_dir.is_dir():
+                continue
+            
+            pmc_id = pmc_dir.name
+            
+            # Only process PMC-XXX format
+            if not pmc_id.startswith('PMC-'):
+                continue
+
+            try:
+                # Scan the directory
+                crystal_entry = scan_crystal_directory(pmc_id, pmc_dir)
+                master_db['crystals'][pmc_id] = crystal_entry
+                processed_count += 1
+            except Exception as e:
+                print(f"Error processing {pmc_id}: {e}")
+                continue
+
+        # Add metadata
+        master_db['metadata'] = {
+            'version': '2.0',
+            'total_crystals': len(master_db['crystals']),
+            'last_updated': datetime.now().isoformat(),
+            'source': 'admin_panel_rebuild'
+        }
+
+        # Save master database
+        save_json(MASTER_DB_PATH, master_db)
+
+        return jsonify({
+            'success': True,
+            'message': f'Database rebuilt successfully with {processed_count} crystals',
+            'processed_count': processed_count,
+            'total_crystals': len(master_db['crystals']),
+            'timestamp': datetime.now().isoformat()
+        }), 200
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/admin/database-status', methods=['GET'])
+def get_database_status():
+    """Get database statistics"""
+    try:
+        master_db = load_json(MASTER_DB_PATH)
+        
+        if not master_db:
+            return jsonify({'error': 'Database not found'}), 404
+
+        crystals = master_db.get('crystals', {})
+        
+        total = len(crystals)
+        complete = sum(1 for c in crystals.values() if c.get('validated'))
+        incomplete = total - complete
+        piezoelectric = sum(1 for c in crystals.values() if c.get('is_piezoelectric'))
+        ferroelectric = sum(1 for c in crystals.values() if c.get('is_ferroelectric'))
+
+        return jsonify({
+            'total_crystals': total,
+            'complete_crystals': complete,
+            'incomplete_crystals': incomplete,
+            'piezoelectric_count': piezoelectric,
+            'ferroelectric_count': ferroelectric,
+            'last_updated': master_db.get('metadata', {}).get('last_updated')
+        }), 200
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/admin/crystals', methods=['GET'])
+def get_crystals_list():
+    """Get list of all crystals"""
+    try:
+        master_db = load_json(MASTER_DB_PATH)
+        
+        if not master_db:
+            return jsonify([]), 404
+
+        crystals = master_db.get('crystals', {})
+        result = list(crystals.values())
+
+        return jsonify(result), 200
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/admin/remove-crystal', methods=['DELETE'])
+def remove_crystal():
+    """Remove a crystal from database"""
+    try:
+        pmc_id = request.args.get('pmc_id')
+        
+        if not pmc_id:
+            return jsonify({'error': 'pmc_id required'}), 400
+
+        master_db = load_json(MASTER_DB_PATH)
+        
+        if pmc_id in master_db.get('crystals', {}):
+            del master_db['crystals'][pmc_id]
+            save_json(MASTER_DB_PATH, master_db)
+            return jsonify({'success': True, 'message': f'{pmc_id} removed'}), 200
+        else:
+            return jsonify({'error': 'Crystal not found'}), 404
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/admin/rebuild-database', methods=['POST'])
+def rebuild_database():
+    ...
+    # (existing function — leave it completely alone)
+
+# ← PASTE THE NEW ROUTE HERE (just the @app.route block, no comment markers)
+
+@app.route('/api/admin/database-status', methods=['GET'])
+def get_database_status():
+    ...

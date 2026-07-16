@@ -38,7 +38,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.365799"
+      "last_updated": "2026-07-15T19:18:13.999313"
     },
     "PMC-002": {
       "pmc_id": "PMC-002",
@@ -78,7 +78,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.375251"
+      "last_updated": "2026-07-15T19:18:13.999616"
     },
     "PMC-003": {
       "pmc_id": "PMC-003",
@@ -118,7 +118,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.375545"
+      "last_updated": "2026-07-15T19:18:13.999887"
     },
     "PMC-004": {
       "pmc_id": "PMC-004",
@@ -158,7 +158,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.375703"
+      "last_updated": "2026-07-15T19:18:14.000171"
     },
     "PMC-005": {
       "pmc_id": "PMC-005",
@@ -198,7 +198,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.375854"
+      "last_updated": "2026-07-15T19:18:14.000396"
     },
     "PMC-006": {
       "pmc_id": "PMC-006",
@@ -238,7 +238,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.376048"
+      "last_updated": "2026-07-15T19:18:14.000637"
     },
     "PMC-007": {
       "pmc_id": "PMC-007",
@@ -278,7 +278,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.376208"
+      "last_updated": "2026-07-15T19:18:14.000863"
     },
     "PMC-008": {
       "pmc_id": "PMC-008",
@@ -319,7 +319,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.376349"
+      "last_updated": "2026-07-15T19:18:14.001090"
     },
     "PMC-009": {
       "pmc_id": "PMC-009",
@@ -361,7 +361,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.376491"
+      "last_updated": "2026-07-15T19:18:14.001233"
     },
     "PMC-010": {
       "pmc_id": "PMC-010",
@@ -401,7 +401,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.376689"
+      "last_updated": "2026-07-15T19:18:14.001453"
     },
     "PMC-011": {
       "pmc_id": "PMC-011",
@@ -431,8 +431,8 @@
       "structure_ref_doi": "10.1107/S0567740874005528",
       "json_schema_version": "1.0",
       "json_path": "../data/PMC-011/PMC-011.json",
-      "pdf_path": "../data/PMC-011/PMC-011.1-2-Methyl-1H-benzimidazole (MBI).pdf",
-      "cif_path": "../data/PMC-011/PMC-011.1-2-Methyl-1H-benzimidazole (MBI).cif",
+      "pdf_path": "../data/PMC-011/PMC-011-Benzimidazole.pdf",
+      "cif_path": "../data/PMC-011/PMC-011-Benzimidazole.cif",
       "txt_path": "../data/PMC-011/PMC-011.txt",
       "aliases": [
         "PMC-011"
@@ -445,7 +445,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.376840"
+      "last_updated": "2026-07-15T19:18:14.001647"
     },
     "PMC-012": {
       "pmc_id": "PMC-012",
@@ -485,7 +485,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.376984"
+      "last_updated": "2026-07-15T19:18:14.001856"
     },
     "PMC-013": {
       "pmc_id": "PMC-013",
@@ -526,7 +526,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.377133"
+      "last_updated": "2026-07-15T19:18:14.002074"
     },
     "PMC-014": {
       "pmc_id": "PMC-014",
@@ -566,7 +566,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.377287"
+      "last_updated": "2026-07-15T19:18:14.002293"
     },
     "PMC-015": {
       "pmc_id": "PMC-015",
@@ -608,7 +608,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.377444"
+      "last_updated": "2026-07-15T19:18:14.002501"
     },
     "PMC-016": {
       "pmc_id": "PMC-016",
@@ -648,7 +648,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.377695"
+      "last_updated": "2026-07-15T19:18:14.002829"
     },
     "PMC-017": {
       "pmc_id": "PMC-017",
@@ -690,7 +690,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.377910"
+      "last_updated": "2026-07-15T19:18:14.003104"
     },
     "PMC-018": {
       "pmc_id": "PMC-018",
@@ -731,7 +731,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.378134"
+      "last_updated": "2026-07-15T19:18:14.003400"
     },
     "PMC-019": {
       "pmc_id": "PMC-019",
@@ -773,7 +773,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.378294"
+      "last_updated": "2026-07-15T19:18:14.003613"
     },
     "PMC-020": {
       "pmc_id": "PMC-020",
@@ -814,7 +814,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.378441"
+      "last_updated": "2026-07-15T19:18:14.003810"
     },
     "PMC-021": {
       "pmc_id": "PMC-021",
@@ -855,7 +855,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.378637"
+      "last_updated": "2026-07-15T19:18:14.004023"
     },
     "PMC-022": {
       "pmc_id": "PMC-022",
@@ -897,7 +897,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.378821"
+      "last_updated": "2026-07-15T19:18:14.004224"
     },
     "PMC-023": {
       "pmc_id": "PMC-023",
@@ -940,7 +940,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.378988"
+      "last_updated": "2026-07-15T19:18:14.004427"
     },
     "PMC-024": {
       "pmc_id": "PMC-024",
@@ -980,7 +980,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.379219"
+      "last_updated": "2026-07-15T19:18:14.004629"
     },
     "PMC-025": {
       "pmc_id": "PMC-025",
@@ -1021,7 +1021,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.379440"
+      "last_updated": "2026-07-15T19:18:14.004837"
     },
     "PMC-026": {
       "pmc_id": "PMC-026",
@@ -1062,7 +1062,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.379651"
+      "last_updated": "2026-07-15T19:18:14.005095"
     },
     "PMC-027": {
       "pmc_id": "PMC-027",
@@ -1103,7 +1103,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.379881"
+      "last_updated": "2026-07-15T19:18:14.005326"
     },
     "PMC-028": {
       "pmc_id": "PMC-028",
@@ -1144,7 +1144,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.380045"
+      "last_updated": "2026-07-15T19:18:14.005519"
     },
     "PMC-029": {
       "pmc_id": "PMC-029",
@@ -1185,7 +1185,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.380201"
+      "last_updated": "2026-07-15T19:18:14.005726"
     },
     "PMC-030": {
       "pmc_id": "PMC-030",
@@ -1226,7 +1226,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.380397"
+      "last_updated": "2026-07-15T19:18:14.005959"
     },
     "PMC-031": {
       "pmc_id": "PMC-031",
@@ -1267,7 +1267,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.380654"
+      "last_updated": "2026-07-15T19:18:14.006197"
     },
     "PMC-032": {
       "pmc_id": "PMC-032",
@@ -1308,7 +1308,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.380889"
+      "last_updated": "2026-07-15T19:18:14.006428"
     },
     "PMC-033": {
       "pmc_id": "PMC-033",
@@ -1348,7 +1348,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381043"
+      "last_updated": "2026-07-15T19:18:14.006614"
     },
     "PMC-034": {
       "pmc_id": "PMC-034",
@@ -1389,7 +1389,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381171"
+      "last_updated": "2026-07-15T19:18:14.006785"
     },
     "PMC-035": {
       "pmc_id": "PMC-035",
@@ -1430,7 +1430,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381296"
+      "last_updated": "2026-07-15T19:18:14.006980"
     },
     "PMC-036": {
       "pmc_id": "PMC-036",
@@ -1470,7 +1470,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381437"
+      "last_updated": "2026-07-15T19:18:14.007174"
     },
     "PMC-037": {
       "pmc_id": "PMC-037",
@@ -1512,7 +1512,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381525"
+      "last_updated": "2026-07-15T19:18:14.007390"
     },
     "PMC-038": {
       "pmc_id": "PMC-038",
@@ -1554,7 +1554,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381597"
+      "last_updated": "2026-07-15T19:18:14.007569"
     },
     "PMC-039": {
       "pmc_id": "PMC-039",
@@ -1597,7 +1597,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381668"
+      "last_updated": "2026-07-15T19:18:14.007747"
     },
     "PMC-040": {
       "pmc_id": "PMC-040",
@@ -1639,7 +1639,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.381825"
+      "last_updated": "2026-07-15T19:18:14.007924"
     },
     "PMC-041": {
       "pmc_id": "PMC-041",
@@ -1676,7 +1676,7 @@
         "txt": false
       },
       "validated": false,
-      "last_updated": "2026-07-06T15:31:01.381882"
+      "last_updated": "2026-07-15T19:18:14.008049"
     },
     "PMC-042": {
       "pmc_id": "PMC-042",
@@ -1717,7 +1717,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.382030"
+      "last_updated": "2026-07-15T19:18:14.008222"
     },
     "PMC-043": {
       "pmc_id": "PMC-043",
@@ -1754,7 +1754,7 @@
         "txt": false
       },
       "validated": false,
-      "last_updated": "2026-07-06T15:31:01.382075"
+      "last_updated": "2026-07-15T19:18:14.008328"
     },
     "PMC-044": {
       "pmc_id": "PMC-044",
@@ -1791,7 +1791,7 @@
         "txt": false
       },
       "validated": false,
-      "last_updated": "2026-07-06T15:31:01.382117"
+      "last_updated": "2026-07-15T19:18:14.008429"
     },
     "PMC-045": {
       "pmc_id": "PMC-045",
@@ -1834,7 +1834,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.382295"
+      "last_updated": "2026-07-15T19:18:14.008596"
     },
     "PMC-046": {
       "pmc_id": "PMC-046",
@@ -1875,7 +1875,7 @@
         "txt": true
       },
       "validated": true,
-      "last_updated": "2026-07-06T15:31:01.382432"
+      "last_updated": "2026-07-15T19:18:14.008759"
     },
     "PMC-047": {
       "pmc_id": "PMC-047",
@@ -1912,13 +1912,50 @@
         "txt": false
       },
       "validated": false,
-      "last_updated": "2026-07-06T15:31:01.382476"
+      "last_updated": "2026-07-15T19:18:14.008865"
+    },
+    "PMC-099": {
+      "pmc_id": "PMC-099",
+      "molecule_name": null,
+      "synonyms": [],
+      "chemical_formula": null,
+      "molecular_weight": null,
+      "crystal_type": null,
+      "component_count": null,
+      "ccdc_number": null,
+      "csd_refcode": null,
+      "space_group_symbol": null,
+      "space_group_number": null,
+      "crystal_system": null,
+      "centrosymmetric": null,
+      "is_piezoelectric": null,
+      "is_ferroelectric": null,
+      "is_pyroelectric": null,
+      "property_ref_doi": null,
+      "structure_ref_doi": null,
+      "json_schema_version": "1.0",
+      "json_path": "../data/PMC-099/PMC-099.json",
+      "pdf_path": "../data/PMC-099/PMC-011.1-2-Methyl-1H-benzimidazole (MBI).pdf",
+      "cif_path": "../data/PMC-099/PMC-011.1-2-Methyl-1H-benzimidazole (MBI).cif",
+      "txt_path": "../data/PMC-099/PMC-099.txt",
+      "aliases": [
+        "PMC-099"
+      ],
+      "search_text": "PMC-099",
+      "status": {
+        "json": false,
+        "pdf": true,
+        "cif": true,
+        "txt": false
+      },
+      "validated": false,
+      "last_updated": "2026-07-15T19:18:14.008978"
     }
   },
   "metadata": {
     "version": "2.0",
-    "total_crystals": 47,
-    "last_updated": "2026-07-06T15:31:01.382493",
+    "total_crystals": 48,
+    "last_updated": "2026-07-15T19:18:14.009007",
     "source": "admin_panel_rebuild"
   }
 }

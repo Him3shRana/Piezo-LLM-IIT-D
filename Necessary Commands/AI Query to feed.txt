@@ -1,0 +1,35 @@
+The thing is that i want to make two Seperate scripts one for NVT and other for  NPT having Complete Seperate things LIke Folder  NVt should have its
+
+
+
+Minimisation (Having its trajectory.pdb , last-frame-of-trajectory.pdb and minimisation log file) 
+
+
+
+NVT equilibration (Having Time Vs Temperature graph plotted ,trajectory.pdb file, last-frame-of-trajectory.pdb, log file)
+
+
+
+NVT Production  (production-trajectory.pdb file, last-frame-of-trajectory.pdb, log file, RDF vs R graph having rdf of simulation , actual rdf , minimised and lastly a xvg file of all possible pairs)
+
+
+
+
+
+And i want Another Script that will be contained under NPT folder having its own
+
+
+
+Minimisation (Having its trajectory.pdb , last-frame-of-trajectory.pdb and minimisation log file)
+
+
+
+ then NVT Equilibration (Having Time Vs Temperature graph plotted ,trajectory.pdb file, last-frame-of-trajectory.pdb, log file)
+
+
+
+then NPT equilibration (Having Volume vs Time Graph,trajectory.pdb, last-frame-of-trajectory.pcb,log file)
+
+
+
+Then NPT Production (having trajectory.pdb, last-frame-of-trajectory.pcb, log file , RDF vs R graph ,Volume vs Time Graph and The Actual Volume or you can say initial volume should also be MArked at the Graph generated)

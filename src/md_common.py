@@ -38,7 +38,7 @@ CHECKPOINT_INTERVAL = 5000        # flush restart+state every N steps
 MIN_CHECKPOINT_INTERVAL = 50      # flush minimiser restart every N opt steps
 
 NPT_TTIME_FS = 25.0
-NPT_PTIME_FS = 75.0
+NPT_PTIME_FS = 250
 NPT_BULK_MODULUS_GPA = 100.0
 BAR_TO_GPA = 1e-4
 
@@ -48,7 +48,6 @@ RDF_N_BINS = 200
 
 # ═══════════════════════════════════════════════════════════════════
 #  Molecule / supercell helpers
-# ═══════════════════════════════════════════════════════════════════
 def find_cif(pmc_id: str) -> Path:
     folder = DATA_DIR / pmc_id
     if not folder.exists():
@@ -115,7 +114,6 @@ def generate_supercell(pmc_id: str, size: int = 2) -> dict:
 
 # ═══════════════════════════════════════════════════════════════════
 #  Checkpoint state helpers
-# ═══════════════════════════════════════════════════════════════════
 def save_stage_state(state_path: Path, state: dict):
     """Write stage state JSON atomically (tmp file + rename)."""
     tmp_path = state_path.with_suffix(state_path.suffix + ".tmp")
@@ -228,7 +226,6 @@ class StepBudget:
 
 # ═══════════════════════════════════════════════════════════════════
 #  Plotting
-# ═══════════════════════════════════════════════════════════════════
 def _load_csv_numeric(csv_path: Path, columns):
     """Read a thermo CSV back into a list of dicts with the requested
     columns cast to float/int."""
@@ -308,7 +305,6 @@ def plot_volume_vs_time(csv_path: Path, title: str, out_path: Path, initial_volu
 
 # ═══════════════════════════════════════════════════════════════════
 #  RDF
-# ═══════════════════════════════════════════════════════════════════
 def compute_rdf_single(atoms, r_max=RDF_R_MAX, n_bins=RDF_N_BINS, elements=None):
     """Total + per-element-pair g(r) for a single ASE Atoms frame,
     using the minimum-image convention (PBC-aware neighbor list).
@@ -443,7 +439,6 @@ def plot_rdf_comparison(r_centers, curves: dict, out_path: Path, title: str):
 
 # ═══════════════════════════════════════════════════════════════════
 #  Checkpointed minimisation
-# ═══════════════════════════════════════════════════════════════════
 def run_minimisation(atoms_in, calc, stage_dir: Path, fmax=0.05, max_steps=500,
                       checkpoint_interval=MIN_CHECKPOINT_INTERVAL,
                       traj_name="trajectory.pdb",
@@ -559,7 +554,6 @@ def run_minimisation(atoms_in, calc, stage_dir: Path, fmax=0.05, max_steps=500,
 
 # ═══════════════════════════════════════════════════════════════════
 #  Checkpointed MD stage (NVT or NPT)
-# ═══════════════════════════════════════════════════════════════════
 def run_md_stage(atoms_in, calc, target_steps, timestep_fs, temp, stage_dir: Path,
                   dyn_type="nvt", pressure_GPa=0.0, init_velocities=False,
                   plot_kind=None, traj_name="trajectory.pdb",
@@ -766,7 +760,6 @@ def run_md_stage(atoms_in, calc, target_steps, timestep_fs, temp, stage_dir: Pat
 
 # ═══════════════════════════════════════════════════════════════════
 #  Progress reporting (the "trace" the user asked for)
-# ═══════════════════════════════════════════════════════════════════
 def collect_progress(results_dir: Path):
     """Walk every state.json under results_dir and return a flat list
     of {path, stage, completed_steps, target_steps, status}."""
