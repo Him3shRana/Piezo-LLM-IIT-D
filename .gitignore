@@ -11,3 +11,10 @@ __pycache__/
 *.log
 *.lock
 Qwen3-8B/
+vectordb/
+vectordb_export.csv
+*.lammpstrj
+*.restart
+*.extxyz
+*.traj
+runs/

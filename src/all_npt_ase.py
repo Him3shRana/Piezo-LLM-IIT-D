@@ -61,7 +61,9 @@ MODELS = {
     ("chgnet", "pretrained"): {"family": "chgnet", "size": "pretrained", "calc_type": "chgnet"},
     ("grace", "GRACE-2L-OMAT-medium-ft-AM"): {"family": "grace", "size": "GRACE-2L-OMAT-medium-ft-AM", "model_name": "GRACE-2L-OMAT-medium-ft-AM", "calc_type": "grace"},
     ("grace", "GRACE-2L-OAM"): {"family": "grace", "size": "GRACE-2L-OAM", "model_name": "GRACE-2L-OAM", "calc_type": "grace"},
-    ("orb", "orb-v2"):                       {"family": "orb", "size": "orb-v2",                      "model_name": "orb-v2",                       "calc_type": "orb"},
+    ("orb", "orb-v2"): {"family": "orb", "size": "orb-v2", "model_name": "orb-v2",
+                        "weights_path": "~/.cache/cached_path/11be2a8c51472ff72b5c88e3ac15e121d32ce011b91cb772454cfe99c70a659c.12664da448d7fc23ce36d4d21e65597c6f8e565382a551e7435a357d348d203b",
+                        "calc_type": "orb"},
     ("orb", "orb-v3-conservative-inf-omat"):  {"family": "orb", "size": "orb-v3-conservative-inf-omat", "model_name": "orb-v3-conservative-inf-omat",  "calc_type": "orb"},
     ("orb", "orb-v3-direct-inf-omat"):        {"family": "orb", "size": "orb-v3-direct-inf-omat",       "model_name": "orb-v3-direct-inf-omat",        "calc_type": "orb"},
     ("mace-mp0", "small"):  {"family": "mace-mp0", "size": "small",  "calc_type": "mace_mp0"},
@@ -270,7 +272,11 @@ def build_calculator(model, device="cpu"):
         from orb_models.forcefield import pretrained
         from orb_models.forcefield.inference.calculator import ORBCalculator
         model_fn = pretrained.ORB_PRETRAINED_MODELS[model["model_name"]]
-        orb_model, atoms_adapter = model_fn(device=device, compile=False)
+        kwargs = {"device": device, "compile": False}
+        local = model.get("weights_path")
+        if local and os.path.exists(os.path.expanduser(local)):
+            kwargs["weights_path"] = os.path.expanduser(local)
+        orb_model, atoms_adapter = model_fn(**kwargs)
         return ORBCalculator(orb_model, atoms_adapter, device=device)
 
     elif calc_type == "mace_mp0":
