@@ -1,0 +1,3 @@
+step,time_ps,temperature_K,potential_energy_eV,kinetic_energy_eV,total_energy_eV,pressure_bar,pressure_GPa,volume_A3
+0,0.0,0.0,-185736.08,0.0,-185736.08,270113.98,27.011398,1879.3936
+33,0.0165,0.0,-185912.7,0.0,-185912.7,-21013.32,-2.101332,1879.3936

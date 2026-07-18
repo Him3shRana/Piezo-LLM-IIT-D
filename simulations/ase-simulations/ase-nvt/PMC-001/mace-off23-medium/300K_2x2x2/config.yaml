@@ -1,0 +1,8 @@
+pmc: PMC-001
+model: mace-off23
+version: medium
+engine: ase
+ensemble: nvt
+temperature_K: 300.0
+timestep_fs: 1.0
+supercell: 2x2x2

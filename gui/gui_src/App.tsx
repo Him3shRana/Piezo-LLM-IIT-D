@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 
 import Dashboard from "./pages/dashboard/Dashboard";
-import Chat from "./pages/Chat/chat";
+import Chat from "./pages/Chat/AiChat";
 import CrystalExplorer from "./pages/crystals/CrystalExplorer";
 import Papers from "./pages/papers/Papers";
 import Database from "./pages/database/Database";

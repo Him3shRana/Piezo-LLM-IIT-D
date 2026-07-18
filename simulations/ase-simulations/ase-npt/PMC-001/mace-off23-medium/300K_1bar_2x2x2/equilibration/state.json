@@ -1,0 +1,9 @@
+{
+  "pmc_id": "",
+  "stage": "equilibration",
+  "last_completed_step": 2000,
+  "target_step": 2000,
+  "status": "completed",
+  "restart_file": "restart.extxyz",
+  "timestamp": "2026-07-14T14:41:57.068216+00:00"
+}

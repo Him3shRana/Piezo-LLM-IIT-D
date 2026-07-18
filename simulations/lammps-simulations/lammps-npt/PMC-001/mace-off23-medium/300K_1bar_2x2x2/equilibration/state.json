@@ -1,0 +1,13 @@
+{
+  "pmc_id": "PMC-001",
+  "engine": "lammps",
+  "model_family": "mace-off23",
+  "model_size": "medium",
+  "stage": "equilibration",
+  "temperature_K": 300.0,
+  "last_completed_step": 200000,
+  "target_step": 200000,
+  "status": "completed",
+  "restart_file": "restart.restart",
+  "last_updated": "2026-07-12T22:08:21.449702+00:00"
+}

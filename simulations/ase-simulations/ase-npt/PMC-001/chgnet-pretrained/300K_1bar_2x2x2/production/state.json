@@ -1,0 +1,9 @@
+{
+  "pmc_id": "",
+  "stage": "production",
+  "last_completed_step": 127000,
+  "target_step": 200000,
+  "status": "running",
+  "restart_file": "restart.extxyz",
+  "timestamp": "2026-07-16T04:54:08.214362+00:00"
+}

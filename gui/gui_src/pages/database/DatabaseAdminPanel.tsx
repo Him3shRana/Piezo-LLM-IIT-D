@@ -1,6 +1,22 @@
 import { useState } from 'react';
 import type { FC } from 'react';
-import { RefreshCw, Database, AlertCircle, CheckCircle, Loader, Layers } from 'lucide-react';
+import {
+  RefreshCw,
+  Database,
+  AlertCircle,
+  CheckCircle,
+  Loader,
+  Layers,
+  Search,
+  ChevronDown,
+  ChevronRight,
+  FileText,
+  FileCode,
+  File,
+  Atom,
+  Zap,
+  BarChart3,
+} from 'lucide-react';
 
 interface CrystalStatus {
   json: boolean;
@@ -36,20 +52,16 @@ const DatabaseAdminPanel: FC = () => {
   const [rebuildError, setRebuildError] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedCrystal, setExpandedCrystal] = useState<string | null>(null);
-
-  // Vector DB state
   const [vectorLoading, setVectorLoading] = useState(false);
   const [vectorSuccess, setVectorSuccess] = useState('');
   const [vectorError, setVectorError] = useState('');
 
-  // Fetch database status
   const fetchDatabaseStatus = async () => {
     setIsLoading(true);
     try {
       const response = await fetch('http://localhost:5000/api/admin/database-status');
       const data = await response.json();
       setStats(data);
-
       const crystalsResponse = await fetch('http://localhost:5000/api/admin/crystals');
       const crystalsData = await crystalsResponse.json();
       setCrystals(crystalsData);
@@ -60,393 +72,323 @@ const DatabaseAdminPanel: FC = () => {
     }
   };
 
-  // Rebuild Master Database
   const handleRebuildDatabase = async () => {
     setRebuildLoading(true);
-    setRebuildProgress('Starting database rebuild...');
+    setRebuildProgress('Scanning crystal directories...');
     setRebuildSuccess(false);
     setRebuildError('');
-
     try {
-      setRebuildProgress('Scanning crystal directories...');
-
       const response = await fetch('http://localhost:5000/api/admin/rebuild-database', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          full_scan: true,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ full_scan: true }),
       });
-
-      if (!response.ok) {
-        throw new Error(`Server error: ${response.status}`);
-      }
-
+      if (!response.ok) throw new Error(`Server error: ${response.status}`);
       const data = await response.json();
-
       setRebuildProgress(`Processing ${data.processed_count || 0} crystals...`);
-
-      setTimeout(() => {
-        setRebuildProgress('Updating master database...');
-      }, 1000);
-
-      setTimeout(() => {
-        setRebuildProgress('Verifying data integrity...');
-      }, 2000);
-
+      setTimeout(() => setRebuildProgress('Updating master database...'), 1000);
+      setTimeout(() => setRebuildProgress('Verifying data integrity...'), 2000);
       setTimeout(() => {
         setRebuildProgress('');
         setRebuildSuccess(true);
         fetchDatabaseStatus();
-
-        setTimeout(() => {
-          setRebuildSuccess(false);
-        }, 5000);
+        setTimeout(() => setRebuildSuccess(false), 5000);
       }, 3000);
     } catch (error) {
       setRebuildError(`Failed to rebuild database: ${error}`);
-      console.error('Rebuild error:', error);
     } finally {
       setRebuildLoading(false);
     }
   };
 
-  // Rebuild Vector Database
   const handleRebuildVectorDB = async () => {
     setVectorLoading(true);
     setVectorSuccess('');
     setVectorError('');
-
     try {
       const response = await fetch('http://localhost:5000/api/admin/rebuild-vectordb', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
       });
-
       const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.error || `Server error: ${response.status}`);
-      }
-
-      const skipped = data.skipped_count
-        ? `, ${data.skipped_count} skipped (empty folders)`
-        : '';
-      setVectorSuccess(
-        `Indexed ${data.total_in_db} molecules (${data.new} new, ${data.updated} updated)${skipped}.`
-      );
-
-      setTimeout(() => {
-        setVectorSuccess('');
-      }, 8000);
+      if (!response.ok || !data.success) throw new Error(data.error || `Server error: ${response.status}`);
+      const skipped = data.skipped_count ? `, ${data.skipped_count} skipped` : '';
+      setVectorSuccess(`Indexed ${data.total_in_db} molecules (${data.new} new, ${data.updated} updated)${skipped}.`);
+      setTimeout(() => setVectorSuccess(''), 8000);
     } catch (error) {
       setVectorError(`Failed to rebuild vector database: ${error}`);
-      console.error('Vector rebuild error:', error);
     } finally {
       setVectorLoading(false);
     }
   };
 
-  // Filter crystals based on search term
   const filteredCrystals = crystals.filter(
     (crystal) =>
       crystal.pmc_id.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (crystal.molecule_name?.toLowerCase() || '').includes(searchTerm.toLowerCase())
   );
 
+  const StatusDot = ({ ok }: { ok: boolean }) => (
+    <span className={`w-1.5 h-1.5 rounded-full ${ok ? 'bg-emerald-500' : 'bg-red-500'}`} />
+  );
+
   return (
-    <div className="space-y-6">
-      {/* Rebuild Database Section */}
-      <div className="bg-gradient-to-r from-blue-900/30 to-cyan-900/30 border border-cyan-500/30 rounded-2xl p-8">
-        <div className="flex items-start justify-between mb-4">
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
-              <Database className="w-6 h-6 text-cyan-400" />
-              Master Database Tools
-            </h2>
-            <p className="text-gray-400">
-              Rebuild and update the master database with latest crystal data
-            </p>
+    <div className="space-y-5">
+
+      {/* Top Row - Two Action Cards */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+        {/* Master Database Card */}
+        <div className="rounded-2xl border border-white/[0.06] bg-[#0d1117] overflow-hidden">
+          <div className="p-5 pb-4">
+            <div className="flex items-center gap-3 mb-1">
+              <div className="p-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20">
+                <Database className="w-4 h-4 text-cyan-400" />
+              </div>
+              <h3 className="text-sm font-semibold text-white">Master Database</h3>
+            </div>
+            <p className="text-xs text-gray-500 ml-[44px]">Scan and rebuild crystal data</p>
+          </div>
+
+          <div className="px-5 pb-5 space-y-3">
+            <button
+              onClick={handleRebuildDatabase}
+              disabled={rebuildLoading}
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 disabled:from-gray-700 disabled:to-gray-700 text-white text-sm font-semibold py-3 rounded-xl transition-all disabled:opacity-40 active:scale-[0.98]"
+            >
+              {rebuildLoading ? (
+                <><Loader className="w-4 h-4 animate-spin" /> Rebuilding...</>
+              ) : (
+                <><RefreshCw className="w-4 h-4" /> Full Scan & Rebuild</>
+              )}
+            </button>
+
+            {rebuildProgress && (
+              <div className="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-cyan-500/5 border border-cyan-500/20">
+                <Loader className="w-3.5 h-3.5 animate-spin text-cyan-400" />
+                <span className="text-xs text-cyan-300">{rebuildProgress}</span>
+              </div>
+            )}
+            {rebuildSuccess && (
+              <div className="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
+                <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="text-xs text-emerald-300">Database rebuilt successfully!</span>
+              </div>
+            )}
+            {rebuildError && (
+              <div className="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-red-500/5 border border-red-500/20">
+                <AlertCircle className="w-3.5 h-3.5 text-red-400" />
+                <span className="text-xs text-red-300">{rebuildError}</span>
+              </div>
+            )}
+
+            <details className="group">
+              <summary className="text-[11px] text-gray-600 cursor-pointer hover:text-gray-400 transition-colors list-none flex items-center gap-1">
+                <ChevronRight className="w-3 h-3 group-open:rotate-90 transition-transform" />
+                What this does
+              </summary>
+              <ul className="mt-2 ml-4 space-y-1 text-[11px] text-gray-500">
+                <li>• Scans all PMC folders for updated JSON files</li>
+                <li>• Verifies CIF, PDF, and TXT file presence</li>
+                <li>• Updates master_database.json with latest data</li>
+                <li>• Validates crystal properties</li>
+              </ul>
+            </details>
           </div>
         </div>
 
-        {/* Rebuild Button and Progress */}
-        <div className="space-y-4">
-          <button
-            onClick={handleRebuildDatabase}
-            disabled={rebuildLoading}
-            className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 disabled:from-gray-600 disabled:to-gray-600 text-white font-bold py-4 px-6 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {rebuildLoading ? (
-              <>
-                <Loader className="w-5 h-5 animate-spin" />
-                Rebuilding Database...
-              </>
-            ) : (
-              <>
-                <RefreshCw className="w-5 h-5" />
-                Full Scan & Rebuild Master Database
-              </>
+        {/* Vector Database Card */}
+        <div className="rounded-2xl border border-white/[0.06] bg-[#0d1117] overflow-hidden">
+          <div className="p-5 pb-4">
+            <div className="flex items-center gap-3 mb-1">
+              <div className="p-2 rounded-lg bg-violet-500/10 border border-violet-500/20">
+                <Layers className="w-4 h-4 text-violet-400" />
+              </div>
+              <h3 className="text-sm font-semibold text-white">Vector Database</h3>
+            </div>
+            <p className="text-xs text-gray-500 ml-[44px]">Rebuild AI search embeddings</p>
+          </div>
+
+          <div className="px-5 pb-5 space-y-3">
+            <button
+              onClick={handleRebuildVectorDB}
+              disabled={vectorLoading}
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 disabled:from-gray-700 disabled:to-gray-700 text-white text-sm font-semibold py-3 rounded-xl transition-all disabled:opacity-40 active:scale-[0.98]"
+            >
+              {vectorLoading ? (
+                <><Loader className="w-4 h-4 animate-spin" /> Building Embeddings...</>
+              ) : (
+                <><RefreshCw className="w-4 h-4" /> Rebuild Vector Database</>
+              )}
+            </button>
+
+            {vectorSuccess && (
+              <div className="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
+                <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="text-xs text-emerald-300">{vectorSuccess}</span>
+              </div>
             )}
-          </button>
+            {vectorError && (
+              <div className="flex items-center gap-2 px-3 py-2.5 rounded-lg bg-red-500/5 border border-red-500/20">
+                <AlertCircle className="w-3.5 h-3.5 text-red-400" />
+                <span className="text-xs text-red-300">{vectorError}</span>
+              </div>
+            )}
 
-          {/* Progress Message */}
-          {rebuildProgress && (
-            <div className="bg-blue-900/40 border border-blue-500/50 rounded-lg p-4 text-blue-300 flex items-center gap-3">
-              <Loader className="w-5 h-5 animate-spin" />
-              {rebuildProgress}
-            </div>
-          )}
-
-          {/* Success Message */}
-          {rebuildSuccess && (
-            <div className="bg-green-900/40 border border-green-500/50 rounded-lg p-4 text-green-300 flex items-center gap-3">
-              <CheckCircle className="w-5 h-5" />
-              ✅ Database rebuilt successfully! All crystals updated.
-            </div>
-          )}
-
-          {/* Error Message */}
-          {rebuildError && (
-            <div className="bg-red-900/40 border border-red-500/50 rounded-lg p-4 text-red-300 flex items-center gap-3">
-              <AlertCircle className="w-5 h-5" />
-              {rebuildError}
-            </div>
-          )}
-
-          {/* Info Box */}
-          <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-4 text-sm text-gray-300">
-            <p className="mb-2">
-              <strong>What this does:</strong>
-            </p>
-            <ul className="list-disc list-inside space-y-1 text-gray-400">
-              <li>Scans all PMC folders for updated JSON files</li>
-              <li>Verifies CIF, PDF, and TXT file presence</li>
-              <li>Updates master_database.json with latest data</li>
-              <li>Validates crystal properties (piezoelectric, ferroelectric, etc.)</li>
-              <li>Updates timestamp for all processed entries</li>
-            </ul>
+            <details className="group">
+              <summary className="text-[11px] text-gray-600 cursor-pointer hover:text-gray-400 transition-colors list-none flex items-center gap-1">
+                <ChevronRight className="w-3 h-3 group-open:rotate-90 transition-transform" />
+                What this does
+              </summary>
+              <ul className="mt-2 ml-4 space-y-1 text-[11px] text-gray-500">
+                <li>• Converts each molecule's text to vector embedding</li>
+                <li>• Updates Chroma vector store (no duplicates)</li>
+                <li>• Skips empty placeholder folders</li>
+                <li>• Run after adding/editing crystal data</li>
+              </ul>
+            </details>
           </div>
         </div>
       </div>
 
-      {/* Vector Database Section */}
-      <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl p-8">
-        <div className="flex items-start justify-between mb-4">
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
-              <Layers className="w-6 h-6 text-purple-400" />
-              Vector Database (AI Search)
-            </h2>
-            <p className="text-gray-400">
-              Rebuild the embeddings used by the AI chat to search crystal data
-            </p>
-          </div>
-        </div>
-
-        <div className="space-y-4">
-          <button
-            onClick={handleRebuildVectorDB}
-            disabled={vectorLoading}
-            className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 disabled:from-gray-600 disabled:to-gray-600 text-white font-bold py-4 px-6 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {vectorLoading ? (
-              <>
-                <Loader className="w-5 h-5 animate-spin" />
-                Building Vector Database...
-              </>
-            ) : (
-              <>
-                <RefreshCw className="w-5 h-5" />
-                Rebuild Vector Database
-              </>
-            )}
-          </button>
-
-          {/* Success Message */}
-          {vectorSuccess && (
-            <div className="bg-green-900/40 border border-green-500/50 rounded-lg p-4 text-green-300 flex items-center gap-3">
-              <CheckCircle className="w-5 h-5" />
-              {vectorSuccess}
-            </div>
+      {/* Stats Row */}
+      {!stats && (
+        <button
+          onClick={fetchDatabaseStatus}
+          disabled={isLoading}
+          className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] text-sm text-gray-400 hover:text-gray-300 transition-all"
+        >
+          {isLoading ? (
+            <><Loader className="w-4 h-4 animate-spin" /> Loading...</>
+          ) : (
+            <><BarChart3 className="w-4 h-4" /> Load Database Status</>
           )}
+        </button>
+      )}
 
-          {/* Error Message */}
-          {vectorError && (
-            <div className="bg-red-900/40 border border-red-500/50 rounded-lg p-4 text-red-300 flex items-center gap-3">
-              <AlertCircle className="w-5 h-5" />
-              {vectorError}
-            </div>
-          )}
-
-          {/* Info Box */}
-          <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-4 text-sm text-gray-300">
-            <p className="mb-2">
-              <strong>What this does:</strong>
-            </p>
-            <ul className="list-disc list-inside space-y-1 text-gray-400">
-              <li>Reads the "text" summary of every molecule's JSON</li>
-              <li>Converts each into a vector embedding for semantic search</li>
-              <li>Updates the Chroma vector store (add new / update existing, no duplicates)</li>
-              <li>Skips empty placeholder folders automatically</li>
-              <li>Run this after adding or editing crystal data so AI search stays current</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Database Statistics */}
       {stats && (
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          <div className="bg-gray-900 border border-gray-700 rounded-lg p-4">
-            <p className="text-gray-400 text-sm mb-1">Total Crystals</p>
-            <p className="text-3xl font-bold text-cyan-400">{stats.total_crystals}</p>
+        <div>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-medium uppercase tracking-wider text-gray-500">Statistics</h3>
+            <button
+              onClick={fetchDatabaseStatus}
+              disabled={isLoading}
+              className="text-[11px] text-gray-600 hover:text-gray-400 flex items-center gap-1 transition-colors"
+            >
+              <RefreshCw className={`w-3 h-3 ${isLoading ? 'animate-spin' : ''}`} /> Refresh
+            </button>
           </div>
-          <div className="bg-gray-900 border border-gray-700 rounded-lg p-4">
-            <p className="text-gray-400 text-sm mb-1">Complete</p>
-            <p className="text-3xl font-bold text-green-400">{stats.complete_crystals}</p>
+
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
+            {[
+              { label: 'Total', value: stats.total_crystals, color: 'text-cyan-400', border: 'border-cyan-500/10' },
+              { label: 'Complete', value: stats.complete_crystals, color: 'text-emerald-400', border: 'border-emerald-500/10' },
+              { label: 'Incomplete', value: stats.incomplete_crystals, color: 'text-amber-400', border: 'border-amber-500/10' },
+              { label: 'Piezoelectric', value: stats.piezoelectric_count, color: 'text-blue-400', border: 'border-blue-500/10' },
+              { label: 'Ferroelectric', value: stats.ferroelectric_count, color: 'text-violet-400', border: 'border-violet-500/10' },
+            ].map((s, i) => (
+              <div key={i} className={`rounded-xl border ${s.border} bg-[#0d1117] p-4`}>
+                <p className="text-[10px] font-medium uppercase tracking-wider text-gray-600 mb-1">{s.label}</p>
+                <p className={`text-2xl font-bold ${s.color}`}>{s.value}</p>
+              </div>
+            ))}
           </div>
-          <div className="bg-gray-900 border border-gray-700 rounded-lg p-4">
-            <p className="text-gray-400 text-sm mb-1">Incomplete</p>
-            <p className="text-3xl font-bold text-yellow-400">{stats.incomplete_crystals}</p>
-          </div>
-          <div className="bg-gray-900 border border-gray-700 rounded-lg p-4">
-            <p className="text-gray-400 text-sm mb-1">Piezoelectric</p>
-            <p className="text-3xl font-bold text-blue-400">{stats.piezoelectric_count}</p>
-          </div>
-          <div className="bg-gray-900 border border-gray-700 rounded-lg p-4">
-            <p className="text-gray-400 text-sm mb-1">Ferroelectric</p>
-            <p className="text-3xl font-bold text-purple-400">{stats.ferroelectric_count}</p>
-          </div>
+
+          {stats.last_updated && (
+            <p className="text-[10px] text-gray-600 mt-2">
+              Last updated: {new Date(stats.last_updated).toLocaleString()}
+            </p>
+          )}
         </div>
       )}
 
-      {/* Fetch Status Button */}
-      <button
-        onClick={fetchDatabaseStatus}
-        disabled={isLoading}
-        className="w-full bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
-      >
-        {isLoading ? (
-          <>
-            <Loader className="w-4 h-4 animate-spin" />
-            Loading Status...
-          </>
-        ) : (
-          <>
-            <RefreshCw className="w-4 h-4" />
-            Refresh Status
-          </>
-        )}
-      </button>
-
-      {/* Crystals List */}
+      {/* Crystal Inventory */}
       {crystals.length > 0 && (
-        <div className="space-y-4">
-          <h3 className="text-xl font-bold text-white">Crystal Inventory</h3>
+        <div>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-medium uppercase tracking-wider text-gray-500">
+              Crystal Inventory <span className="text-gray-600">({filteredCrystals.length})</span>
+            </h3>
+          </div>
 
           {/* Search */}
-          <input
-            type="text"
-            placeholder="Search by PMC ID or molecule name..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500"
-          />
+          <div className="relative mb-3">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600" />
+            <input
+              type="text"
+              placeholder="Search by PMC ID or molecule name..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full bg-white/[0.02] border border-white/[0.06] rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-gray-600 outline-none focus:border-cyan-500/30 transition-colors"
+            />
+          </div>
 
-          {/* Crystals Table */}
-          <div className="space-y-2 max-h-96 overflow-y-auto">
-            {filteredCrystals.map((crystal) => (
+          {/* Crystal List */}
+          <div className="rounded-xl border border-white/[0.06] bg-[#0d1117] overflow-hidden max-h-[400px] overflow-y-auto">
+            {filteredCrystals.map((crystal, idx) => (
               <div
                 key={crystal.pmc_id}
-                className="bg-gray-900 border border-gray-700 rounded-lg p-4 cursor-pointer hover:bg-gray-800 transition-colors"
-                onClick={() =>
-                  setExpandedCrystal(
-                    expandedCrystal === crystal.pmc_id ? null : crystal.pmc_id
-                  )
-                }
+                className={`cursor-pointer transition-colors hover:bg-white/[0.02] ${
+                  idx !== filteredCrystals.length - 1 ? 'border-b border-white/[0.04]' : ''
+                }`}
+                onClick={() => setExpandedCrystal(expandedCrystal === crystal.pmc_id ? null : crystal.pmc_id)}
               >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-semibold text-cyan-400">{crystal.pmc_id}</p>
-                    <p className="text-sm text-gray-400">
-                      {crystal.molecule_name || 'Unknown molecule'}
-                    </p>
+                <div className="flex items-center justify-between px-4 py-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/10 flex items-center justify-center flex-shrink-0">
+                      <Atom className="w-3.5 h-3.5 text-cyan-400" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{crystal.pmc_id}</p>
+                      <p className="text-[11px] text-gray-500">{crystal.molecule_name || 'Unknown'}</p>
+                    </div>
                   </div>
-                  <div className="flex gap-2">
+
+                  <div className="flex items-center gap-2">
                     {Boolean(crystal.is_piezoelectric) && (
-                      <span className="bg-blue-600/30 text-blue-300 text-xs px-3 py-1 rounded-full">
-                        Piezoelectric
+                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                        Piezo
                       </span>
                     )}
                     {Boolean(crystal.is_ferroelectric) && (
-                      <span className="bg-purple-600/30 text-purple-300 text-xs px-3 py-1 rounded-full">
-                        Ferroelectric
+                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">
+                        Ferro
                       </span>
                     )}
+                    <ChevronDown className={`w-4 h-4 text-gray-600 transition-transform ${expandedCrystal === crystal.pmc_id ? 'rotate-180' : ''}`} />
                   </div>
                 </div>
 
-                {/* Expanded Details */}
+                {/* Expanded file status */}
                 {expandedCrystal === crystal.pmc_id && (
-                  <div className="mt-4 pt-4 border-t border-gray-700 space-y-2">
-                    <div className="grid grid-cols-2 gap-2 text-sm">
-                      <div className="flex items-center gap-2">
-                        <span
-                          className={`w-2 h-2 rounded-full ${
-                            crystal.status.json ? 'bg-green-500' : 'bg-red-500'
-                          }`}
-                        ></span>
-                        <span className="text-gray-300">
-                          JSON: {crystal.status.json ? '✓' : '✗'}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span
-                          className={`w-2 h-2 rounded-full ${
-                            crystal.status.pdf ? 'bg-green-500' : 'bg-red-500'
-                          }`}
-                        ></span>
-                        <span className="text-gray-300">
-                          PDF: {crystal.status.pdf ? '✓' : '✗'}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span
-                          className={`w-2 h-2 rounded-full ${
-                            crystal.status.cif ? 'bg-green-500' : 'bg-red-500'
-                          }`}
-                        ></span>
-                        <span className="text-gray-300">
-                          CIF: {crystal.status.cif ? '✓' : '✗'}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span
-                          className={`w-2 h-2 rounded-full ${
-                            crystal.status.txt ? 'bg-green-500' : 'bg-red-500'
-                          }`}
-                        ></span>
-                        <span className="text-gray-300">
-                          TXT: {crystal.status.txt ? '✓' : '✗'}
-                        </span>
-                      </div>
+                  <div className="px-4 pb-3 ml-11">
+                    <div className="grid grid-cols-4 gap-2">
+                      {[
+                        { label: 'JSON', ok: crystal.status.json, icon: FileCode },
+                        { label: 'PDF', ok: crystal.status.pdf, icon: FileText },
+                        { label: 'CIF', ok: crystal.status.cif, icon: Atom },
+                        { label: 'TXT', ok: crystal.status.txt, icon: File },
+                      ].map((f) => (
+                        <div key={f.label} className={`flex items-center gap-1.5 text-[11px] px-2 py-1.5 rounded-lg ${
+                          f.ok ? 'bg-emerald-500/5 text-emerald-400' : 'bg-red-500/5 text-red-400'
+                        }`}>
+                          <StatusDot ok={f.ok} />
+                          <f.icon className="w-3 h-3" />
+                          {f.label}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 )}
               </div>
             ))}
-          </div>
 
-          {filteredCrystals.length === 0 && (
-            <p className="text-gray-400 text-center py-4">
-              No crystals found matching "{searchTerm}"
-            </p>
-          )}
+            {filteredCrystals.length === 0 && (
+              <p className="text-center text-sm text-gray-600 py-8">
+                No crystals matching "{searchTerm}"
+              </p>
+            )}
+          </div>
         </div>
       )}
     </div>

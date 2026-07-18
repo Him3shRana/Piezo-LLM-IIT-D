@@ -67,6 +67,18 @@ MODELS = {
     ("mace-mp0", "small"):  {"family": "mace-mp0", "size": "small",  "calc_type": "mace_mp0"},
     ("mace-mp0", "medium"): {"family": "mace-mp0", "size": "medium", "calc_type": "mace_mp0"},
     ("mace-mp0", "large"):  {"family": "mace-mp0", "size": "large",  "calc_type": "mace_mp0"},
+    ("mace-mpa0", "medium"): {"family": "mace-mpa0", "size": "medium", "calc_type": "mace_mpa0"},
+    ("mattersim", "5M"): {"family": "mattersim", "size": "5M", "model_name": "mattersim-v1.0.0-5M", "calc_type": "mattersim"},
+    ("mattersim", "1M"): {"family": "mattersim", "size": "1M", "model_name": "mattersim-v1.0.0-1M", "calc_type": "mattersim"},
+    ("mace-mh0", "default"): {"family": "mace-mh0", "size": "default", "calc_type": "mace_mh0"},
+    ("mace-mh1", "default"): {"family": "mace-mh1", "size": "default", "calc_type": "mace_mh1"},
+    ("mace-mh1", "spice"):   {"family": "mace-mh1", "size": "spice",   "head": "spice_wB97M",       "calc_type": "mace_mh1"},
+    ("mace-mh1", "omat"):    {"family": "mace-mh1", "size": "omat",    "head": "omat_pbe",           "calc_type": "mace_mh1"},
+    ("mace-mh1", "mp"):      {"family": "mace-mh1", "size": "mp",      "head": "mp_pbe_refit_add",   "calc_type": "mace_mh1"},
+    ("mace-mh1", "r2scan"):  {"family": "mace-mh1", "size": "r2scan",  "head": "matpes_r2scan",      "calc_type": "mace_mh1"},
+    ("uma", "uma-s-1p1"): {"family": "uma", "size": "uma-s-1p1", "model_name": "uma-s-1p1", "task": "omc", "calc_type": "uma"},
+    ("uma", "uma-m-1p1"): {"family": "uma", "size": "uma-m-1p1", "model_name": "uma-m-1p1", "task": "omc", "calc_type": "uma"},
+    ("pet", "pet-oam-xl"): {"family": "pet", "size": "pet-oam-xl", "model_name": "pet-oam-xl", "calc_type": "pet"},
 }   
 
 STATE_FILENAME = "state.json"
@@ -258,13 +270,51 @@ def build_calculator(model, device="cpu"):
         from orb_models.forcefield import pretrained
         from orb_models.forcefield.inference.calculator import ORBCalculator
         model_fn = pretrained.ORB_PRETRAINED_MODELS[model["model_name"]]
-        orb_model, atoms_adapter = model_fn(device=device)
+        orb_model, atoms_adapter = model_fn(device=device, compile=False)
         return ORBCalculator(orb_model, atoms_adapter, device=device)
 
     elif calc_type == "mace_mp0":
         from mace.calculators import mace_mp
         return mace_mp(model=model["size"], device=device, default_dtype="float64")
 
+    elif calc_type == "mace_mpa0":
+        from mace.calculators import mace_mp
+        return mace_mp(model="medium-mpa-0", device=device, default_dtype="float32")
+
+    elif calc_type == "mattersim":
+        from mattersim.forcefield import MatterSimCalculator, Potential
+        potential = Potential.from_checkpoint(
+            load_path=model["model_name"],
+            device=device
+        )   
+        return MatterSimCalculator(potential=potential, device=device)
+
+    elif calc_type == "mace_mh0":
+        from mace.calculators import mace_mp
+        return mace_mp(model="mh-0", device=device, default_dtype="float32")
+
+    elif calc_type == "mace_mh1":
+        from mace.calculators import mace_mp
+        head = model.get("head", "spice_wB97M")
+        return mace_mp(model="mh-1", device=device, default_dtype="float32", head=head)
+
+    elif calc_type == "uma":
+        from fairchem.core import pretrained_mlip, FAIRChemCalculator
+        predictor = pretrained_mlip.get_predict_unit(model["model_name"], device=device)
+        return FAIRChemCalculator(predictor, task_name=model.get("task", "omc"))
+
+    elif calc_type == "pet":
+        from upet.calculator import UPETCalculator
+        import os
+        checkpoint_path = os.path.expanduser("~/.cache/upet/pet-oam-xl-v1.0.0.pt")
+        return UPETCalculator(
+            model=model["model_name"],
+            version="1.0.0",
+            checkpoint_path=checkpoint_path,
+            device=device
+        )
+    
+    
     else:
         raise ValueError(f"Unknown calc_type: {calc_type}")
 
@@ -354,13 +404,7 @@ def run_npt_md_stage(stage_name, atoms, stage_dir, temperature, pressure_bar,
                        taut=taut, taup=taup,
                        compressibility_au=8e-5 / units.GPa)  # changed by himesh from 4.57e-5 (water) to this to control constant rise of volume
     dyn.atoms.calc = _calc
-    # Patch _refresh_properties to ensure calculator is always attached
-    def _safe_refresh():
-        if dyn.atoms.calc is None:
-            dyn.atoms.calc = _calc
-        dyn.atoms.get_forces()
-    dyn._refresh_properties = _safe_refresh
-
+    
 
     def md_callback():
         current_step[0] += 1
@@ -393,9 +437,11 @@ def run_npt_md_stage(stage_name, atoms, stage_dir, temperature, pressure_bar,
 
         if step % dump_every == 0:
             pdb_path = os.path.join(stage_dir, "trajectory.pdb")
-            # Only append if file exists AND we are resuming (not fresh start)
-            append_mode = os.path.exists(pdb_path) and start_step > 0
-            write(pdb_path, atoms, format="proteindatabank", append=append_mode)
+            # Delete old file on first write of fresh run
+            if step == dump_every and start_step == 0:
+                if os.path.exists(pdb_path):
+                    os.remove(pdb_path)
+            write(pdb_path, atoms, format="proteindatabank", append=True)
 
         if traj_filename and step % dump_every == 0:
             traj_frames.append(atoms.copy())

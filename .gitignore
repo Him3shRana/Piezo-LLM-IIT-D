@@ -1,21 +1,13 @@
-# Simulation outputs — regenerated, don't version
-simulations/
+venv-finetune/
+venv-serve/
+300K/
+*.model
+*.ckpt
+*.pt
+*.extxyz
 *.traj
-*.xyz
-*.csv
-
-# Python
 __pycache__/
 *.pyc
-venv/
-.venv/
-
-# Vector DB
-vectordb/
-
-# Node / frontend
-node_modules/
-dist/
-
-# Editor
-.vscode/
+*.log
+*.lock
+Qwen3-8B/

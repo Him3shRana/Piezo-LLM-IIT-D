@@ -1,0 +1,10 @@
+{
+  "stage": "minimisation",
+  "fmax": 0.05,
+  "target_steps": 500,
+  "completed_steps": 69,
+  "checkpoint_interval": 50,
+  "trajectory_file": "trajectory.pdb",
+  "restart_file": "minimisation.restart.extxyz",
+  "status": "completed"
+}

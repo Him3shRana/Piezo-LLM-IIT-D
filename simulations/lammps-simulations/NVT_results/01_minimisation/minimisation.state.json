@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "stage": "Minimisation",
+  "elapsed_seconds": 156.49842715263367,
+  "completed_steps": 1,
+  "target_steps": 1,
+  "final_temperature_K": 0.0,
+  "final_pressure_GPa": -2.101332,
+  "final_volume_A3": 1879.3936,
+  "restart_file": "minimisation.restart",
+  "trajectory_file": "trajectory.pdb",
+  "last_frame_file": "last-frame-of-trajectory.pdb",
+  "csv_file": "minimisation.csv",
+  "view_log_file": "minimisation.view.log",
+  "dump_file": "minimisation.lammpstrj",
+  "element_order": [
+    "C",
+    "N",
+    "O",
+    "H"
+  ]
+}

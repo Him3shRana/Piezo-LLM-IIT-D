@@ -1,0 +1,15 @@
+pmc: PMC-001
+engine: lammps
+model_family: mace-off23
+model_size: medium
+ensemble: npt
+temperature_K: 300.0
+pressure_bar: 1.0
+minimize_steps: 2000
+equil_steps: 200000
+target_step: 2000000
+checkpoint_every: 500
+dump_every: 1000
+timestep_fs: 1.0
+timestep_ps: 0.001
+supercell_size: 2
